@@ -13,10 +13,12 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 from pathlib import Path
 import environ
 from datetime import timedelta
-
+from dotenv import load_dotenv
+import os
+load_dotenv()
 # Initialise environment variables
-env = environ.Env()
-environ.Env.read_env()
+# env = environ.Env()
+# environ.Env.read_env()
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -26,8 +28,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY =  'django-insecure-o06v+xeaat)av((0bo8s*&(o*uff+a^ip(^0c@_#=f4#kyc4fa'
-OPEN_API_KEY = env('OPEN_API_KEY')
+SECRET_KEY =  os.getenv('SECRET_KEY')
+OPEN_API_KEY = os.getenv('OPEN_API_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
