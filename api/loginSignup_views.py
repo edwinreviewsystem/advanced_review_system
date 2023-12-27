@@ -27,4 +27,10 @@ class RegisterAPIView(APIView):
 class LogoutView(APIView):
     def get(self, request):
         logout(request)
-        return redirect('login_api')
+        return Response(
+            {
+                "status":status.HTTP_200_OK,
+                "message": "Logout successfully",
+            },
+            status=status.HTTP_200_OK,
+        )

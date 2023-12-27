@@ -5,6 +5,10 @@ from rest_framework.permissions import IsAuthenticated
 from .serializers import ProductReviewSerializer
 import openai
 from django.conf import settings
+from django.views.generic import TemplateView
+
+class HomePageView(TemplateView):
+    template_name = 'home.html'
 
 class GetChatGPTSuggestions(APIView):
     permission_classes = [IsAuthenticated]
