@@ -32,7 +32,7 @@ class HomePageView(TemplateView):
     template_name = 'home.html'
 
 def view_pdf(request):
-    pdf_file_path = 'static/Review_System_Docs.pdf'  
+    pdf_file_path = 'static/Review_System_APIDocs.pdf'  
     with open(pdf_file_path, 'rb') as pdf_file:
         response = HttpResponse(pdf_file.read(), content_type='application/pdf')
         response['Content-Disposition'] = 'filename="apidocs.pdf"'

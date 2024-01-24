@@ -22,7 +22,7 @@ class ProductReviewsListAPI(APIView):
                     status=status.HTTP_400_BAD_REQUEST,
                 )
 
-            reviews = ProductReviews.objects.filter(product_id=product_id)
+            reviews = ProductReviews.objects.filter(product_id=product_id, user_id=request.user.id)
 
             if not reviews.exists():
                 return Response(
