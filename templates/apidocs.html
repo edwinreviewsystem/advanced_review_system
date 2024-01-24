@@ -1,0 +1,46 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Documentation</title>
+
+    <link rel="stylesheet" type="text/css" href="{% static 'pdfjs/web/viewer.css' %}">
+    <script type="text/javascript" src="{% static 'pdfjs/build/pdf.js' %}"></script>
+
+    <style>
+        #pdf-viewer {
+            width: 100%;
+            height: 900px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to API Documentation</h1>
+
+    <div id="pdf-viewer"></div>
+
+    <script>
+        var pdfPath = '{% static "Review_System_Docs.pdf" %}';
+        var pdfViewer = document.getElementById('pdf-viewer');
+
+        pdfjsLib.getDocument(pdfPath).promise.then(function(pdfDoc) {
+            for (var pageNum = 1; pageNum <= pdfDoc.numPages; pageNum++) {
+                pdfDoc.getPage(pageNum).then(function(page) {
+                    var canvas = document.createElement('canvas');
+                    pdfViewer.appendChild(canvas);
+
+                    var viewport = page.getViewport({ scale: 1.5 });
+                    canvas.height = viewport.height;
+                    canvas.width = viewport.width;
+
+                    page.render({ canvasContext: canvas.getContext('2d'), viewport: viewport });
+                });
+            }
+        });
+    </script>
+
+</body>
+</html>

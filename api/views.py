@@ -2,14 +2,41 @@ from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
 from rest_framework.permissions import IsAuthenticated, AllowAny
+from rest_framework_simplejwt.serializers import TokenObtainPairSerializer
+from rest_framework_simplejwt.views import TokenObtainPairView
 from .serializers import ProductReviewSerializer
 import openai
 from django.conf import settings
 from django.views.generic import TemplateView
 import json
+import os
+from django.conf import settings
+from django.http import Http404
+from django.http import FileResponse
+from django.http import HttpResponse
+
+
+class MyTokenObtainPairSerializer(TokenObtainPairSerializer):
+
+    @classmethod
+    def get_token(cls, user):
+        token = super(MyTokenObtainPairSerializer, cls).get_token(user)
+
+        token['username'] = user.username
+        return token
+    
+class MyTokenObtainPairView(TokenObtainPairView):
+    serializer_class = MyTokenObtainPairSerializer
 
 class HomePageView(TemplateView):
     template_name = 'home.html'
+
+def view_pdf(request):
+    pdf_file_path = 'static/Review_System_Docs.pdf'  
+    with open(pdf_file_path, 'rb') as pdf_file:
+        response = HttpResponse(pdf_file.read(), content_type='application/pdf')
+        response['Content-Disposition'] = 'filename="apidocs.pdf"'
+        return response
 
 class GetChatGPTSuggestions(APIView):
     # permission_classes = [IsAuthenticated]
@@ -27,7 +54,6 @@ class GetChatGPTSuggestions(APIView):
 
         except Exception as e:
             return Response({'error': str(e)}, status=status.HTTP_400_BAD_REQUEST)
-        
         
 
     def get_chatgpt_suggestions(self, star_rating,product_name):

@@ -5,21 +5,11 @@ from django.contrib.auth.models import User
 
 class ProductReviewSerializer(serializers.ModelSerializer):
     user_word = serializers.CharField(max_length=200, required=False)
-
     class Meta:
         model = ProductReview
         fields = [ 'star_rating','user_word','product_name']
 
 
-class MyTokenObtainPairSerializer(TokenObtainPairSerializer):
-
-    @classmethod
-    def get_token(cls, user):
-        token = super(MyTokenObtainPairSerializer, cls).get_token(user)
-
-        token['username'] = user.username
-        return token
-    
 class RegisterSerializer(serializers.ModelSerializer):
     class Meta:
         model = User

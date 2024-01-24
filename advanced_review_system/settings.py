@@ -51,6 +51,7 @@ INSTALLED_APPS = [
     "rest_framework_simplejwt",
     "rest_framework_simplejwt.token_blacklist",
     "corsheaders",
+    "review_system.apps.ReviewSystemConfig",
 ]
 
 REST_FRAMEWORK = {
@@ -102,6 +103,18 @@ DATABASES = {
     }
 }
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'review_system',
+#         'USER': 'postgres',
+#         'PASSWORD': 'admin',
+#         'HOST': 'localhost',  
+#         'PORT': '5432',      
+#     }
+# }
+
+
 
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
@@ -137,15 +150,21 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+# BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 STATIC_URL = "static/"
 STATICFILES_DIRS = ['static_files']
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+
+MEDIA_ROOT= BASE_DIR / 'media'
+MEDIA_URL='/media/'
+
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
 CORS_ALLOW_ALL_ORIGINS = True
 
 
@@ -153,7 +172,7 @@ CORS_ALLOW_ALL_ORIGINS = True
 jwt config
 """
 SIMPLE_JWT = {
-    "ACCESS_TOKEN_LIFETIME": timedelta(days=15),
+    "ACCESS_TOKEN_LIFETIME": timedelta(days=30),
     "REFRESH_TOKEN_LIFETIME": timedelta(days=30),
     # refresh token automatically refresh after a specific period of time, so that user don't have any need to re-login when refresh token expires
     # but its not a good practice to make it TRUE as if someone steals our refresh token so he can generates it own access token which is not good so we have to blacklist it
