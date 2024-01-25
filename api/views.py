@@ -39,8 +39,8 @@ def view_pdf(request):
         return response
 
 class GetChatGPTSuggestions(APIView):
-    # permission_classes = [IsAuthenticated]
-    permission_classes = [AllowAny]
+    permission_classes = [IsAuthenticated]
+    # permission_classes = [AllowAny]
 
     def post(self, request):
         try:
@@ -58,7 +58,7 @@ class GetChatGPTSuggestions(APIView):
 
     def get_chatgpt_suggestions(self, star_rating,product_name):
         openai.api_key = settings.OPEN_API_KEY
-        prompt = f"User rated the product:{product_name} with {star_rating} stars. Generate 8-10 best describing words for {star_rating} of {product_name}, Ignore description and should be in the array format."
+        prompt = f"User rated the product:{product_name} with {star_rating} stars. Generate 9-11 best describing words for {star_rating}, Ignore description and should be in the array format."
 
         response = openai.ChatCompletion.create(
             model="gpt-3.5-turbo",
@@ -78,8 +78,8 @@ class GetChatGPTSuggestions(APIView):
 
 
 class GetChatGPTReview(APIView):
-    # permission_classes = [IsAuthenticated]
-    permission_classes = [AllowAny]
+    permission_classes = [IsAuthenticated]
+    # permission_classes = [AllowAny]
 
     def post(self, request):
         try:
@@ -100,7 +100,7 @@ class GetChatGPTReview(APIView):
 
     def get_chatgpt_review(self, star_rating, user_word, product_name):
         openai.api_key = settings.OPEN_API_KEY
-        prompt = f"User selected {user_word} as best describing words for {product_name} and rated {star_rating} stars for review.Only provide a detailed 80-100 words review based on {product_name} in easy language. Ignore description."
+        prompt = f"Provide a detailed 80-100 words review based on {product_name}, {star_rating} and best describing words {user_word} user has given, as a real review. Ignore description."
 
         response = openai.ChatCompletion.create(
             model="gpt-3.5-turbo",

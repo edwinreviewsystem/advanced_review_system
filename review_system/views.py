@@ -3,14 +3,18 @@ from rest_framework.response import Response
 from rest_framework import status
 from .models import ProductReviews
 from .serializers import ProductReviewsSerializer
+from django.contrib.auth.decorators import login_required
 from rest_framework.permissions import IsAuthenticated, AllowAny
+from django.contrib.auth.models import User
+
 
 class ProductReviewsListAPI(APIView):
-    # permission_classes = [IsAuthenticated]
-    permission_classes = [AllowAny]
+    permission_classes = [IsAuthenticated]
+    # permission_classes = [AllowAny]
 
     def get(self, request):
         product_id = request.query_params.get('product_id')
+        # product_id = request.data.get('product_id')
 
         try:
             if not product_id:
@@ -21,14 +25,17 @@ class ProductReviewsListAPI(APIView):
                     },
                     status=status.HTTP_400_BAD_REQUEST,
                 )
-
-            reviews = ProductReviews.objects.filter(product_id=product_id, user_id=request.user.id)
+            user_id = request.user.id
+            if not user_id:
+                reviews = ProductReviews.objects.filter(product_id=product_id)
+            else:
+                reviews = ProductReviews.objects.filter(product_id=product_id, user_id=user_id)
 
             if not reviews.exists():
                 return Response(
                     {
                         "status": status.HTTP_404_NOT_FOUND,
-                        "message": "No reviews found for the specified product_id.",
+                        "message": "No reviews found for the specified product_id and user_id.",
                     },
                     status=status.HTTP_404_NOT_FOUND,
                 )
@@ -63,7 +70,9 @@ class ProductReviewsListAPI(APIView):
                     },
                     status=status.HTTP_400_BAD_REQUEST,
                 )
+            
 
+            request.data['user'] = request.user.id
             serializer = ProductReviewsSerializer(data=request.data)
             if serializer.is_valid():
                 serializer.save()
@@ -95,12 +104,13 @@ class ProductReviewsListAPI(APIView):
 
 
 class ProductReviewsDetailAPI(APIView):
-    # permission_classes = [IsAuthenticated]
-    permission_classes = [AllowAny]
+    permission_classes = [IsAuthenticated]
+    # permission_classes = [AllowAny]
 
     def put(self, request, pk):
         try:
             review = ProductReviews.objects.get(pk=pk)
+            request.data['user'] = request.user.id
             serializer = ProductReviewsSerializer(review, data=request.data, partial=True)
             if serializer.is_valid():
                 serializer.save()
