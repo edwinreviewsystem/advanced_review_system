@@ -39,8 +39,8 @@ def view_pdf(request):
         return response
 
 class GetChatGPTSuggestions(APIView):
-    permission_classes = [IsAuthenticated]
-    # permission_classes = [AllowAny]
+    # permission_classes = [IsAuthenticated]
+    permission_classes = [AllowAny]
 
     def post(self, request):
         try:
@@ -78,8 +78,8 @@ class GetChatGPTSuggestions(APIView):
 
 
 class GetChatGPTReview(APIView):
-    permission_classes = [IsAuthenticated]
-    # permission_classes = [AllowAny]
+    # permission_classes = [IsAuthenticated]
+    permission_classes = [AllowAny]
 
     def post(self, request):
         try:
@@ -95,6 +95,7 @@ class GetChatGPTReview(APIView):
 
         except Exception as e:
             return Response({'error': str(e)}, status=status.HTTP_400_BAD_REQUEST)
+        
 
 
 

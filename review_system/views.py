@@ -9,8 +9,8 @@ from django.contrib.auth.models import User
 
 
 class ProductReviewsListAPI(APIView):
-    permission_classes = [IsAuthenticated]
-    # permission_classes = [AllowAny]
+    # permission_classes = [IsAuthenticated]
+    permission_classes = [AllowAny]
 
     def get(self, request):
         product_id = request.query_params.get('product_id')
@@ -35,7 +35,7 @@ class ProductReviewsListAPI(APIView):
                 return Response(
                     {
                         "status": status.HTTP_404_NOT_FOUND,
-                        "message": "No reviews found for the specified product_id and user_id.",
+                        "message": "No reviews found for the specified product_id.",
                     },
                     status=status.HTTP_404_NOT_FOUND,
                 )
@@ -104,8 +104,8 @@ class ProductReviewsListAPI(APIView):
 
 
 class ProductReviewsDetailAPI(APIView):
-    permission_classes = [IsAuthenticated]
-    # permission_classes = [AllowAny]
+    # permission_classes = [IsAuthenticated]
+    permission_classes = [AllowAny]
 
     def put(self, request, pk):
         try:

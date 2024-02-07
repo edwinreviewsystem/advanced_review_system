@@ -7,7 +7,7 @@ from django.core.exceptions import ValidationError
 class ProductReviewsSerializer(serializers.ModelSerializer):
     class Meta:
         model = ProductReviews
-        fields = ['id','user','star_rating', 'name', 'email', 'product_id', 'review', 'image', 'created_at']
+        fields = ['id','star_rating', 'name', 'email', 'product_id', 'review', 'image', 'created_at']
         
     
     def validate_email(self, value):
