@@ -60,20 +60,22 @@ class ProductReviewsListAPI(APIView):
 
     def post(self, request):
         try:
-            product_id = request.data.get('product_id')
-
-            if not product_id:
-                return Response(
-                    {
-                        "status": status.HTTP_400_BAD_REQUEST,
-                        "message": "Missing product_id in request data",
-                    },
-                    status=status.HTTP_400_BAD_REQUEST,
-                )
+            # product_id = request.data.get('product_id')
+            # print(product_id)
+        
+            # if not product_id:
+            #     return Response(
+            #         {
+            #             "status": status.HTTP_400_BAD_REQUEST,
+            #             "message": "Missing product_id in request data",
+            #         },
+            #         status=status.HTTP_400_BAD_REQUEST,
+            #     )
             
 
             request.data['user'] = request.user.id
             serializer = ProductReviewsSerializer(data=request.data)
+            # print(request.data.get('product_id'))
             if serializer.is_valid():
                 serializer.save()
                 return Response(
