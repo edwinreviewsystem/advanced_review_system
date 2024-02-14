@@ -60,8 +60,20 @@ class ProductReviewsListAPI(APIView):
 
     def post(self, request):
         try:
-            # product_id = request.data.get('product_id')
-            # print(product_id)
+            star_rating = request.data.get('star_rating')
+            name = request.data.get('name')
+            email = request.data.get('email')
+            product_id = request.data.get('product_id')
+            review = request.data.get('review')
+
+
+            new_data = {
+                 'product_id': product_id,
+                 'star_rating': star_rating,
+                 'email':email,
+                 'name': name,
+                 'review': review,
+            }
         
             # if not product_id:
             #     return Response(
@@ -73,9 +85,8 @@ class ProductReviewsListAPI(APIView):
             #     )
             
 
-            request.data['user'] = request.user.id
-            serializer = ProductReviewsSerializer(data=request.data)
-            # print(request.data.get('product_id'))
+            # request.data['user'] = request.user.id
+            serializer = ProductReviewsSerializer(data=new_data)
             if serializer.is_valid():
                 serializer.save()
                 return Response(
