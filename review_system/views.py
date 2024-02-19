@@ -100,11 +100,11 @@ class ProductReviewsListAPI(APIView):
             #     )
             
             # request.data['user'] = request.user.id
+            new_data['image'] = image if image else None
             serializer = ProductReviewsSerializer(data=new_data)
+            # if new_data['image']:
+            #         new_data['image'] = save_image(new_data['image'])
             if serializer.is_valid():
-                if new_data['image']:
-                    new_data['image'] = save_image(new_data['image'])
-        
                 serializer.save()
                 return Response(
                     {
