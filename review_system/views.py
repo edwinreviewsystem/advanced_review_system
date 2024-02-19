@@ -102,10 +102,9 @@ class ProductReviewsListAPI(APIView):
             # request.data['user'] = request.user.id
             serializer = ProductReviewsSerializer(data=new_data)
             if serializer.is_valid():
-                saved_image_path = None
-                if  new_data['image']:
-                    saved_image_path = save_image(new_data['image'])
-                    serializer.data['image'] = saved_image_path
+                if new_data['image']:
+                    new_data['image'] = save_image(new_data['image'])
+        
                 serializer.save()
                 return Response(
                     {
