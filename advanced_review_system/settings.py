@@ -165,7 +165,7 @@ MEDIA_URL='/media/'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-
+ALLOWED_IMAGE_TYPES = ['image/jpeg', 'image/jpg', 'image/png']
 CORS_ALLOW_ALL_ORIGINS = True
 
 

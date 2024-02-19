@@ -6,6 +6,9 @@ from .serializers import ProductReviewsSerializer
 from django.contrib.auth.decorators import login_required
 from rest_framework.permissions import IsAuthenticated, AllowAny
 from django.contrib.auth.models import User
+from django.core.files.base import ContentFile
+from django.core.files.storage import default_storage
+from rest_framework.exceptions import ValidationError
 
 
 class ProductReviewsListAPI(APIView):
@@ -65,7 +68,7 @@ class ProductReviewsListAPI(APIView):
             email = request.data.get('email')
             product_id = request.data.get('product_id')
             review = request.data.get('review')
-
+            image = request.FILES.get('image')
 
             new_data = {
                  'product_id': product_id,
@@ -73,7 +76,19 @@ class ProductReviewsListAPI(APIView):
                  'email':email,
                  'name': name,
                  'review': review,
+                 'image':image,
             }
+
+            def save_image(image):
+                return image.name
+         
+
+            ALLOWED_IMAGE_TYPES = ['image/jpeg', 'image/jpg', 'image/png']
+            if new_data['image']:
+                content_type = new_data['image'].content_type
+            if content_type not in ALLOWED_IMAGE_TYPES:
+                raise ValidationError('Invalid image content type.')
+
         
             # if not product_id:
             #     return Response(
@@ -84,10 +99,13 @@ class ProductReviewsListAPI(APIView):
             #         status=status.HTTP_400_BAD_REQUEST,
             #     )
             
-
             # request.data['user'] = request.user.id
             serializer = ProductReviewsSerializer(data=new_data)
             if serializer.is_valid():
+                saved_image_path = None
+                if  new_data['image']:
+                    saved_image_path = save_image(new_data['image'])
+                    serializer.data['image'] = saved_image_path
                 serializer.save()
                 return Response(
                     {
