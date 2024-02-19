@@ -83,11 +83,11 @@ class ProductReviewsListAPI(APIView):
                 return image.name
          
 
-            ALLOWED_IMAGE_TYPES = ['image/jpeg', 'image/jpg', 'image/png']
-            if new_data['image']:
-                content_type = new_data['image'].content_type
-            if content_type not in ALLOWED_IMAGE_TYPES:
-                raise ValidationError('Invalid image content type.')
+            # ALLOWED_IMAGE_TYPES = ['image/jpeg', 'image/jpg', 'image/png']
+            # if new_data['image']:
+            #     content_type = new_data['image'].content_type
+            # if content_type not in ALLOWED_IMAGE_TYPES:
+            #     raise ValidationError('Invalid image content type.')
 
         
             # if not product_id:
