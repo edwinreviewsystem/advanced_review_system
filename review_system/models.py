@@ -10,7 +10,7 @@ class ProductReviews(models.Model):
     email = models.EmailField()
     name = models.CharField(max_length=255)
     image = models.ImageField(upload_to='uploaded_images/', default='')
-    product_id = models.PositiveIntegerField(default=None) 
+    product_id = models.CharField(max_length=255, unique=True)
     created_at = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):

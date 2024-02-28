@@ -5,6 +5,7 @@ from .models import ProductReviews
 from .serializers import ProductReviewsSerializer
 from django.contrib.auth.decorators import login_required
 from rest_framework.permissions import IsAuthenticated, AllowAny
+from rest_framework.exceptions import NotFound
 from django.contrib.auth.models import User
 from django.core.files.base import ContentFile
 from django.core.files.storage import default_storage
@@ -79,31 +80,12 @@ class ProductReviewsListAPI(APIView):
                  'image':image,
             }
 
-            def save_image(image):
-                return image.name
-         
 
-            # ALLOWED_IMAGE_TYPES = ['image/jpeg', 'image/jpg', 'image/png']
-            # if new_data['image']:
-            #     content_type = new_data['image'].content_type
-            # if content_type not in ALLOWED_IMAGE_TYPES:
-            #     raise ValidationError('Invalid image content type.')
-
-        
-            # if not product_id:
-            #     return Response(
-            #         {
-            #             "status": status.HTTP_400_BAD_REQUEST,
-            #             "message": "Missing product_id in request data",
-            #         },
-            #         status=status.HTTP_400_BAD_REQUEST,
-            #     )
             
             # request.data['user'] = request.user.id
             new_data['image'] = image if image else None
             serializer = ProductReviewsSerializer(data=new_data)
-            # if new_data['image']:
-            #         new_data['image'] = save_image(new_data['image'])
+         
             if serializer.is_valid():
                 serializer.save()
                 return Response(
@@ -161,13 +143,7 @@ class ProductReviewsDetailAPI(APIView):
                 status=status.HTTP_400_BAD_REQUEST,
             )
         except ProductReviews.DoesNotExist:
-            return Response(
-                {
-                    "status": status.HTTP_404_NOT_FOUND,
-                    "message": "Product review not found",
-                },
-                status=status.HTTP_404_NOT_FOUND,
-            )
+            raise NotFound()
         except Exception as e:
             return Response(
                 {
@@ -183,19 +159,13 @@ class ProductReviewsDetailAPI(APIView):
             review.delete()
             return Response(
                 {
-                    "status": status.HTTP_200_OK,
+                    "status": status.HTTP_204_NO_CONTENT,
                     "message": "Product review deleted successfully!",
                 },
-                status=status.HTTP_200_OK,
+                status=status.HTTP_204_NO_CONTENT,
             )
         except ProductReviews.DoesNotExist:
-            return Response(
-                {
-                    "status": status.HTTP_404_NOT_FOUND,
-                    "message": "Product review not found",
-                },
-                status=status.HTTP_404_NOT_FOUND,
-            )
+            raise NotFound()
         except Exception as e:
             return Response(
                 {

@@ -2,6 +2,12 @@ from django.db import models
 from django.contrib.auth.models import User
 # Create your models here.
 
+class ReviewTone(models.Model):
+    name = models.CharField(max_length=255, unique=True)
+
+    def __str__(self):
+        return self.name
+
 
 class ProductReview(models.Model):
     STAR_CHOICES = [
@@ -17,6 +23,7 @@ class ProductReview(models.Model):
     user_word = models.CharField(max_length=200, default=None)
     product_name = models.CharField(max_length=255) 
     generated_review = models.TextField(blank=True, null=True)
+    review_tone = models.ForeignKey(ReviewTone, on_delete=models.CASCADE, blank=True, null=True)
 
     def __str__(self):
         return f"{self.user.username}'s Review - {self.star_rating} stars"
