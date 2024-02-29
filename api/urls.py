@@ -16,6 +16,7 @@ urlpatterns = [
     path('api/rating', GetChatGPTSuggestions.as_view(), name='submit_rating'),
     path('api/review', GetChatGPTReview.as_view(), name='generate_review'),
     path('api/review-tones', ReviewToneListAPIView.as_view(), name='review-tone-list'),
+    path('api/review-tones/create', ReviewToneCreateAPIView.as_view(), name='review-tone-create'),
     path('api/review-tones/<int:pk>', ReviewToneDetailAPIView.as_view(), name='review-tone-detail'),
 
 
