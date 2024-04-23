@@ -61,12 +61,18 @@ class GetChatGPTSuggestions(APIView):
 
     def get_chatgpt_suggestions(self, star_rating,product_name,review_tone):
         openai.api_key = settings.OPEN_API_KEY
-        prompt = f"User gives {star_rating} stars to {product_name}. Generate 9-11 best describing words in a {review_tone} tone, Ignore description and should be in the array format."
+        # prompt = f"User gives {star_rating} stars to {product_name}. Generate 9-11 best describing words in a {review_tone} tone, Ignore description and should be in the array format."
+        prompt = f"User gives {star_rating} stars to {product_name}."
+
+        if review_tone:
+            prompt += f" Review tone: {review_tone}"
+
+        prompt += " Generate 9-11 best describing words in a {neutral} tone, Ignore description and should be in the array format."
 
         response = openai.ChatCompletion.create(
             model="gpt-3.5-turbo",
             messages=[
-                {"role": "system", "content": "You are a helpful assistant for the product review system."},
+                {"role": "system", "content": "You are a helpful assistant for reviewing products/services."},
                 {"role": "user", "content": prompt}
             ],
             max_tokens=60
@@ -107,7 +113,7 @@ class GetChatGPTReview(APIView):
         response = openai.ChatCompletion.create(
             model="gpt-3.5-turbo",
             messages=[
-                {"role": "system", "content": "You are a helpful assistant for a reviewing products/services."},
+                {"role": "system", "content": "You are a helpful assistant for reviewing products/services."},
                 {"role": "user", "content": prompt}
             ],
             max_tokens=200
