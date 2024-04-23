@@ -10,6 +10,7 @@ from django.contrib.auth.models import User
 from django.core.files.base import ContentFile
 from django.core.files.storage import default_storage
 from rest_framework.exceptions import ValidationError
+from django.db.models import Q, Count
 
 
 class ProductReviewsListAPI(APIView):
@@ -17,32 +18,42 @@ class ProductReviewsListAPI(APIView):
     permission_classes = [AllowAny]
 
     def get(self, request):
-        product_id = request.query_params.get('product_id')
-        # product_id = request.data.get('product_id')
+        product_name = request.query_params.get('product_name')
+        domain = request.query_params.get('domain')
+        # product_name = request.data.get('product_name')
 
         try:
-            if not product_id:
+            if not (product_name or domain):
                 return Response(
                     {
                         "status": status.HTTP_400_BAD_REQUEST,
-                        "message": "Missing product_id in query parameters",
+                        "message": "Missing product_name/domain in query parameters",
                     },
                     status=status.HTTP_400_BAD_REQUEST,
                 )
             user_id = request.user.id
             if not user_id:
-                reviews = ProductReviews.objects.filter(product_id=product_id)
+                reviews = ProductReviews.objects.filter(domain=domain)
             else:
-                reviews = ProductReviews.objects.filter(product_id=product_id, user_id=user_id)
+                reviews = ProductReviews.objects.filter(Q(product_name=product_name) | Q(domain=domain))
+                # reviews = ProductReviews.objects.filter(product_name=product_name, user_id=user_id)
+                # reviews = ProductReviews.objects.all()
 
             if not reviews.exists():
                 return Response(
                     {
                         "status": status.HTTP_404_NOT_FOUND,
-                        "message": "No reviews found for the specified product_id.",
+                        "message": "No reviews found for the specified product_name/domain.",
                     },
                     status=status.HTTP_404_NOT_FOUND,
                 )
+            data = {'business': [], 'product': []}
+            for review in reviews:
+                if product_name and review.product_name == product_name:
+                    data['product'].append(review.to_dict()) 
+                else:
+                    data['business'].append(review.to_dict())  
+
 
             serializer = ProductReviewsSerializer(reviews, many=True)
             return Response(
@@ -67,12 +78,14 @@ class ProductReviewsListAPI(APIView):
             star_rating = request.data.get('star_rating')
             name = request.data.get('name')
             email = request.data.get('email')
-            product_id = request.data.get('product_id')
+            product_name = request.data.get('product_name')
+            domain = request.data.get('domain')
             review = request.data.get('review')
             image = request.FILES.get('image')
 
             new_data = {
-                 'product_id': product_id,
+                 'product_name': product_name,
+                 'domain':domain,
                  'star_rating': star_rating,
                  'email':email,
                  'name': name,
@@ -80,8 +93,7 @@ class ProductReviewsListAPI(APIView):
                  'image':image,
             }
 
-
-            
+      
             # request.data['user'] = request.user.id
             new_data['image'] = image if image else None
             serializer = ProductReviewsSerializer(data=new_data)
@@ -91,7 +103,7 @@ class ProductReviewsListAPI(APIView):
                 return Response(
                     {
                         "status": status.HTTP_201_CREATED,
-                        "message": "Product review added!",
+                        "message": "New Review added!",
                         "data": serializer.data,
                     },
                     status=status.HTTP_201_CREATED,
@@ -109,10 +121,14 @@ class ProductReviewsListAPI(APIView):
             return Response(
                 {
                     "status": status.HTTP_400_BAD_REQUEST,
-                    "message": f"Error while posting product review: {str(e)}",
+                    "message": f"Error while posting Review: {str(e)}",
                 },
                 status=status.HTTP_400_BAD_REQUEST,
             )
+    def get_review_count_by_domain(self):
+        # This method can be used to get the count of reviews for each domain
+        domain_review_counts = ProductReviews.objects.values('domain').annotate(count=Count('id'))
+        return domain_review_counts
 
 
 class ProductReviewsDetailAPI(APIView):
@@ -122,6 +138,7 @@ class ProductReviewsDetailAPI(APIView):
     def put(self, request, pk):
         try:
             review = ProductReviews.objects.get(pk=pk)
+            print('put product pk=',pk)
             request.data['user'] = request.user.id
             serializer = ProductReviewsSerializer(review, data=request.data, partial=True)
             if serializer.is_valid():

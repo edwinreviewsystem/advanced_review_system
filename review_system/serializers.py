@@ -8,7 +8,7 @@ class ProductReviewsSerializer(serializers.ModelSerializer):
     image = serializers.ImageField(allow_null=True, required=False)
     class Meta:
         model = ProductReviews
-        fields = ['id','star_rating', 'name', 'email', 'product_id', 'review', 'image', 'created_at']
+        fields = ['id','star_rating', 'name', 'email', 'product_name', 'domain', 'review', 'image', 'created_at']
         
     
     def validate_email(self, value):

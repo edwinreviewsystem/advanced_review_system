@@ -3,7 +3,7 @@ from .models import ProductReviews
 from django.utils.html import format_html
 
 class ProductReviewsAdmin(admin.ModelAdmin):
-    list_display = ('id','user','email',  'star_rating', 'review', 'product_id','display_image','created_at')
+    list_display = ('id','user','email',  'star_rating', 'review', 'product_name', 'domain', 'display_image','created_at')
 
     def display_image(self, obj):
         if obj.image:
@@ -16,7 +16,7 @@ class ProductReviewsAdmin(admin.ModelAdmin):
 
 
 
-    search_fields = ('email', 'product_id')
-    list_filter = ('star_rating', 'product_id', 'created_at')
+    # search_fields = ('email', 'product_id')
+    # list_filter = ('star_rating', 'product_id', 'created_at')
 
 admin.site.register(ProductReviews, ProductReviewsAdmin)

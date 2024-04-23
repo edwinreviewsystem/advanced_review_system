@@ -1,19 +1,19 @@
 from rest_framework import serializers, validators
 from rest_framework_simplejwt.serializers import TokenObtainPairSerializer
-from .models import ProductReview, ReviewTone
+from .models import *
 from django.contrib.auth.models import User
 
-class ReviewToneSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = ReviewTone
-        fields = '__all__'
+# class ReviewToneSerializer(serializers.ModelSerializer):
+#     class Meta:
+#         model = ReviewTone
+#         fields = '__all__'
 
-class ProductReviewSerializer(serializers.ModelSerializer):
+class AIReviewSerializer(serializers.ModelSerializer):
     # user_word = serializers.CharField(max_length=200, required=False)
-    review_tone = ReviewToneSerializer(read_only=True)
+    # review_tone = ReviewToneSerializer(read_only=True)
     class Meta:
-        model = ProductReview
-        fields = [ 'star_rating','user_word','product_name', 'review_tone']
+        model = AIReview
+        fields = [ 'star_rating','user_selected_words','product_name', 'review_tone']
 
 
 class RegisterSerializer(serializers.ModelSerializer):

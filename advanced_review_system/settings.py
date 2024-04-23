@@ -32,7 +32,7 @@ SECRET_KEY =  os.getenv('SECRET_KEY')
 OPEN_API_KEY = os.getenv('OPEN_API_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = os.getenv('DEBUG')
 
 ALLOWED_HOSTS = ['*']
 
@@ -104,17 +104,15 @@ DATABASES = {
 }
 
 # DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql',
-#         'NAME': 'review_system',
-#         'USER': 'postgres',
-#         'PASSWORD': 'admin',
-#         'HOST': 'localhost',  
-#         'PORT': '5432',      
+#     "default": {
+#         "ENGINE": "django.db.backends.postgresql",
+#         "NAME": os.getenv('NAME'),
+#         "USER": os.getenv('USER'),
+#         "PASSWORD": os.getenv('PASSWORD'),
+#         "HOST":os.getenv('HOST'),
+#         "PORT":os.getenv('PORT'),
 #     }
 # }
-
-
 
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators

@@ -4,7 +4,7 @@ from rest_framework import status
 from rest_framework.permissions import IsAuthenticated, AllowAny
 from rest_framework_simplejwt.serializers import TokenObtainPairSerializer
 from rest_framework_simplejwt.views import TokenObtainPairView
-from .serializers import ProductReviewSerializer
+from .serializers import AIReviewSerializer
 import openai
 from django.conf import settings
 from django.views.generic import TemplateView
@@ -44,24 +44,24 @@ class GetChatGPTSuggestions(APIView):
 
     def post(self, request):
         try:
-            serializer = ProductReviewSerializer(data=request.data)
+            serializer = AIReviewSerializer(data=request.data)
             serializer.is_valid(raise_exception=True)
             star_rating = serializer.validated_data['star_rating']
             product_name = serializer.validated_data['product_name']
-            review_tone = serializer.validated_data.get('review_tone')
+            review_tone = serializer.validated_data['review_tone']
 
-            review_tone_text = review_tone.name if review_tone else "" 
+            # review_tone_text = review_tone.name if review_tone else "" 
 
-            suggestions = self.get_chatgpt_suggestions(star_rating, product_name,review_tone_text)
+            suggestions = self.get_chatgpt_suggestions(star_rating, product_name, review_tone)
             return Response({'suggestions': suggestions}, status=status.HTTP_200_OK)
 
         except Exception as e:
             return Response({'error': str(e)}, status=status.HTTP_400_BAD_REQUEST)
         
 
-    def get_chatgpt_suggestions(self, star_rating,product_name,review_tone_text):
+    def get_chatgpt_suggestions(self, star_rating,product_name,review_tone):
         openai.api_key = settings.OPEN_API_KEY
-        prompt = f"User gives {star_rating} stars to {product_name}. Generate 9-11 best describing words in a {review_tone_text} tone, Ignore description and should be in the array format."
+        prompt = f"User gives {star_rating} stars to {product_name}. Generate 9-11 best describing words in a {review_tone} tone, Ignore description and should be in the array format."
 
         response = openai.ChatCompletion.create(
             model="gpt-3.5-turbo",
@@ -86,34 +86,28 @@ class GetChatGPTReview(APIView):
 
     def post(self, request):
         try:
-            serializer = ProductReviewSerializer(data=request.data)
+            serializer = AIReviewSerializer(data=request.data)
             serializer.is_valid(raise_exception=True)
             
             star_rating = serializer.validated_data['star_rating']
-            user_word = serializer.validated_data['user_word']
+            user_selected_words = serializer.validated_data['user_selected_words']
             product_name = serializer.validated_data['product_name']
-            review_tone = serializer.validated_data.get('review_tone')
-
-            review_tone_text = review_tone.name if review_tone else "" 
             
-            review = self.get_chatgpt_review(star_rating, user_word, product_name,review_tone_text)
-            return Response({'review': review}, status=status.HTTP_200_OK)
+            review = self.get_chatgpt_review(star_rating, user_selected_words, product_name)
+            return Response({'AIreview': review}, status=status.HTTP_200_OK)
 
         except Exception as e:
             return Response({'error': str(e)}, status=status.HTTP_400_BAD_REQUEST)
         
 
-
-
-    def get_chatgpt_review(self, star_rating, user_word, product_name,review_tone_text):
+    def get_chatgpt_review(self, star_rating, user_selected_words, product_name):
         openai.api_key = settings.OPEN_API_KEY
-        # prompt = f"Provide a detailed 80-100 words review based on {product_name}, {star_rating} and best describing words {user_word} user has given, as a real review. Ignore description."
-        prompt = f"User give {star_rating} stars selected {user_word} best describing words for {product_name}. Provide a detailed 80-100 words review based on these with a {review_tone_text} tone, as a real review in easy language. Ignore description."
+        prompt = f"User give {star_rating} stars selected {user_selected_words} best describing words for {product_name}. Provide a detailed 80-100 words review on these basis for {product_name}, in easy real language. Ignore description."
         
         response = openai.ChatCompletion.create(
             model="gpt-3.5-turbo",
             messages=[
-                {"role": "system", "content": "You are a helpful assistant for a product review system."},
+                {"role": "system", "content": "You are a helpful assistant for a reviewing products/services."},
                 {"role": "user", "content": prompt}
             ],
             max_tokens=200
