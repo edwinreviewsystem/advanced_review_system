@@ -73,13 +73,13 @@ class ProductReviewsListAPI(APIView):
             star_rating = request.data.get('star_rating')
             name = request.data.get('name')
             email = request.data.get('email')
-            product_name = request.data.get('product_name')
+            # product_name = request.data.get('product_name')
             domain = request.data.get('domain')
             review = request.data.get('review')
             image = request.FILES.get('image')
 
             new_data = {
-                 'product_name': product_name,
+                #  'product_name': product_name,
                  'domain':domain,
                  'star_rating': star_rating,
                  'email':email,

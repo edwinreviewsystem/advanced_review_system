@@ -67,7 +67,7 @@ class GetChatGPTSuggestions(APIView):
         if review_tone:
             prompt += f" Review tone: {review_tone}"
 
-        prompt += " Generate 9-11 best describing words in a {neutral} tone, Ignore description and should be in the array format."
+        prompt += " Generate 9-11 best describing words, Ignore description and should be in the array format."
 
         response = openai.ChatCompletion.create(
             model="gpt-3.5-turbo",
