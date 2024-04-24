@@ -32,35 +32,30 @@ class ProductReviewsListAPI(APIView):
                     status=status.HTTP_400_BAD_REQUEST,
                 )
             user_id = request.user.id
-            if not user_id:
-                reviews = ProductReviews.objects.filter(domain=domain)
-            else:
-                reviews = ProductReviews.objects.filter(Q(product_name=product_name) | Q(domain=domain))
-                # reviews = ProductReviews.objects.filter(product_name=product_name, user_id=user_id)
-                # reviews = ProductReviews.objects.all()
 
+            data = {'business': [], 'product': []}
+            reviews = ProductReviews.objects.filter(domain=domain)
+            # if product_name:
+            #     reviews = reviews.filter(product_name=product_name)
+            
             if not reviews.exists():
                 return Response(
                     {
                         "status": status.HTTP_404_NOT_FOUND,
-                        "message": "No reviews found for the specified product_name/domain.",
+                        "message": "No reviews found.",
+                        "data": []
                     },
                     status=status.HTTP_404_NOT_FOUND,
-                )
-            data = {'business': [], 'product': []}
-            for review in reviews:
-                if product_name and review.product_name == product_name:
-                    data['product'].append(review.to_dict()) 
-                else:
-                    data['business'].append(review.to_dict())  
+                )  
+            data['product'] = [review.to_dict() for review in reviews if review.product_name]
+            data['business'] = [review.to_dict() for review in reviews if not review.product_name]   
 
-
-            serializer = ProductReviewsSerializer(reviews, many=True)
+            # serializer = ProductReviewsSerializer(reviews, many=True)
             return Response(
                 {
                     "status": status.HTTP_200_OK,
                     "message": "Product reviews retrieved successfully!",
-                    "data": serializer.data,
+                    "data": data,
                 },
                 status=status.HTTP_200_OK,
             )
