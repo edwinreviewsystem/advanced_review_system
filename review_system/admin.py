@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import ProductReviews, ReviewFormDesign, ReviewListDesign
+from .models import *
 from django.utils.html import format_html
 
 class ProductReviewsAdmin(admin.ModelAdmin):
@@ -18,10 +18,15 @@ class ProductReviewsAdmin(admin.ModelAdmin):
 
 admin.site.register(ProductReviews, ProductReviewsAdmin)
 
-class ReviewFormDesignAdmin(admin.ModelAdmin):
-    list_display = ('id', 'field_name', 'color_value')
-admin.site.register(ReviewFormDesign, ReviewFormDesignAdmin)
 
+@admin.register(ReviewFormDesign)
+class ReviewFormDesignAdmin(admin.ModelAdmin):
+    list_display = ('domain_name', 'button_color', 'button_text_color', 'label_text_color', 'background_color', 'updated_at')
+    search_fields = ('domain_name',)
+    list_filter = ('updated_at',)
+
+@admin.register(ReviewListDesign)
 class ReviewListDesignAdmin(admin.ModelAdmin):
-    list_display = ('id', 'element_name', 'color_value')
-admin.site.register(ReviewListDesign, ReviewListDesignAdmin)
+    list_display = ('domain_name', 'content_text_color', 'star_rating_color', 'reviewer_name_color', 'updated_at')
+    search_fields = ('domain_name',)
+    list_filter = ('updated_at',)

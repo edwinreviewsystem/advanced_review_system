@@ -34,27 +34,30 @@ class ProductReviews(models.Model):
     class Meta:
         verbose_name = "Product Review"
         verbose_name_plural = "Product Reviews"
+  
 
 class ReviewFormDesign(models.Model):
-    id = models.AutoField(primary_key=True)
-    field_name = models.CharField(max_length=255)
-    color_value = models.CharField(max_length=7)  
+    domain_name = models.CharField(max_length=255)
+    button_color = models.CharField(max_length=155, blank=True)
+    button_text_color = models.CharField(max_length=155, blank=True)
+    label_text_color = models.CharField(max_length=155, blank=True)
+    background_color = models.CharField(max_length=155, blank=True)
+    updated_at = models.DateTimeField(auto_now=True)
 
-    def __str__(self):
-        return f"{self.field_name} form"
-    
     class Meta:
         verbose_name = "Review Form Design"
         verbose_name_plural = "Review Form Design"
 
 class ReviewListDesign(models.Model):
-    id = models.AutoField(primary_key=True)
-    element_name = models.CharField(max_length=255)
-    color_value = models.CharField(max_length=7)
+    domain_name = models.CharField(max_length=255)
+    content_text_color = models.CharField(max_length=155, blank=True)
+    star_rating_color = models.CharField(max_length=155, blank=True)
+    reviewer_name_color = models.CharField(max_length=155, blank=True)
+    updated_at = models.DateTimeField(auto_now=True)
 
-    def __str__(self):
-        return f"{self.element_name} listing"
-    
     class Meta:
-        verbose_name = "Review Listing Design"
-        verbose_name_plural = "Review Listing Design"
+        verbose_name = "Review List Design"
+        verbose_name_plural = "Review List Design"
+
+
+ 
