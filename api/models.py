@@ -24,15 +24,16 @@ class AIReview(models.Model):
     ('Casual and Conservative', 'Casual and Conservative'),
     ]
 
-
-    user = models.ForeignKey(User, on_delete=models.CASCADE, default=None)
+    # user = models.ForeignKey(User, on_delete=models.CASCADE, null= True)
     star_rating = models.IntegerField(choices=STAR_CHOICES)
     review_tone = models.CharField(max_length=150, choices=REVIEW_TONE_CHOICES, blank=True, null=True)
     product_name = models.TextField() 
-    # domain = models.CharField()
     user_selected_words = models.CharField(max_length=200, default=None)
     generated_review = models.TextField(blank=True, null=True)
    
     def __str__(self):
-        return f"Review - {self.star_rating}stars"
+        return "AI Reviews"
+    
+    class Meta:
+        db_table = 'api_aireview' 
 

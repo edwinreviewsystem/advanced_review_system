@@ -4,13 +4,14 @@ from django.contrib.auth.models import User
 # Create your models here.
 
 class ProductReviews(models.Model):
-    user = models.ForeignKey(User, on_delete=models.CASCADE, null= True)
+    # user = models.ForeignKey(User, on_delete=models.CASCADE, null= True)
+    # product_id = models.CharField(max_length=255)
+
     star_rating = models.IntegerField()
     review = models.TextField()
     email = models.EmailField()
     name = models.CharField(max_length=255)
     image = models.ImageField(upload_to='uploaded_images/', default='')
-    # product_id = models.CharField(max_length=255)
     product_name = models.CharField(max_length=455 ,default="", blank=True) 
     domain = models.CharField(max_length=255,default="")
     created_at = models.DateTimeField(auto_now_add=True)

@@ -15,13 +15,14 @@ idna==3.6
 multidict==6.0.4
 openai==0.28.0
 pillow==10.2.0
+psycopg2==2.9.9
 PyJWT==2.8.0
 python-dotenv==1.0.0
 pytz==2023.3.post1
 requests==2.31.0
+sorl-thumbnail==12.10.0
 sqlparse==0.4.4
 tqdm==4.66.1
 tzdata==2023.3
 urllib3==2.1.0
 yarl==1.9.4
-gunicorn
