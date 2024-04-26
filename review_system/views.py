@@ -20,7 +20,6 @@ class ProductReviewsListAPI(APIView):
     def get(self, request):
         product_name = request.query_params.get('product_name')
         domain = request.query_params.get('domain')
-        # product_name = request.data.get('product_name')
 
         try:
             if not (product_name or domain):
@@ -35,18 +34,18 @@ class ProductReviewsListAPI(APIView):
 
             data = {'business': [], 'product': []}
             reviews = ProductReviews.objects.filter(domain=domain)
-            # if product_name:
-            #     reviews = reviews.filter(product_name=product_name)
+            if product_name:
+                reviews = reviews.filter(product_name=product_name)
             
             if not reviews.exists():
                 return Response(
                     {
-                        "status": status.HTTP_404_NOT_FOUND,
+                        "status": status.HTTP_204_NO_CONTENT,
                         "message": "No reviews found.",
                         "data": []
                     },
-                    status=status.HTTP_404_NOT_FOUND,
-                )  
+                    status=status.HTTP_204_NO_CONTENT,
+                )
             data['product'] = [review.to_dict() for review in reviews if review.product_name]
             data['business'] = [review.to_dict() for review in reviews if not review.product_name]   
 

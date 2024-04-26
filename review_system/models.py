@@ -11,7 +11,7 @@ class ProductReviews(models.Model):
     review = models.TextField()
     email = models.EmailField()
     name = models.CharField(max_length=255)
-    image = models.ImageField(upload_to='uploaded_images/', default='')
+    image = models.ImageField(upload_to='uploaded_images/', default='', blank=True)
     product_name = models.CharField(max_length=455 ,default="", blank=True) 
     domain = models.CharField(max_length=255,default="")
     created_at = models.DateTimeField(auto_now_add=True)
@@ -39,10 +39,10 @@ class ProductReviews(models.Model):
 
 class ReviewFormDesign(models.Model):
     domain_name = models.CharField(max_length=255)
-    button_color = models.CharField(max_length=155, blank=True)
-    button_text_color = models.CharField(max_length=155, blank=True)
-    label_text_color = models.CharField(max_length=155, blank=True)
-    background_color = models.CharField(max_length=155, blank=True)
+    button_color = models.CharField(max_length=25, blank=True)
+    button_text_color = models.CharField(max_length=25, blank=True)
+    label_text_color = models.CharField(max_length=25, blank=True)
+    background_color = models.CharField(max_length=25, blank=True)
     updated_at = models.DateTimeField(auto_now=True)
 
     class Meta:
@@ -51,9 +51,9 @@ class ReviewFormDesign(models.Model):
 
 class ReviewListDesign(models.Model):
     domain_name = models.CharField(max_length=255)
-    content_text_color = models.CharField(max_length=155, blank=True)
-    star_rating_color = models.CharField(max_length=155, blank=True)
-    reviewer_name_color = models.CharField(max_length=155, blank=True)
+    content_text_color = models.CharField(max_length=25, blank=True)
+    star_rating_color = models.CharField(max_length=25, blank=True)
+    reviewer_name_color = models.CharField(max_length=25, blank=True)
     updated_at = models.DateTimeField(auto_now=True)
 
     class Meta:
