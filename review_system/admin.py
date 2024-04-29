@@ -20,9 +20,8 @@ class ProductReviewsListAdmin(admin.ModelAdmin):
             return format_html(
                 '<img src="{}" width="70px" height="60px" />'.format(obj.image.url)
             )
-        else:
-            no_image_url = settings.STATIC_URL + 'No-image-found.jpeg'
-            return format_html('<img src="{}" width="50px" height="50px" />'.format(no_image_url))
+        # else:
+        #     return format_html('<img src="static/No_image_found.jpg" width="50px" height="50px" />')
     display_image.short_description = "Uploaded Image"
 
 
@@ -43,12 +42,12 @@ admin.site.register(ProductReviews, ProductReviewsListAdmin)
 
 @admin.register(ReviewFormDesign)
 class ReviewFormDesignAdmin(admin.ModelAdmin):
-    list_display = ('domain_name', 'button_color', 'button_text_color', 'label_text_color', 'background_color', 'updated_at')
-    search_fields = ('domain_name',)
+    list_display = ('domain', 'button_color', 'button_text_color', 'label_text_color', 'background_color', 'updated_at')
+    search_fields = ('domain',)
     list_filter = ('updated_at',)
 
 @admin.register(ReviewListDesign)
 class ReviewListDesignAdmin(admin.ModelAdmin):
-    list_display = ('domain_name', 'content_text_color', 'star_rating_color', 'reviewer_name_color', 'updated_at')
-    search_fields = ('domain_name',)
+    list_display = ('domain', 'content_text_color', 'star_rating_color', 'reviewer_name_color', 'updated_at')
+    search_fields = ('domain',)
     list_filter = ('updated_at',)

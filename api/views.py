@@ -61,13 +61,13 @@ class GetChatGPTSuggestions(APIView):
 
     def get_chatgpt_suggestions(self, star_rating,product_name,review_tone):
         openai.api_key = settings.OPEN_API_KEY
-        # prompt = f"User gives {star_rating} stars to {product_name}. Generate 9-11 best describing words in a {review_tone} tone, Ignore description and should be in the array format."
-        prompt = f"User gives {star_rating} stars to {product_name}."
+        prompt = f"User gives {star_rating} stars to {product_name}. Generate 9-11 best describing words in a {review_tone} tone, Ignore description and should be in the array format."
+        # prompt = f"User gives {star_rating} stars to {product_name}."
 
-        if review_tone:
-            prompt += f" Review tone: {review_tone}"
+        # if review_tone:
+        #     prompt += f" Review tone: {review_tone}"
 
-        prompt += " Generate 9-11 best describing words, Ignore description and should be in the array format."
+        # prompt += " Generate 9-11 best describing words, Ignore description and should be in the array format."
 
         response = openai.ChatCompletion.create(
             model="gpt-3.5-turbo",
@@ -80,7 +80,6 @@ class GetChatGPTSuggestions(APIView):
 
         suggestions = response['choices'][0]['message']['content']
         suggestions_list = json.loads(suggestions)
-         # suggestions = "Neutral, average, satisfactory, acceptable, standard, decent, usual"  
         return suggestions_list
        
        

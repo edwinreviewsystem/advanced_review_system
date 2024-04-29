@@ -105,6 +105,14 @@ DATABASES = {
 }
 
 # DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db-local.sqlite3',
+#     }
+# }
+
+
+# DATABASES = {
 #     "default": {
 #         "ENGINE": "django.db.backends.postgresql",
 #         "NAME": os.getenv('NAME'),

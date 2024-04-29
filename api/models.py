@@ -25,10 +25,11 @@ class AIReview(models.Model):
     ]
 
     # user = models.ForeignKey(User, on_delete=models.CASCADE, null= True)
+    # review_tone = models.CharField(max_length=150, choices=REVIEW_TONE_CHOICES, blank=True, null=True)
     star_rating = models.IntegerField(choices=STAR_CHOICES)
-    review_tone = models.CharField(max_length=150, choices=REVIEW_TONE_CHOICES, blank=True, null=True)
-    product_name = models.TextField() 
-    user_selected_words = models.CharField(max_length=200, default=None)
+    review_tone = models.CharField(max_length=255, blank=True, null=True)
+    product_name = models.TextField(blank=True, null=True) 
+    user_selected_words = models.CharField(max_length=455, default=None)
     generated_review = models.TextField(blank=True, null=True)
    
     def __str__(self):

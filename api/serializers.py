@@ -13,7 +13,7 @@ class AIReviewSerializer(serializers.ModelSerializer):
     # review_tone = ReviewToneSerializer(read_only=True)
     class Meta:
         model = AIReview
-        fields = [ 'star_rating','user_selected_words','product_name', 'review_tone']
+        fields = [ 'star_rating', 'product_name', 'review_tone' , 'user_selected_words']
 
 
 class RegisterSerializer(serializers.ModelSerializer):

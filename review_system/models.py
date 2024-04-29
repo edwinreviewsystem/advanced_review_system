@@ -12,7 +12,7 @@ class ProductReviews(models.Model):
     email = models.EmailField()
     name = models.CharField(max_length=255)
     image = models.ImageField(upload_to='uploaded_images/', default='', blank=True)
-    product_name = models.CharField(max_length=455 ,default="", blank=True) 
+    product_name = models.CharField(max_length=455 ,default="", blank=True, null =True) 
     domain = models.CharField(max_length=255,default="")
     created_at = models.DateTimeField(auto_now_add=True)
 
@@ -38,7 +38,7 @@ class ProductReviews(models.Model):
   
 
 class ReviewFormDesign(models.Model):
-    domain_name = models.CharField(max_length=255)
+    domain = models.CharField(max_length=255, blank=True)
     button_color = models.CharField(max_length=25, blank=True)
     button_text_color = models.CharField(max_length=25, blank=True)
     label_text_color = models.CharField(max_length=25, blank=True)
@@ -50,7 +50,7 @@ class ReviewFormDesign(models.Model):
         verbose_name_plural = "Review Form Design"
 
 class ReviewListDesign(models.Model):
-    domain_name = models.CharField(max_length=255)
+    domain = models.CharField(max_length=255, blank=True)
     content_text_color = models.CharField(max_length=25, blank=True)
     star_rating_color = models.CharField(max_length=25, blank=True)
     reviewer_name_color = models.CharField(max_length=25, blank=True)
