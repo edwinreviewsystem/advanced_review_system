@@ -11,6 +11,7 @@ from django.core.files.base import ContentFile
 from django.core.files.storage import default_storage
 from rest_framework.exceptions import ValidationError
 from django.db.models import Q, Count
+from django.db.models import Avg
 
 
 class ProductReviewsListAPI(APIView):
@@ -32,8 +33,8 @@ class ProductReviewsListAPI(APIView):
                 )
             user_id = request.user.id
 
-            data = {'business': [], 'product': []}
-            reviews = ProductReviews.objects.filter(domain=domain)
+
+            reviews = ProductReviews.objects.filter(domain=domain, status='approve')
             if product_name:
                 reviews = reviews.filter(product_name=product_name)
             
@@ -41,20 +42,44 @@ class ProductReviewsListAPI(APIView):
                 return Response(
                     {
                         "status": status.HTTP_204_NO_CONTENT,
-                        "message": "No reviews found.",
+                        "message": "No approved Reviews Found.",
                         "data": []
                     },
                     status=status.HTTP_204_NO_CONTENT,
                 )
-            data['product'] = [review.to_dict() for review in reviews if review.product_name]
-            data['business'] = [review.to_dict() for review in reviews if not review.product_name]   
+            
+            
+            # Calculate average star rating for business and product reviews separately
+            business_reviews = reviews.filter(product_name__isnull=True)
+            business_average_star_rating = business_reviews.aggregate(avg_star_rating=Avg('star_rating'))['avg_star_rating'] or 0.0
 
-            # serializer = ProductReviewsSerializer(reviews, many=True)
+            product_reviews = reviews.filter(product_name__isnull=False)
+            product_average_star_rating = product_reviews.aggregate(avg_star_rating=Avg('star_rating'))['avg_star_rating'] or 0.0
+            reviews_data = {'business': [], 'product': []}
+
+
+            for review in reviews:
+                    review_dict = review.to_dict()
+                    if review.product_name:
+                        reviews_data['product'].append(review_dict)
+                    else:
+                        reviews_data['business'].append(review_dict)  
+
+
             return Response(
                 {
                     "status": status.HTTP_200_OK,
-                    "message": "Product reviews retrieved successfully!",
-                    "data": data,
+                    "message": "Reviews Retrieved successfully!",
+                    "data": {
+                        "business": {
+                            "average_star_rating": business_average_star_rating,
+                            "business reviews": reviews_data['business'],
+                        },
+                        "product": {
+                            "average_star_rating": product_average_star_rating,
+                            "product reviews": reviews_data['product'],
+                        },
+                    },
                 },
                 status=status.HTTP_200_OK,
             )
@@ -62,7 +87,7 @@ class ProductReviewsListAPI(APIView):
             return Response(
                 {
                     "status": status.HTTP_400_BAD_REQUEST,
-                    "message": f"Error while retrieving product reviews: {str(e)}",
+                    "message": f"Error while retrieving Reviews: {str(e)}",
                 },
                 status=status.HTTP_400_BAD_REQUEST,
             )
@@ -87,7 +112,17 @@ class ProductReviewsListAPI(APIView):
                  'image':image,
             }
 
-      
+             # Check if auto-approval is enabled
+            # if request.user and isinstance(request.user, User) and request.user.is_superuser and request.user.auto_approve_reviews:
+            #     new_data['status'] = 'approve'
+            # else:
+            #     new_data['status'] = 'approve'
+
+
+            # Auto-approve all reviews
+                # ProductReviews.objects.filter(status='pending').update(status='approve')
+
+
             # request.data['user'] = request.user.id
             new_data['image'] = image if image else None
             serializer = ProductReviewsSerializer(data=new_data)
@@ -115,12 +150,11 @@ class ProductReviewsListAPI(APIView):
             return Response(
                 {
                     "status": status.HTTP_400_BAD_REQUEST,
-                    "message": f"Error while posting Review: {str(e)}",
+                    "message": f"Error while posting new Review: {str(e)}",
                 },
                 status=status.HTTP_400_BAD_REQUEST,
             )
     def get_review_count_by_domain(self):
-        # This method can be used to get the count of reviews for each domain
         domain_review_counts = ProductReviews.objects.values('domain').annotate(count=Count('id'))
         return domain_review_counts
 
@@ -132,7 +166,6 @@ class ProductReviewsDetailAPI(APIView):
     def put(self, request, pk):
         try:
             review = ProductReviews.objects.get(pk=pk)
-            print('put product pk=',pk)
             request.data['user'] = request.user.id
             serializer = ProductReviewsSerializer(review, data=request.data, partial=True)
             if serializer.is_valid():
@@ -140,7 +173,7 @@ class ProductReviewsDetailAPI(APIView):
                 return Response(
                     {
                         "status": status.HTTP_200_OK,
-                        "message": "Product review updated successfully!",
+                        "message": "Review Updated successfully!",
                         "data": serializer.data,
                     },
                     status=status.HTTP_200_OK,
@@ -159,7 +192,7 @@ class ProductReviewsDetailAPI(APIView):
             return Response(
                 {
                     "status": status.HTTP_400_BAD_REQUEST,
-                    "message": f"Error while updating product review: {str(e)}",
+                    "message": f"Error while updating Review: {str(e)}",
                 },
                 status=status.HTTP_400_BAD_REQUEST,
             )
@@ -171,7 +204,7 @@ class ProductReviewsDetailAPI(APIView):
             return Response(
                 {
                     "status": status.HTTP_204_NO_CONTENT,
-                    "message": "Product review deleted successfully!",
+                    "message": "Review deleted successfully!",
                 },
                 status=status.HTTP_204_NO_CONTENT,
             )
@@ -181,7 +214,7 @@ class ProductReviewsDetailAPI(APIView):
             return Response(
                 {
                     "status": status.HTTP_400_BAD_REQUEST,
-                    "message": f"Error while deleting product review: {str(e)}",
+                    "message": f"Error while deleting Review: {str(e)}",
                 },
                 status=status.HTTP_400_BAD_REQUEST,
             )

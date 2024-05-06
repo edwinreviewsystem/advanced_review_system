@@ -1,42 +1,49 @@
 from django.contrib import admin
+from django.http.request import HttpRequest
+from django.http.response import HttpResponse
 from .models import *
 from django.utils.html import format_html
-
 from django.db.models import F
 from sorl.thumbnail import get_thumbnail
 from django.conf import settings
 from django.template.loader import render_to_string
 
+
 class ProductReviewsListAdmin(admin.ModelAdmin):
-    list_display = ('id', 'domain', 'star_rating', 'review_one_line', 'name', 'email', 'display_image', 'created_at')
+    list_display = ('id', 'review_one_line', 'star_rating', 'name', 'email',  'domain', 'display_image', 'status', 'created_at')
     list_display_links = ('id', 'domain')
-    search_fields = ('name', 'email', 'domain')
-    list_filter = ('created_at',)
+    search_fields = ('name', 'email', 'domain', 'status')
+    list_filter = ('created_at','domain','status')
     list_per_page = 20
 
-
+    actions = ['auto_approve_reviews', 'auto_disapprove_reviews']
+    
+    
     def display_image(self, obj):
         if obj.image:
             return format_html(
                 '<img src="{}" width="70px" height="60px" />'.format(obj.image.url)
             )
-        # else:
-        #     return format_html('<img src="static/No_image_found.jpg" width="50px" height="50px" />')
     display_image.short_description = "Uploaded Image"
-
 
     def review_one_line(self, obj):
         return obj.review[:22] + '..' if len(obj.review) > 22 else obj.review
     review_one_line.short_description = 'Review'
 
+    def auto_approve_reviews(self, request, queryset):
+        queryset.update(status='approve')
+    def auto_disapprove_reviews(self, request, queryset):
+        queryset.update(status='disapprove')
 
-    def get_list_display(self, request):
-        if request.path.endswith('/change/'):
-            return ('domain', 'star_rating', 'review','email', 'name', 'display_image', 'product_name')
-        # Use summary list display for list view
-        return ('id', 'name', 'email', 'star_rating', 'review_one_line', 'domain', 'display_image', 'created_at')
+    auto_approve_reviews.short_description = "Auto-Approve all Reviews"
+    auto_disapprove_reviews.short_description = "Auto-Disapprove Reviews"
 
+
+    # change_list_template = "button_form.html"
+
+admin.site.site_title = 'AI REVIEW SuperAdmin Portal'
 admin.site.register(ProductReviews, ProductReviewsListAdmin)
+
 
 
 

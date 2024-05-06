@@ -10,7 +10,7 @@ class CustomizationAPIView(APIView):
         # if not domain:
         #     return Response({'error': 'Pass domain in the query parameters to get customization'}, status=status.HTTP_400_BAD_REQUEST)
         
-        response_data = {'domain': domain}
+        response_data = {'domain': domain, 'review_form': {}, 'review_design': {}}
         try:
             review_form_settings = ReviewFormDesign.objects.get(domain=domain)
             review_form_data = ReviewFormDesignSerializer(review_form_settings).data

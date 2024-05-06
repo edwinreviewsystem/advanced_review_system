@@ -3,10 +3,22 @@ from django.contrib.auth.models import User
 
 # Create your models here.
 
+
 class ProductReviews(models.Model):
     # user = models.ForeignKey(User, on_delete=models.CASCADE, null= True)
     # product_id = models.CharField(max_length=255)
+    # auto_approve_reviews = models.BooleanField(default=False)
 
+    APPROVE = 'approve'
+    DISAPPROVE = 'disapprove'
+    PENDING = 'Pending'
+    STATUS_CHOICES = [
+        (APPROVE, 'Approve'),
+        (DISAPPROVE, 'Disapprove'),
+        (PENDING, 'Pending')
+    ]
+
+    status = models.CharField(max_length=20, choices=STATUS_CHOICES, default=PENDING)
     star_rating = models.IntegerField()
     review = models.TextField()
     email = models.EmailField()
