@@ -73,11 +73,11 @@ class ProductReviewsListAPI(APIView):
                     "data": {
                         "business": {
                             "average_star_rating": business_average_star_rating,
-                            "business reviews": reviews_data['business'],
+                            "business_reviews": reviews_data['business'],
                         },
                         "product": {
                             "average_star_rating": product_average_star_rating,
-                            "product reviews": reviews_data['product'],
+                            "product_reviews": reviews_data['product'],
                         },
                     },
                 },
