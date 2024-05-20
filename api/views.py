@@ -50,7 +50,6 @@ class GetChatGPTSuggestions(APIView):
             product_name = serializer.validated_data['product_name']
             review_tone = serializer.validated_data['review_tone']
 
-            # review_tone_text = review_tone.name if review_tone else "" 
 
             suggestions = self.get_chatgpt_suggestions(star_rating, product_name, review_tone)
             return Response({'suggestions': suggestions}, status=status.HTTP_200_OK)
