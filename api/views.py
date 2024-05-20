@@ -61,13 +61,7 @@ class GetChatGPTSuggestions(APIView):
 
     def get_chatgpt_suggestions(self, star_rating,product_name,review_tone):
         openai.api_key = settings.OPEN_API_KEY
-        prompt = f"User gives {star_rating} stars to {product_name}. Generate 9-11 best describing words in a {review_tone} tone, Ignore description and should be in the array format."
-        # prompt = f"User gives {star_rating} stars to {product_name}."
-
-        # if review_tone:
-        #     prompt += f" Review tone: {review_tone}"
-
-        # prompt += " Generate 9-11 best describing words, Ignore description and should be in the array format."
+        prompt = f"User gives {star_rating} stars to {product_name}. Generate 9-11 best describing words in a {review_tone} tone. Ignore description and should be in the array format. withouy any extra symbol and in a single line."
 
         response = openai.ChatCompletion.create(
             model="gpt-3.5-turbo",
@@ -78,12 +72,14 @@ class GetChatGPTSuggestions(APIView):
             max_tokens=60
         )
 
-        suggestions = response['choices'][0]['message']['content']
-        suggestions_list = json.loads(suggestions)
-        return suggestions_list
+        suggestions = response['choices'][0]['message']['content'].strip()
+        suggestions = suggestions.strip('[]')
+        suggestions = [s.strip('"').strip("'") for s in suggestions.split(", ")]
+        # print(type(suggestions))
+        # suggestions = json.loads(suggestions)
+        return suggestions
        
        
-
 
 class GetChatGPTReview(APIView):
     # permission_classes = [IsAuthenticated]
