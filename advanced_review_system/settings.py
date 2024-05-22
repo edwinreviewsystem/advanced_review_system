@@ -113,16 +113,28 @@ WSGI_APPLICATION = 'advanced_review_system.wsgi.application'
 # }
 
 
+# DATABASES = {
+#     "default": {
+#         "ENGINE": "django.db.backends.postgresql",
+#         "NAME": os.getenv('NAME'),
+#         "USER": os.getenv('USER'),
+#         "PASSWORD": os.getenv('PASSWORD'),
+#         "HOST":os.getenv('HOST'),
+#         "PORT":os.getenv('PORT'),
+#     }
+# }
+
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql",
-        "NAME": os.getenv('NAME'),
-        "USER": os.getenv('USER'),
-        "PASSWORD": os.getenv('PASSWORD'),
-        "HOST":os.getenv('HOST'),
-        "PORT":os.getenv('PORT'),
+        "NAME": 'edice_db',
+        "USER": 'shagun',
+        "PASSWORD": 'shagun',
+        "HOST":'13.53.123.17',
+        "PORT":5432,
     }
 }
+
 
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
