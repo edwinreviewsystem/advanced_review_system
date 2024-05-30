@@ -12,6 +12,10 @@ from django.core.files.storage import default_storage
 from rest_framework.exceptions import ValidationError
 from django.db.models import Q, Count
 from django.db.models import Avg
+from django.utils import timezone
+from django.shortcuts import get_object_or_404
+from django.core.mail import send_mail
+from django.core.exceptions import ObjectDoesNotExist
 
 
 class ProductReviewsListAPI(APIView):
@@ -22,21 +26,23 @@ class ProductReviewsListAPI(APIView):
         product_name = request.query_params.get('product_name')
         domain = request.query_params.get('domain')
 
+        
+        if not (product_name or domain):
+            return Response(
+                {
+                    "status": status.HTTP_400_BAD_REQUEST,
+                    "message": "Missing product_name/domain in query parameters",
+                },
+                status=status.HTTP_400_BAD_REQUEST,
+            )
+
         try:
-            if not (product_name or domain):
-                return Response(
-                    {
-                        "status": status.HTTP_400_BAD_REQUEST,
-                        "message": "Missing product_name/domain in query parameters",
-                    },
-                    status=status.HTTP_400_BAD_REQUEST,
-                )
-            user_id = request.user.id
-
-
             reviews = ProductReviews.objects.filter(domain=domain, status='approve')
             if product_name:
                 reviews = reviews.filter(product_name=product_name)
+
+            total_product_reviews = reviews.filter(product_name__isnull=False).count()
+            total_business_reviews = reviews.filter(product_name__isnull=True).count()
             
             if not reviews.exists():
                 return Response(
@@ -52,14 +58,19 @@ class ProductReviewsListAPI(APIView):
             # Calculate average star rating for business and product reviews separately
             business_reviews = reviews.filter(product_name__isnull=True)
             business_average_star_rating = business_reviews.aggregate(avg_star_rating=Avg('star_rating'))['avg_star_rating'] or 0.0
+            business_average_star_rating = round(business_average_star_rating, 1)
 
             product_reviews = reviews.filter(product_name__isnull=False)
             product_average_star_rating = product_reviews.aggregate(avg_star_rating=Avg('star_rating'))['avg_star_rating'] or 0.0
+            product_average_star_rating = round(product_average_star_rating, 1)
+
             reviews_data = {'business': [], 'product': []}
 
 
             for review in reviews:
                     review_dict = review.to_dict()
+                    review_dict['reply_created_at'] = review.reply_created_at
+                    review_dict['reply_text'] = review.reply_text
                     if review.product_name:
                         reviews_data['product'].append(review_dict)
                     else:
@@ -73,10 +84,12 @@ class ProductReviewsListAPI(APIView):
                     "data": {
                         "business": {
                             "average_star_rating": business_average_star_rating,
+                            "total_business_reviews": total_business_reviews,
                             "business_reviews": reviews_data['business'],
                         },
                         "product": {
                             "average_star_rating": product_average_star_rating,
+                            "total_product_reviews": total_product_reviews,
                             "product_reviews": reviews_data['product'],
                         },
                     },
@@ -112,22 +125,13 @@ class ProductReviewsListAPI(APIView):
                  'image':image,
             }
 
-             # Check if auto-approval is enabled
-            # if request.user and isinstance(request.user, User) and request.user.is_superuser and request.user.auto_approve_reviews:
-            #     new_data['status'] = 'approve'
-            # else:
-            #     new_data['status'] = 'approve'
-
-
-            # Auto-approve all reviews
-                # ProductReviews.objects.filter(status='pending').update(status='approve')
-
-
-            # request.data['user'] = request.user.id
             new_data['image'] = image if image else None
             serializer = ProductReviewsSerializer(data=new_data)
+            auto_approve = request.data.get('auto_approve', 0)
          
             if serializer.is_valid():
+                serializer.validated_data['status'] = ProductReviews.APPROVE if auto_approve else ProductReviews.PENDING
+
                 serializer.save()
                 return Response(
                     {
@@ -154,9 +158,7 @@ class ProductReviewsListAPI(APIView):
                 },
                 status=status.HTTP_400_BAD_REQUEST,
             )
-    def get_review_count_by_domain(self):
-        domain_review_counts = ProductReviews.objects.values('domain').annotate(count=Count('id'))
-        return domain_review_counts
+    
 
 
 class ProductReviewsDetailAPI(APIView):

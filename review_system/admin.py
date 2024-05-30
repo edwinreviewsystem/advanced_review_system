@@ -10,9 +10,9 @@ from django.template.loader import render_to_string
 
 
 class ProductReviewsListAdmin(admin.ModelAdmin):
-    list_display = ('id', 'review_one_line', 'star_rating', 'name', 'email',  'domain', 'display_image', 'status', 'created_at')
+    list_display = ('id', 'review_one_line', 'star_rating', 'email',  'domain', 'display_image', 'status', 'created_at')
     list_display_links = ('id', 'domain')
-    search_fields = ('name', 'email', 'domain', 'status')
+    search_fields = ('email', 'domain', 'status')
     list_filter = ('created_at','domain','status')
     list_per_page = 20
 
@@ -39,7 +39,6 @@ class ProductReviewsListAdmin(admin.ModelAdmin):
     auto_disapprove_reviews.short_description = "Auto-Disapprove Reviews"
 
 
-    # change_list_template = "button_form.html"
 
 admin.site.site_title = 'AI REVIEW SuperAdmin Portal'
 admin.site.register(ProductReviews, ProductReviewsListAdmin)

@@ -5,10 +5,11 @@ from django.core.validators import validate_email
 from django.core.exceptions import ValidationError
 
 class ProductReviewsSerializer(serializers.ModelSerializer):
+    auto_approve = serializers.BooleanField(required=False)
     image = serializers.ImageField(allow_null=True, required=False)
     class Meta:
         model = ProductReviews
-        fields = ['id','star_rating', 'product_name', 'domain', 'name', 'email', 'review', 'image', 'created_at']
+        fields = ['id','star_rating', 'product_name', 'domain', 'name', 'email', 'review', 'image', 'created_at','auto_approve']
         
     
     def validate_email(self, value):

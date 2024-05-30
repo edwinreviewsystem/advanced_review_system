@@ -1,14 +1,10 @@
 from django.db import models
 from django.contrib.auth.models import User
-
 # Create your models here.
 
 
 class ProductReviews(models.Model):
-    # user = models.ForeignKey(User, on_delete=models.CASCADE, null= True)
-    # product_id = models.CharField(max_length=255)
-    # auto_approve_reviews = models.BooleanField(default=False)
-
+    
     APPROVE = 'approve'
     DISAPPROVE = 'disapprove'
     PENDING = 'Pending'
@@ -28,6 +24,10 @@ class ProductReviews(models.Model):
     domain = models.CharField(max_length=255,default="")
     created_at = models.DateTimeField(auto_now_add=True)
 
+    reply_text = models.TextField(blank=True, null=True)
+    reply_created_at = models.DateTimeField(blank=True, null=True)
+    auto_approve = models.BooleanField(default=0)
+
     def to_dict(self):
         return {
             'id': self.id,
@@ -38,11 +38,13 @@ class ProductReviews(models.Model):
             'name' : self.name,
             'email' : self.email,
             'image': self.image.url if self.image else '', 
-            'created_at' : self.created_at
+            'created_at' : self.created_at,
+            'reply_text' : self.reply_text,
+            'reply_created_at': self.reply_created_at,
         }
 
     def __str__(self):
-        return f"{self.star_rating} stars by {self.name}"
+        return "Product Reviews"
     
     class Meta:
         verbose_name = "Product Review"
