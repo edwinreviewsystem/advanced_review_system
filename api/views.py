@@ -74,7 +74,6 @@ class GetChatGPTSuggestions(APIView):
         suggestions = response['choices'][0]['message']['content'].strip()
         suggestions = suggestions.strip('[]')
         suggestions = [s.strip('"').strip("'") for s in suggestions.split(", ")]
-        # print(type(suggestions))
         # suggestions = json.loads(suggestions)
         return suggestions
        
@@ -113,6 +112,5 @@ class GetChatGPTReview(APIView):
             max_tokens=200
         )
         review = response['choices'][0]['message']['content']
-        # review = "The product was average in terms of performance. It did the job adequately. It was satisfactory and decent overall. The quality and durability were moderate, and it seemed to hold up fine under regular use. The features and functionality were acceptable, but there was nothing that stood out. I would give it 3 stars because it met my basic needs, but I wasn't overly impressed. If you're looking for a basic, no-frills product, this would be a decent choice."
         return review
       

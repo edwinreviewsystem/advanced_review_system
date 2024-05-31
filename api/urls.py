@@ -12,12 +12,9 @@ from rest_framework_simplejwt.views import (
 urlpatterns = [
 
     path('', HomePageView.as_view(), name='home'),
-    path('apidocs', view_pdf, name='view_apidocs'),
-    path('api/rating', GetChatGPTSuggestions.as_view(), name='submit_rating'),
+    path('apidocs', view_pdf, name='apidocs'),
+    path('api/rating', GetChatGPTSuggestions.as_view(), name='generate_suggestions'),
     path('api/review', GetChatGPTReview.as_view(), name='generate_review'),
-    # path('api/review-tones', ReviewToneListAPIView.as_view(), name='review-tone-list'),
-    # path('api/review-tones/create', ReviewToneCreateAPIView.as_view(), name='review-tone-create'),
-    # path('api/review-tones/<int:pk>', ReviewToneDetailAPIView.as_view(), name='review-tone-detail'),
 
 
     path("api/login", MyTokenObtainPairView.as_view(), name="login_api"),

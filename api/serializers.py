@@ -3,14 +3,8 @@ from rest_framework_simplejwt.serializers import TokenObtainPairSerializer
 from .models import *
 from django.contrib.auth.models import User
 
-# class ReviewToneSerializer(serializers.ModelSerializer):
-#     class Meta:
-#         model = ReviewTone
-#         fields = '__all__'
 
 class AIReviewSerializer(serializers.ModelSerializer):
-    # user_word = serializers.CharField(max_length=200, required=False)
-    # review_tone = ReviewToneSerializer(read_only=True)
     class Meta:
         model = AIReview
         fields = [ 'star_rating', 'product_name', 'review_tone' , 'user_selected_words']

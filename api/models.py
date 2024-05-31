@@ -2,12 +2,6 @@ from django.db import models
 from django.contrib.auth.models import User
 # Create your models here.
 
-# class ReviewTone(models.Model):
-#     name = models.CharField(max_length=255, unique=True)
-
-#     def __str__(self):
-#         return self.name
-
 
 class AIReview(models.Model):
     STAR_CHOICES = [
@@ -25,7 +19,6 @@ class AIReview(models.Model):
     ]
 
     # user = models.ForeignKey(User, on_delete=models.CASCADE, null= True)
-    # review_tone = models.CharField(max_length=150, choices=REVIEW_TONE_CHOICES, blank=True, null=True)
     star_rating = models.IntegerField(choices=STAR_CHOICES)
     review_tone = models.CharField(max_length=255, blank=True, null=True)
     product_name = models.TextField(blank=True, null=True) 
