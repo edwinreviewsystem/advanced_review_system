@@ -4,10 +4,10 @@ from django.contrib.auth.models import User
 
 
 class ProductReviews(models.Model):
-    
+
     APPROVE = 'approve'
     DISAPPROVE = 'disapprove'
-    PENDING = 'Pending'
+    PENDING = 'pending'
     STATUS_CHOICES = [
         (APPROVE, 'Approve'),
         (DISAPPROVE, 'Disapprove'),

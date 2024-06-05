@@ -24,6 +24,7 @@ class ProductReviewsListAdmin(admin.ModelAdmin):
             return format_html(
                 '<img src="{}" width="70px" height="60px" />'.format(obj.image.url)
             )
+        return "-"
     display_image.short_description = "Uploaded Image"
 
     def review_one_line(self, obj):
