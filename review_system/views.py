@@ -127,7 +127,10 @@ class ProductReviewsListAPI(APIView):
 
             new_data['image'] = image if image else None
             serializer = ProductReviewsSerializer(data=new_data)
-            auto_approve = request.data.get('auto_approve', 0)
+             # Get the auto_approve value from the first ProductReviews entry
+            first_review = ProductReviews.objects.first()
+            auto_approve = first_review.auto_approve if first_review else 0
+            print('auto_approve', auto_approve)
          
             if serializer.is_valid():
                 serializer.validated_data['status'] = ProductReviews.APPROVE if auto_approve else ProductReviews.PENDING
