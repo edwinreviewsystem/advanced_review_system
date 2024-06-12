@@ -16,9 +16,6 @@ from datetime import timedelta
 from dotenv import load_dotenv
 import os
 load_dotenv()
-# Initialise environment variables
-# env = environ.Env()
-# environ.Env.read_env()
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 # BASE_DIR = Path(__file__).resolve().parent.parent
@@ -31,7 +28,7 @@ SECRET_KEY =  os.getenv('SECRET_KEY')
 OPEN_API_KEY = os.getenv('OPEN_API_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = os.getenv('DEBUG')
+DEBUG = True
 # DEBUG = False
 
 ALLOWED_HOSTS = ['*']
@@ -51,7 +48,6 @@ INSTALLED_APPS = [
     "rest_framework_simplejwt",
     "rest_framework_simplejwt.token_blacklist",
     "corsheaders",
-    "sorl.thumbnail",
     "review_system.apps.ReviewSystemConfig",
 ]
 
@@ -98,23 +94,24 @@ WSGI_APPLICATION = 'advanced_review_system.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': os.path.join(BASE_DIR, 'db-local.sqlite3'),
-#     }
-# }
 
 DATABASES = {
-    "default": {
-        "ENGINE": "django.db.backends.postgresql",
-        "NAME": 'edice_db',
-        "USER": 'shagun',
-        "PASSWORD": 'shagun',
-        "HOST":'16.170.1.215',
-        "PORT":5432,
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
+
+# DATABASES = {
+#     "default": {
+#         "ENGINE": "django.db.backends.postgresql",
+#         "NAME": 'edice_db',
+#         "USER": 'shagun',
+#         "PASSWORD": 'shagun',
+#         "HOST":'16.170.1.215',
+#         "PORT":5432,
+#     }
+# }
 
 
 # Password validation
@@ -160,6 +157,39 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles/')
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL='/media/'
 
+
+# logging
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'formatters': {
+        'verbose': {
+            'format': '{levelname} {asctime} {module} {message}',
+            'style': '{',
+        },
+    },
+
+    'handlers': {
+        'console': {
+            'class': 'logging.StreamHandler',
+            'formatter': 'verbose',
+        },
+
+        'file': {
+            'class': 'logging.FileHandler',
+            'formatter': 'verbose',
+            'filename': 'logs/django_info.log',
+        },
+    },
+
+    'loggers': {
+        'django': {
+            'handlers': ['console', 'file'],
+            'level': 'INFO',
+            'propagate': True,
+        },
+    },
+}
 
 
 # Default primary key field type

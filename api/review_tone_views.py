@@ -1,112 +1,82 @@
 # from rest_framework.views import APIView
 # from rest_framework.response import Response
-# from rest_framework.permissions import IsAdminUser, IsAuthenticated, IsAuthenticatedOrReadOnly, AllowAny
 # from rest_framework import status
-# from rest_framework.exceptions import NotFound
-# from .models import ReviewTone
-# from .serializers import ReviewToneSerializer
-# from django.contrib.auth.decorators import user_passes_test
-
-# def admin_only(function):
-#     def wrapper(request, *args, **kwargs):
-#         if request.user.is_authenticated and request.user.is_staff:
-#             return function(request, *args, **kwargs)
-#         else:
-#             return Response(
-#                 {
-#                     "status": status.HTTP_401_UNAUTHORIZED,
-#                     "message": "User Authentication Required.",
-#                 },
-#                 status=status.HTTP_401_UNAUTHORIZED,
-#             )
-
-#     return wrapper
+# from rest_framework.permissions import IsAuthenticated, AllowAny
+# from .serializers import AIReviewSerializer
+# import openai
+# from django.conf import settings
 
 
-# class ReviewToneListAPIView(APIView):
-#     def get(self, request):
+# class GetChatGPTSuggestions(APIView):
+#     permission_classes = [AllowAny]
+
+#     def post(self, request):
 #         try:
-#             review_tones = ReviewTone.objects.all()
-#             if not review_tones.exists():
-#                 return Response(
-#                     {
-#                         "status": status.HTTP_200_OK,
-#                         "message": "No review tones found in database.",
-#                         "data": [],
-#                     },
-#                     status=status.HTTP_200_OK,
-#                 )
-#             serializer = ReviewToneSerializer(review_tones, many=True)
-#             return Response(
-#                 {
-#                     "status": status.HTTP_200_OK,
-#                     "message": "Review tone Retrieved successfully!",
-#                     "data": serializer.data,
-#                 },
-#                 status=status.HTTP_200_OK,
-#             )
+#             serializer = AIReviewSerializer(data=request.data)
+#             serializer.is_valid(raise_exception=True)
+#             star_rating = serializer.validated_data['star_rating']
+#             product_name = serializer.validated_data['product_name']
+#             review_tone = serializer.validated_data['review_tone']
+#             language = request.data.get('language', 'english')  
+
+#             suggestions = self.get_chatgpt_suggestions(star_rating, product_name, review_tone, language)
+#             return Response({'suggestions': suggestions}, status=status.HTTP_200_OK)
+
 #         except Exception as e:
-#             return Response(
-#                 {
-#                     "status": status.HTTP_400_BAD_REQUEST,
-#                     "message": f"Error in Retrieving Review Tones: {str(e)}",
-#                 },
-#                 status=status.HTTP_400_BAD_REQUEST,
-#             )
+#             return Response({'error': str(e)}, status=status.HTTP_400_BAD_REQUEST)
         
 
-# class ReviewToneCreateAPIView(APIView):
-#     # permission_classes = [IsAdminUser]
-#     # @admin_only
+#     def get_chatgpt_suggestions(self, star_rating, product_name, review_tone, language):
+#         openai.api_key = settings.OPEN_API_KEY
+#         prompt = (f"User gives {star_rating} stars to {product_name}. Generate 9-11 best describing words in a {review_tone} tone, "
+#               f"in {language}. Ignore description and provide the words in an array format.")
+
+#         response = openai.ChatCompletion.create(
+#             model="gpt-3.5-turbo",
+#             messages=[
+#                 {"role": "system", "content": "You are a helpful assistant for reviewing products/services."},
+#                 {"role": "user", "content": prompt}
+#             ],
+#             max_tokens=60
+#         )
+
+#         suggestions = response['choices'][0]['message']['content'].strip()
+#         suggestions = suggestions.strip('[]')
+#         suggestions = [s.strip('"').strip("'") for s in suggestions.split(", ")]
+#         return suggestions
+       
+# class GetChatGPTReview(APIView):
+#     permission_classes = [AllowAny]
+
 #     def post(self, request):
-#         serializer = ReviewToneSerializer(data=request.data)
-#         if serializer.is_valid():
-#             serializer.save()
-#             return Response(
-#                     {
-#                         "status": status.HTTP_201_CREATED,
-#                         "message": "Product review added!",
-#                         "data": serializer.data,
-#                     },
-#                     status=status.HTTP_201_CREATED,
-#             )
-#         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
-    
-
-
-# class ReviewToneDetailAPIView(APIView):
-#     # permission_classes = [IsAdminUser]
-#     # @admin_only
-#     def put(self, request, pk):
 #         try:
-#             review_tone = ReviewTone.objects.get(pk=pk)
-#         except ReviewTone.DoesNotExist:
-#             raise NotFound()
+#             serializer = AIReviewSerializer(data=request.data)
+#             serializer.is_valid(raise_exception=True)
+            
+#             star_rating = serializer.validated_data['star_rating']
+#             user_selected_words = serializer.validated_data['user_selected_words']
+#             product_name = serializer.validated_data['product_name']
+#             language = request.data.get('language', 'english') 
+            
+#             review = self.get_chatgpt_review(star_rating, user_selected_words, product_name, language)
+#             return Response({'AIreview': review}, status=status.HTTP_200_OK)
 
-#         serializer = ReviewToneSerializer(review_tone, data=request.data)
-#         if serializer.is_valid():
-#             serializer.save()
-#             return Response(
-#                     {
-#                         "status": status.HTTP_200_OK,
-#                         "message": "Review tone Updated successfully!",
-#                         "data": serializer.data,
-#                     },
-#                     status=status.HTTP_200_OK,
-#                 )
-#         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+#         except Exception as e:
+#             return Response({'error': str(e)}, status=status.HTTP_400_BAD_REQUEST)
+        
 
-#     # @admin_only
-#     def delete(self, request, pk):
-#         try:
-#             review_tone = ReviewTone.objects.get(pk=pk)
-#             review_tone.delete()
-#             return Response(
-#                 {
-#                     "status": status.HTTP_204_NO_CONTENT,
-#                     "message": "Review tone Deleted successfully!",
-#                 },
-#                 status=status.HTTP_204_NO_CONTENT,
-#             )
-#         except ReviewTone.DoesNotExist:
-#             raise NotFound()
+#     def get_chatgpt_review(self, star_rating, user_selected_words, product_name, language):
+#         openai.api_key = settings.OPEN_API_KEY
+#         prompt = (f"User gives {star_rating} stars and selected {user_selected_words} as the best describing words for {product_name}. "
+#                   f"Provide a detailed 80-100 words review on this basis for {product_name}, in {language}. Ignore description.")
+        
+#         response = openai.ChatCompletion.create(
+#             model="gpt-3.5-turbo",
+#             messages=[
+#                 {"role": "system", "content": "You are a helpful assistant for reviewing products/services."},
+#                 {"role": "user", "content": prompt}
+#             ],
+#             max_tokens=200
+#         )
+#         review = response['choices'][0]['message']['content']
+#         return review

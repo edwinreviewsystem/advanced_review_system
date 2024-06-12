@@ -23,6 +23,3 @@ urlpatterns = [
     path("api/logout",LogoutView.as_view(), name="logout_api"),
     
 ]
-
-if settings.DEBUG:
-    urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

@@ -6,18 +6,17 @@ from rest_framework_simplejwt.serializers import TokenObtainPairSerializer
 from rest_framework_simplejwt.views import TokenObtainPairView
 from .serializers import AIReviewSerializer
 import openai
+import re, json
 from django.conf import settings
 from django.views.generic import TemplateView
-import json
-import os
 from django.conf import settings
-from django.http import Http404
-from django.http import FileResponse
 from django.http import HttpResponse
+import logging
 
+logger = logging.getLogger('api')
+logger.setLevel(logging.DEBUG)
 
 class MyTokenObtainPairSerializer(TokenObtainPairSerializer):
-
     @classmethod
     def get_token(cls, user):
         token = super(MyTokenObtainPairSerializer, cls).get_token(user)
@@ -58,6 +57,7 @@ class GetChatGPTSuggestions(APIView):
             return Response({'error': str(e)}, status=status.HTTP_400_BAD_REQUEST)
         
 
+
     def get_chatgpt_suggestions(self, star_rating,product_name,review_tone):
         openai.api_key = settings.OPEN_API_KEY
         prompt = f"User gives {star_rating} stars to {product_name}. Generate 9-11 best describing words in a {review_tone} tone. Ignore description and should be in the array format. withouy any extra symbol and in a single line."
@@ -71,13 +71,18 @@ class GetChatGPTSuggestions(APIView):
             max_tokens=60
         )
 
+        
+
         suggestions = response['choices'][0]['message']['content'].strip()
-        suggestions = suggestions.strip('[]')
-        suggestions = [s.strip('"').strip("'") for s in suggestions.split(", ")]
+        
+        # suggestions = suggestions.strip('[]')
+        # suggestions = [s.strip('"').strip("'") for s in suggestions.split(", ")]
         # suggestions = json.loads(suggestions)
+        # return suggestions
+        suggestions = suggestions.strip("[]").replace('\n', '').replace('"', '').replace("'", "")
+        suggestions = [s.strip() for s in suggestions.split(",")]
         return suggestions
-       
-       
+
 
 class GetChatGPTReview(APIView):
     # permission_classes = [IsAuthenticated]

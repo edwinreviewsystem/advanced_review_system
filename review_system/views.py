@@ -1,22 +1,15 @@
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
-from .models import ProductReviews
+from .models import ProductReviews, ReviewSettings
 from .serializers import ProductReviewsSerializer
-from django.contrib.auth.decorators import login_required
 from rest_framework.permissions import IsAuthenticated, AllowAny
 from rest_framework.exceptions import NotFound
-from django.contrib.auth.models import User
-from django.core.files.base import ContentFile
-from django.core.files.storage import default_storage
-from rest_framework.exceptions import ValidationError
-from django.db.models import Q, Count
 from django.db.models import Avg
-from django.utils import timezone
-from django.shortcuts import get_object_or_404
-from django.core.mail import send_mail
-from django.core.exceptions import ObjectDoesNotExist
+import logging
 
+logger = logging.getLogger('review_system')
+logger.setLevel(logging.DEBUG)
 
 class ProductReviewsListAPI(APIView):
     # permission_classes = [IsAuthenticated]
@@ -122,25 +115,29 @@ class ProductReviewsListAPI(APIView):
                  'email':email,
                  'name': name,
                  'review': review,
-                 'image':image,
+                 'image':image if image else None,
             }
 
-            new_data['image'] = image if image else None
+            # new_data['image'] = image if image else None
             serializer = ProductReviewsSerializer(data=new_data)
-             # Get the auto_approve value from the first ProductReviews entry
-            first_review = ProductReviews.objects.first()
-            auto_approve = first_review.auto_approve if first_review else 0
+
+            settings = ReviewSettings.objects.first()
+            auto_approve = settings.auto_approve if settings else False 
             print('auto_approve', auto_approve)
          
             if serializer.is_valid():
-                serializer.validated_data['status'] = ProductReviews.APPROVE if auto_approve else ProductReviews.PENDING
+                status_value = ProductReviews.APPROVE if auto_approve else ProductReviews.PENDING
+                serializer.validated_data['status'] = status_value
 
-                serializer.save()
+                review_instance = serializer.save()
+
+                # Update all reviews for the same domain to match the auto_approve setting
+                ProductReviews.objects.filter(domain=domain).update(status=status_value)
                 return Response(
                     {
                         "status": status.HTTP_201_CREATED,
                         "message": "New Review added!",
-                        "data": serializer.data,
+                        "data": ProductReviewsSerializer(review_instance).data,
                     },
                     status=status.HTTP_201_CREATED,
                 )

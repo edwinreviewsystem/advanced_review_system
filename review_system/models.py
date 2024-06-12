@@ -1,10 +1,31 @@
 from django.db import models
 from django.contrib.auth.models import User
-# Create your models here.
+from django.core.exceptions import ValidationError
 
+# Create your models here.
+class SingletonManager(models.Manager):
+    def get_instance(self):
+        if self.count() > 0:
+            return self.get()
+        return self.create()
+
+class ReviewSettings(models.Model):
+    auto_approve = models.BooleanField(default=False, null=True)
+    objects = SingletonManager()
+
+    def save(self, *args, **kwargs):
+        if not self.pk and ReviewSettings.objects.exists():
+            raise ValidationError('There can be only one ReviewSettings instance')
+        return super(ReviewSettings, self).save(*args, **kwargs)
+
+    def __str__(self):
+        return "Review Settings"
+
+    class Meta:
+        verbose_name = "Review Setting"
+        verbose_name_plural = "Review Settings"
 
 class ProductReviews(models.Model):
-
     APPROVE = 'approve'
     DISAPPROVE = 'disapprove'
     PENDING = 'pending'
@@ -26,7 +47,14 @@ class ProductReviews(models.Model):
 
     reply_text = models.TextField(blank=True, null=True)
     reply_created_at = models.DateTimeField(blank=True, null=True)
-    auto_approve = models.BooleanField(default=0)
+
+    def save(self, *args, **kwargs):
+        review_settings = ReviewSettings.objects.get_instance()
+        if review_settings.auto_approve:
+            self.status = self.APPROVE
+        else:
+            self.status = self.PENDING
+        super(ProductReviews, self).save(*args, **kwargs)
 
     def to_dict(self):
         return {
@@ -53,6 +81,8 @@ class ProductReviews(models.Model):
 
 class ReviewFormDesign(models.Model):
     domain = models.CharField(max_length=255, blank=True)
+    generate_button_color = models.CharField(max_length=25, blank=True)
+    generate_button_text_color = models.CharField(max_length=25, blank=True)
     button_color = models.CharField(max_length=25, blank=True)
     button_text_color = models.CharField(max_length=25, blank=True)
     label_text_color = models.CharField(max_length=25, blank=True)
