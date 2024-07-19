@@ -2,8 +2,8 @@ venvv/
 venv/
 db.sqlite3/
 # __pycache__/
-# Ignore Django migration files
-*/migrations/*.py
-!*/migrations/__init__.py
-.logs/*
+# # Ignore Django migration files
+# */migrations/*.py
+# !*/migrations/__init__.py
+logs/
 .env
