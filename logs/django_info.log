@@ -2612,3 +2612,32 @@ INFO 2024-07-19 10:30:33,165 basehttp "POST /api/rating HTTP/1.1" 200 5806
 INFO 2024-07-19 10:31:57,091 basehttp "POST /api/review HTTP/1.1" 200 6262
 INFO 2024-07-19 10:32:54,296 autoreload E:\VE\Edwin Bleeker Review System\advanced_review_system\api\views.py changed, reloading.
 INFO 2024-07-19 10:32:55,236 autoreload Watching for file changes with StatReloader
+INFO 2024-07-22 09:47:50,699 autoreload Watching for file changes with StatReloader
+INFO 2024-07-22 09:48:03,655 autoreload E:\VE\Edwin Bleeker Review System\advanced_review_system\api\views.py changed, reloading.
+INFO 2024-07-22 09:48:04,561 autoreload Watching for file changes with StatReloader
+INFO 2024-07-22 09:48:43,238 autoreload E:\VE\Edwin Bleeker Review System\advanced_review_system\api\views.py changed, reloading.
+INFO 2024-07-22 09:48:44,141 autoreload Watching for file changes with StatReloader
+INFO 2024-07-22 09:49:44,686 autoreload E:\VE\Edwin Bleeker Review System\advanced_review_system\api\views.py changed, reloading.
+INFO 2024-07-22 09:49:45,547 autoreload Watching for file changes with StatReloader
+INFO 2024-07-22 09:49:53,676 autoreload E:\VE\Edwin Bleeker Review System\advanced_review_system\api\views.py changed, reloading.
+INFO 2024-07-22 09:49:54,508 autoreload Watching for file changes with StatReloader
+INFO 2024-07-22 09:50:33,121 autoreload E:\VE\Edwin Bleeker Review System\advanced_review_system\api\views.py changed, reloading.
+INFO 2024-07-22 09:50:34,002 autoreload Watching for file changes with StatReloader
+INFO 2024-07-22 09:51:00,605 autoreload E:\VE\Edwin Bleeker Review System\advanced_review_system\api\views.py changed, reloading.
+INFO 2024-07-22 09:51:01,499 autoreload Watching for file changes with StatReloader
+INFO 2024-07-22 09:51:10,284 autoreload Watching for file changes with StatReloader
+INFO 2024-07-22 09:51:30,803 autoreload E:\VE\Edwin Bleeker Review System\advanced_review_system\api\views.py changed, reloading.
+INFO 2024-07-22 09:51:31,627 autoreload Watching for file changes with StatReloader
+INFO 2024-07-22 09:51:52,279 basehttp "POST /api/rating HTTP/1.1" 200 5919
+INFO 2024-07-22 09:52:11,380 autoreload E:\VE\Edwin Bleeker Review System\advanced_review_system\api\views.py changed, reloading.
+INFO 2024-07-22 09:52:12,248 autoreload Watching for file changes with StatReloader
+INFO 2024-07-22 09:52:15,946 basehttp "POST /api/rating HTTP/1.1" 200 5578
+INFO 2024-07-22 09:52:20,072 basehttp "POST /api/rating HTTP/1.1" 200 5946
+INFO 2024-07-22 09:52:59,203 basehttp "POST /api/rating HTTP/1.1" 200 5938
+INFO 2024-07-22 09:53:06,160 basehttp "POST /api/rating HTTP/1.1" 200 5938
+INFO 2024-07-22 09:54:01,857 basehttp "POST /api/rating HTTP/1.1" 200 5936
+INFO 2024-07-22 09:55:50,008 autoreload E:\VE\Edwin Bleeker Review System\advanced_review_system\api\views.py changed, reloading.
+INFO 2024-07-22 09:55:50,925 autoreload Watching for file changes with StatReloader
+INFO 2024-07-22 09:55:55,555 autoreload E:\VE\Edwin Bleeker Review System\advanced_review_system\api\views.py changed, reloading.
+INFO 2024-07-22 09:55:56,386 autoreload Watching for file changes with StatReloader
+INFO 2024-07-22 09:56:08,725 basehttp "POST /api/rating HTTP/1.1" 200 5998

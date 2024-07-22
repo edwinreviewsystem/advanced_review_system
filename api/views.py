@@ -51,7 +51,7 @@ class GetChatGPTSuggestions(APIView):
             meta_info = request.data['meta_info']
             
             suggestions = self.get_chatgpt_suggestions(star_rating, product_name, review_tone,meta_info)
-            print(type(suggestions))
+            # print(type(suggestions))
             return Response(suggestions, status=status.HTTP_200_OK)
 
         except Exception as e:
@@ -62,7 +62,7 @@ class GetChatGPTSuggestions(APIView):
     def get_chatgpt_suggestions(self, star_rating,product_name,review_tone,meta_info):
         openai.api_key = settings.OPEN_API_KEY
         RESPONSE_JSON = {
-            "suggestions":["word1","word2","word3","word4"]
+            "suggestions":["word1","word2","word3","word4", "word5, word6", "word7","word8","word9"]
         }
         prompt = f"""User gives {star_rating} out of 5 stars to {product_name} and about product you can get from meta_info here {meta_info}. Generate 9-11 describing words or phrases in a {review_tone} tone according to the star rated.
         Replace the words in an array with the actual words.
@@ -91,7 +91,7 @@ class GetChatGPTSuggestions(APIView):
         except json.JSONDecodeError as e:
             print(f"Failed to parse JSON response: {e}")
             json_response = {}
-        print(suggestions)
+        # print(suggestions)
         
         # suggestions = suggestions.strip('[]')
         # suggestions = [s.strip('"').strip("'") for s in suggestions.split(", ")]
