@@ -95,23 +95,23 @@ WSGI_APPLICATION = 'advanced_review_system.wsgi.application'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    }
-}
-
 # DATABASES = {
-#     "default": {
-#         "ENGINE": "django.db.backends.postgresql",
-#         "NAME": 'edice_db',
-#         "USER": 'shagun',
-#         "PASSWORD": 'shagun',
-#         "HOST":'16.170.1.215',
-#         "PORT":5432,
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
 #     }
 # }
+
+DATABASES = {
+    "default": {
+        "ENGINE": "django.db.backends.postgresql",
+        "NAME": 'edice_db',
+        "USER": 'shagun',
+        "PASSWORD": 'shagun',
+        "HOST":'16.170.1.215',
+        "PORT":5432,
+    }
+}
 
 
 # Password validation
