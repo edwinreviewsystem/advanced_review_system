@@ -39,14 +39,14 @@ admin.site.register(ProductReviews, ProductReviewsListAdmin)
 
 @admin.register(ReviewSettings)
 class ReviewSettingsAdmin(admin.ModelAdmin):
-    list_display = ('auto_approve', 'id', 'domain')
+    list_display = ('auto_approve', 'id')
     list_filter = ('auto_approve',)
     list_display_links = ('id', 'auto_approve')
 
 
 @admin.register(ReviewFormDesign)
 class ReviewFormDesignAdmin(admin.ModelAdmin):
-    list_display = ('domain', 'generate_button', 'generate_button_text', 'button_color', 'button_text_color', 'label_text_color', 'background_color', 'updated_at')
+    list_display = ('domain', 'generate_button_color', 'generate_button_text_color', 'button_color', 'button_text_color', 'label_text_color', 'background_color', 'updated_at')
     search_fields = ('domain',)
     list_filter = ('updated_at',)
 

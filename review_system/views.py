@@ -122,16 +122,16 @@ class ProductReviewsListAPI(APIView):
             serializer = ProductReviewsSerializer(data=new_data)
 
             # Fetch the ReviewSettings for the given domain
-            settings = ReviewSettings.objects.filter(domain=domain).first()
+            settings = ReviewSettings.objects.first()
             auto_approve = settings.auto_approve if settings else False 
-            print(f'auto_approve value for {domain} is {auto_approve}')
+            # print(f'auto_approve value for {domain} is {auto_approve}')
          
             if serializer.is_valid():
                 status_value = ProductReviews.APPROVE if auto_approve else ProductReviews.PENDING
                 serializer.validated_data['status'] = status_value
 
                 review_instance = serializer.save()
-
+                ProductReviews.objects.filter(domain=domain).update(status=status_value)
                 return Response(
                     {
                         "status": status.HTTP_201_CREATED,
