@@ -82,8 +82,8 @@ class ProductReviews(models.Model):
 
 class ReviewFormDesign(models.Model):
     domain = models.CharField(max_length=255, blank=True)
-    generate_button_color = models.CharField(max_length=25, blank=True)
-    generate_button_text_color  = models.CharField(max_length=25, blank=True)
+    generate_button = models.CharField(max_length=25, blank=True)
+    generate_button_text  = models.CharField(max_length=25, blank=True)
     button_color = models.CharField(max_length=25, blank=True)
     button_text_color = models.CharField(max_length=25, blank=True)
     label_text_color = models.CharField(max_length=25, blank=True)

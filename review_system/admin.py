@@ -46,7 +46,7 @@ class ReviewSettingsAdmin(admin.ModelAdmin):
 
 @admin.register(ReviewFormDesign)
 class ReviewFormDesignAdmin(admin.ModelAdmin):
-    list_display = ('domain', 'generate_button_color', 'generate_button_text_color', 'button_color', 'button_text_color', 'label_text_color', 'background_color', 'updated_at')
+    list_display = ('domain', 'generate_button', 'generate_button_text', 'button_color', 'button_text_color', 'label_text_color', 'background_color', 'updated_at')
     search_fields = ('domain',)
     list_filter = ('updated_at',)
 
