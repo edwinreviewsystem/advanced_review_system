@@ -21,7 +21,7 @@ class ProductReviewsSerializer(serializers.ModelSerializer):
 class ReviewFormDesignSerializer(serializers.ModelSerializer):
     class Meta:
         model = ReviewFormDesign
-        fields = ('generate_button_color', 'generate_button_text_color', 'button_color', 'button_text_color', 'label_text_color', 'background_color')
+        fields = ('generate_button', 'generate_button_text', 'button_color', 'button_text_color', 'label_text_color', 'background_color')
 
 class ReviewListDesignSerializer(serializers.ModelSerializer):
     class Meta:
