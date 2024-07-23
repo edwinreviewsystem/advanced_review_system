@@ -39,7 +39,7 @@ admin.site.register(ProductReviews, ProductReviewsListAdmin)
 
 @admin.register(ReviewSettings)
 class ReviewSettingsAdmin(admin.ModelAdmin):
-    list_display = ('auto_approve', 'id')
+    list_display = ('auto_approve', 'id','domain')
     list_filter = ('auto_approve',)
     list_display_links = ('id', 'auto_approve')
 

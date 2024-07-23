@@ -11,13 +11,13 @@ class SingletonManager(models.Manager):
 
 class ReviewSettings(models.Model):
     auto_approve = models.BooleanField(default=False, null=True)
-    # domain = models.CharField(max_length=255, blank=True, null=True) # New field
-    objects = SingletonManager()
+    domain = models.CharField(max_length=255, blank=True, null=True) # New field
+    # objects = SingletonManager()
 
-    def save(self, *args, **kwargs):
-        if not self.pk and ReviewSettings.objects.exists():
-            raise ValidationError('There can be only one ReviewSettings instance')
-        return super(ReviewSettings, self).save(*args, **kwargs)
+    # def save(self, *args, **kwargs):
+    #     if not self.pk and ReviewSettings.objects.exists():
+    #         raise ValidationError('There can be only one ReviewSettings instance')
+    #     return super(ReviewSettings, self).save(*args, **kwargs)
 
     def __str__(self):
         return "Review Settings"
@@ -49,13 +49,13 @@ class ProductReviews(models.Model):
     reply_text = models.TextField(blank=True, null=True)
     reply_created_at = models.DateTimeField(blank=True, null=True)
 
-    def save(self, *args, **kwargs):
-        review_settings = ReviewSettings.objects.get_instance()
-        if review_settings.auto_approve:
-            self.status = self.APPROVE
-        else:
-            self.status = self.PENDING
-        super(ProductReviews, self).save(*args, **kwargs)
+    # def save(self, *args, **kwargs):
+    #     review_settings = ReviewSettings.objects.get_instance()
+    #     if review_settings.auto_approve:
+    #         self.status = self.APPROVE
+    #     else:
+    #         self.status = self.PENDING
+    #     super(ProductReviews, self).save(*args, **kwargs)
 
     def to_dict(self):
         return {
