@@ -49,8 +49,9 @@ class GetChatGPTSuggestions(APIView):
             product_name = serializer.validated_data['product_name']
             review_tone = serializer.validated_data['review_tone']
             meta_info = request.data['meta_info']
+            lang_code = request.data['lang_code']
             
-            suggestions = self.get_chatgpt_suggestions(star_rating, product_name, review_tone,meta_info)
+            suggestions = self.get_chatgpt_suggestions(star_rating, product_name, review_tone,meta_info,lang_code)
             # print(type(suggestions))
             return Response(suggestions, status=status.HTTP_200_OK)
 
@@ -59,12 +60,12 @@ class GetChatGPTSuggestions(APIView):
         
 
 
-    def get_chatgpt_suggestions(self, star_rating,product_name,review_tone,meta_info):
+    def get_chatgpt_suggestions(self, star_rating,product_name,review_tone,meta_info,lang_code):
         openai.api_key = settings.OPEN_API_KEY
         RESPONSE_JSON = {
             "suggestions":["word1","word2","word3","word4", "word5, word6", "word7","word8","word9"]
         }
-        prompt = f"""User gives {star_rating} out of 5 stars to {product_name} and about product you can get from meta_info here {meta_info}. Generate 9-11 describing words or phrases in a {review_tone} tone according to the star rated.
+        prompt = f"""User gives {star_rating} out of 5 stars to {product_name} and about product you can get from meta_info here {meta_info}. Generate 9-11 describing words or phrases in a {review_tone} tone according to the star rated in language code {lang_code}.
         Replace the words in an array with the actual words.
         
         RESPONSE_JSON : {RESPONSE_JSON}
@@ -115,16 +116,18 @@ class GetChatGPTReview(APIView):
             user_selected_words = serializer.validated_data['user_selected_words']
             product_name = serializer.validated_data['product_name']
             meta_info = request.data['meta_info']
-            review = self.get_chatgpt_review(star_rating, user_selected_words, product_name,meta_info)
+            lang_code = request.data['lang_code']
+            
+            review = self.get_chatgpt_review(star_rating, user_selected_words, product_name,meta_info,lang_code)
             return Response({'AIreview': review}, status=status.HTTP_200_OK)
 
         except Exception as e:
             return Response({'error': str(e)}, status=status.HTTP_400_BAD_REQUEST)
         
 
-    def get_chatgpt_review(self, star_rating, user_selected_words, product_name,meta_info):
+    def get_chatgpt_review(self, star_rating, user_selected_words, product_name,meta_info,lang_code):
         openai.api_key = settings.OPEN_API_KEY
-        prompt = f"User gave {star_rating} out of 5 stars and selected '{user_selected_words}' as the best describing words for {product_name}. Provide a detailed 80-100 words review based on these criteria for {product_name} and meta description of that is {meta_info} provided, in easy real language. Ignore description."
+        prompt = f"User gave {star_rating} out of 5 stars and selected '{user_selected_words}' as the best describing words for {product_name}. Provide a detailed 80-100 words review based on these criteria for {product_name} and meta description of that is {meta_info} provided, in easy real language in language code {lang_code}. Ignore description."
         
         response = openai.ChatCompletion.create(
             model="gpt-3.5-turbo",
