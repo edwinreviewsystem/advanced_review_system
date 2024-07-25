@@ -74,25 +74,26 @@ class GetChatGPTSuggestions(APIView):
         
         Return the response in json format only."""
 
-        response = openai.ChatCompletion.create(
+        completion = openai.ChatCompletion.create(
             model="gpt-3.5-turbo",
             response_format={"type": "json_object"},
             messages=[
                 {"role": "system", "content": "You are a helpful assistant for reviewing products/services/business/website."},
                 {"role": "user", "content": prompt}
             ],
-            max_tokens=60
+            max_tokens=500
         )
 
-        
+        # print("completion",completion)
 
-        suggestions = response['choices'][0]['message']['content'].strip()
+        # suggestions = response['choices'][0]['message']['content']
+        suggestions = completion.choices[0].message.content
         try:
             json_response = json.loads(suggestions)
         except json.JSONDecodeError as e:
             print(f"Failed to parse JSON response: {e}")
             json_response = {}
-        # print(suggestions)
+        # print("suggesstions",suggestions)
         
         # suggestions = suggestions.strip('[]')
         # suggestions = [s.strip('"').strip("'") for s in suggestions.split(", ")]
@@ -135,7 +136,7 @@ class GetChatGPTReview(APIView):
                 {"role": "system", "content": "You are a helpful assistant for reviewing products/services/business/website."},
                 {"role": "user", "content": prompt}
             ],
-            max_tokens=200
+            max_tokens=400
         )
         review = response['choices'][0]['message']['content']
         return review
