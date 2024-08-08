@@ -47,7 +47,7 @@ class ProductReviewsListAPI(APIView):
                     status=status.HTTP_204_NO_CONTENT,
                 )
             
-            
+            reviews = reviews.order_by("-created_at")
             # Calculate average star rating for business and product reviews separately
             business_reviews = reviews.filter(product_name__isnull=True)
             business_average_star_rating = business_reviews.aggregate(avg_star_rating=Avg('star_rating'))['avg_star_rating'] or 0.0
