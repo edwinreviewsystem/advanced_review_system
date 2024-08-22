@@ -1,8 +1,9 @@
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
+from datetime import datetime, timedelta
 from .models import ProductReviews, ReviewSettings
-from .serializers import ProductReviewsSerializer
+from .serializers import ProductReviewsSerializer, CustomerSerializer
 from rest_framework.permissions import IsAuthenticated, AllowAny
 from rest_framework.exceptions import NotFound
 from django.db.models import Avg
@@ -219,3 +220,51 @@ class ProductReviewsDetailAPI(APIView):
                 },
                 status=status.HTTP_400_BAD_REQUEST,
             )
+
+
+class CustomerCreateAPIView(APIView):
+    def post(self, request, *args, **kwargs):
+        try:
+            parsed_data = request.data.get('data')
+            customer_data = {}
+
+            customer_data['domain_name'] = parsed_data.get('domain_name', None)
+
+            if 'contact' in parsed_data and parsed_data['contact'].get('email'):
+                customer_data['email'] = parsed_data['contact']['email']
+
+            if 'plan_title' in parsed_data and parsed_data['plan_title']:
+                customer_data['plan_name'] = parsed_data['plan_title']
+
+            if 'plan_start_date' in parsed_data and parsed_data['plan_start_date']:
+                start_date = datetime.strptime(parsed_data['plan_start_date'], "%d/%m/%y").strftime("%Y-%m-%d")
+                customer_data['date_start'] = start_date
+
+                if 'plan_cycle_duration' in parsed_data:
+                    if parsed_data['plan_cycle_duration'] == "1 month":
+                        end_date = (datetime.strptime(parsed_data['plan_start_date'], "%d/%m/%y") + timedelta(days=30)).strftime("%Y-%m-%d")
+                    elif parsed_data['plan_cycle_duration'] == "1 year":
+                        end_date = (datetime.strptime(parsed_data['plan_start_date'], "%d/%m/%y") + timedelta(days=365)).strftime("%Y-%m-%d")
+                    else:
+                        end_date = parsed_data.get('plan_valid_until', 'Until canceled')
+                    customer_data['date_end'] = end_date
+                else:
+                    customer_data['date_end'] = parsed_data.get('plan_valid_until', 'Until canceled')
+
+            if 'plan_price' in parsed_data and parsed_data['plan_price'].get('value'):
+                customer_data['plan_price'] = parsed_data['plan_price']['value']
+
+            # Set first_name and last_name to 'N/A' if they are not provided
+            customer_data['first_name'] = parsed_data.get('name', {}).get('first', 'N/A')
+            customer_data['last_name'] = parsed_data.get('name', {}).get('last', 'N/A')
+
+            customer_data['password'] = 'N/A'
+
+            serializer = CustomerSerializer(data=customer_data)
+            if serializer.is_valid():
+                serializer.save()
+                return Response(serializer.data, status=status.HTTP_201_CREATED)
+            return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+        
+        except Exception as e:
+            return Response({"error": str(e)}, status=status.HTTP_400_BAD_REQUEST)

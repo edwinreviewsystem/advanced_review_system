@@ -55,3 +55,9 @@ class ReviewListDesignAdmin(admin.ModelAdmin):
     list_display = ('domain', 'content_text_color', 'star_rating_color', 'reviewer_name_color', 'updated_at')
     search_fields = ('domain',)
     list_filter = ('updated_at',)
+    
+
+class CustomerAdmin(admin.ModelAdmin):
+    list_display = ('email','domain_name', 'first_name', 'last_name', 'activated')
+
+admin.site.register(Customer, CustomerAdmin)

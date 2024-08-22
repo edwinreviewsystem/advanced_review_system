@@ -106,4 +106,19 @@ class ReviewListDesign(models.Model):
         verbose_name_plural = "Review List Design"
 
 
- 
+class Customer(models.Model):
+    domain_name = models.CharField(max_length=255, blank=True,null=True)
+    email = models.EmailField(max_length=255, unique=True)
+    first_name = models.CharField(max_length=50)
+    last_name = models.CharField(max_length=50)
+    plan_name = models.CharField(max_length=100)
+    date_start = models.DateField()
+    date_end = models.DateField()
+    password = models.CharField(max_length=128)
+    plan_price = models.DecimalField(max_digits=10, decimal_places=2)
+    activated = models.BooleanField(default=True)
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return self.email
