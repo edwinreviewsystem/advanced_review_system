@@ -58,6 +58,6 @@ class ReviewListDesignAdmin(admin.ModelAdmin):
     
 
 class CustomerAdmin(admin.ModelAdmin):
-    list_display = ('email','domain_name', 'first_name', 'last_name', 'activated')
+    list_display = ('id','email','domain_name', 'first_name', 'last_name', 'activated')
 
 admin.site.register(Customer, CustomerAdmin)

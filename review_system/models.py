@@ -109,8 +109,8 @@ class ReviewListDesign(models.Model):
 class Customer(models.Model):
     domain_name = models.CharField(max_length=255, blank=True,null=True)
     email = models.EmailField(max_length=255, unique=True)
-    first_name = models.CharField(max_length=50)
-    last_name = models.CharField(max_length=50)
+    first_name = models.CharField(max_length=50,null=True)
+    last_name = models.CharField(max_length=50, null=True)
     plan_name = models.CharField(max_length=100)
     date_start = models.DateField()
     date_end = models.DateField()

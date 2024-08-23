@@ -254,9 +254,9 @@ class CustomerCreateAPIView(APIView):
             if 'plan_price' in parsed_data and parsed_data['plan_price'].get('value'):
                 customer_data['plan_price'] = parsed_data['plan_price']['value']
 
-            # Set first_name and last_name to 'N/A' if they are not provided
-            customer_data['first_name'] = parsed_data.get('name', {}).get('first', 'N/A')
-            customer_data['last_name'] = parsed_data.get('name', {}).get('last', 'N/A')
+            
+            customer_data['first_name'] = parsed_data.get('name', {}).get('first', None)
+            customer_data['last_name'] = parsed_data.get('name', {}).get('last', None)
 
             customer_data['password'] = 'N/A'
 
