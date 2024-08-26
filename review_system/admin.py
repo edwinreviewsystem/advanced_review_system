@@ -2,6 +2,7 @@ from django.contrib import admin
 from .models import *
 from django.utils.html import format_html
 from django.conf import settings
+from django import forms
 
 
 class ProductReviewsListAdmin(admin.ModelAdmin):
@@ -57,7 +58,24 @@ class ReviewListDesignAdmin(admin.ModelAdmin):
     list_filter = ('updated_at',)
     
 
+class CustomDateInput(forms.DateInput):
+    input_type = 'date'
+    format = '%Y-%m-%d'
+
+    def __init__(self, *args, **kwargs):
+        kwargs['format'] = self.format
+        super().__init__(*args, **kwargs)
+
+class CustomerAdminForm(forms.ModelForm):
+    date_start = forms.DateField(widget=CustomDateInput(format='%d-%m-%Y'))
+    date_end = forms.DateField(widget=CustomDateInput(format='%d-%m-%Y'))
+
+    class Meta:
+        model = Customer
+        fields = '__all__'
+
 class CustomerAdmin(admin.ModelAdmin):
-    list_display = ('id','email','domain_name', 'first_name', 'last_name', 'activated')
+    form = CustomerAdminForm
+    list_display = ('id', 'email', 'domain_name', 'first_name', 'last_name', 'activated')
 
 admin.site.register(Customer, CustomerAdmin)

@@ -8,6 +8,8 @@ from rest_framework.permissions import IsAuthenticated, AllowAny
 from rest_framework.exceptions import NotFound
 from django.db.models import Avg
 import logging
+import json 
+from django.http import JsonResponse
 
 logger = logging.getLogger('review_system')
 logger.setLevel(logging.DEBUG)
@@ -222,13 +224,32 @@ class ProductReviewsDetailAPI(APIView):
             )
 
 
+customer_logger = logging.getLogger('customer_create_logger')
+
+customer_logger = logging.getLogger('customer_create_logger')
+
 class CustomerCreateAPIView(APIView):
     def post(self, request, *args, **kwargs):
         try:
-            parsed_data = request.data.get('data')
+            # Check if the data is already in JSON format
+            if isinstance(request.data, dict):
+                parsed_data = request.data
+            else:
+                # Attempt to parse the incoming data as JSON
+                try:
+                    parsed_data = json.loads(request.body.decode('utf-8'))
+                except json.JSONDecodeError:
+                    return JsonResponse({"error": "Invalid JSON format"}, status=status.HTTP_400_BAD_REQUEST)
+
+            # Extract data from 'data' key
+            parsed_data = parsed_data.get('data', {})
+
+            # Log the incoming data
+            customer_logger.debug(f"Incoming data: {parsed_data}")
+
             customer_data = {}
 
-            customer_data['domain_name'] = parsed_data.get('domain_name', None)
+            customer_data['domain_name'] = parsed_data.get('site_name', None)
 
             if 'contact' in parsed_data and parsed_data['contact'].get('email'):
                 customer_data['email'] = parsed_data['contact']['email']
@@ -254,12 +275,12 @@ class CustomerCreateAPIView(APIView):
             if 'plan_price' in parsed_data and parsed_data['plan_price'].get('value'):
                 customer_data['plan_price'] = parsed_data['plan_price']['value']
 
-            
             customer_data['first_name'] = parsed_data.get('name', {}).get('first', None)
             customer_data['last_name'] = parsed_data.get('name', {}).get('last', None)
 
             customer_data['password'] = 'N/A'
 
+            # Validate and save the customer data
             serializer = CustomerSerializer(data=customer_data)
             if serializer.is_valid():
                 serializer.save()
@@ -267,4 +288,5 @@ class CustomerCreateAPIView(APIView):
             return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
         
         except Exception as e:
+            customer_logger.error(f"Error processing data: {str(e)}")
             return Response({"error": str(e)}, status=status.HTTP_400_BAD_REQUEST)
