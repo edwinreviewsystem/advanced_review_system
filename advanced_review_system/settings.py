@@ -158,7 +158,6 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL='/media/'
 
 
-# logging
 LOGGING = {
     'version': 1,
     'disable_existing_loggers': False,
@@ -180,6 +179,12 @@ LOGGING = {
             'formatter': 'verbose',
             'filename': 'logs/django_info.log',
         },
+        
+        'customer_create_file': {
+            'class': 'logging.FileHandler',
+            'formatter': 'verbose',
+            'filename': 'logs/customer_create.log',  # Separate log file for CustomerCreateAPIView
+        },
     },
 
     'loggers': {
@@ -188,8 +193,14 @@ LOGGING = {
             'level': 'INFO',
             'propagate': True,
         },
+        'customer_create_logger': {
+            'handlers': ['customer_create_file', 'console'],
+            'level': 'DEBUG',
+            'propagate': False,
+        },
     },
 }
+
 
 
 # Default primary key field type
