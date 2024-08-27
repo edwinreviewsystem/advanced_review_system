@@ -4,6 +4,10 @@ from django.utils.html import format_html
 from django.conf import settings
 from django import forms
 
+from django.contrib.auth.hashers import make_password
+from .models import Customer
+
+
 
 class ProductReviewsListAdmin(admin.ModelAdmin):
     list_display = ('id', 'review_one_line', 'star_rating', 'email', 'domain', 'display_image', 'status', 'created_at')
@@ -74,8 +78,24 @@ class CustomerAdminForm(forms.ModelForm):
         model = Customer
         fields = '__all__'
 
+    def clean_password(self):
+        password = self.cleaned_data.get('password')
+        if password and not password.startswith('pbkdf2_'):
+            return make_password(password)
+        return password
+
 class CustomerAdmin(admin.ModelAdmin):
     form = CustomerAdminForm
     list_display = ('id', 'email', 'domain_name', 'first_name', 'last_name', 'activated')
+
+    def get_form(self, request, obj=None, **kwargs):
+        form = super().get_form(request, obj, **kwargs)
+        form.base_fields['password'].widget = forms.PasswordInput(render_value=True)
+        return form
+
+    def save_model(self, request, obj, form, change):
+        if form.cleaned_data.get('password') and not obj.password.startswith('pbkdf2_'):
+            obj.password = make_password(form.cleaned_data.get('password'))
+        super().save_model(request, obj, form, change)
 
 admin.site.register(Customer, CustomerAdmin)

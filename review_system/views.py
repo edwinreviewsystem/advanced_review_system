@@ -221,30 +221,28 @@ class ProductReviewsDetailAPI(APIView):
                     "message": f"Error while deleting Review: {str(e)}",
                 },
                 status=status.HTTP_400_BAD_REQUEST,
-            )
+            ) 
 
-
-customer_logger = logging.getLogger('customer_create_logger')
 
 customer_logger = logging.getLogger('customer_create_logger')
 
 class CustomerCreateAPIView(APIView):
     def post(self, request, *args, **kwargs):
         try:
-            # Check if the data is already in JSON format
+            
             if isinstance(request.data, dict):
                 parsed_data = request.data
             else:
-                # Attempt to parse the incoming data as JSON
+                
                 try:
                     parsed_data = json.loads(request.body.decode('utf-8'))
                 except json.JSONDecodeError:
                     return JsonResponse({"error": "Invalid JSON format"}, status=status.HTTP_400_BAD_REQUEST)
 
-            # Extract data from 'data' key
+           
             parsed_data = parsed_data.get('data', {})
 
-            # Log the incoming data
+            
             customer_logger.debug(f"Incoming data: {parsed_data}")
 
             customer_data = {}
