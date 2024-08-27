@@ -247,7 +247,7 @@ class CustomerCreateAPIView(APIView):
 
             customer_data = {}
 
-            customer_data['domain_name'] = parsed_data.get('site_name', None)
+            customer_data['domain_name'] = parsed_data.get('domain_name', None)
 
             if 'contact' in parsed_data and parsed_data['contact'].get('email'):
                 customer_data['email'] = parsed_data['contact']['email']
