@@ -2945,3 +2945,516 @@ INFO 2024-07-23 09:48:17,876 autoreload Watching for file changes with StatReloa
 INFO 2024-07-23 09:48:41,174 basehttp "GET /api/get-customize-css HTTP/1.1" 200 5378
 INFO 2024-07-23 09:49:21,065 autoreload Watching for file changes with StatReloader
 INFO 2024-07-23 09:49:35,373 basehttp "GET /api/get-customize-css HTTP/1.1" 200 5378
+INFO 2024-08-29 15:59:40,939 autoreload Watching for file changes with StatReloader
+INFO 2024-08-30 13:16:28,411 autoreload Watching for file changes with StatReloader
+INFO 2024-08-30 13:19:34,572 basehttp "GET / HTTP/1.1" 200 1256
+WARNING 2024-08-30 13:19:36,635 log Not Found: /favicon.ico
+WARNING 2024-08-30 13:19:36,635 basehttp "GET /favicon.ico HTTP/1.1" 404 3896
+WARNING 2024-08-30 13:19:44,084 log Bad Request: /api/reviews
+WARNING 2024-08-30 13:19:44,085 basehttp "GET /api/reviews HTTP/1.1" 400 7055
+INFO 2024-08-30 13:19:44,342 basehttp "GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 817
+INFO 2024-08-30 13:19:44,438 basehttp "GET /static/rest_framework/css/default.css HTTP/1.1" 200 1152
+INFO 2024-08-30 13:19:44,445 basehttp "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 121457
+INFO 2024-08-30 13:19:44,769 basehttp "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 3385
+INFO 2024-08-30 13:19:45,561 basehttp "GET /static/rest_framework/js/default.js HTTP/1.1" 200 1268
+INFO 2024-08-30 13:19:45,561 basehttp "GET /static/rest_framework/js/csrf.js HTTP/1.1" 200 1719
+INFO 2024-08-30 13:19:45,561 basehttp "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 200 3597
+INFO 2024-08-30 13:19:45,578 basehttp "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 200 13632
+INFO 2024-08-30 13:19:45,585 basehttp "GET /static/rest_framework/js/jquery-3.5.1.min.js HTTP/1.1" 200 89476
+INFO 2024-08-30 13:19:45,647 basehttp "GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+INFO 2024-08-30 13:19:45,667 basehttp "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 200 39680
+WARNING 2024-08-30 13:19:53,522 log Bad Request: /api/reviews
+WARNING 2024-08-30 13:19:53,523 basehttp "POST /api/reviews HTTP/1.1" 400 7530
+INFO 2024-08-30 13:20:13,348 autoreload C:\Users\tusharsharma\OneDrive - virtualemployee P Ltd\VE\advanced_review_system\review_system\views.py changed, reloading.
+INFO 2024-08-30 13:20:15,017 autoreload Watching for file changes with StatReloader
+INFO 2024-08-30 13:20:47,189 autoreload C:\Users\tusharsharma\OneDrive - virtualemployee P Ltd\VE\advanced_review_system\review_system\models.py changed, reloading.
+INFO 2024-08-30 13:20:48,921 autoreload Watching for file changes with StatReloader
+INFO 2024-08-30 13:21:03,639 autoreload C:\Users\tusharsharma\OneDrive - virtualemployee P Ltd\VE\advanced_review_system\review_system\serializers.py changed, reloading.
+INFO 2024-08-30 13:21:04,702 autoreload Watching for file changes with StatReloader
+INFO 2024-08-30 13:21:27,070 basehttp "GET /admin HTTP/1.1" 301 0
+INFO 2024-08-30 13:21:27,191 basehttp "GET /admin/ HTTP/1.1" 302 0
+INFO 2024-08-30 13:21:27,902 basehttp "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4158
+INFO 2024-08-30 13:21:28,098 basehttp "GET /static/admin/css/login.css HTTP/1.1" 200 958
+INFO 2024-08-30 13:21:28,116 basehttp "GET /static/admin/css/responsive.css HTTP/1.1" 200 17905
+INFO 2024-08-30 13:21:28,121 basehttp "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2682
+INFO 2024-08-30 13:21:28,393 basehttp "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+INFO 2024-08-30 13:21:28,414 basehttp "GET /static/admin/css/base.css HTTP/1.1" 200 21544
+INFO 2024-08-30 13:21:29,071 basehttp "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+INFO 2024-08-30 13:21:29,078 basehttp "GET /static/admin/js/theme.js HTTP/1.1" 200 1943
+INFO 2024-08-30 13:24:56,998 basehttp "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2024-08-30 13:24:58,901 basehttp "GET /admin/ HTTP/1.1" 200 12694
+INFO 2024-08-30 13:24:59,014 basehttp "GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+INFO 2024-08-30 13:24:59,109 basehttp "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+INFO 2024-08-30 13:24:59,137 basehttp "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+INFO 2024-08-30 13:24:59,310 basehttp "GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 200 392
+INFO 2024-08-30 13:25:05,576 basehttp "GET /admin/review_system/productreviews/ HTTP/1.1" 200 31092
+INFO 2024-08-30 13:25:05,613 basehttp "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+INFO 2024-08-30 13:25:05,683 basehttp "GET /static/admin/css/changelists.css HTTP/1.1" 200 6811
+INFO 2024-08-30 13:25:05,940 basehttp "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+INFO 2024-08-30 13:25:06,053 basehttp "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+INFO 2024-08-30 13:25:06,059 basehttp "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 9042
+INFO 2024-08-30 13:25:06,059 basehttp "GET /static/admin/js/core.js HTTP/1.1" 200 6208
+INFO 2024-08-30 13:25:06,106 basehttp "GET /static/admin/img/search.svg HTTP/1.1" 200 458
+INFO 2024-08-30 13:25:06,121 basehttp "GET /static/admin/js/actions.js HTTP/1.1" 200 8067
+INFO 2024-08-30 13:25:06,329 basehttp "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 285314
+INFO 2024-08-30 13:25:06,347 basehttp "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 325171
+INFO 2024-08-30 13:25:06,665 basehttp "GET /static/admin/js/filters.js HTTP/1.1" 200 978
+WARNING 2024-08-30 13:25:06,678 log Not Found: /media/uploaded_images/Logo_Wix_certified_partner.png
+WARNING 2024-08-30 13:25:06,679 basehttp "GET /media/uploaded_images/Logo_Wix_certified_partner.png HTTP/1.1" 404 4175
+WARNING 2024-08-30 13:25:06,692 log Not Found: /media/uploaded_images/logo_Flor-it.png
+WARNING 2024-08-30 13:25:06,693 basehttp "GET /media/uploaded_images/logo_Flor-it.png HTTP/1.1" 404 4119
+WARNING 2024-08-30 13:25:06,703 log Not Found: /media/uploaded_images/profile-img.jpg
+WARNING 2024-08-30 13:25:06,703 basehttp "GET /media/uploaded_images/profile-img.jpg HTTP/1.1" 404 4115
+WARNING 2024-08-30 13:25:06,715 log Not Found: /media/uploaded_images/messages-3.jpg
+WARNING 2024-08-30 13:25:06,716 basehttp "GET /media/uploaded_images/messages-3.jpg HTTP/1.1" 404 4111
+INFO 2024-08-30 13:25:07,381 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-08-30 13:25:07,483 basehttp "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 200 581
+INFO 2024-08-30 13:25:07,509 basehttp "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+INFO 2024-08-30 13:25:17,536 basehttp "GET /admin/review_system/productreviews/213/change/ HTTP/1.1" 200 18114
+INFO 2024-08-30 13:25:17,597 basehttp "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+INFO 2024-08-30 13:25:17,652 basehttp "GET /static/admin/js/calendar.js HTTP/1.1" 200 9141
+INFO 2024-08-30 13:25:17,717 basehttp "GET /static/admin/css/forms.css HTTP/1.1" 200 9048
+INFO 2024-08-30 13:25:17,735 basehttp "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 200 19319
+INFO 2024-08-30 13:25:17,747 basehttp "GET /static/admin/css/widgets.css HTTP/1.1" 200 11800
+INFO 2024-08-30 13:25:17,816 basehttp "GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+INFO 2024-08-30 13:25:19,245 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-08-30 13:25:19,321 basehttp "GET /static/admin/img/icon-calendar.svg HTTP/1.1" 200 1086
+INFO 2024-08-30 13:25:19,324 basehttp "GET /static/admin/img/icon-clock.svg HTTP/1.1" 200 677
+INFO 2024-08-30 13:33:23,190 autoreload C:\Users\tusharsharma\OneDrive - virtualemployee P Ltd\VE\advanced_review_system\review_system\views.py changed, reloading.
+INFO 2024-08-30 13:33:24,908 autoreload Watching for file changes with StatReloader
+INFO 2024-08-30 13:33:33,085 autoreload C:\Users\tusharsharma\OneDrive - virtualemployee P Ltd\VE\advanced_review_system\review_system\serializers.py changed, reloading.
+INFO 2024-08-30 13:33:34,258 autoreload Watching for file changes with StatReloader
+INFO 2024-08-30 13:36:08,427 basehttp "GET / HTTP/1.1" 200 1256
+WARNING 2024-08-30 13:36:26,179 log Bad Request: /api/reviews
+WARNING 2024-08-30 13:36:26,180 basehttp "GET /api/reviews HTTP/1.1" 400 7055
+WARNING 2024-08-30 13:36:32,391 log Bad Request: /api/reviews
+WARNING 2024-08-30 13:36:32,392 basehttp "POST /api/reviews HTTP/1.1" 400 7530
+INFO 2024-08-30 13:37:22,029 autoreload C:\Users\tusharsharma\OneDrive - virtualemployee P Ltd\VE\advanced_review_system\review_system\views.py changed, reloading.
+INFO 2024-08-30 13:37:24,112 autoreload Watching for file changes with StatReloader
+WARNING 2024-08-30 13:37:26,573 log Bad Request: /api/reviews
+WARNING 2024-08-30 13:37:26,577 basehttp "GET /api/reviews HTTP/1.1" 400 7055
+INFO 2024-08-30 13:37:26,757 basehttp "GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 817
+INFO 2024-08-30 13:37:26,759 basehttp "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 3385
+INFO 2024-08-30 13:37:26,789 basehttp "GET /static/rest_framework/css/default.css HTTP/1.1" 200 1152
+INFO 2024-08-30 13:37:26,793 basehttp "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 121457
+INFO 2024-08-30 13:37:26,797 basehttp "GET /static/rest_framework/js/jquery-3.5.1.min.js HTTP/1.1" 200 89476
+INFO 2024-08-30 13:37:26,829 basehttp "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 200 3597
+INFO 2024-08-30 13:37:26,838 basehttp "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 200 13632
+INFO 2024-08-30 13:37:26,861 basehttp "GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+INFO 2024-08-30 13:37:26,882 basehttp "GET /static/rest_framework/js/default.js HTTP/1.1" 200 1268
+INFO 2024-08-30 13:37:26,884 basehttp "GET /static/rest_framework/js/csrf.js HTTP/1.1" 200 1719
+INFO 2024-08-30 13:37:26,895 basehttp "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 200 39680
+WARNING 2024-08-30 13:37:27,221 log Not Found: /favicon.ico
+WARNING 2024-08-30 13:37:27,223 basehttp "GET /favicon.ico HTTP/1.1" 404 3896
+WARNING 2024-08-30 13:37:31,135 log Bad Request: /api/reviews
+WARNING 2024-08-30 13:37:31,136 basehttp "POST /api/reviews HTTP/1.1" 400 7530
+INFO 2024-08-30 13:53:43,871 basehttp "POST /api/reviews HTTP/1.1" 201 7735
+INFO 2024-08-30 13:53:54,055 basehttp "GET /admin/ HTTP/1.1" 200 12694
+INFO 2024-08-30 13:53:59,080 basehttp "GET /admin/review_system/productreviews/ HTTP/1.1" 200 31085
+WARNING 2024-08-30 13:53:59,339 log Not Found: /media/uploaded_images/Logo_Wix_certified_partner.png
+WARNING 2024-08-30 13:53:59,340 basehttp "GET /media/uploaded_images/Logo_Wix_certified_partner.png HTTP/1.1" 404 4175
+WARNING 2024-08-30 13:53:59,352 log Not Found: /media/uploaded_images/logo_Flor-it.png
+WARNING 2024-08-30 13:53:59,353 basehttp "GET /media/uploaded_images/logo_Flor-it.png HTTP/1.1" 404 4119
+WARNING 2024-08-30 13:53:59,364 log Not Found: /media/uploaded_images/profile-img.jpg
+WARNING 2024-08-30 13:53:59,365 basehttp "GET /media/uploaded_images/profile-img.jpg HTTP/1.1" 404 4115
+INFO 2024-08-30 13:54:00,811 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-08-30 13:54:05,405 basehttp "GET /admin/review_system/productreviews/214/change/ HTTP/1.1" 200 17687
+INFO 2024-08-30 13:54:08,074 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-08-30 13:54:16,619 basehttp "GET /admin/review_system/productreviews/ HTTP/1.1" 200 31085
+INFO 2024-08-30 13:54:30,870 basehttp "POST /admin/review_system/productreviews/ HTTP/1.1" 200 9884
+INFO 2024-08-30 13:54:32,019 basehttp "GET /static/admin/js/cancel.js HTTP/1.1" 200 884
+INFO 2024-08-30 13:54:35,118 basehttp "POST /admin/review_system/productreviews/ HTTP/1.1" 302 0
+INFO 2024-08-30 13:54:39,631 basehttp "GET /admin/review_system/productreviews/ HTTP/1.1" 200 31236
+WARNING 2024-08-30 13:54:39,650 log Not Found: /media/uploaded_images/Logo_Wix_certified_partner.png
+WARNING 2024-08-30 13:54:39,651 basehttp "GET /media/uploaded_images/Logo_Wix_certified_partner.png HTTP/1.1" 404 4175
+WARNING 2024-08-30 13:54:39,672 log Not Found: /media/uploaded_images/logo_Flor-it.png
+WARNING 2024-08-30 13:54:39,673 basehttp "GET /media/uploaded_images/logo_Flor-it.png HTTP/1.1" 404 4119
+WARNING 2024-08-30 13:54:39,686 log Not Found: /media/uploaded_images/profile-img.jpg
+WARNING 2024-08-30 13:54:39,799 basehttp "GET /media/uploaded_images/profile-img.jpg HTTP/1.1" 404 4115
+WARNING 2024-08-30 13:54:39,808 log Not Found: /media/uploaded_images/messages-3.jpg
+WARNING 2024-08-30 13:54:39,810 basehttp "GET /media/uploaded_images/messages-3.jpg HTTP/1.1" 404 4111
+INFO 2024-08-30 13:54:41,302 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-08-30 13:54:41,382 basehttp "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+INFO 2024-08-30 15:47:32,589 basehttp "GET /admin/review_system/productreviews/213/change/ HTTP/1.1" 200 18114
+INFO 2024-08-30 15:47:32,991 basehttp "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+INFO 2024-08-30 15:47:32,991 basehttp "GET /static/admin/css/base.css HTTP/1.1" 304 0
+INFO 2024-08-30 15:47:33,131 basehttp "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+INFO 2024-08-30 15:47:33,643 basehttp "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+INFO 2024-08-30 15:47:33,646 basehttp "GET /static/admin/js/theme.js HTTP/1.1" 304 0
+INFO 2024-08-30 15:47:33,686 basehttp "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+INFO 2024-08-30 15:47:36,409 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-08-30 16:30:03,193 autoreload C:\Users\tusharsharma\OneDrive - virtualemployee P Ltd\VE\advanced_review_system\review_system\views.py changed, reloading.
+INFO 2024-08-30 16:30:49,355 autoreload Watching for file changes with StatReloader
+INFO 2024-08-30 17:33:19,450 autoreload C:\Users\tusharsharma\OneDrive - virtualemployee P Ltd\VE\advanced_review_system\review_system\models.py changed, reloading.
+INFO 2024-08-30 17:33:41,318 autoreload Watching for file changes with StatReloader
+INFO 2024-08-30 17:52:38,177 autoreload C:\Users\tusharsharma\OneDrive - virtualemployee P Ltd\VE\advanced_review_system\review_system\models.py changed, reloading.
+INFO 2024-08-30 17:53:17,951 autoreload Watching for file changes with StatReloader
+ERROR 2024-08-30 18:07:31,382 log Internal Server Error: /admin/review_system/customer/
+Traceback (most recent call last):
+  File "C:\Users\tusharsharma\OneDrive - virtualemployee P Ltd\VE\advanced_review_system\venv\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.errors.UndefinedColumn: column review_system_customer.profile_img does not exist
+LINE 1: ...lan_price", "review_system_customer"."activated", "review_sy...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\tusharsharma\OneDrive - virtualemployee P Ltd\VE\advanced_review_system\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\tusharsharma\OneDrive - virtualemployee P Ltd\VE\advanced_review_system\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\tusharsharma\OneDrive - virtualemployee P Ltd\VE\advanced_review_system\venv\lib\site-packages\django\contrib\admin\options.py", line 714, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Users\tusharsharma\OneDrive - virtualemployee P Ltd\VE\advanced_review_system\venv\lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+  File "C:\Users\tusharsharma\OneDrive - virtualemployee P Ltd\VE\advanced_review_system\venv\lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\tusharsharma\OneDrive - virtualemployee P Ltd\VE\advanced_review_system\venv\lib\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\tusharsharma\OneDrive - virtualemployee P Ltd\VE\advanced_review_system\venv\lib\site-packages\django\contrib\admin\sites.py", line 240, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\tusharsharma\OneDrive - virtualemployee P Ltd\VE\advanced_review_system\venv\lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\tusharsharma\OneDrive - virtualemployee P Ltd\VE\advanced_review_system\venv\lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+  File "C:\Users\tusharsharma\OneDrive - virtualemployee P Ltd\VE\advanced_review_system\venv\lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\tusharsharma\OneDrive - virtualemployee P Ltd\VE\advanced_review_system\venv\lib\site-packages\django\contrib\admin\options.py", line 2120, in changelist_view
+    "selection_note": _("0 of %(cnt)s selected") % {"cnt": len(cl.result_list)},
+  File "C:\Users\tusharsharma\OneDrive - virtualemployee P Ltd\VE\advanced_review_system\venv\lib\site-packages\django\db\models\query.py", line 380, in __len__
+    self._fetch_all()
+  File "C:\Users\tusharsharma\OneDrive - virtualemployee P Ltd\VE\advanced_review_system\venv\lib\site-packages\django\db\models\query.py", line 1926, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\tusharsharma\OneDrive - virtualemployee P Ltd\VE\advanced_review_system\venv\lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+  File "C:\Users\tusharsharma\OneDrive - virtualemployee P Ltd\VE\advanced_review_system\venv\lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\tusharsharma\OneDrive - virtualemployee P Ltd\VE\advanced_review_system\venv\lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+  File "C:\Users\tusharsharma\OneDrive - virtualemployee P Ltd\VE\advanced_review_system\venv\lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\tusharsharma\OneDrive - virtualemployee P Ltd\VE\advanced_review_system\venv\lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\tusharsharma\OneDrive - virtualemployee P Ltd\VE\advanced_review_system\venv\lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\tusharsharma\OneDrive - virtualemployee P Ltd\VE\advanced_review_system\venv\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\tusharsharma\OneDrive - virtualemployee P Ltd\VE\advanced_review_system\venv\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.ProgrammingError: column review_system_customer.profile_img does not exist
+LINE 1: ...lan_price", "review_system_customer"."activated", "review_sy...
+                                                             ^
+
+ERROR 2024-08-30 18:07:32,469 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 500 175627
+INFO 2024-08-30 18:08:28,230 basehttp "GET /admin/review_system/productreviews/213/change/ HTTP/1.1" 200 18114
+INFO 2024-08-30 18:09:06,915 basehttp "GET /admin/review_system/productreviews/ HTTP/1.1" 200 31092
+INFO 2024-08-30 18:09:06,944 basehttp "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+INFO 2024-08-30 18:09:06,978 basehttp "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+INFO 2024-08-30 18:09:06,979 basehttp "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+INFO 2024-08-30 18:09:06,979 basehttp "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+INFO 2024-08-30 18:09:06,979 basehttp "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+INFO 2024-08-30 18:09:06,979 basehttp "GET /static/admin/js/core.js HTTP/1.1" 304 0
+INFO 2024-08-30 18:09:06,985 basehttp "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+INFO 2024-08-30 18:09:06,986 basehttp "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+INFO 2024-08-30 18:09:06,986 basehttp "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+INFO 2024-08-30 18:09:06,991 basehttp "GET /static/admin/img/search.svg HTTP/1.1" 304 0
+INFO 2024-08-30 18:09:07,011 basehttp "GET /static/admin/js/filters.js HTTP/1.1" 304 0
+WARNING 2024-08-30 18:09:07,608 log Not Found: /media/uploaded_images/Logo_Wix_certified_partner.png
+WARNING 2024-08-30 18:09:07,609 basehttp "GET /media/uploaded_images/Logo_Wix_certified_partner.png HTTP/1.1" 404 4175
+WARNING 2024-08-30 18:09:07,726 log Not Found: /media/uploaded_images/logo_Flor-it.png
+WARNING 2024-08-30 18:09:07,727 basehttp "GET /media/uploaded_images/logo_Flor-it.png HTTP/1.1" 404 4119
+WARNING 2024-08-30 18:09:07,736 log Not Found: /media/uploaded_images/profile-img.jpg
+WARNING 2024-08-30 18:09:07,737 basehttp "GET /media/uploaded_images/profile-img.jpg HTTP/1.1" 404 4115
+WARNING 2024-08-30 18:09:07,747 log Not Found: /media/uploaded_images/messages-3.jpg
+WARNING 2024-08-30 18:09:07,747 basehttp "GET /media/uploaded_images/messages-3.jpg HTTP/1.1" 404 4111
+INFO 2024-08-30 18:09:10,118 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-08-30 18:09:10,260 basehttp "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+INFO 2024-08-30 18:09:10,397 basehttp "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 304 0
+ERROR 2024-08-30 18:09:54,425 log Internal Server Error: /admin/review_system/customer/
+Traceback (most recent call last):
+  File "C:\Users\tusharsharma\OneDrive - virtualemployee P Ltd\VE\advanced_review_system\venv\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.errors.UndefinedColumn: column review_system_customer.profile_img does not exist
+LINE 1: ...lan_price", "review_system_customer"."activated", "review_sy...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\tusharsharma\OneDrive - virtualemployee P Ltd\VE\advanced_review_system\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\tusharsharma\OneDrive - virtualemployee P Ltd\VE\advanced_review_system\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\tusharsharma\OneDrive - virtualemployee P Ltd\VE\advanced_review_system\venv\lib\site-packages\django\contrib\admin\options.py", line 714, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Users\tusharsharma\OneDrive - virtualemployee P Ltd\VE\advanced_review_system\venv\lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+  File "C:\Users\tusharsharma\OneDrive - virtualemployee P Ltd\VE\advanced_review_system\venv\lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\tusharsharma\OneDrive - virtualemployee P Ltd\VE\advanced_review_system\venv\lib\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\tusharsharma\OneDrive - virtualemployee P Ltd\VE\advanced_review_system\venv\lib\site-packages\django\contrib\admin\sites.py", line 240, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\tusharsharma\OneDrive - virtualemployee P Ltd\VE\advanced_review_system\venv\lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\tusharsharma\OneDrive - virtualemployee P Ltd\VE\advanced_review_system\venv\lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+  File "C:\Users\tusharsharma\OneDrive - virtualemployee P Ltd\VE\advanced_review_system\venv\lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\tusharsharma\OneDrive - virtualemployee P Ltd\VE\advanced_review_system\venv\lib\site-packages\django\contrib\admin\options.py", line 2120, in changelist_view
+    "selection_note": _("0 of %(cnt)s selected") % {"cnt": len(cl.result_list)},
+  File "C:\Users\tusharsharma\OneDrive - virtualemployee P Ltd\VE\advanced_review_system\venv\lib\site-packages\django\db\models\query.py", line 380, in __len__
+    self._fetch_all()
+  File "C:\Users\tusharsharma\OneDrive - virtualemployee P Ltd\VE\advanced_review_system\venv\lib\site-packages\django\db\models\query.py", line 1926, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\tusharsharma\OneDrive - virtualemployee P Ltd\VE\advanced_review_system\venv\lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+  File "C:\Users\tusharsharma\OneDrive - virtualemployee P Ltd\VE\advanced_review_system\venv\lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\tusharsharma\OneDrive - virtualemployee P Ltd\VE\advanced_review_system\venv\lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+  File "C:\Users\tusharsharma\OneDrive - virtualemployee P Ltd\VE\advanced_review_system\venv\lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\tusharsharma\OneDrive - virtualemployee P Ltd\VE\advanced_review_system\venv\lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\tusharsharma\OneDrive - virtualemployee P Ltd\VE\advanced_review_system\venv\lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\tusharsharma\OneDrive - virtualemployee P Ltd\VE\advanced_review_system\venv\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\tusharsharma\OneDrive - virtualemployee P Ltd\VE\advanced_review_system\venv\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.ProgrammingError: column review_system_customer.profile_img does not exist
+LINE 1: ...lan_price", "review_system_customer"."activated", "review_sy...
+                                                             ^
+
+ERROR 2024-08-30 18:09:54,722 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 500 175616
+INFO 2024-08-30 18:10:25,674 autoreload C:\Users\tusharsharma\OneDrive - virtualemployee P Ltd\VE\advanced_review_system\review_system\models.py changed, reloading.
+INFO 2024-08-30 18:11:02,603 autoreload Watching for file changes with StatReloader
+INFO 2024-09-02 10:29:50,857 autoreload C:\Users\tusharsharma\OneDrive - virtualemployee P Ltd\VE\advanced_review_system\review_system\views.py changed, reloading.
+INFO 2024-09-02 10:31:45,777 autoreload Watching for file changes with StatReloader
+INFO 2024-09-02 10:41:43,354 autoreload C:\Users\tusharsharma\OneDrive - virtualemployee P Ltd\VE\advanced_review_system\review_system\views.py changed, reloading.
+INFO 2024-09-02 10:41:53,803 autoreload Watching for file changes with StatReloader
+INFO 2024-09-02 11:09:30,912 autoreload C:\Users\tusharsharma\OneDrive - virtualemployee P Ltd\VE\advanced_review_system\review_system\views.py changed, reloading.
+INFO 2024-09-02 11:09:44,701 autoreload Watching for file changes with StatReloader
+INFO 2024-09-02 12:05:12,215 autoreload C:\Users\tusharsharma\OneDrive - virtualemployee P Ltd\VE\advanced_review_system\review_system\models.py changed, reloading.
+INFO 2024-09-02 12:05:32,619 autoreload Watching for file changes with StatReloader
+INFO 2024-09-02 12:10:41,859 autoreload Watching for file changes with StatReloader
+INFO 2024-09-02 12:11:36,074 basehttp "GET / HTTP/1.1" 200 1256
+WARNING 2024-09-02 12:11:41,401 log Not Found: /favicon.ico
+WARNING 2024-09-02 12:11:41,402 basehttp "GET /favicon.ico HTTP/1.1" 404 3896
+INFO 2024-09-02 12:11:47,904 basehttp "GET /admin/ HTTP/1.1" 200 12696
+INFO 2024-09-02 12:11:47,962 basehttp "GET /static/admin/css/base.css HTTP/1.1" 304 0
+INFO 2024-09-02 12:11:47,962 basehttp "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+INFO 2024-09-02 12:11:47,964 basehttp "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+INFO 2024-09-02 12:11:47,966 basehttp "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+INFO 2024-09-02 12:11:47,967 basehttp "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+INFO 2024-09-02 12:11:48,123 basehttp "GET /static/admin/js/theme.js HTTP/1.1" 304 0
+INFO 2024-09-02 12:11:48,123 basehttp "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+INFO 2024-09-02 12:11:48,276 basehttp "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+INFO 2024-09-02 12:11:48,299 basehttp "GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 304 0
+INFO 2024-09-02 12:11:48,299 basehttp "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+ERROR 2024-09-02 12:16:50,082 log Internal Server Error: /admin/review_system/customer/
+Traceback (most recent call last):
+  File "C:\Users\tusharsharma\OneDrive - virtualemployee P Ltd\VE\advanced_review_system\venv\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.errors.UndefinedColumn: column review_system_customer.profile_img does not exist
+LINE 1: ...lan_price", "review_system_customer"."activated", "review_sy...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\tusharsharma\OneDrive - virtualemployee P Ltd\VE\advanced_review_system\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\tusharsharma\OneDrive - virtualemployee P Ltd\VE\advanced_review_system\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\tusharsharma\OneDrive - virtualemployee P Ltd\VE\advanced_review_system\venv\lib\site-packages\django\contrib\admin\options.py", line 714, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Users\tusharsharma\OneDrive - virtualemployee P Ltd\VE\advanced_review_system\venv\lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+  File "C:\Users\tusharsharma\OneDrive - virtualemployee P Ltd\VE\advanced_review_system\venv\lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\tusharsharma\OneDrive - virtualemployee P Ltd\VE\advanced_review_system\venv\lib\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\tusharsharma\OneDrive - virtualemployee P Ltd\VE\advanced_review_system\venv\lib\site-packages\django\contrib\admin\sites.py", line 240, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\tusharsharma\OneDrive - virtualemployee P Ltd\VE\advanced_review_system\venv\lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\tusharsharma\OneDrive - virtualemployee P Ltd\VE\advanced_review_system\venv\lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+  File "C:\Users\tusharsharma\OneDrive - virtualemployee P Ltd\VE\advanced_review_system\venv\lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\tusharsharma\OneDrive - virtualemployee P Ltd\VE\advanced_review_system\venv\lib\site-packages\django\contrib\admin\options.py", line 2120, in changelist_view
+    "selection_note": _("0 of %(cnt)s selected") % {"cnt": len(cl.result_list)},
+  File "C:\Users\tusharsharma\OneDrive - virtualemployee P Ltd\VE\advanced_review_system\venv\lib\site-packages\django\db\models\query.py", line 380, in __len__
+    self._fetch_all()
+  File "C:\Users\tusharsharma\OneDrive - virtualemployee P Ltd\VE\advanced_review_system\venv\lib\site-packages\django\db\models\query.py", line 1926, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\tusharsharma\OneDrive - virtualemployee P Ltd\VE\advanced_review_system\venv\lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+  File "C:\Users\tusharsharma\OneDrive - virtualemployee P Ltd\VE\advanced_review_system\venv\lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\tusharsharma\OneDrive - virtualemployee P Ltd\VE\advanced_review_system\venv\lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+  File "C:\Users\tusharsharma\OneDrive - virtualemployee P Ltd\VE\advanced_review_system\venv\lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\tusharsharma\OneDrive - virtualemployee P Ltd\VE\advanced_review_system\venv\lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\tusharsharma\OneDrive - virtualemployee P Ltd\VE\advanced_review_system\venv\lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\tusharsharma\OneDrive - virtualemployee P Ltd\VE\advanced_review_system\venv\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\tusharsharma\OneDrive - virtualemployee P Ltd\VE\advanced_review_system\venv\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.ProgrammingError: column review_system_customer.profile_img does not exist
+LINE 1: ...lan_price", "review_system_customer"."activated", "review_sy...
+                                                             ^
+
+ERROR 2024-09-02 12:16:50,127 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 500 175587
+INFO 2024-09-02 12:17:02,610 basehttp "GET /admin/ HTTP/1.1" 200 12696
+INFO 2024-09-02 14:26:07,469 autoreload Watching for file changes with StatReloader
+INFO 2024-09-02 14:29:41,067 basehttp "GET / HTTP/1.1" 200 1256
+INFO 2024-09-02 14:29:48,467 basehttp "GET /admin/ HTTP/1.1" 200 12774
+INFO 2024-09-02 14:29:54,128 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 14686
+INFO 2024-09-02 14:29:54,378 basehttp "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+INFO 2024-09-02 14:29:54,380 basehttp "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+INFO 2024-09-02 14:29:54,394 basehttp "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+INFO 2024-09-02 14:29:54,405 basehttp "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+INFO 2024-09-02 14:29:54,406 basehttp "GET /static/admin/js/core.js HTTP/1.1" 304 0
+INFO 2024-09-02 14:29:54,406 basehttp "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+INFO 2024-09-02 14:29:54,407 basehttp "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+INFO 2024-09-02 14:29:54,407 basehttp "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+INFO 2024-09-02 14:29:54,434 basehttp "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+INFO 2024-09-02 14:29:54,502 basehttp "GET /static/admin/img/icon-yes.svg HTTP/1.1" 304 0
+INFO 2024-09-02 14:29:54,554 basehttp "GET /static/admin/js/filters.js HTTP/1.1" 304 0
+INFO 2024-09-02 14:29:56,959 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-09-02 14:29:57,284 basehttp "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+INFO 2024-09-02 14:30:04,328 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 14686
+INFO 2024-09-02 14:30:06,014 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-09-02 14:36:16,704 autoreload C:\Users\tusharsharma\OneDrive - virtualemployee P Ltd\VE\advanced_review_system\review_system\admin.py changed, reloading.
+INFO 2024-09-02 14:36:16,742 autoreload C:\Users\tusharsharma\OneDrive - virtualemployee P Ltd\VE\advanced_review_system\review_system\admin.py changed, reloading.
+INFO 2024-09-02 14:36:27,460 autoreload Watching for file changes with StatReloader
+INFO 2024-09-02 14:36:27,464 autoreload Watching for file changes with StatReloader
+INFO 2024-09-02 14:43:35,166 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 15730
+INFO 2024-09-02 14:43:36,035 basehttp "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2682
+INFO 2024-09-02 14:43:36,131 basehttp "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+INFO 2024-09-02 14:43:36,154 basehttp "GET /static/admin/css/changelists.css HTTP/1.1" 200 6811
+INFO 2024-09-02 14:43:36,154 basehttp "GET /static/admin/css/base.css HTTP/1.1" 200 21544
+INFO 2024-09-02 14:43:36,426 basehttp "GET /static/admin/css/responsive.css HTTP/1.1" 200 17905
+INFO 2024-09-02 14:43:36,991 basehttp "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+INFO 2024-09-02 14:43:38,493 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-09-02 14:43:38,962 basehttp "GET /static/admin/js/core.js HTTP/1.1" 200 6208
+INFO 2024-09-02 14:43:41,281 basehttp "GET /static/admin/js/actions.js HTTP/1.1" 200 8067
+INFO 2024-09-02 14:43:42,033 basehttp "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 9042
+INFO 2024-09-02 14:43:42,072 basehttp "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+INFO 2024-09-02 14:43:42,197 basehttp "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+INFO 2024-09-02 14:43:42,271 basehttp "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+INFO 2024-09-02 14:43:43,947 basehttp "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 285314
+INFO 2024-09-02 14:43:43,978 basehttp "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 325171
+INFO 2024-09-02 14:43:44,094 basehttp "GET /static/admin/js/theme.js HTTP/1.1" 200 1943
+INFO 2024-09-02 14:43:44,175 basehttp "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+INFO 2024-09-02 14:43:44,302 basehttp "GET /static/admin/js/filters.js HTTP/1.1" 200 978
+INFO 2024-09-02 14:43:44,317 basehttp "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+INFO 2024-09-02 14:43:44,394 basehttp "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+WARNING 2024-09-02 14:43:45,761 log Not Found: /media/uploaded_profile_images/image.png
+WARNING 2024-09-02 14:43:45,762 basehttp "GET /media/uploaded_profile_images/image.png HTTP/1.1" 404 4123
+WARNING 2024-09-02 14:43:45,812 log Not Found: /favicon.ico
+WARNING 2024-09-02 14:43:45,813 basehttp "GET /favicon.ico HTTP/1.1" 404 3896
+INFO 2024-09-02 14:44:06,660 basehttp "GET /api/post-webhook HTTP/1.1" 301 0
+WARNING 2024-09-02 14:44:09,064 log Method Not Allowed: /api/post-webhook/
+WARNING 2024-09-02 14:44:09,065 basehttp "GET /api/post-webhook/ HTTP/1.1" 405 5671
+INFO 2024-09-02 14:44:09,174 basehttp "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 3385
+INFO 2024-09-02 14:44:09,195 basehttp "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 121457
+INFO 2024-09-02 14:44:09,487 basehttp "GET /static/rest_framework/css/default.css HTTP/1.1" 200 1152
+INFO 2024-09-02 14:44:09,646 basehttp "GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 817
+INFO 2024-09-02 14:44:09,780 basehttp "GET /static/rest_framework/js/default.js HTTP/1.1" 200 1268
+INFO 2024-09-02 14:44:10,041 basehttp "GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+INFO 2024-09-02 14:44:10,383 basehttp "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 200 3597
+INFO 2024-09-02 14:44:10,566 basehttp "GET /static/rest_framework/js/jquery-3.5.1.min.js HTTP/1.1" 200 89476
+INFO 2024-09-02 14:44:10,676 basehttp "GET /static/rest_framework/js/csrf.js HTTP/1.1" 200 1719
+INFO 2024-09-02 14:44:10,795 basehttp "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 200 39680
+INFO 2024-09-02 14:44:11,512 basehttp "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 200 13632
+WARNING 2024-09-02 14:44:11,600 log Not Found: /favicon.ico
+WARNING 2024-09-02 14:44:11,601 basehttp "GET /favicon.ico HTTP/1.1" 404 3896
+WARNING 2024-09-02 14:48:23,485 log Bad Request: /api/post-webhook/
+WARNING 2024-09-02 14:48:23,486 basehttp "POST /api/post-webhook/ HTTP/1.1" 400 5683
+WARNING 2024-09-02 14:48:46,541 log Bad Request: /api/post-webhook/
+WARNING 2024-09-02 14:48:46,542 basehttp "POST /api/post-webhook/ HTTP/1.1" 400 5683
+INFO 2024-09-02 14:49:29,796 basehttp "POST /api/post-webhook/ HTTP/1.1" 201 6364
+INFO 2024-09-02 14:50:10,542 autoreload C:\Users\tusharsharma\OneDrive - virtualemployee P Ltd\VE\advanced_review_system\review_system\views.py changed, reloading.
+INFO 2024-09-02 14:50:10,713 autoreload C:\Users\tusharsharma\OneDrive - virtualemployee P Ltd\VE\advanced_review_system\review_system\views.py changed, reloading.
+INFO 2024-09-02 14:50:17,707 autoreload Watching for file changes with StatReloader
+INFO 2024-09-02 14:50:17,914 autoreload Watching for file changes with StatReloader
+INFO 2024-09-02 14:59:49,509 autoreload C:\Users\tusharsharma\OneDrive - virtualemployee P Ltd\VE\advanced_review_system\review_system\views.py changed, reloading.
+INFO 2024-09-02 14:59:56,199 autoreload Watching for file changes with StatReloader
+INFO 2024-09-02 14:59:56,484 autoreload Watching for file changes with StatReloader
+INFO 2024-09-02 15:09:20,830 basehttp "GET /admin/review_system/productreviews/ HTTP/1.1" 200 30926
+INFO 2024-09-02 15:09:21,600 basehttp "GET /static/admin/img/search.svg HTTP/1.1" 304 0
+WARNING 2024-09-02 15:09:21,732 log Not Found: /media/uploaded_images/Logo_Wix_certified_partner.png
+WARNING 2024-09-02 15:09:21,733 basehttp "GET /media/uploaded_images/Logo_Wix_certified_partner.png HTTP/1.1" 404 4175
+WARNING 2024-09-02 15:09:21,746 log Not Found: /media/uploaded_images/logo_Flor-it.png
+WARNING 2024-09-02 15:09:21,747 basehttp "GET /media/uploaded_images/logo_Flor-it.png HTTP/1.1" 404 4119
+INFO 2024-09-02 15:09:23,261 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-09-02 15:09:23,622 basehttp "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 304 0
+WARNING 2024-09-02 15:11:23,736 log Method Not Allowed: /api/reviews/217
+WARNING 2024-09-02 15:11:23,737 basehttp "GET /api/reviews/217 HTTP/1.1" 405 6995
+INFO 2024-09-02 15:11:55,994 autoreload C:\Users\tusharsharma\OneDrive - virtualemployee P Ltd\VE\advanced_review_system\review_system\views.py changed, reloading.
+INFO 2024-09-02 15:11:57,492 autoreload C:\Users\tusharsharma\OneDrive - virtualemployee P Ltd\VE\advanced_review_system\review_system\views.py changed, reloading.
+INFO 2024-09-02 15:12:02,604 autoreload Watching for file changes with StatReloader
+INFO 2024-09-02 15:12:02,686 autoreload Watching for file changes with StatReloader
+WARNING 2024-09-02 15:13:02,388 log Bad Request: /api/reviews
+WARNING 2024-09-02 15:13:02,389 basehttp "GET /api/reviews HTTP/1.1" 400 7055
+WARNING 2024-09-02 15:13:10,720 log Method Not Allowed: /api/reviews/217
+WARNING 2024-09-02 15:13:10,722 basehttp "GET /api/reviews/217 HTTP/1.1" 405 6995
+WARNING 2024-09-02 15:13:31,095 log Not Found: /api/reviews/domain=remarqz.com
+WARNING 2024-09-02 15:13:31,095 basehttp "GET /api/reviews/domain=remarqz.com HTTP/1.1" 404 4624
+INFO 2024-09-02 15:13:54,955 basehttp "GET /api/reviews?domain=remarqz.com HTTP/1.1" 200 38320
+INFO 2024-09-02 17:44:12,973 autoreload Watching for file changes with StatReloader
+INFO 2024-09-02 17:45:07,363 basehttp "GET / HTTP/1.1" 200 1256
+INFO 2024-09-02 17:47:16,315 basehttp "GET /api/post-webhook HTTP/1.1" 301 0
+WARNING 2024-09-02 17:47:19,515 log Method Not Allowed: /api/post-webhook/
+WARNING 2024-09-02 17:47:19,517 basehttp "GET /api/post-webhook/ HTTP/1.1" 405 5671
+INFO 2024-09-02 17:47:19,643 basehttp "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0
+INFO 2024-09-02 17:47:19,697 basehttp "GET /static/rest_framework/css/default.css HTTP/1.1" 304 0
+INFO 2024-09-02 17:47:19,697 basehttp "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
+INFO 2024-09-02 17:47:19,697 basehttp "GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0
+INFO 2024-09-02 17:47:19,697 basehttp "GET /static/rest_framework/js/jquery-3.5.1.min.js HTTP/1.1" 304 0
+INFO 2024-09-02 17:47:19,700 basehttp "GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
+INFO 2024-09-02 17:47:19,704 basehttp "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+INFO 2024-09-02 17:47:19,813 basehttp "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+INFO 2024-09-02 17:47:19,816 basehttp "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+INFO 2024-09-02 17:47:19,816 basehttp "GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
+INFO 2024-09-02 17:47:20,150 basehttp "GET /static/rest_framework/img/grid.png HTTP/1.1" 304 0
+WARNING 2024-09-02 17:48:56,112 log Bad Request: /api/post-webhook/
+WARNING 2024-09-02 17:48:56,113 basehttp "POST /api/post-webhook/ HTTP/1.1" 400 5673
+INFO 2024-09-02 17:49:18,616 autoreload C:\Users\tusharsharma\OneDrive - virtualemployee P Ltd\VE\advanced_review_system\review_system\views.py changed, reloading.
+INFO 2024-09-02 17:49:25,872 autoreload Watching for file changes with StatReloader
+INFO 2024-09-02 17:49:30,993 autoreload C:\Users\tusharsharma\OneDrive - virtualemployee P Ltd\VE\advanced_review_system\review_system\views.py changed, reloading.
+INFO 2024-09-02 17:49:33,882 autoreload Watching for file changes with StatReloader
+INFO 2024-09-02 17:49:45,448 autoreload C:\Users\tusharsharma\OneDrive - virtualemployee P Ltd\VE\advanced_review_system\review_system\models.py changed, reloading.
+INFO 2024-09-02 17:49:47,828 autoreload Watching for file changes with StatReloader
+INFO 2024-09-02 17:49:53,449 autoreload C:\Users\tusharsharma\OneDrive - virtualemployee P Ltd\VE\advanced_review_system\review_system\models.py changed, reloading.
+INFO 2024-09-02 17:49:54,911 autoreload Watching for file changes with StatReloader
+INFO 2024-09-02 17:51:09,837 autoreload C:\Users\tusharsharma\OneDrive - virtualemployee P Ltd\VE\advanced_review_system\review_system\models.py changed, reloading.
+INFO 2024-09-02 17:51:13,252 autoreload Watching for file changes with StatReloader
+INFO 2024-09-02 17:53:11,397 autoreload C:\Users\tusharsharma\OneDrive - virtualemployee P Ltd\VE\advanced_review_system\review_system\models.py changed, reloading.
+INFO 2024-09-02 17:53:12,669 autoreload Watching for file changes with StatReloader
+INFO 2024-09-02 17:54:29,205 autoreload C:\Users\tusharsharma\OneDrive - virtualemployee P Ltd\VE\advanced_review_system\review_system\models.py changed, reloading.
+INFO 2024-09-02 17:54:31,392 autoreload Watching for file changes with StatReloader
+INFO 2024-09-02 17:56:18,820 autoreload C:\Users\tusharsharma\OneDrive - virtualemployee P Ltd\VE\advanced_review_system\review_system\migrations\0001_initial.py changed, reloading.
+INFO 2024-09-02 17:56:20,768 autoreload Watching for file changes with StatReloader
+INFO 2024-09-02 17:56:46,351 autoreload C:\Users\tusharsharma\OneDrive - virtualemployee P Ltd\VE\advanced_review_system\review_system\models.py changed, reloading.
+INFO 2024-09-02 17:56:47,453 autoreload Watching for file changes with StatReloader
+INFO 2024-09-02 17:56:52,479 autoreload C:\Users\tusharsharma\OneDrive - virtualemployee P Ltd\VE\advanced_review_system\review_system\models.py changed, reloading.
+INFO 2024-09-02 17:56:53,755 autoreload Watching for file changes with StatReloader
+INFO 2024-09-02 17:58:46,935 autoreload C:\Users\tusharsharma\OneDrive - virtualemployee P Ltd\VE\advanced_review_system\review_system\models.py changed, reloading.
+INFO 2024-09-02 17:58:48,222 autoreload Watching for file changes with StatReloader
+INFO 2024-09-02 17:59:00,988 autoreload C:\Users\tusharsharma\OneDrive - virtualemployee P Ltd\VE\advanced_review_system\review_system\models.py changed, reloading.
+INFO 2024-09-02 17:59:02,132 autoreload Watching for file changes with StatReloader
+INFO 2024-09-02 17:59:07,314 autoreload C:\Users\tusharsharma\OneDrive - virtualemployee P Ltd\VE\advanced_review_system\review_system\models.py changed, reloading.
+INFO 2024-09-02 17:59:08,484 autoreload Watching for file changes with StatReloader
+INFO 2024-09-02 18:03:07,022 basehttp "POST /api/post-webhook/ HTTP/1.1" 201 6319

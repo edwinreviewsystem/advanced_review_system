@@ -118,10 +118,10 @@ class Customer(models.Model):
     plan_name = models.CharField(max_length=100)
     date_start = models.DateField()
     date_end = models.DateField()
-    password = models.CharField(max_length=128)
+    password = models.CharField(max_length=128, null=True)
     plan_price = models.DecimalField(max_digits=10, decimal_places=2)
     activated = models.BooleanField(default=True)
-    profile_img = models.ImageField(upload_to='uploaded_images/', default='', blank=True)
+    profile_img = models.ImageField(upload_to='profile_images/', default='', null=True)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now_add=True)
     
