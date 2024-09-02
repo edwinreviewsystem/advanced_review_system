@@ -46,6 +46,8 @@ class ProductReviews(models.Model):
     product_name = models.CharField(max_length=455 ,default="", blank=True, null =True) 
     domain = models.CharField(max_length=255,default="")
     created_at = models.DateTimeField(auto_now_add=True)
+    source = models.CharField(max_length=255,default="",blank=True, null =True)
+    
 
     reply_text = models.TextField(blank=True, null=True)
     reply_created_at = models.DateTimeField(blank=True, null=True)
@@ -68,6 +70,7 @@ class ProductReviews(models.Model):
             'name' : self.name,
             'email' : self.email,
             'image': self.image.url if self.image else '', 
+            'source': self.source,
             'created_at' : self.created_at,
             'reply_text' : self.reply_text,
             'reply_created_at': self.reply_created_at,
@@ -118,6 +121,7 @@ class Customer(models.Model):
     password = models.CharField(max_length=128)
     plan_price = models.DecimalField(max_digits=10, decimal_places=2)
     activated = models.BooleanField(default=True)
+    profile_img = models.ImageField(upload_to='uploaded_images/', default='', blank=True)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now_add=True)
     

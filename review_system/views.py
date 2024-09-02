@@ -110,6 +110,7 @@ class ProductReviewsListAPI(APIView):
             domain = request.data.get('domain')
             review = request.data.get('review')
             image = request.FILES.get('image')
+            source = request.data.get('source')
 
             new_data = {
                  'product_name': product_name,
@@ -119,6 +120,7 @@ class ProductReviewsListAPI(APIView):
                  'name': name,
                  'review': review,
                  'image':image if image else None,
+                 'source':source
             }
 
             # new_data['image'] = image if image else None
@@ -276,7 +278,8 @@ class CustomerCreateAPIView(APIView):
             customer_data['first_name'] = parsed_data.get('name', {}).get('first', None)
             customer_data['last_name'] = parsed_data.get('name', {}).get('last', None)
 
-            customer_data['password'] = 'N/A'
+            customer_data['password'] = None
+            
 
             # Validate and save the customer data
             serializer = CustomerSerializer(data=customer_data)
@@ -288,3 +291,4 @@ class CustomerCreateAPIView(APIView):
         except Exception as e:
             customer_logger.error(f"Error processing data: {str(e)}")
             return Response({"error": str(e)}, status=status.HTTP_400_BAD_REQUEST)
+   

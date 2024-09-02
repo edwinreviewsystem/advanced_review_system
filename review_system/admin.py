@@ -10,7 +10,7 @@ from .models import Customer
 
 
 class ProductReviewsListAdmin(admin.ModelAdmin):
-    list_display = ('id', 'review_one_line', 'star_rating', 'email', 'domain', 'display_image', 'status', 'created_at')
+    list_display = ('id', 'review_one_line', 'star_rating', 'email', 'domain', 'display_image', 'status','source', 'created_at')
     list_display_links = ('id', 'domain', 'status')
     search_fields = ('email', 'domain', 'status')
     list_filter = ('created_at','domain','status')
@@ -86,7 +86,7 @@ class CustomerAdminForm(forms.ModelForm):
 
 class CustomerAdmin(admin.ModelAdmin):
     form = CustomerAdminForm
-    list_display = ('id', 'email', 'domain_name', 'first_name', 'last_name', 'activated')
+    list_display = ('id', 'email', 'domain_name', 'first_name', 'last_name', 'display_profile_image', 'activated', 'created_at')
 
     def get_form(self, request, obj=None, **kwargs):
         form = super().get_form(request, obj, **kwargs)
@@ -97,5 +97,14 @@ class CustomerAdmin(admin.ModelAdmin):
         if form.cleaned_data.get('password') and not obj.password.startswith('pbkdf2_'):
             obj.password = make_password(form.cleaned_data.get('password'))
         super().save_model(request, obj, form, change)
+
+    def display_profile_image(self, obj):
+        if obj.profile_img:
+            return format_html(
+                '<img src="{}" width="70px" height="60px" />'.format(obj.profile_img.url)
+            )
+        return "-"
+    display_profile_image.short_description = "Profile Image"
+
 
 admin.site.register(Customer, CustomerAdmin)
