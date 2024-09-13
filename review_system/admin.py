@@ -1,29 +1,23 @@
 from django.contrib import admin
 from .models import *
 from django.utils.html import format_html
-from django.conf import settings
 from django import forms
-
-from django.contrib.auth.hashers import make_password
-from .models import Customer
-
+import bcrypt
 
 
 class ProductReviewsListAdmin(admin.ModelAdmin):
-    list_display = ('id', 'review_one_line', 'star_rating', 'email', 'domain', 'display_image', 'status','source', 'created_at')
+    list_display = ('id', 'review_one_line', 'star_rating', 'email', 'domain', 'display_image', 'status', 'source', 'created_at')
     list_display_links = ('id', 'domain', 'status')
     search_fields = ('email', 'domain', 'status')
-    list_filter = ('created_at','domain','status')
+    list_filter = ('created_at', 'domain', 'status')
     list_per_page = 20
     actions = ['auto_approve_reviews', 'auto_pending_reviews']
-    
 
     def display_image(self, obj):
         if obj.image:
             return format_html(
                 '<img src="{}" width="70px" height="60px" />'.format(obj.image.url)
             )
-        
         return "-"
     display_image.short_description = "Uploaded Image"
 
@@ -33,6 +27,7 @@ class ProductReviewsListAdmin(admin.ModelAdmin):
 
     def auto_approve_reviews(self, queryset):
         queryset.update(status='approve')
+
     def auto_pending_reviews(self, queryset):
         queryset.update(status='pending')
 
@@ -42,9 +37,10 @@ class ProductReviewsListAdmin(admin.ModelAdmin):
 
 admin.site.register(ProductReviews, ProductReviewsListAdmin)
 
+
 @admin.register(ReviewSettings)
 class ReviewSettingsAdmin(admin.ModelAdmin):
-    list_display = ('auto_approve', 'id','domain')
+    list_display = ('auto_approve', 'id', 'domain')
     list_filter = ('auto_approve',)
     list_display_links = ('id', 'auto_approve')
 
@@ -55,12 +51,13 @@ class ReviewFormDesignAdmin(admin.ModelAdmin):
     search_fields = ('domain',)
     list_filter = ('updated_at',)
 
+
 @admin.register(ReviewListDesign)
 class ReviewListDesignAdmin(admin.ModelAdmin):
     list_display = ('domain', 'content_text_color', 'star_rating_color', 'reviewer_name_color', 'updated_at')
     search_fields = ('domain',)
     list_filter = ('updated_at',)
-    
+
 
 class CustomDateInput(forms.DateInput):
     input_type = 'date'
@@ -69,6 +66,7 @@ class CustomDateInput(forms.DateInput):
     def __init__(self, *args, **kwargs):
         kwargs['format'] = self.format
         super().__init__(*args, **kwargs)
+
 
 class CustomerAdminForm(forms.ModelForm):
     date_start = forms.DateField(widget=CustomDateInput(format='%d-%m-%Y'))
@@ -80,9 +78,12 @@ class CustomerAdminForm(forms.ModelForm):
 
     def clean_password(self):
         password = self.cleaned_data.get('password')
-        if password and not password.startswith('pbkdf2_'):
-            return make_password(password)
+        if password and not password.startswith('$2y$'):
+            salt = bcrypt.gensalt()
+            hashed_password = bcrypt.hashpw(password.encode('utf-8'), salt)
+            return hashed_password.decode('utf-8')  # Store it as a string
         return password
+
 
 class CustomerAdmin(admin.ModelAdmin):
     form = CustomerAdminForm
@@ -94,8 +95,10 @@ class CustomerAdmin(admin.ModelAdmin):
         return form
 
     def save_model(self, request, obj, form, change):
-        if form.cleaned_data.get('password') and not obj.password.startswith('pbkdf2_'):
-            obj.password = make_password(form.cleaned_data.get('password'))
+        password = form.cleaned_data.get('password')
+        if password and not password.startswith('$2y$'):  
+            salt = bcrypt.gensalt()
+            obj.password = bcrypt.hashpw(password.encode('utf-8'), salt).decode('utf-8')
         super().save_model(request, obj, form, change)
 
     def display_profile_image(self, obj):

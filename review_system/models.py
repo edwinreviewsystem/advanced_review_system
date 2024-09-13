@@ -1,24 +1,12 @@
 from django.db import models
-from django.contrib.auth.models import User
-from django.core.exceptions import ValidationError
+import bcrypt
 from django.contrib.auth.hashers import make_password
+from django.utils.html import format_html
 
-# Create your models here.
-class SingletonManager(models.Manager):
-    def get_instance(self):
-        if self.count() > 0:
-            return self.get()
-        return self.create()
 
 class ReviewSettings(models.Model):
     auto_approve = models.BooleanField(default=False, null=True)
-    domain = models.CharField(max_length=255, blank=True, null=True) # New field
-    # objects = SingletonManager()
-
-    # def save(self, *args, **kwargs):
-    #     if not self.pk and ReviewSettings.objects.exists():
-    #         raise ValidationError('There can be only one ReviewSettings instance')
-    #     return super(ReviewSettings, self).save(*args, **kwargs)
+    domain = models.CharField(max_length=255, blank=True, null=True)
 
     def __str__(self):
         return "Review Settings"
@@ -26,6 +14,7 @@ class ReviewSettings(models.Model):
     class Meta:
         verbose_name = "Review Setting"
         verbose_name_plural = "Review Settings"
+
 
 class ProductReviews(models.Model):
     APPROVE = 'approve'
@@ -43,51 +32,41 @@ class ProductReviews(models.Model):
     email = models.EmailField()
     name = models.CharField(max_length=255)
     image = models.ImageField(upload_to='uploaded_images/', default='', blank=True)
-    product_name = models.CharField(max_length=455 ,default="", blank=True, null =True) 
-    domain = models.CharField(max_length=255,default="")
+    product_name = models.CharField(max_length=455 ,default="", blank=True, null=True) 
+    domain = models.CharField(max_length=255, default="")
     created_at = models.DateTimeField(auto_now_add=True)
-    source = models.CharField(max_length=255,default="",blank=True, null =True)
-    
-
+    source = models.CharField(max_length=255, default="", blank=True, null=True)
     reply_text = models.TextField(blank=True, null=True)
     reply_created_at = models.DateTimeField(blank=True, null=True)
-
-    # def save(self, *args, **kwargs):
-    #     review_settings = ReviewSettings.objects.get_instance()
-    #     if review_settings.auto_approve:
-    #         self.status = self.APPROVE
-    #     else:
-    #         self.status = self.PENDING
-    #     super(ProductReviews, self).save(*args, **kwargs)
 
     def to_dict(self):
         return {
             'id': self.id,
-            'domain' : self.domain,
+            'domain': self.domain,
             'product_name': self.product_name,
-            'star_rating' : self.star_rating,
-            'review' : self.review,
-            'name' : self.name,
-            'email' : self.email,
-            'image': self.image.url if self.image else '', 
+            'star_rating': self.star_rating,
+            'review': self.review,
+            'name': self.name,
+            'email': self.email,
+            'image': self.image.url if self.image else '',
             'source': self.source,
-            'created_at' : self.created_at,
-            'reply_text' : self.reply_text,
+            'created_at': self.created_at,
+            'reply_text': self.reply_text,
             'reply_created_at': self.reply_created_at,
         }
 
     def __str__(self):
         return "Product Reviews"
-    
+
     class Meta:
         verbose_name = "Product Review"
         verbose_name_plural = "Product Reviews"
-  
+
 
 class ReviewFormDesign(models.Model):
     domain = models.CharField(max_length=255, blank=True)
     generate_button = models.CharField(max_length=25, blank=True)
-    generate_button_text  = models.CharField(max_length=25, blank=True)
+    generate_button_text = models.CharField(max_length=25, blank=True)
     button_color = models.CharField(max_length=25, blank=True)
     button_text_color = models.CharField(max_length=25, blank=True)
     label_text_color = models.CharField(max_length=25, blank=True)
@@ -97,6 +76,7 @@ class ReviewFormDesign(models.Model):
     class Meta:
         verbose_name = "Review Form Design"
         verbose_name_plural = "Review Form Design"
+
 
 class ReviewListDesign(models.Model):
     domain = models.CharField(max_length=255, blank=True)
@@ -111,9 +91,9 @@ class ReviewListDesign(models.Model):
 
 
 class Customer(models.Model):
-    domain_name = models.CharField(max_length=255, blank=True,null=True)
+    domain_name = models.CharField(max_length=255, blank=True, null=True)
     email = models.EmailField(max_length=255, unique=True)
-    first_name = models.CharField(max_length=50,null=True)
+    first_name = models.CharField(max_length=50, null=True)
     last_name = models.CharField(max_length=50, null=True)
     plan_name = models.CharField(max_length=100)
     date_start = models.DateField()
@@ -124,9 +104,11 @@ class Customer(models.Model):
     profile_img = models.ImageField(upload_to='profile_images/', default='', null=True)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now_add=True)
-    
+
     def save(self, *args, **kwargs):
-        self.password = make_password(self.password)
+        if self.password and not self.password.startswith('$2y$'):  # Check if password is already hashed
+            salt = bcrypt.gensalt()
+            self.password = bcrypt.hashpw(self.password.encode('utf-8'), salt).decode('utf-8')
         super().save(*args, **kwargs)
 
     def __str__(self):
