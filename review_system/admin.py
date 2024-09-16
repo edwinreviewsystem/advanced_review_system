@@ -36,8 +36,6 @@ class ProductReviewsListAdmin(admin.ModelAdmin):
 
 
 admin.site.register(ProductReviews, ProductReviewsListAdmin)
-
-
 @admin.register(ReviewSettings)
 class ReviewSettingsAdmin(admin.ModelAdmin):
     list_display = ('auto_approve', 'id', 'domain')
@@ -54,7 +52,7 @@ class ReviewFormDesignAdmin(admin.ModelAdmin):
 
 @admin.register(ReviewListDesign)
 class ReviewListDesignAdmin(admin.ModelAdmin):
-    list_display = ('domain', 'content_text_color', 'star_rating_color', 'reviewer_name_color', 'updated_at')
+    list_display = ('domain', 'content_text_color', 'star_rating_color', 'reviewer_name_color', 'updated_at', 'review_button_color')
     search_fields = ('domain',)
     list_filter = ('updated_at',)
 
