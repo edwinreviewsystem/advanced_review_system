@@ -83,7 +83,7 @@ class ReviewListDesign(models.Model):
     content_text_color = models.CharField(max_length=25, blank=True)
     star_rating_color = models.CharField(max_length=25, blank=True)
     reviewer_name_color = models.CharField(max_length=25, blank=True)
-    review_button_color = models.CharField(max_length=25, blank=True) 
+    review_color = models.CharField(max_length=25, blank=True) 
     updated_at = models.DateTimeField(auto_now=True)
 
     class Meta:
