@@ -91,6 +91,33 @@ class ReviewListDesign(models.Model):
         verbose_name_plural = "Review List Design"
 
 
+class Google_Reviews(models.Model):
+    APPROVE = 'approve'
+    DISAPPROVE = 'disapprove'
+    PENDING = 'pending'
+    STATUS_CHOICES = [
+        (APPROVE, 'Approve'),
+        (DISAPPROVE, 'Disapprove'),
+        (PENDING, 'Pending')
+    ]
+
+    status = models.CharField(max_length=20, choices=STATUS_CHOICES, default=APPROVE)
+    place_id = models.CharField(max_length=255)  
+    domain_name = models.CharField(max_length=255) 
+    google_review_id = models.CharField(max_length=255, unique=True) 
+    author_name = models.CharField(max_length=255) 
+    rating = models.IntegerField() 
+    text = models.TextField() 
+    time = models.DateTimeField() 
+    created_at = models.DateTimeField(auto_now_add=True) 
+    updated_at = models.DateTimeField(auto_now=True) 
+
+    def __str__(self):
+        return f"Review by {self.author_name} on {self.domain_name}"
+
+    class Meta:
+        verbose_name = "Google Review"
+
 class Customer(models.Model):
     domain_name = models.CharField(max_length=255, blank=True, null=True)
     email = models.EmailField(max_length=255, unique=True)

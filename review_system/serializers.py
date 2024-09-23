@@ -29,6 +29,9 @@ class ReviewListDesignSerializer(serializers.ModelSerializer):
         model = ReviewListDesign
         fields = ('content_text_color', 'star_rating_color', 'reviewer_name_color', 'review_color')  
 
+
+
+
 class CustomerSerializer(serializers.ModelSerializer):
     first_name = serializers.CharField(allow_null=True, required=False)
     last_name = serializers.CharField(allow_null=True, required=False)
