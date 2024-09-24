@@ -16,14 +16,12 @@ logger = logging.getLogger('review_system')
 logger.setLevel(logging.DEBUG)
 
 class ProductReviewsListAPI(APIView):
-    # permission_classes = [IsAuthenticated]
     permission_classes = [AllowAny]
 
     def get(self, request):
         product_name = request.query_params.get('product_name')
         domain = request.query_params.get('domain')
 
-        
         if not (product_name or domain):
             return Response(
                 {
@@ -34,45 +32,31 @@ class ProductReviewsListAPI(APIView):
             )
 
         try:
-            reviews = ProductReviews.objects.filter(domain=domain, status='approve')
+            # Fetch Product Reviews (reviews with product_name)
+            product_reviews = ProductReviews.objects.filter(domain=domain, status='approve', product_name__isnull=False)
             if product_name:
-                reviews = reviews.filter(product_name=product_name)
+                product_reviews = product_reviews.filter(product_name=product_name)
 
-            total_product_reviews = reviews.filter(product_name__isnull=False).count()
-            total_business_reviews = reviews.filter(product_name__isnull=True).count()
-            
-            if not reviews.exists():
-                return Response(
-                    {
-                        "status": status.HTTP_204_NO_CONTENT,
-                        "message": "No approved Reviews Found.",
-                        "data": []
-                    },
-                    status=status.HTTP_204_NO_CONTENT,
-                )
-            
-            reviews = reviews.order_by("-created_at")
-            # Calculate average star rating for business and product reviews separately
-            business_reviews = reviews.filter(product_name__isnull=True)
-            business_average_star_rating = business_reviews.aggregate(avg_star_rating=Avg('star_rating'))['avg_star_rating'] or 0.0
-            business_average_star_rating = round(business_average_star_rating, 1)
+            # Fetch Business Reviews (reviews without product_name)
+            business_reviews = ProductReviews.objects.filter(domain=domain, status='approve', product_name__isnull=True)
 
-            product_reviews = reviews.filter(product_name__isnull=False)
+            # Fetch Google Reviews
+            google_reviews = Google_Reviews.objects.filter(domain_name=domain, status='approve')
+
+            # Calculate total and average star ratings
+            total_product_reviews = product_reviews.count()
+            total_business_reviews = business_reviews.count()
+
             product_average_star_rating = product_reviews.aggregate(avg_star_rating=Avg('star_rating'))['avg_star_rating'] or 0.0
             product_average_star_rating = round(product_average_star_rating, 1)
 
-            reviews_data = {'business': [], 'product': []}
+            business_average_star_rating = business_reviews.aggregate(avg_star_rating=Avg('star_rating'))['avg_star_rating'] or 0.0
+            business_average_star_rating = round(business_average_star_rating, 1)
 
-
-            for review in reviews:
-                    review_dict = review.to_dict()
-                    review_dict['reply_created_at'] = review.reply_created_at
-                    review_dict['reply_text'] = review.reply_text
-                    if review.product_name:
-                        reviews_data['product'].append(review_dict)
-                    else:
-                        reviews_data['business'].append(review_dict)  
-
+            # Serialize data for each type of review
+            product_reviews_data = ReviewSerializer(product_reviews, many=True).data
+            business_reviews_data = ReviewSerializer(business_reviews, many=True).data
+            google_reviews_data = ReviewSerializer(google_reviews, many=True).data
 
             return Response(
                 {
@@ -82,17 +66,22 @@ class ProductReviewsListAPI(APIView):
                         "business": {
                             "average_star_rating": business_average_star_rating,
                             "total_business_reviews": total_business_reviews,
-                            "business_reviews": reviews_data['business'],
+                            "business_reviews": business_reviews_data,
                         },
                         "product": {
                             "average_star_rating": product_average_star_rating,
                             "total_product_reviews": total_product_reviews,
-                            "product_reviews": reviews_data['product'],
+                            "product_reviews": product_reviews_data,
+                        },
+                        "google": {
+                            "total_google_reviews": len(google_reviews_data),
+                            "google_reviews": google_reviews_data,
                         },
                     },
                 },
                 status=status.HTTP_200_OK,
             )
+
         except Exception as e:
             return Response(
                 {
@@ -101,7 +90,7 @@ class ProductReviewsListAPI(APIView):
                 },
                 status=status.HTTP_400_BAD_REQUEST,
             )
-
+        
     def post(self, request):
         try:
             star_rating = request.data.get('star_rating')
@@ -125,7 +114,7 @@ class ProductReviewsListAPI(APIView):
             }
 
             # new_data['image'] = image if image else None
-            serializer = ProductReviewsSerializer(data=new_data)
+            serializer = ReviewSerializer(data=new_data)
 
             # Fetch the ReviewSettings for the given domain
             settings = ReviewSettings.objects.filter(domain=domain).first()
@@ -142,7 +131,7 @@ class ProductReviewsListAPI(APIView):
                     {
                         "status": status.HTTP_201_CREATED,
                         "message": "New Review added!",
-                        "data": ProductReviewsSerializer(review_instance).data,
+                        "data":ReviewSerializer(review_instance).data,
                     },
                     status=status.HTTP_201_CREATED,
                 )
