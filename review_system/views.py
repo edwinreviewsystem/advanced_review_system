@@ -41,17 +41,21 @@ class ProductReviewsListAPI(APIView):
             business_reviews = ProductReviews.objects.filter(domain=domain, status='approve', product_name__isnull=True)
 
             # Fetch Google Reviews
-            google_reviews = Google_Reviews.objects.filter(domain_name=domain, status='approve')
+            google_reviews = Google_Reviews.objects.filter(domain_name=domain)
 
             # Calculate total and average star ratings
             total_product_reviews = product_reviews.count()
             total_business_reviews = business_reviews.count()
+            total_google_reviews = google_reviews.count()
 
             product_average_star_rating = product_reviews.aggregate(avg_star_rating=Avg('star_rating'))['avg_star_rating'] or 0.0
             product_average_star_rating = round(product_average_star_rating, 1)
 
             business_average_star_rating = business_reviews.aggregate(avg_star_rating=Avg('star_rating'))['avg_star_rating'] or 0.0
             business_average_star_rating = round(business_average_star_rating, 1)
+
+            google_average_star_rating = google_reviews.aggregate(avg_star_rating=Avg('rating'))['avg_star_rating'] or 0.0
+            google_average_star_rating = round(google_average_star_rating, 1)
 
             # Serialize data for each type of review
             product_reviews_data = ReviewSerializer(product_reviews, many=True).data
@@ -74,7 +78,8 @@ class ProductReviewsListAPI(APIView):
                             "product_reviews": product_reviews_data,
                         },
                         "google": {
-                            "total_google_reviews": len(google_reviews_data),
+                            "average_star_rating": google_average_star_rating,
+                            "total_google_reviews": total_google_reviews,
                             "google_reviews": google_reviews_data,
                         },
                     },
@@ -90,6 +95,7 @@ class ProductReviewsListAPI(APIView):
                 },
                 status=status.HTTP_400_BAD_REQUEST,
             )
+
         
     def post(self, request):
         try:
