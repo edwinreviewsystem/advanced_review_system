@@ -83,7 +83,7 @@ class ReviewSerializer(serializers.ModelSerializer):
             return {
                 'id': serializers.IntegerField(read_only=True),
                 'star_rating': serializers.IntegerField(),
-                'product_name': serializers.CharField(),
+                'product_name': serializers.CharField(allow_null=True),  
                 'domain': serializers.CharField(),
                 'name': serializers.CharField(),
                 'email': serializers.EmailField(),
@@ -91,8 +91,8 @@ class ReviewSerializer(serializers.ModelSerializer):
                 'image': serializers.ImageField(required=False, allow_null=True),
                 'source': serializers.CharField(),
                 'created_at': serializers.DateTimeField(read_only=True),
-                'reply_text' : serializers.CharField(allow_null=True),
-                'reply_created_at' : serializers.DateTimeField(read_only=True),
+                'reply_text': serializers.CharField(required=False, allow_null=True),  
+                'reply_created_at': serializers.DateTimeField(read_only=True),
             }
     
 class ReviewFormDesignSerializer(serializers.ModelSerializer):
