@@ -43,7 +43,9 @@ class ReviewSerializer(serializers.ModelSerializer):
                 'image': instance.image.url if instance.image else None,
                 'source': instance.source,
                 'created_at': instance.created_at,
-                'status': instance.status
+                'status': instance.status,
+                'reply_text' : instance.reply_text,
+                'reply_created_at' : instance.reply_created_at
             }
 
     def create(self, validated_data):
@@ -89,6 +91,8 @@ class ReviewSerializer(serializers.ModelSerializer):
                 'image': serializers.ImageField(required=False, allow_null=True),
                 'source': serializers.CharField(),
                 'created_at': serializers.DateTimeField(read_only=True),
+                'reply_text' : serializers.CharField(allow_null=True),
+                'reply_created_at' : serializers.DateTimeField(read_only=True),
             }
     
 class ReviewFormDesignSerializer(serializers.ModelSerializer):
