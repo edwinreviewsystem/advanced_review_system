@@ -32,16 +32,16 @@ class ProductReviewsListAPI(APIView):
             )
 
         try:
-            # Fetch Product Reviews (reviews with product_name)
-            product_reviews = ProductReviews.objects.filter(domain=domain, status='approve', product_name__isnull=False)
+            # Fetch Product Reviews (reviews with product_name) and order by latest
+            product_reviews = ProductReviews.objects.filter(domain=domain, status='approve', product_name__isnull=False).order_by('-created_at')
             if product_name:
                 product_reviews = product_reviews.filter(product_name=product_name)
 
-            # Fetch Business Reviews (reviews without product_name)
-            business_reviews = ProductReviews.objects.filter(domain=domain, status='approve', product_name__isnull=True)
+            # Fetch Business Reviews (reviews without product_name) and order by latest
+            business_reviews = ProductReviews.objects.filter(domain=domain, status='approve', product_name__isnull=True).order_by('-created_at')
 
-            # Fetch Google Reviews
-            google_reviews = Google_Reviews.objects.filter(domain_name=domain)
+            # Fetch Google Reviews and order by latest
+            google_reviews = Google_Reviews.objects.filter(domain_name=domain).order_by('-created_at')
 
             # Calculate total and average star ratings
             total_product_reviews = product_reviews.count()
@@ -95,6 +95,7 @@ class ProductReviewsListAPI(APIView):
                 },
                 status=status.HTTP_400_BAD_REQUEST,
             )
+
 
         
     def post(self, request):
