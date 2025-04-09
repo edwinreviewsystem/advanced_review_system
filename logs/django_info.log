@@ -3458,3 +3458,45 @@ INFO 2024-09-02 17:59:02,132 autoreload Watching for file changes with StatReloa
 INFO 2024-09-02 17:59:07,314 autoreload C:\Users\tusharsharma\OneDrive - virtualemployee P Ltd\VE\advanced_review_system\review_system\models.py changed, reloading.
 INFO 2024-09-02 17:59:08,484 autoreload Watching for file changes with StatReloader
 INFO 2024-09-02 18:03:07,022 basehttp "POST /api/post-webhook/ HTTP/1.1" 201 6319
+INFO 2025-04-08 17:18:19,544 autoreload Watching for file changes with StatReloader
+INFO 2025-04-08 17:19:41,170 autoreload Watching for file changes with StatReloader
+INFO 2025-04-08 17:19:50,663 basehttp "GET /admin/review_system/reviewlistdesign/ HTTP/1.1" 200 40266
+INFO 2025-04-08 17:19:52,221 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-04-08 17:21:55,437 autoreload E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\review_system\models.py changed, reloading.
+INFO 2025-04-08 17:21:56,330 autoreload Watching for file changes with StatReloader
+INFO 2025-04-08 17:22:50,026 autoreload Watching for file changes with StatReloader
+INFO 2025-04-08 17:23:56,511 autoreload Watching for file changes with StatReloader
+INFO 2025-04-08 17:24:13,552 basehttp "GET /admin/review_system/reviewlistdesign/ HTTP/1.1" 200 40266
+INFO 2025-04-08 17:24:15,305 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-04-08 17:26:33,194 autoreload E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\review_system\admin.py changed, reloading.
+INFO 2025-04-08 17:26:34,144 autoreload Watching for file changes with StatReloader
+INFO 2025-04-08 17:26:41,699 basehttp "GET /admin/review_system/reviewlistdesign/ HTTP/1.1" 200 44628
+INFO 2025-04-08 17:26:43,255 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-04-08 17:26:50,072 basehttp "GET /api/get-customize-css?domain=pipco25.nl HTTP/1.1" 200 349
+INFO 2025-04-08 17:26:55,976 basehttp "GET /api/get-customize-css?domain=pipco25.nl HTTP/1.1" 200 6094
+INFO 2025-04-08 17:27:45,934 autoreload E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\review_system\serializers.py changed, reloading.
+INFO 2025-04-08 17:27:46,860 autoreload Watching for file changes with StatReloader
+INFO 2025-04-08 17:27:59,187 basehttp "GET /api/get-customize-css?domain=pipco25.nl HTTP/1.1" 200 6208
+INFO 2025-04-08 17:28:04,609 basehttp "GET /api/get-customize-css?domain=pipco25.nl HTTP/1.1" 200 403
+INFO 2025-04-09 09:54:46,210 basehttp "GET /admin/review_system/reviewlistdesign/ HTTP/1.1" 200 44628
+INFO 2025-04-09 09:54:47,813 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-04-09 09:54:55,679 basehttp "GET /admin/review_system/reviewsettings/ HTTP/1.1" 200 34624
+INFO 2025-04-09 09:54:55,759 basehttp "GET /static/admin/img/icon-no.svg HTTP/1.1" 200 560
+INFO 2025-04-09 09:54:57,324 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-04-09 09:55:17,300 basehttp "GET /admin/review_system/reviewlistdesign/ HTTP/1.1" 200 44628
+INFO 2025-04-09 09:55:18,891 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-04-09 10:30:28,745 basehttp "OPTIONS /api/finished-modules/?company_name=Lighthouse%20Canton HTTP/1.1" 200 0
+INFO 2025-04-09 10:30:28,748 basehttp "OPTIONS /api/design-principles/Lighthouse%20Canton/ HTTP/1.1" 200 0
+WARNING 2025-04-09 10:30:28,804 log Not Found: /api/design-principles/Lighthouse Canton/
+WARNING 2025-04-09 10:30:28,806 log Not Found: /api/finished-modules/
+WARNING 2025-04-09 10:30:28,807 basehttp "GET /api/design-principles/Lighthouse%20Canton/ HTTP/1.1" 404 4654
+WARNING 2025-04-09 10:30:28,808 basehttp "GET /api/finished-modules/?company_name=Lighthouse%20Canton HTTP/1.1" 404 4628
+INFO 2025-04-09 10:31:24,828 basehttp "GET /api/get-customize-css?domain=pipco25.nl HTTP/1.1" 200 6208
+INFO 2025-04-09 10:31:32,489 basehttp "GET /api/get-customize-css?domain=pipco25.nl HTTP/1.1" 200 403
+INFO 2025-04-09 10:31:52,871 basehttp "GET /api/get-customize-css?domain=sparkscience.ch HTTP/1.1" 200 404
+INFO 2025-04-09 10:32:38,093 basehttp "GET /api/get-customize-css?domain=pipco25.nl HTTP/1.1" 200 403
+INFO 2025-04-09 13:39:42,456 autoreload Watching for file changes with StatReloader
+INFO 2025-04-09 13:39:52,330 basehttp "GET /api/get-customize-css?domain=pipco25.nl HTTP/1.1" 200 6208
+WARNING 2025-04-09 13:39:52,484 log Not Found: /favicon.ico
+WARNING 2025-04-09 13:39:52,485 basehttp "GET /favicon.ico HTTP/1.1" 404 3896
+INFO 2025-04-09 13:39:57,587 basehttp "GET /api/get-customize-css?domain=pipco25.nl HTTP/1.1" 200 403

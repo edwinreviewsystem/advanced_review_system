@@ -103,7 +103,7 @@ class ReviewFormDesignSerializer(serializers.ModelSerializer):
 class ReviewListDesignSerializer(serializers.ModelSerializer):
     class Meta:
         model = ReviewListDesign
-        fields = ('content_text_color', 'star_rating_color', 'reviewer_name_color', 'review_color')  
+        fields = ('content_text_color', 'star_rating_color', 'reviewer_name_color', 'review_color', 'primary_btn_color', 'btn_border_radius')  
 
 
 
