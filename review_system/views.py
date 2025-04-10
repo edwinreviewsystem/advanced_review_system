@@ -125,7 +125,7 @@ class ProductReviewsListAPI(APIView):
 
             # Fetch the ReviewSettings for the given domain
             settings = ReviewSettings.objects.filter(domain=domain).first()
-            auto_approve = settings.auto_approve if settings else False 
+            auto_approve = settings.auto_approve if settings and settings.auto_approve is not None else True 
             # print(f'auto_approve value for {domain} is {auto_approve}')
          
             if serializer.is_valid():

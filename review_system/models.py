@@ -84,8 +84,8 @@ class ReviewListDesign(models.Model):
     star_rating_color = models.CharField(max_length=25, blank=True)
     reviewer_name_color = models.CharField(max_length=25, blank=True)
     review_color = models.CharField(max_length=25, blank=True)
-    primary_btn_color = models.CharField(max_length=25, null=True, blank=True)
-    btn_border_radius = models.CharField(max_length=25, null=True, blank=True)
+    primary_btn_color = models.CharField(max_length=25, null=True, blank=True, verbose_name="Reviews Button Color")
+    btn_border_radius = models.CharField(max_length=25, null=True, blank=True, verbose_name="Reviews Button Corners")
     updated_at = models.DateTimeField(auto_now=True)
 
     class Meta:
