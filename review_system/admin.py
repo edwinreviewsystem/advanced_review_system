@@ -85,7 +85,7 @@ class CustomerAdminForm(forms.ModelForm):
 
 class CustomerAdmin(admin.ModelAdmin):
     form = CustomerAdminForm
-    list_display = ('id', 'email', 'domain_name', 'first_name', 'last_name', 'display_profile_image', 'activated', 'created_at')
+    list_display = ('id', 'email', 'domain_name', 'first_name', 'last_name', 'platform', 'display_profile_image', 'activated', 'created_at')
 
     def get_form(self, request, obj=None, **kwargs):
         form = super().get_form(request, obj, **kwargs)

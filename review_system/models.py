@@ -132,6 +132,7 @@ class Customer(models.Model):
     plan_price = models.DecimalField(max_digits=10, decimal_places=2)
     activated = models.BooleanField(default=True)
     profile_img = models.ImageField(upload_to='profile_images/', default='', null=True)
+    platform = models.CharField(max_length=255, blank=True, null=True, default="")
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now_add=True)
 
