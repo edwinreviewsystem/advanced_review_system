@@ -82,10 +82,29 @@ class CustomerAdminForm(forms.ModelForm):
             return hashed_password.decode('utf-8')  # Store it as a string
         return password
 
+@admin.register(Plans)
+class PlansAdmin(admin.ModelAdmin):
+    list_display = ("id", "name", "features", "duration", "price", "created_at", "updated_at")
+    list_filter = ("name", "duration")
 
 class CustomerAdmin(admin.ModelAdmin):
     form = CustomerAdminForm
-    list_display = ('id', 'email', 'domain_name', 'first_name', 'last_name', 'platform', 'display_profile_image', 'activated', 'created_at')
+    list_display = ('id', 'plan', 'email', 'domain_name', 'first_name', 'last_name', 'platform', 'display_profile_image', 'activated', 'created_at')
+    fields = (
+        'plan',
+        'domain_name',
+        'email',
+        'first_name',
+        'last_name',
+        'plan_name',
+        'date_start',
+        'date_end',
+        'password',
+        'plan_price',
+        'platform',
+        'activated',
+        'profile_img',
+    )
 
     def get_form(self, request, obj=None, **kwargs):
         form = super().get_form(request, obj, **kwargs)

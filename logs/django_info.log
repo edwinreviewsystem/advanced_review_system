@@ -3917,3 +3917,1243 @@ INFO 2025-05-14 15:34:46,340 basehttp "GET /admin/review_system/customer/412/cha
 INFO 2025-05-14 15:34:48,069 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
 INFO 2025-05-14 15:35:28,444 autoreload E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\review_system\admin.py changed, reloading.
 INFO 2025-05-14 15:35:29,389 autoreload Watching for file changes with StatReloader
+INFO 2025-05-15 15:27:32,627 autoreload Watching for file changes with StatReloader
+INFO 2025-05-15 15:32:31,556 autoreload Watching for file changes with StatReloader
+INFO 2025-05-15 15:32:44,700 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 52589
+WARNING 2025-05-15 15:32:44,844 log Not Found: /media/profile_images/22e53e_7066c7318bb34be38d3a4f2e3a256021mv2.webp
+WARNING 2025-05-15 15:32:44,855 basehttp "GET /media/profile_images/22e53e_7066c7318bb34be38d3a4f2e3a256021mv2.webp HTTP/1.1" 404 4231
+WARNING 2025-05-15 15:32:44,910 log Not Found: /favicon.ico
+WARNING 2025-05-15 15:32:44,913 basehttp "GET /favicon.ico HTTP/1.1" 404 3896
+INFO 2025-05-15 15:35:16,750 autoreload E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\review_system\models.py changed, reloading.
+INFO 2025-05-15 15:35:17,777 autoreload Watching for file changes with StatReloader
+INFO 2025-05-15 15:35:29,936 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 52588
+WARNING 2025-05-15 15:35:29,962 log Not Found: /media/profile_images/22e53e_7066c7318bb34be38d3a4f2e3a256021mv2.webp
+WARNING 2025-05-15 15:35:29,968 basehttp "GET /media/profile_images/22e53e_7066c7318bb34be38d3a4f2e3a256021mv2.webp HTTP/1.1" 404 4231
+WARNING 2025-05-15 15:35:29,977 log Not Found: /media/profile_images/22e53e_7066c7318bb34be38d3a4f2e3a256021mv2_PFLhi0c.webp
+WARNING 2025-05-15 15:35:29,977 basehttp "GET /media/profile_images/22e53e_7066c7318bb34be38d3a4f2e3a256021mv2_PFLhi0c.webp HTTP/1.1" 404 4263
+WARNING 2025-05-15 15:35:29,984 log Not Found: /media/profile_images/ED-removebg-preview_Kc0VegY.png
+WARNING 2025-05-15 15:35:29,985 basehttp "GET /media/profile_images/ED-removebg-preview_Kc0VegY.png HTTP/1.1" 404 4167
+WARNING 2025-05-15 15:35:29,994 log Not Found: /media/profile_images/logo_Flor-it_R9hl2VF.png
+WARNING 2025-05-15 15:35:30,004 basehttp "GET /media/profile_images/logo_Flor-it_R9hl2VF.png HTTP/1.1" 404 4139
+WARNING 2025-05-15 15:35:30,021 log Not Found: /media/profile_images/logo_Flor-it_3ug9vGy.png
+WARNING 2025-05-15 15:35:30,021 basehttp "GET /media/profile_images/logo_Flor-it_3ug9vGy.png HTTP/1.1" 404 4139
+WARNING 2025-05-15 15:35:30,043 log Not Found: /media/profile_images/logo_Flor-it_QbHvwb7.png
+WARNING 2025-05-15 15:35:30,043 basehttp "GET /media/profile_images/logo_Flor-it_QbHvwb7.png HTTP/1.1" 404 4139
+WARNING 2025-05-15 15:35:30,054 log Not Found: /media/profile_images/logo_flor-it.png
+WARNING 2025-05-15 15:35:30,069 basehttp "GET /media/profile_images/logo_flor-it.png HTTP/1.1" 404 4107
+WARNING 2025-05-15 15:35:30,082 log Not Found: /media/profile_images/ED-removebg-preview_CBDMx0t.png
+WARNING 2025-05-15 15:35:30,082 basehttp "GET /media/profile_images/ED-removebg-preview_CBDMx0t.png HTTP/1.1" 404 4167
+WARNING 2025-05-15 15:35:30,098 log Not Found: /media/profile_images/logo_Flor-it_I3sk1vS.png
+WARNING 2025-05-15 15:35:30,104 basehttp "GET /media/profile_images/logo_Flor-it_I3sk1vS.png HTTP/1.1" 404 4139
+WARNING 2025-05-15 15:35:30,112 log Not Found: /media/profile_images/logo_Flor-it_ycPeTUA.png
+WARNING 2025-05-15 15:35:30,114 basehttp "GET /media/profile_images/logo_Flor-it_ycPeTUA.png HTTP/1.1" 404 4139
+WARNING 2025-05-15 15:35:30,124 log Not Found: /media/profile_images/ED-removebg-preview_neUNEjX.png
+WARNING 2025-05-15 15:35:30,130 basehttp "GET /media/profile_images/ED-removebg-preview_neUNEjX.png HTTP/1.1" 404 4167
+WARNING 2025-05-15 15:35:30,153 log Not Found: /media/profile_images/logo_Flor-it_JECFN7N.png
+WARNING 2025-05-15 15:35:30,154 basehttp "GET /media/profile_images/logo_Flor-it_JECFN7N.png HTTP/1.1" 404 4139
+WARNING 2025-05-15 15:35:30,167 log Not Found: /media/profile_images/logo_Flor-it_p6KsS8d.png
+WARNING 2025-05-15 15:35:30,179 basehttp "GET /media/profile_images/logo_Flor-it_p6KsS8d.png HTTP/1.1" 404 4139
+WARNING 2025-05-15 15:35:30,189 log Not Found: /media/profile_images/logo_Flor-it_1mmrPW0.png
+WARNING 2025-05-15 15:35:30,190 basehttp "GET /media/profile_images/logo_Flor-it_1mmrPW0.png HTTP/1.1" 404 4139
+WARNING 2025-05-15 15:35:30,218 log Not Found: /media/profile_images/remarqz-logo-mark-full-color-rgb-900px-w-144ppi.png
+WARNING 2025-05-15 15:35:30,219 basehttp "GET /media/profile_images/remarqz-logo-mark-full-color-rgb-900px-w-144ppi.png HTTP/1.1" 404 4247
+WARNING 2025-05-15 15:35:30,229 log Not Found: /media/profile_images/Flor_IT-Badge.png
+WARNING 2025-05-15 15:35:30,240 basehttp "GET /media/profile_images/Flor_IT-Badge.png HTTP/1.1" 404 4111
+WARNING 2025-05-15 15:35:30,251 log Not Found: /media/profile_images/logo_Flor-it.png
+WARNING 2025-05-15 15:35:30,251 basehttp "GET /media/profile_images/logo_Flor-it.png HTTP/1.1" 404 4107
+WARNING 2025-05-15 15:35:30,263 log Not Found: /media/profile_images/remarqz-logo-full-color-rgb-900px-w-144ppi.jpg
+WARNING 2025-05-15 15:35:30,276 basehttp "GET /media/profile_images/remarqz-logo-full-color-rgb-900px-w-144ppi.jpg HTTP/1.1" 404 4227
+WARNING 2025-05-15 15:35:30,296 log Not Found: /media/profile_images/Schermafbeelding_2025-01-08_om_13.29.58.png
+WARNING 2025-05-15 15:35:30,297 basehttp "GET /media/profile_images/Schermafbeelding_2025-01-08_om_13.29.58.png HTTP/1.1" 404 4215
+WARNING 2025-05-15 15:35:30,311 log Not Found: /media/profile_images/Schermafbeelding_2025-01-06_om_15.14.17.png
+WARNING 2025-05-15 15:35:30,319 basehttp "GET /media/profile_images/Schermafbeelding_2025-01-06_om_15.14.17.png HTTP/1.1" 404 4215
+WARNING 2025-05-15 15:35:30,328 log Not Found: /media/profile_images/remarqz-logo-full-color-rgb-900px-w-144ppi.png
+WARNING 2025-05-15 15:35:30,328 basehttp "GET /media/profile_images/remarqz-logo-full-color-rgb-900px-w-144ppi.png HTTP/1.1" 404 4227
+WARNING 2025-05-15 15:35:30,342 log Not Found: /media/Logo PS.png
+WARNING 2025-05-15 15:35:30,354 basehttp "GET /media/Logo%20PS.png HTTP/1.1" 404 4029
+WARNING 2025-05-15 15:35:30,363 log Not Found: /media/profile_images/Schermafbeelding_2024-10-24_om_16.01.17.png
+WARNING 2025-05-15 15:35:30,364 basehttp "GET /media/profile_images/Schermafbeelding_2024-10-24_om_16.01.17.png HTTP/1.1" 404 4215
+WARNING 2025-05-15 15:35:30,401 log Not Found: /media/Dee & Tracy.jpg
+WARNING 2025-05-15 15:35:30,402 basehttp "GET /media/Dee%20%26%20Tracy.jpg HTTP/1.1" 404 4063
+WARNING 2025-05-15 15:35:30,410 log Not Found: /media/profile_images/Schermafbeelding_2024-10-11_om_13.21.22.png
+WARNING 2025-05-15 15:35:30,413 basehttp "GET /media/profile_images/Schermafbeelding_2024-10-11_om_13.21.22.png HTTP/1.1" 404 4215
+WARNING 2025-05-15 15:35:30,437 log Not Found: /media/profile_images/logo-transparent_langwerpig-01-01_edited_edited_edited.png
+WARNING 2025-05-15 15:35:30,438 basehttp "GET /media/profile_images/logo-transparent_langwerpig-01-01_edited_edited_edited.png HTTP/1.1" 404 4275
+WARNING 2025-05-15 15:35:30,465 log Not Found: /media/profile_images/icon_purple_kopie_jkDxYW0.png
+WARNING 2025-05-15 15:35:30,466 basehttp "GET /media/profile_images/icon_purple_kopie_jkDxYW0.png HTTP/1.1" 404 4159
+INFO 2025-05-15 15:35:31,619 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-15 15:35:56,928 basehttp "GET /admin/review_system/plans/ HTTP/1.1" 200 10691
+INFO 2025-05-15 15:35:58,546 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-15 15:35:58,561 basehttp "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 304 0
+INFO 2025-05-15 15:36:06,585 basehttp "GET /admin/review_system/plans/add/ HTTP/1.1" 200 12649
+INFO 2025-05-15 15:36:08,309 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-15 15:44:27,584 basehttp "POST /admin/review_system/plans/add/ HTTP/1.1" 302 0
+INFO 2025-05-15 15:44:29,341 basehttp "GET /admin/review_system/plans/add/ HTTP/1.1" 200 12883
+INFO 2025-05-15 15:44:30,988 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-15 15:45:03,214 basehttp "POST /admin/review_system/plans/add/ HTTP/1.1" 302 0
+INFO 2025-05-15 15:45:05,357 basehttp "GET /admin/review_system/plans/add/ HTTP/1.1" 200 12883
+INFO 2025-05-15 15:45:07,089 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-15 15:45:42,545 basehttp "POST /admin/review_system/plans/add/ HTTP/1.1" 302 0
+INFO 2025-05-15 15:45:45,330 basehttp "GET /admin/review_system/plans/ HTTP/1.1" 200 15385
+INFO 2025-05-15 15:45:47,045 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-15 15:48:19,318 autoreload E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\review_system\models.py changed, reloading.
+INFO 2025-05-15 15:48:20,417 autoreload Watching for file changes with StatReloader
+INFO 2025-05-15 15:48:46,397 autoreload E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\review_system\models.py changed, reloading.
+INFO 2025-05-15 15:48:47,310 autoreload Watching for file changes with StatReloader
+INFO 2025-05-15 15:49:21,356 autoreload E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\review_system\admin.py changed, reloading.
+INFO 2025-05-15 15:49:22,309 autoreload Watching for file changes with StatReloader
+INFO 2025-05-15 15:50:50,555 autoreload Watching for file changes with StatReloader
+INFO 2025-05-15 15:50:57,570 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 54876
+WARNING 2025-05-15 15:50:57,647 log Not Found: /media/profile_images/22e53e_7066c7318bb34be38d3a4f2e3a256021mv2.webp
+WARNING 2025-05-15 15:50:57,648 basehttp "GET /media/profile_images/22e53e_7066c7318bb34be38d3a4f2e3a256021mv2.webp HTTP/1.1" 404 4231
+WARNING 2025-05-15 15:50:57,656 log Not Found: /media/profile_images/22e53e_7066c7318bb34be38d3a4f2e3a256021mv2_PFLhi0c.webp
+WARNING 2025-05-15 15:50:57,659 basehttp "GET /media/profile_images/22e53e_7066c7318bb34be38d3a4f2e3a256021mv2_PFLhi0c.webp HTTP/1.1" 404 4263
+WARNING 2025-05-15 15:50:57,681 log Not Found: /media/profile_images/ED-removebg-preview_Kc0VegY.png
+WARNING 2025-05-15 15:50:57,698 basehttp "GET /media/profile_images/ED-removebg-preview_Kc0VegY.png HTTP/1.1" 404 4167
+WARNING 2025-05-15 15:50:57,719 log Not Found: /media/profile_images/logo_Flor-it_R9hl2VF.png
+WARNING 2025-05-15 15:50:57,720 basehttp "GET /media/profile_images/logo_Flor-it_R9hl2VF.png HTTP/1.1" 404 4139
+WARNING 2025-05-15 15:50:57,756 log Not Found: /media/profile_images/logo_Flor-it_3ug9vGy.png
+WARNING 2025-05-15 15:50:57,757 basehttp "GET /media/profile_images/logo_Flor-it_3ug9vGy.png HTTP/1.1" 404 4139
+WARNING 2025-05-15 15:50:57,783 log Not Found: /media/profile_images/logo_Flor-it_QbHvwb7.png
+WARNING 2025-05-15 15:50:57,792 basehttp "GET /media/profile_images/logo_Flor-it_QbHvwb7.png HTTP/1.1" 404 4139
+WARNING 2025-05-15 15:50:57,804 log Not Found: /media/profile_images/logo_flor-it.png
+WARNING 2025-05-15 15:50:57,804 basehttp "GET /media/profile_images/logo_flor-it.png HTTP/1.1" 404 4107
+WARNING 2025-05-15 15:50:57,827 log Not Found: /media/profile_images/ED-removebg-preview_CBDMx0t.png
+WARNING 2025-05-15 15:50:57,827 basehttp "GET /media/profile_images/ED-removebg-preview_CBDMx0t.png HTTP/1.1" 404 4167
+WARNING 2025-05-15 15:50:57,837 log Not Found: /media/profile_images/logo_Flor-it_I3sk1vS.png
+WARNING 2025-05-15 15:50:57,850 basehttp "GET /media/profile_images/logo_Flor-it_I3sk1vS.png HTTP/1.1" 404 4139
+WARNING 2025-05-15 15:50:57,859 log Not Found: /media/profile_images/logo_Flor-it_ycPeTUA.png
+WARNING 2025-05-15 15:50:57,860 basehttp "GET /media/profile_images/logo_Flor-it_ycPeTUA.png HTTP/1.1" 404 4139
+WARNING 2025-05-15 15:50:57,872 log Not Found: /media/profile_images/ED-removebg-preview_neUNEjX.png
+WARNING 2025-05-15 15:50:57,882 basehttp "GET /media/profile_images/ED-removebg-preview_neUNEjX.png HTTP/1.1" 404 4167
+WARNING 2025-05-15 15:50:57,893 log Not Found: /media/profile_images/logo_Flor-it_JECFN7N.png
+WARNING 2025-05-15 15:50:57,893 basehttp "GET /media/profile_images/logo_Flor-it_JECFN7N.png HTTP/1.1" 404 4139
+WARNING 2025-05-15 15:50:57,915 log Not Found: /media/profile_images/logo_Flor-it_p6KsS8d.png
+WARNING 2025-05-15 15:50:57,930 basehttp "GET /media/profile_images/logo_Flor-it_p6KsS8d.png HTTP/1.1" 404 4139
+WARNING 2025-05-15 15:50:57,940 log Not Found: /media/profile_images/logo_Flor-it_1mmrPW0.png
+WARNING 2025-05-15 15:50:57,940 basehttp "GET /media/profile_images/logo_Flor-it_1mmrPW0.png HTTP/1.1" 404 4139
+WARNING 2025-05-15 15:50:57,984 log Not Found: /media/profile_images/remarqz-logo-mark-full-color-rgb-900px-w-144ppi.png
+WARNING 2025-05-15 15:50:57,985 basehttp "GET /media/profile_images/remarqz-logo-mark-full-color-rgb-900px-w-144ppi.png HTTP/1.1" 404 4247
+WARNING 2025-05-15 15:50:57,996 log Not Found: /media/profile_images/Flor_IT-Badge.png
+WARNING 2025-05-15 15:50:58,000 basehttp "GET /media/profile_images/Flor_IT-Badge.png HTTP/1.1" 404 4111
+WARNING 2025-05-15 15:50:58,010 log Not Found: /media/profile_images/logo_Flor-it.png
+WARNING 2025-05-15 15:50:58,023 basehttp "GET /media/profile_images/logo_Flor-it.png HTTP/1.1" 404 4107
+WARNING 2025-05-15 15:50:58,034 log Not Found: /media/profile_images/remarqz-logo-full-color-rgb-900px-w-144ppi.jpg
+WARNING 2025-05-15 15:50:58,049 basehttp "GET /media/profile_images/remarqz-logo-full-color-rgb-900px-w-144ppi.jpg HTTP/1.1" 404 4227
+WARNING 2025-05-15 15:50:58,086 log Not Found: /media/profile_images/Schermafbeelding_2025-01-08_om_13.29.58.png
+WARNING 2025-05-15 15:50:58,087 basehttp "GET /media/profile_images/Schermafbeelding_2025-01-08_om_13.29.58.png HTTP/1.1" 404 4215
+WARNING 2025-05-15 15:50:58,097 log Not Found: /media/profile_images/Schermafbeelding_2025-01-06_om_15.14.17.png
+WARNING 2025-05-15 15:50:58,097 basehttp "GET /media/profile_images/Schermafbeelding_2025-01-06_om_15.14.17.png HTTP/1.1" 404 4215
+WARNING 2025-05-15 15:50:58,107 log Not Found: /media/profile_images/remarqz-logo-full-color-rgb-900px-w-144ppi.png
+WARNING 2025-05-15 15:50:58,108 basehttp "GET /media/profile_images/remarqz-logo-full-color-rgb-900px-w-144ppi.png HTTP/1.1" 404 4227
+WARNING 2025-05-15 15:50:58,119 log Not Found: /media/Logo PS.png
+WARNING 2025-05-15 15:50:58,132 basehttp "GET /media/Logo%20PS.png HTTP/1.1" 404 4029
+WARNING 2025-05-15 15:50:58,140 log Not Found: /media/profile_images/Schermafbeelding_2024-10-24_om_16.01.17.png
+WARNING 2025-05-15 15:50:58,141 basehttp "GET /media/profile_images/Schermafbeelding_2024-10-24_om_16.01.17.png HTTP/1.1" 404 4215
+WARNING 2025-05-15 15:50:58,151 log Not Found: /media/Dee & Tracy.jpg
+WARNING 2025-05-15 15:50:58,175 basehttp "GET /media/Dee%20%26%20Tracy.jpg HTTP/1.1" 404 4063
+WARNING 2025-05-15 15:50:58,187 log Not Found: /media/profile_images/Schermafbeelding_2024-10-11_om_13.21.22.png
+WARNING 2025-05-15 15:50:58,188 basehttp "GET /media/profile_images/Schermafbeelding_2024-10-11_om_13.21.22.png HTTP/1.1" 404 4215
+WARNING 2025-05-15 15:50:58,199 log Not Found: /media/profile_images/logo-transparent_langwerpig-01-01_edited_edited_edited.png
+WARNING 2025-05-15 15:50:58,207 basehttp "GET /media/profile_images/logo-transparent_langwerpig-01-01_edited_edited_edited.png HTTP/1.1" 404 4275
+WARNING 2025-05-15 15:50:58,235 log Not Found: /media/profile_images/icon_purple_kopie_jkDxYW0.png
+WARNING 2025-05-15 15:50:58,245 basehttp "GET /media/profile_images/icon_purple_kopie_jkDxYW0.png HTTP/1.1" 404 4159
+INFO 2025-05-15 15:50:59,239 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-15 15:59:05,592 basehttp "GET /api/reviews?domain=pipco25.nl HTTP/1.1" 200 322
+INFO 2025-05-15 15:59:30,618 basehttp "GET /api/reviews?domain=remarqz.com HTTP/1.1" 200 12268
+INFO 2025-05-15 16:02:47,986 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 54876
+WARNING 2025-05-15 16:02:48,028 log Not Found: /media/profile_images/22e53e_7066c7318bb34be38d3a4f2e3a256021mv2.webp
+WARNING 2025-05-15 16:02:48,028 basehttp "GET /media/profile_images/22e53e_7066c7318bb34be38d3a4f2e3a256021mv2.webp HTTP/1.1" 404 4231
+WARNING 2025-05-15 16:02:48,035 log Not Found: /media/profile_images/22e53e_7066c7318bb34be38d3a4f2e3a256021mv2_PFLhi0c.webp
+WARNING 2025-05-15 16:02:48,036 basehttp "GET /media/profile_images/22e53e_7066c7318bb34be38d3a4f2e3a256021mv2_PFLhi0c.webp HTTP/1.1" 404 4263
+WARNING 2025-05-15 16:02:48,044 log Not Found: /media/profile_images/ED-removebg-preview_Kc0VegY.png
+WARNING 2025-05-15 16:02:48,045 basehttp "GET /media/profile_images/ED-removebg-preview_Kc0VegY.png HTTP/1.1" 404 4167
+WARNING 2025-05-15 16:02:48,053 log Not Found: /media/profile_images/logo_Flor-it_R9hl2VF.png
+WARNING 2025-05-15 16:02:48,066 basehttp "GET /media/profile_images/logo_Flor-it_R9hl2VF.png HTTP/1.1" 404 4139
+WARNING 2025-05-15 16:02:48,096 log Not Found: /media/profile_images/logo_Flor-it_3ug9vGy.png
+WARNING 2025-05-15 16:02:48,114 basehttp "GET /media/profile_images/logo_Flor-it_3ug9vGy.png HTTP/1.1" 404 4139
+WARNING 2025-05-15 16:02:48,137 log Not Found: /media/profile_images/logo_Flor-it_QbHvwb7.png
+WARNING 2025-05-15 16:02:48,150 basehttp "GET /media/profile_images/logo_Flor-it_QbHvwb7.png HTTP/1.1" 404 4139
+WARNING 2025-05-15 16:02:48,159 log Not Found: /media/profile_images/logo_flor-it.png
+WARNING 2025-05-15 16:02:48,160 basehttp "GET /media/profile_images/logo_flor-it.png HTTP/1.1" 404 4107
+WARNING 2025-05-15 16:02:48,190 log Not Found: /media/profile_images/ED-removebg-preview_CBDMx0t.png
+WARNING 2025-05-15 16:02:48,190 basehttp "GET /media/profile_images/ED-removebg-preview_CBDMx0t.png HTTP/1.1" 404 4167
+WARNING 2025-05-15 16:02:48,219 log Not Found: /media/profile_images/logo_Flor-it_I3sk1vS.png
+WARNING 2025-05-15 16:02:48,220 basehttp "GET /media/profile_images/logo_Flor-it_I3sk1vS.png HTTP/1.1" 404 4139
+WARNING 2025-05-15 16:02:48,230 log Not Found: /media/profile_images/logo_Flor-it_ycPeTUA.png
+WARNING 2025-05-15 16:02:48,243 basehttp "GET /media/profile_images/logo_Flor-it_ycPeTUA.png HTTP/1.1" 404 4139
+WARNING 2025-05-15 16:02:48,254 log Not Found: /media/profile_images/ED-removebg-preview_neUNEjX.png
+WARNING 2025-05-15 16:02:48,275 basehttp "GET /media/profile_images/ED-removebg-preview_neUNEjX.png HTTP/1.1" 404 4167
+WARNING 2025-05-15 16:02:48,284 log Not Found: /media/profile_images/logo_Flor-it_JECFN7N.png
+WARNING 2025-05-15 16:02:48,285 basehttp "GET /media/profile_images/logo_Flor-it_JECFN7N.png HTTP/1.1" 404 4139
+WARNING 2025-05-15 16:02:48,315 log Not Found: /media/profile_images/logo_Flor-it_p6KsS8d.png
+WARNING 2025-05-15 16:02:48,315 basehttp "GET /media/profile_images/logo_Flor-it_p6KsS8d.png HTTP/1.1" 404 4139
+WARNING 2025-05-15 16:02:48,342 log Not Found: /media/profile_images/logo_Flor-it_1mmrPW0.png
+WARNING 2025-05-15 16:02:48,343 basehttp "GET /media/profile_images/logo_Flor-it_1mmrPW0.png HTTP/1.1" 404 4139
+WARNING 2025-05-15 16:02:48,357 log Not Found: /media/profile_images/remarqz-logo-mark-full-color-rgb-900px-w-144ppi.png
+WARNING 2025-05-15 16:02:48,368 basehttp "GET /media/profile_images/remarqz-logo-mark-full-color-rgb-900px-w-144ppi.png HTTP/1.1" 404 4247
+WARNING 2025-05-15 16:02:48,393 log Not Found: /media/profile_images/Flor_IT-Badge.png
+WARNING 2025-05-15 16:02:48,418 basehttp "GET /media/profile_images/Flor_IT-Badge.png HTTP/1.1" 404 4111
+WARNING 2025-05-15 16:02:48,428 log Not Found: /media/profile_images/logo_Flor-it.png
+WARNING 2025-05-15 16:02:48,442 basehttp "GET /media/profile_images/logo_Flor-it.png HTTP/1.1" 404 4107
+WARNING 2025-05-15 16:02:48,454 log Not Found: /media/profile_images/remarqz-logo-full-color-rgb-900px-w-144ppi.jpg
+WARNING 2025-05-15 16:02:48,455 basehttp "GET /media/profile_images/remarqz-logo-full-color-rgb-900px-w-144ppi.jpg HTTP/1.1" 404 4227
+WARNING 2025-05-15 16:02:48,482 log Not Found: /media/profile_images/Schermafbeelding_2025-01-08_om_13.29.58.png
+WARNING 2025-05-15 16:02:48,493 basehttp "GET /media/profile_images/Schermafbeelding_2025-01-08_om_13.29.58.png HTTP/1.1" 404 4215
+WARNING 2025-05-15 16:02:48,503 log Not Found: /media/profile_images/Schermafbeelding_2025-01-06_om_15.14.17.png
+WARNING 2025-05-15 16:02:48,503 basehttp "GET /media/profile_images/Schermafbeelding_2025-01-06_om_15.14.17.png HTTP/1.1" 404 4215
+WARNING 2025-05-15 16:02:48,531 log Not Found: /media/profile_images/remarqz-logo-full-color-rgb-900px-w-144ppi.png
+WARNING 2025-05-15 16:02:48,532 basehttp "GET /media/profile_images/remarqz-logo-full-color-rgb-900px-w-144ppi.png HTTP/1.1" 404 4227
+WARNING 2025-05-15 16:02:48,543 log Not Found: /media/Logo PS.png
+WARNING 2025-05-15 16:02:48,556 basehttp "GET /media/Logo%20PS.png HTTP/1.1" 404 4029
+WARNING 2025-05-15 16:02:48,565 log Not Found: /media/profile_images/Schermafbeelding_2024-10-24_om_16.01.17.png
+WARNING 2025-05-15 16:02:48,565 basehttp "GET /media/profile_images/Schermafbeelding_2024-10-24_om_16.01.17.png HTTP/1.1" 404 4215
+WARNING 2025-05-15 16:02:48,591 log Not Found: /media/Dee & Tracy.jpg
+WARNING 2025-05-15 16:02:48,603 basehttp "GET /media/Dee%20%26%20Tracy.jpg HTTP/1.1" 404 4063
+WARNING 2025-05-15 16:02:48,611 log Not Found: /media/profile_images/Schermafbeelding_2024-10-11_om_13.21.22.png
+WARNING 2025-05-15 16:02:48,612 basehttp "GET /media/profile_images/Schermafbeelding_2024-10-11_om_13.21.22.png HTTP/1.1" 404 4215
+WARNING 2025-05-15 16:02:48,624 log Not Found: /media/profile_images/logo-transparent_langwerpig-01-01_edited_edited_edited.png
+WARNING 2025-05-15 16:02:48,636 basehttp "GET /media/profile_images/logo-transparent_langwerpig-01-01_edited_edited_edited.png HTTP/1.1" 404 4275
+WARNING 2025-05-15 16:02:48,646 log Not Found: /media/profile_images/icon_purple_kopie_jkDxYW0.png
+WARNING 2025-05-15 16:02:48,647 basehttp "GET /media/profile_images/icon_purple_kopie_jkDxYW0.png HTTP/1.1" 404 4159
+INFO 2025-05-15 16:02:49,665 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-15 16:03:48,558 basehttp "GET /admin/review_system/customer/178/change/ HTTP/1.1" 200 20347
+INFO 2025-05-15 16:03:48,650 basehttp "GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 200 392
+INFO 2025-05-15 16:03:50,204 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-15 16:15:28,471 autoreload E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\review_system\views.py changed, reloading.
+INFO 2025-05-15 16:15:29,393 autoreload Watching for file changes with StatReloader
+WARNING 2025-05-15 16:15:54,808 log Bad Request: /api/reviews
+WARNING 2025-05-15 16:15:54,809 basehttp "GET /api/reviews?domain=remarqz.com HTTP/1.1" 400 252
+INFO 2025-05-15 16:16:18,912 autoreload E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\review_system\views.py changed, reloading.
+INFO 2025-05-15 16:16:19,790 autoreload Watching for file changes with StatReloader
+INFO 2025-05-15 16:16:26,768 basehttp "GET /api/reviews?domain=remarqz.com HTTP/1.1" 200 12268
+INFO 2025-05-15 16:17:02,340 basehttp "POST /admin/review_system/customer/178/change/ HTTP/1.1" 302 0
+INFO 2025-05-15 16:17:05,254 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 55105
+WARNING 2025-05-15 16:17:05,295 log Not Found: /media/profile_images/22e53e_7066c7318bb34be38d3a4f2e3a256021mv2.webp
+WARNING 2025-05-15 16:17:05,296 basehttp "GET /media/profile_images/22e53e_7066c7318bb34be38d3a4f2e3a256021mv2.webp HTTP/1.1" 404 4231
+WARNING 2025-05-15 16:17:05,303 log Not Found: /media/profile_images/22e53e_7066c7318bb34be38d3a4f2e3a256021mv2_PFLhi0c.webp
+WARNING 2025-05-15 16:17:05,304 basehttp "GET /media/profile_images/22e53e_7066c7318bb34be38d3a4f2e3a256021mv2_PFLhi0c.webp HTTP/1.1" 404 4263
+WARNING 2025-05-15 16:17:05,312 log Not Found: /media/profile_images/ED-removebg-preview_Kc0VegY.png
+WARNING 2025-05-15 16:17:05,313 basehttp "GET /media/profile_images/ED-removebg-preview_Kc0VegY.png HTTP/1.1" 404 4167
+WARNING 2025-05-15 16:17:05,323 log Not Found: /media/profile_images/logo_Flor-it_R9hl2VF.png
+WARNING 2025-05-15 16:17:05,333 basehttp "GET /media/profile_images/logo_Flor-it_R9hl2VF.png HTTP/1.1" 404 4139
+WARNING 2025-05-15 16:17:05,358 log Not Found: /media/profile_images/logo_Flor-it_3ug9vGy.png
+WARNING 2025-05-15 16:17:05,359 basehttp "GET /media/profile_images/logo_Flor-it_3ug9vGy.png HTTP/1.1" 404 4139
+WARNING 2025-05-15 16:17:05,371 log Not Found: /media/profile_images/logo_Flor-it_QbHvwb7.png
+WARNING 2025-05-15 16:17:05,384 basehttp "GET /media/profile_images/logo_Flor-it_QbHvwb7.png HTTP/1.1" 404 4139
+WARNING 2025-05-15 16:17:05,392 log Not Found: /media/profile_images/logo_flor-it.png
+WARNING 2025-05-15 16:17:05,392 basehttp "GET /media/profile_images/logo_flor-it.png HTTP/1.1" 404 4107
+WARNING 2025-05-15 16:17:05,403 log Not Found: /media/profile_images/ED-removebg-preview_CBDMx0t.png
+WARNING 2025-05-15 16:17:05,418 basehttp "GET /media/profile_images/ED-removebg-preview_CBDMx0t.png HTTP/1.1" 404 4167
+WARNING 2025-05-15 16:17:05,427 log Not Found: /media/profile_images/logo_Flor-it_I3sk1vS.png
+WARNING 2025-05-15 16:17:05,428 basehttp "GET /media/profile_images/logo_Flor-it_I3sk1vS.png HTTP/1.1" 404 4139
+WARNING 2025-05-15 16:17:05,455 log Not Found: /media/profile_images/logo_Flor-it_ycPeTUA.png
+WARNING 2025-05-15 16:17:05,456 basehttp "GET /media/profile_images/logo_Flor-it_ycPeTUA.png HTTP/1.1" 404 4139
+WARNING 2025-05-15 16:17:05,466 log Not Found: /media/profile_images/ED-removebg-preview_neUNEjX.png
+WARNING 2025-05-15 16:17:05,475 basehttp "GET /media/profile_images/ED-removebg-preview_neUNEjX.png HTTP/1.1" 404 4167
+WARNING 2025-05-15 16:17:05,498 log Not Found: /media/profile_images/logo_Flor-it_JECFN7N.png
+WARNING 2025-05-15 16:17:05,498 basehttp "GET /media/profile_images/logo_Flor-it_JECFN7N.png HTTP/1.1" 404 4139
+WARNING 2025-05-15 16:17:05,509 log Not Found: /media/profile_images/logo_Flor-it_p6KsS8d.png
+WARNING 2025-05-15 16:17:05,521 basehttp "GET /media/profile_images/logo_Flor-it_p6KsS8d.png HTTP/1.1" 404 4139
+WARNING 2025-05-15 16:17:05,547 log Not Found: /media/profile_images/logo_Flor-it_1mmrPW0.png
+WARNING 2025-05-15 16:17:05,548 basehttp "GET /media/profile_images/logo_Flor-it_1mmrPW0.png HTTP/1.1" 404 4139
+WARNING 2025-05-15 16:17:05,556 log Not Found: /media/profile_images/remarqz-logo-mark-full-color-rgb-900px-w-144ppi.png
+WARNING 2025-05-15 16:17:05,571 basehttp "GET /media/profile_images/remarqz-logo-mark-full-color-rgb-900px-w-144ppi.png HTTP/1.1" 404 4247
+WARNING 2025-05-15 16:17:05,580 log Not Found: /media/profile_images/Flor_IT-Badge.png
+WARNING 2025-05-15 16:17:05,580 basehttp "GET /media/profile_images/Flor_IT-Badge.png HTTP/1.1" 404 4111
+WARNING 2025-05-15 16:17:05,591 log Not Found: /media/profile_images/logo_Flor-it.png
+WARNING 2025-05-15 16:17:05,603 basehttp "GET /media/profile_images/logo_Flor-it.png HTTP/1.1" 404 4107
+WARNING 2025-05-15 16:17:05,611 log Not Found: /media/profile_images/remarqz-logo-full-color-rgb-900px-w-144ppi.jpg
+WARNING 2025-05-15 16:17:05,612 basehttp "GET /media/profile_images/remarqz-logo-full-color-rgb-900px-w-144ppi.jpg HTTP/1.1" 404 4227
+WARNING 2025-05-15 16:17:05,621 log Not Found: /media/profile_images/Schermafbeelding_2025-01-08_om_13.29.58.png
+WARNING 2025-05-15 16:17:05,634 basehttp "GET /media/profile_images/Schermafbeelding_2025-01-08_om_13.29.58.png HTTP/1.1" 404 4215
+WARNING 2025-05-15 16:17:05,643 log Not Found: /media/profile_images/Schermafbeelding_2025-01-06_om_15.14.17.png
+WARNING 2025-05-15 16:17:05,644 basehttp "GET /media/profile_images/Schermafbeelding_2025-01-06_om_15.14.17.png HTTP/1.1" 404 4215
+WARNING 2025-05-15 16:17:05,653 log Not Found: /media/profile_images/remarqz-logo-full-color-rgb-900px-w-144ppi.png
+WARNING 2025-05-15 16:17:05,663 basehttp "GET /media/profile_images/remarqz-logo-full-color-rgb-900px-w-144ppi.png HTTP/1.1" 404 4227
+WARNING 2025-05-15 16:17:05,682 log Not Found: /media/Logo PS.png
+WARNING 2025-05-15 16:17:05,683 basehttp "GET /media/Logo%20PS.png HTTP/1.1" 404 4029
+WARNING 2025-05-15 16:17:05,693 log Not Found: /media/profile_images/Schermafbeelding_2024-10-24_om_16.01.17.png
+WARNING 2025-05-15 16:17:05,706 basehttp "GET /media/profile_images/Schermafbeelding_2024-10-24_om_16.01.17.png HTTP/1.1" 404 4215
+WARNING 2025-05-15 16:17:05,719 log Not Found: /media/Dee & Tracy.jpg
+WARNING 2025-05-15 16:17:05,730 basehttp "GET /media/Dee%20%26%20Tracy.jpg HTTP/1.1" 404 4063
+WARNING 2025-05-15 16:17:05,738 log Not Found: /media/profile_images/Schermafbeelding_2024-10-11_om_13.21.22.png
+WARNING 2025-05-15 16:17:05,739 basehttp "GET /media/profile_images/Schermafbeelding_2024-10-11_om_13.21.22.png HTTP/1.1" 404 4215
+WARNING 2025-05-15 16:17:05,765 log Not Found: /media/profile_images/logo-transparent_langwerpig-01-01_edited_edited_edited.png
+WARNING 2025-05-15 16:17:05,765 basehttp "GET /media/profile_images/logo-transparent_langwerpig-01-01_edited_edited_edited.png HTTP/1.1" 404 4275
+WARNING 2025-05-15 16:17:05,774 log Not Found: /media/profile_images/icon_purple_kopie_jkDxYW0.png
+WARNING 2025-05-15 16:17:05,774 basehttp "GET /media/profile_images/icon_purple_kopie_jkDxYW0.png HTTP/1.1" 404 4159
+INFO 2025-05-15 16:17:06,913 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-15 16:17:20,543 basehttp "GET /admin/review_system/customer/178/change/ HTTP/1.1" 200 20347
+INFO 2025-05-15 16:17:23,815 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-15 16:17:31,952 basehttp "GET /api/reviews?domain=remarqz.com HTTP/1.1" 200 5377
+INFO 2025-05-15 16:51:13,405 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 54879
+WARNING 2025-05-15 16:51:13,468 log Not Found: /media/profile_images/22e53e_7066c7318bb34be38d3a4f2e3a256021mv2.webp
+WARNING 2025-05-15 16:51:13,468 basehttp "GET /media/profile_images/22e53e_7066c7318bb34be38d3a4f2e3a256021mv2.webp HTTP/1.1" 404 4231
+WARNING 2025-05-15 16:51:13,476 log Not Found: /media/profile_images/22e53e_7066c7318bb34be38d3a4f2e3a256021mv2_PFLhi0c.webp
+WARNING 2025-05-15 16:51:13,477 basehttp "GET /media/profile_images/22e53e_7066c7318bb34be38d3a4f2e3a256021mv2_PFLhi0c.webp HTTP/1.1" 404 4263
+WARNING 2025-05-15 16:51:13,487 log Not Found: /media/profile_images/ED-removebg-preview_Kc0VegY.png
+WARNING 2025-05-15 16:51:13,499 basehttp "GET /media/profile_images/ED-removebg-preview_Kc0VegY.png HTTP/1.1" 404 4167
+WARNING 2025-05-15 16:51:13,508 log Not Found: /media/profile_images/logo_Flor-it_R9hl2VF.png
+WARNING 2025-05-15 16:51:13,512 basehttp "GET /media/profile_images/logo_Flor-it_R9hl2VF.png HTTP/1.1" 404 4139
+WARNING 2025-05-15 16:51:13,533 log Not Found: /media/profile_images/logo_Flor-it_3ug9vGy.png
+WARNING 2025-05-15 16:51:13,540 basehttp "GET /media/profile_images/logo_Flor-it_3ug9vGy.png HTTP/1.1" 404 4139
+WARNING 2025-05-15 16:51:13,549 log Not Found: /media/profile_images/logo_Flor-it_QbHvwb7.png
+WARNING 2025-05-15 16:51:13,549 basehttp "GET /media/profile_images/logo_Flor-it_QbHvwb7.png HTTP/1.1" 404 4139
+WARNING 2025-05-15 16:51:13,562 log Not Found: /media/profile_images/logo_flor-it.png
+WARNING 2025-05-15 16:51:13,580 basehttp "GET /media/profile_images/logo_flor-it.png HTTP/1.1" 404 4107
+WARNING 2025-05-15 16:51:13,593 log Not Found: /media/profile_images/ED-removebg-preview_CBDMx0t.png
+WARNING 2025-05-15 16:51:13,611 basehttp "GET /media/profile_images/ED-removebg-preview_CBDMx0t.png HTTP/1.1" 404 4167
+WARNING 2025-05-15 16:51:13,625 log Not Found: /media/profile_images/logo_Flor-it_I3sk1vS.png
+WARNING 2025-05-15 16:51:13,641 basehttp "GET /media/profile_images/logo_Flor-it_I3sk1vS.png HTTP/1.1" 404 4139
+WARNING 2025-05-15 16:51:13,665 log Not Found: /media/profile_images/logo_Flor-it_ycPeTUA.png
+WARNING 2025-05-15 16:51:13,673 basehttp "GET /media/profile_images/logo_Flor-it_ycPeTUA.png HTTP/1.1" 404 4139
+WARNING 2025-05-15 16:51:13,688 log Not Found: /media/profile_images/ED-removebg-preview_neUNEjX.png
+WARNING 2025-05-15 16:51:13,702 basehttp "GET /media/profile_images/ED-removebg-preview_neUNEjX.png HTTP/1.1" 404 4167
+WARNING 2025-05-15 16:51:13,712 log Not Found: /media/profile_images/logo_Flor-it_JECFN7N.png
+WARNING 2025-05-15 16:51:13,716 basehttp "GET /media/profile_images/logo_Flor-it_JECFN7N.png HTTP/1.1" 404 4139
+WARNING 2025-05-15 16:51:13,750 log Not Found: /media/profile_images/logo_Flor-it_p6KsS8d.png
+WARNING 2025-05-15 16:51:13,765 basehttp "GET /media/profile_images/logo_Flor-it_p6KsS8d.png HTTP/1.1" 404 4139
+WARNING 2025-05-15 16:51:13,778 log Not Found: /media/profile_images/logo_Flor-it_1mmrPW0.png
+WARNING 2025-05-15 16:51:13,786 basehttp "GET /media/profile_images/logo_Flor-it_1mmrPW0.png HTTP/1.1" 404 4139
+WARNING 2025-05-15 16:51:13,813 log Not Found: /media/profile_images/remarqz-logo-mark-full-color-rgb-900px-w-144ppi.png
+WARNING 2025-05-15 16:51:13,830 basehttp "GET /media/profile_images/remarqz-logo-mark-full-color-rgb-900px-w-144ppi.png HTTP/1.1" 404 4247
+WARNING 2025-05-15 16:51:13,843 log Not Found: /media/profile_images/Flor_IT-Badge.png
+WARNING 2025-05-15 16:51:13,860 basehttp "GET /media/profile_images/Flor_IT-Badge.png HTTP/1.1" 404 4111
+WARNING 2025-05-15 16:51:13,875 log Not Found: /media/profile_images/logo_Flor-it.png
+WARNING 2025-05-15 16:51:13,893 basehttp "GET /media/profile_images/logo_Flor-it.png HTTP/1.1" 404 4107
+WARNING 2025-05-15 16:51:13,902 log Not Found: /media/profile_images/remarqz-logo-full-color-rgb-900px-w-144ppi.jpg
+WARNING 2025-05-15 16:51:13,903 basehttp "GET /media/profile_images/remarqz-logo-full-color-rgb-900px-w-144ppi.jpg HTTP/1.1" 404 4227
+WARNING 2025-05-15 16:51:13,912 log Not Found: /media/profile_images/Schermafbeelding_2025-01-08_om_13.29.58.png
+WARNING 2025-05-15 16:51:13,913 basehttp "GET /media/profile_images/Schermafbeelding_2025-01-08_om_13.29.58.png HTTP/1.1" 404 4215
+WARNING 2025-05-15 16:51:13,973 log Not Found: /media/profile_images/Schermafbeelding_2025-01-06_om_15.14.17.png
+WARNING 2025-05-15 16:51:13,974 basehttp "GET /media/profile_images/Schermafbeelding_2025-01-06_om_15.14.17.png HTTP/1.1" 404 4215
+WARNING 2025-05-15 16:51:13,985 log Not Found: /media/profile_images/remarqz-logo-full-color-rgb-900px-w-144ppi.png
+WARNING 2025-05-15 16:51:14,001 basehttp "GET /media/profile_images/remarqz-logo-full-color-rgb-900px-w-144ppi.png HTTP/1.1" 404 4227
+WARNING 2025-05-15 16:51:14,016 log Not Found: /media/Logo PS.png
+WARNING 2025-05-15 16:51:14,018 basehttp "GET /media/Logo%20PS.png HTTP/1.1" 404 4029
+WARNING 2025-05-15 16:51:14,047 log Not Found: /media/profile_images/Schermafbeelding_2024-10-24_om_16.01.17.png
+WARNING 2025-05-15 16:51:14,063 basehttp "GET /media/profile_images/Schermafbeelding_2024-10-24_om_16.01.17.png HTTP/1.1" 404 4215
+WARNING 2025-05-15 16:51:14,094 log Not Found: /media/Dee & Tracy.jpg
+WARNING 2025-05-15 16:51:14,095 basehttp "GET /media/Dee%20%26%20Tracy.jpg HTTP/1.1" 404 4063
+WARNING 2025-05-15 16:51:14,105 log Not Found: /media/profile_images/Schermafbeelding_2024-10-11_om_13.21.22.png
+WARNING 2025-05-15 16:51:14,127 basehttp "GET /media/profile_images/Schermafbeelding_2024-10-11_om_13.21.22.png HTTP/1.1" 404 4215
+WARNING 2025-05-15 16:51:14,144 log Not Found: /media/profile_images/logo-transparent_langwerpig-01-01_edited_edited_edited.png
+WARNING 2025-05-15 16:51:14,158 basehttp "GET /media/profile_images/logo-transparent_langwerpig-01-01_edited_edited_edited.png HTTP/1.1" 404 4275
+WARNING 2025-05-15 16:51:14,170 log Not Found: /media/profile_images/icon_purple_kopie_jkDxYW0.png
+WARNING 2025-05-15 16:51:14,171 basehttp "GET /media/profile_images/icon_purple_kopie_jkDxYW0.png HTTP/1.1" 404 4159
+INFO 2025-05-15 16:51:15,058 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-15 17:04:09,101 autoreload E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\review_system\models.py changed, reloading.
+INFO 2025-05-15 17:04:09,996 autoreload Watching for file changes with StatReloader
+INFO 2025-05-15 17:04:18,672 autoreload E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\review_system\admin.py changed, reloading.
+INFO 2025-05-15 17:04:19,563 autoreload Watching for file changes with StatReloader
+INFO 2025-05-15 17:10:30,648 autoreload Watching for file changes with StatReloader
+INFO 2025-05-15 17:13:13,626 autoreload E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\review_system\views.py changed, reloading.
+INFO 2025-05-15 17:13:14,629 autoreload Watching for file changes with StatReloader
+INFO 2025-05-15 17:17:47,497 autoreload E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\review_system\views.py changed, reloading.
+INFO 2025-05-15 17:17:48,406 autoreload Watching for file changes with StatReloader
+INFO 2025-05-15 17:18:10,840 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 54978
+WARNING 2025-05-15 17:18:10,870 log Not Found: /media/profile_images/22e53e_7066c7318bb34be38d3a4f2e3a256021mv2.webp
+WARNING 2025-05-15 17:18:10,871 basehttp "GET /media/profile_images/22e53e_7066c7318bb34be38d3a4f2e3a256021mv2.webp HTTP/1.1" 404 4231
+WARNING 2025-05-15 17:18:10,879 log Not Found: /media/profile_images/22e53e_7066c7318bb34be38d3a4f2e3a256021mv2_PFLhi0c.webp
+WARNING 2025-05-15 17:18:10,879 basehttp "GET /media/profile_images/22e53e_7066c7318bb34be38d3a4f2e3a256021mv2_PFLhi0c.webp HTTP/1.1" 404 4263
+WARNING 2025-05-15 17:18:10,887 log Not Found: /media/profile_images/ED-removebg-preview_Kc0VegY.png
+WARNING 2025-05-15 17:18:10,888 basehttp "GET /media/profile_images/ED-removebg-preview_Kc0VegY.png HTTP/1.1" 404 4167
+WARNING 2025-05-15 17:18:10,896 log Not Found: /media/profile_images/logo_Flor-it_R9hl2VF.png
+WARNING 2025-05-15 17:18:10,897 basehttp "GET /media/profile_images/logo_Flor-it_R9hl2VF.png HTTP/1.1" 404 4139
+WARNING 2025-05-15 17:18:10,904 log Not Found: /media/profile_images/logo_Flor-it_3ug9vGy.png
+WARNING 2025-05-15 17:18:10,905 basehttp "GET /media/profile_images/logo_Flor-it_3ug9vGy.png HTTP/1.1" 404 4139
+WARNING 2025-05-15 17:18:10,912 log Not Found: /media/profile_images/logo_Flor-it_QbHvwb7.png
+WARNING 2025-05-15 17:18:10,913 basehttp "GET /media/profile_images/logo_Flor-it_QbHvwb7.png HTTP/1.1" 404 4139
+WARNING 2025-05-15 17:18:10,922 log Not Found: /media/profile_images/logo_flor-it.png
+WARNING 2025-05-15 17:18:10,923 basehttp "GET /media/profile_images/logo_flor-it.png HTTP/1.1" 404 4107
+WARNING 2025-05-15 17:18:10,931 log Not Found: /media/profile_images/ED-removebg-preview_CBDMx0t.png
+WARNING 2025-05-15 17:18:10,931 basehttp "GET /media/profile_images/ED-removebg-preview_CBDMx0t.png HTTP/1.1" 404 4167
+WARNING 2025-05-15 17:18:10,941 log Not Found: /media/profile_images/logo_Flor-it_I3sk1vS.png
+WARNING 2025-05-15 17:18:10,942 basehttp "GET /media/profile_images/logo_Flor-it_I3sk1vS.png HTTP/1.1" 404 4139
+WARNING 2025-05-15 17:18:10,952 log Not Found: /media/profile_images/logo_Flor-it_ycPeTUA.png
+WARNING 2025-05-15 17:18:10,953 basehttp "GET /media/profile_images/logo_Flor-it_ycPeTUA.png HTTP/1.1" 404 4139
+WARNING 2025-05-15 17:18:10,962 log Not Found: /media/profile_images/ED-removebg-preview_neUNEjX.png
+WARNING 2025-05-15 17:18:10,963 basehttp "GET /media/profile_images/ED-removebg-preview_neUNEjX.png HTTP/1.1" 404 4167
+WARNING 2025-05-15 17:18:10,973 log Not Found: /media/profile_images/logo_Flor-it_JECFN7N.png
+WARNING 2025-05-15 17:18:10,974 basehttp "GET /media/profile_images/logo_Flor-it_JECFN7N.png HTTP/1.1" 404 4139
+WARNING 2025-05-15 17:18:10,982 log Not Found: /media/profile_images/logo_Flor-it_p6KsS8d.png
+WARNING 2025-05-15 17:18:10,982 basehttp "GET /media/profile_images/logo_Flor-it_p6KsS8d.png HTTP/1.1" 404 4139
+WARNING 2025-05-15 17:18:10,991 log Not Found: /media/profile_images/logo_Flor-it_1mmrPW0.png
+WARNING 2025-05-15 17:18:10,992 basehttp "GET /media/profile_images/logo_Flor-it_1mmrPW0.png HTTP/1.1" 404 4139
+WARNING 2025-05-15 17:18:11,001 log Not Found: /media/profile_images/remarqz-logo-mark-full-color-rgb-900px-w-144ppi.png
+WARNING 2025-05-15 17:18:11,002 basehttp "GET /media/profile_images/remarqz-logo-mark-full-color-rgb-900px-w-144ppi.png HTTP/1.1" 404 4247
+WARNING 2025-05-15 17:18:11,012 log Not Found: /media/profile_images/Flor_IT-Badge.png
+WARNING 2025-05-15 17:18:11,013 basehttp "GET /media/profile_images/Flor_IT-Badge.png HTTP/1.1" 404 4111
+WARNING 2025-05-15 17:18:11,022 log Not Found: /media/profile_images/logo_Flor-it.png
+WARNING 2025-05-15 17:18:11,023 basehttp "GET /media/profile_images/logo_Flor-it.png HTTP/1.1" 404 4107
+WARNING 2025-05-15 17:18:11,032 log Not Found: /media/profile_images/remarqz-logo-full-color-rgb-900px-w-144ppi.jpg
+WARNING 2025-05-15 17:18:11,032 basehttp "GET /media/profile_images/remarqz-logo-full-color-rgb-900px-w-144ppi.jpg HTTP/1.1" 404 4227
+WARNING 2025-05-15 17:18:11,042 log Not Found: /media/profile_images/Schermafbeelding_2025-01-08_om_13.29.58.png
+WARNING 2025-05-15 17:18:11,043 basehttp "GET /media/profile_images/Schermafbeelding_2025-01-08_om_13.29.58.png HTTP/1.1" 404 4215
+WARNING 2025-05-15 17:18:11,052 log Not Found: /media/profile_images/Schermafbeelding_2025-01-06_om_15.14.17.png
+WARNING 2025-05-15 17:18:11,052 basehttp "GET /media/profile_images/Schermafbeelding_2025-01-06_om_15.14.17.png HTTP/1.1" 404 4215
+WARNING 2025-05-15 17:18:11,062 log Not Found: /media/profile_images/remarqz-logo-full-color-rgb-900px-w-144ppi.png
+WARNING 2025-05-15 17:18:11,063 basehttp "GET /media/profile_images/remarqz-logo-full-color-rgb-900px-w-144ppi.png HTTP/1.1" 404 4227
+WARNING 2025-05-15 17:18:11,071 log Not Found: /media/Logo PS.png
+WARNING 2025-05-15 17:18:11,071 basehttp "GET /media/Logo%20PS.png HTTP/1.1" 404 4029
+WARNING 2025-05-15 17:18:11,080 log Not Found: /media/profile_images/Schermafbeelding_2024-10-24_om_16.01.17.png
+WARNING 2025-05-15 17:18:11,080 basehttp "GET /media/profile_images/Schermafbeelding_2024-10-24_om_16.01.17.png HTTP/1.1" 404 4215
+WARNING 2025-05-15 17:18:11,090 log Not Found: /media/Dee & Tracy.jpg
+WARNING 2025-05-15 17:18:11,091 basehttp "GET /media/Dee%20%26%20Tracy.jpg HTTP/1.1" 404 4063
+WARNING 2025-05-15 17:18:11,099 log Not Found: /media/profile_images/Schermafbeelding_2024-10-11_om_13.21.22.png
+WARNING 2025-05-15 17:18:11,100 basehttp "GET /media/profile_images/Schermafbeelding_2024-10-11_om_13.21.22.png HTTP/1.1" 404 4215
+WARNING 2025-05-15 17:18:11,110 log Not Found: /media/profile_images/logo-transparent_langwerpig-01-01_edited_edited_edited.png
+WARNING 2025-05-15 17:18:11,111 basehttp "GET /media/profile_images/logo-transparent_langwerpig-01-01_edited_edited_edited.png HTTP/1.1" 404 4275
+WARNING 2025-05-15 17:18:11,122 log Not Found: /media/profile_images/icon_purple_kopie_jkDxYW0.png
+WARNING 2025-05-15 17:18:11,123 basehttp "GET /media/profile_images/icon_purple_kopie_jkDxYW0.png HTTP/1.1" 404 4159
+INFO 2025-05-15 17:18:12,427 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-15 17:18:37,965 basehttp "GET /admin/review_system/customer/178/change/ HTTP/1.1" 200 20307
+INFO 2025-05-15 17:18:39,611 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-15 17:18:46,419 basehttp "POST /admin/review_system/customer/178/change/ HTTP/1.1" 302 0
+INFO 2025-05-15 17:18:58,549 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 55201
+WARNING 2025-05-15 17:18:58,641 log Not Found: /media/profile_images/22e53e_7066c7318bb34be38d3a4f2e3a256021mv2.webp
+WARNING 2025-05-15 17:18:58,642 basehttp "GET /media/profile_images/22e53e_7066c7318bb34be38d3a4f2e3a256021mv2.webp HTTP/1.1" 404 4231
+WARNING 2025-05-15 17:18:58,652 log Not Found: /media/profile_images/22e53e_7066c7318bb34be38d3a4f2e3a256021mv2_PFLhi0c.webp
+WARNING 2025-05-15 17:18:58,652 basehttp "GET /media/profile_images/22e53e_7066c7318bb34be38d3a4f2e3a256021mv2_PFLhi0c.webp HTTP/1.1" 404 4263
+WARNING 2025-05-15 17:18:58,665 log Not Found: /media/profile_images/ED-removebg-preview_Kc0VegY.png
+WARNING 2025-05-15 17:18:58,666 basehttp "GET /media/profile_images/ED-removebg-preview_Kc0VegY.png HTTP/1.1" 404 4167
+WARNING 2025-05-15 17:18:58,675 log Not Found: /media/profile_images/logo_Flor-it_R9hl2VF.png
+WARNING 2025-05-15 17:18:58,676 basehttp "GET /media/profile_images/logo_Flor-it_R9hl2VF.png HTTP/1.1" 404 4139
+WARNING 2025-05-15 17:18:58,684 log Not Found: /media/profile_images/logo_Flor-it_3ug9vGy.png
+WARNING 2025-05-15 17:18:58,686 basehttp "GET /media/profile_images/logo_Flor-it_3ug9vGy.png HTTP/1.1" 404 4139
+WARNING 2025-05-15 17:18:58,695 log Not Found: /media/profile_images/logo_Flor-it_QbHvwb7.png
+WARNING 2025-05-15 17:18:58,696 basehttp "GET /media/profile_images/logo_Flor-it_QbHvwb7.png HTTP/1.1" 404 4139
+WARNING 2025-05-15 17:18:58,704 log Not Found: /media/profile_images/logo_flor-it.png
+WARNING 2025-05-15 17:18:58,704 basehttp "GET /media/profile_images/logo_flor-it.png HTTP/1.1" 404 4107
+WARNING 2025-05-15 17:18:58,712 log Not Found: /media/profile_images/ED-removebg-preview_CBDMx0t.png
+WARNING 2025-05-15 17:18:58,713 basehttp "GET /media/profile_images/ED-removebg-preview_CBDMx0t.png HTTP/1.1" 404 4167
+WARNING 2025-05-15 17:18:58,722 log Not Found: /media/profile_images/logo_Flor-it_I3sk1vS.png
+WARNING 2025-05-15 17:18:58,722 basehttp "GET /media/profile_images/logo_Flor-it_I3sk1vS.png HTTP/1.1" 404 4139
+WARNING 2025-05-15 17:18:58,730 log Not Found: /media/profile_images/logo_Flor-it_ycPeTUA.png
+WARNING 2025-05-15 17:18:58,731 basehttp "GET /media/profile_images/logo_Flor-it_ycPeTUA.png HTTP/1.1" 404 4139
+WARNING 2025-05-15 17:18:58,740 log Not Found: /media/profile_images/ED-removebg-preview_neUNEjX.png
+WARNING 2025-05-15 17:18:58,741 basehttp "GET /media/profile_images/ED-removebg-preview_neUNEjX.png HTTP/1.1" 404 4167
+WARNING 2025-05-15 17:18:58,749 log Not Found: /media/profile_images/logo_Flor-it_JECFN7N.png
+WARNING 2025-05-15 17:18:58,750 basehttp "GET /media/profile_images/logo_Flor-it_JECFN7N.png HTTP/1.1" 404 4139
+WARNING 2025-05-15 17:18:58,757 log Not Found: /media/profile_images/logo_Flor-it_p6KsS8d.png
+WARNING 2025-05-15 17:18:58,758 basehttp "GET /media/profile_images/logo_Flor-it_p6KsS8d.png HTTP/1.1" 404 4139
+WARNING 2025-05-15 17:18:58,769 log Not Found: /media/profile_images/logo_Flor-it_1mmrPW0.png
+WARNING 2025-05-15 17:18:58,770 basehttp "GET /media/profile_images/logo_Flor-it_1mmrPW0.png HTTP/1.1" 404 4139
+WARNING 2025-05-15 17:18:58,779 log Not Found: /media/profile_images/remarqz-logo-mark-full-color-rgb-900px-w-144ppi.png
+WARNING 2025-05-15 17:18:58,780 basehttp "GET /media/profile_images/remarqz-logo-mark-full-color-rgb-900px-w-144ppi.png HTTP/1.1" 404 4247
+WARNING 2025-05-15 17:18:58,788 log Not Found: /media/profile_images/Flor_IT-Badge.png
+WARNING 2025-05-15 17:18:58,789 basehttp "GET /media/profile_images/Flor_IT-Badge.png HTTP/1.1" 404 4111
+WARNING 2025-05-15 17:18:58,797 log Not Found: /media/profile_images/logo_Flor-it.png
+WARNING 2025-05-15 17:18:58,798 basehttp "GET /media/profile_images/logo_Flor-it.png HTTP/1.1" 404 4107
+WARNING 2025-05-15 17:18:58,809 log Not Found: /media/profile_images/remarqz-logo-full-color-rgb-900px-w-144ppi.jpg
+WARNING 2025-05-15 17:18:58,809 basehttp "GET /media/profile_images/remarqz-logo-full-color-rgb-900px-w-144ppi.jpg HTTP/1.1" 404 4227
+WARNING 2025-05-15 17:18:58,817 log Not Found: /media/profile_images/Schermafbeelding_2025-01-08_om_13.29.58.png
+WARNING 2025-05-15 17:18:58,818 basehttp "GET /media/profile_images/Schermafbeelding_2025-01-08_om_13.29.58.png HTTP/1.1" 404 4215
+WARNING 2025-05-15 17:18:58,826 log Not Found: /media/profile_images/Schermafbeelding_2025-01-06_om_15.14.17.png
+WARNING 2025-05-15 17:18:58,827 basehttp "GET /media/profile_images/Schermafbeelding_2025-01-06_om_15.14.17.png HTTP/1.1" 404 4215
+WARNING 2025-05-15 17:18:58,837 log Not Found: /media/profile_images/remarqz-logo-full-color-rgb-900px-w-144ppi.png
+WARNING 2025-05-15 17:18:58,837 basehttp "GET /media/profile_images/remarqz-logo-full-color-rgb-900px-w-144ppi.png HTTP/1.1" 404 4227
+WARNING 2025-05-15 17:18:58,847 log Not Found: /media/Logo PS.png
+WARNING 2025-05-15 17:18:58,848 basehttp "GET /media/Logo%20PS.png HTTP/1.1" 404 4029
+WARNING 2025-05-15 17:18:58,856 log Not Found: /media/profile_images/Schermafbeelding_2024-10-24_om_16.01.17.png
+WARNING 2025-05-15 17:18:58,857 basehttp "GET /media/profile_images/Schermafbeelding_2024-10-24_om_16.01.17.png HTTP/1.1" 404 4215
+WARNING 2025-05-15 17:18:58,865 log Not Found: /media/Dee & Tracy.jpg
+WARNING 2025-05-15 17:18:58,866 basehttp "GET /media/Dee%20%26%20Tracy.jpg HTTP/1.1" 404 4063
+WARNING 2025-05-15 17:18:58,875 log Not Found: /media/profile_images/Schermafbeelding_2024-10-11_om_13.21.22.png
+WARNING 2025-05-15 17:18:58,875 basehttp "GET /media/profile_images/Schermafbeelding_2024-10-11_om_13.21.22.png HTTP/1.1" 404 4215
+WARNING 2025-05-15 17:18:58,885 log Not Found: /media/profile_images/logo-transparent_langwerpig-01-01_edited_edited_edited.png
+WARNING 2025-05-15 17:18:58,886 basehttp "GET /media/profile_images/logo-transparent_langwerpig-01-01_edited_edited_edited.png HTTP/1.1" 404 4275
+WARNING 2025-05-15 17:18:58,894 log Not Found: /media/profile_images/icon_purple_kopie_jkDxYW0.png
+WARNING 2025-05-15 17:18:58,894 basehttp "GET /media/profile_images/icon_purple_kopie_jkDxYW0.png HTTP/1.1" 404 4159
+INFO 2025-05-15 17:19:00,357 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-15 17:19:06,356 basehttp "GET /api/reviews?domain=remarqz.com HTTP/1.1" 200 10404
+INFO 2025-05-15 17:19:27,326 basehttp "GET /admin/review_system/customer/178/change/ HTTP/1.1" 200 20307
+INFO 2025-05-15 17:19:29,210 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-15 17:19:36,673 basehttp "POST /admin/review_system/customer/178/change/ HTTP/1.1" 302 0
+INFO 2025-05-15 17:19:53,919 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 55201
+WARNING 2025-05-15 17:19:53,945 log Not Found: /media/profile_images/22e53e_7066c7318bb34be38d3a4f2e3a256021mv2.webp
+WARNING 2025-05-15 17:19:53,945 basehttp "GET /media/profile_images/22e53e_7066c7318bb34be38d3a4f2e3a256021mv2.webp HTTP/1.1" 404 4231
+WARNING 2025-05-15 17:19:53,953 log Not Found: /media/profile_images/22e53e_7066c7318bb34be38d3a4f2e3a256021mv2_PFLhi0c.webp
+WARNING 2025-05-15 17:19:53,953 basehttp "GET /media/profile_images/22e53e_7066c7318bb34be38d3a4f2e3a256021mv2_PFLhi0c.webp HTTP/1.1" 404 4263
+WARNING 2025-05-15 17:19:53,960 log Not Found: /media/profile_images/ED-removebg-preview_Kc0VegY.png
+WARNING 2025-05-15 17:19:53,961 basehttp "GET /media/profile_images/ED-removebg-preview_Kc0VegY.png HTTP/1.1" 404 4167
+WARNING 2025-05-15 17:19:53,968 log Not Found: /media/profile_images/logo_Flor-it_R9hl2VF.png
+WARNING 2025-05-15 17:19:53,968 basehttp "GET /media/profile_images/logo_Flor-it_R9hl2VF.png HTTP/1.1" 404 4139
+WARNING 2025-05-15 17:19:53,975 log Not Found: /media/profile_images/logo_Flor-it_3ug9vGy.png
+WARNING 2025-05-15 17:19:53,976 basehttp "GET /media/profile_images/logo_Flor-it_3ug9vGy.png HTTP/1.1" 404 4139
+WARNING 2025-05-15 17:19:53,984 log Not Found: /media/profile_images/logo_Flor-it_QbHvwb7.png
+WARNING 2025-05-15 17:19:53,984 basehttp "GET /media/profile_images/logo_Flor-it_QbHvwb7.png HTTP/1.1" 404 4139
+WARNING 2025-05-15 17:19:53,991 log Not Found: /media/profile_images/logo_flor-it.png
+WARNING 2025-05-15 17:19:53,992 basehttp "GET /media/profile_images/logo_flor-it.png HTTP/1.1" 404 4107
+WARNING 2025-05-15 17:19:54,003 log Not Found: /media/profile_images/ED-removebg-preview_CBDMx0t.png
+WARNING 2025-05-15 17:19:54,003 basehttp "GET /media/profile_images/ED-removebg-preview_CBDMx0t.png HTTP/1.1" 404 4167
+WARNING 2025-05-15 17:19:54,011 log Not Found: /media/profile_images/logo_Flor-it_I3sk1vS.png
+WARNING 2025-05-15 17:19:54,011 basehttp "GET /media/profile_images/logo_Flor-it_I3sk1vS.png HTTP/1.1" 404 4139
+WARNING 2025-05-15 17:19:54,019 log Not Found: /media/profile_images/logo_Flor-it_ycPeTUA.png
+WARNING 2025-05-15 17:19:54,020 basehttp "GET /media/profile_images/logo_Flor-it_ycPeTUA.png HTTP/1.1" 404 4139
+WARNING 2025-05-15 17:19:54,029 log Not Found: /media/profile_images/ED-removebg-preview_neUNEjX.png
+WARNING 2025-05-15 17:19:54,029 basehttp "GET /media/profile_images/ED-removebg-preview_neUNEjX.png HTTP/1.1" 404 4167
+WARNING 2025-05-15 17:19:54,037 log Not Found: /media/profile_images/logo_Flor-it_JECFN7N.png
+WARNING 2025-05-15 17:19:54,038 basehttp "GET /media/profile_images/logo_Flor-it_JECFN7N.png HTTP/1.1" 404 4139
+WARNING 2025-05-15 17:19:54,045 log Not Found: /media/profile_images/logo_Flor-it_p6KsS8d.png
+WARNING 2025-05-15 17:19:54,045 basehttp "GET /media/profile_images/logo_Flor-it_p6KsS8d.png HTTP/1.1" 404 4139
+WARNING 2025-05-15 17:19:54,052 log Not Found: /media/profile_images/logo_Flor-it_1mmrPW0.png
+WARNING 2025-05-15 17:19:54,053 basehttp "GET /media/profile_images/logo_Flor-it_1mmrPW0.png HTTP/1.1" 404 4139
+WARNING 2025-05-15 17:19:54,062 log Not Found: /media/profile_images/remarqz-logo-mark-full-color-rgb-900px-w-144ppi.png
+WARNING 2025-05-15 17:19:54,062 basehttp "GET /media/profile_images/remarqz-logo-mark-full-color-rgb-900px-w-144ppi.png HTTP/1.1" 404 4247
+WARNING 2025-05-15 17:19:54,069 log Not Found: /media/profile_images/Flor_IT-Badge.png
+WARNING 2025-05-15 17:19:54,070 basehttp "GET /media/profile_images/Flor_IT-Badge.png HTTP/1.1" 404 4111
+WARNING 2025-05-15 17:19:54,078 log Not Found: /media/profile_images/logo_Flor-it.png
+WARNING 2025-05-15 17:19:54,079 basehttp "GET /media/profile_images/logo_Flor-it.png HTTP/1.1" 404 4107
+WARNING 2025-05-15 17:19:54,087 log Not Found: /media/profile_images/remarqz-logo-full-color-rgb-900px-w-144ppi.jpg
+WARNING 2025-05-15 17:19:54,087 basehttp "GET /media/profile_images/remarqz-logo-full-color-rgb-900px-w-144ppi.jpg HTTP/1.1" 404 4227
+WARNING 2025-05-15 17:19:54,096 log Not Found: /media/profile_images/Schermafbeelding_2025-01-08_om_13.29.58.png
+WARNING 2025-05-15 17:19:54,097 basehttp "GET /media/profile_images/Schermafbeelding_2025-01-08_om_13.29.58.png HTTP/1.1" 404 4215
+WARNING 2025-05-15 17:19:54,105 log Not Found: /media/profile_images/Schermafbeelding_2025-01-06_om_15.14.17.png
+WARNING 2025-05-15 17:19:54,105 basehttp "GET /media/profile_images/Schermafbeelding_2025-01-06_om_15.14.17.png HTTP/1.1" 404 4215
+WARNING 2025-05-15 17:19:54,113 log Not Found: /media/profile_images/remarqz-logo-full-color-rgb-900px-w-144ppi.png
+WARNING 2025-05-15 17:19:54,114 basehttp "GET /media/profile_images/remarqz-logo-full-color-rgb-900px-w-144ppi.png HTTP/1.1" 404 4227
+WARNING 2025-05-15 17:19:54,123 log Not Found: /media/Logo PS.png
+WARNING 2025-05-15 17:19:54,124 basehttp "GET /media/Logo%20PS.png HTTP/1.1" 404 4029
+WARNING 2025-05-15 17:19:54,132 log Not Found: /media/profile_images/Schermafbeelding_2024-10-24_om_16.01.17.png
+WARNING 2025-05-15 17:19:54,132 basehttp "GET /media/profile_images/Schermafbeelding_2024-10-24_om_16.01.17.png HTTP/1.1" 404 4215
+WARNING 2025-05-15 17:19:54,141 log Not Found: /media/Dee & Tracy.jpg
+WARNING 2025-05-15 17:19:54,142 basehttp "GET /media/Dee%20%26%20Tracy.jpg HTTP/1.1" 404 4063
+WARNING 2025-05-15 17:19:54,150 log Not Found: /media/profile_images/Schermafbeelding_2024-10-11_om_13.21.22.png
+WARNING 2025-05-15 17:19:54,150 basehttp "GET /media/profile_images/Schermafbeelding_2024-10-11_om_13.21.22.png HTTP/1.1" 404 4215
+WARNING 2025-05-15 17:19:54,158 log Not Found: /media/profile_images/logo-transparent_langwerpig-01-01_edited_edited_edited.png
+WARNING 2025-05-15 17:19:54,158 basehttp "GET /media/profile_images/logo-transparent_langwerpig-01-01_edited_edited_edited.png HTTP/1.1" 404 4275
+WARNING 2025-05-15 17:19:54,167 log Not Found: /media/profile_images/icon_purple_kopie_jkDxYW0.png
+WARNING 2025-05-15 17:19:54,167 basehttp "GET /media/profile_images/icon_purple_kopie_jkDxYW0.png HTTP/1.1" 404 4159
+INFO 2025-05-15 17:19:55,588 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-15 17:20:00,341 basehttp "GET /api/reviews?domain=remarqz.com HTTP/1.1" 200 10404
+INFO 2025-05-15 17:20:10,388 basehttp "GET /admin/review_system/customer/178/change/ HTTP/1.1" 200 20307
+INFO 2025-05-15 17:20:12,109 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-15 17:20:19,371 basehttp "POST /admin/review_system/customer/178/change/ HTTP/1.1" 302 0
+INFO 2025-05-15 17:20:31,758 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 55201
+WARNING 2025-05-15 17:20:31,783 log Not Found: /media/profile_images/22e53e_7066c7318bb34be38d3a4f2e3a256021mv2.webp
+WARNING 2025-05-15 17:20:31,783 basehttp "GET /media/profile_images/22e53e_7066c7318bb34be38d3a4f2e3a256021mv2.webp HTTP/1.1" 404 4231
+WARNING 2025-05-15 17:20:31,790 log Not Found: /media/profile_images/22e53e_7066c7318bb34be38d3a4f2e3a256021mv2_PFLhi0c.webp
+WARNING 2025-05-15 17:20:31,792 basehttp "GET /media/profile_images/22e53e_7066c7318bb34be38d3a4f2e3a256021mv2_PFLhi0c.webp HTTP/1.1" 404 4263
+WARNING 2025-05-15 17:20:31,797 log Not Found: /media/profile_images/ED-removebg-preview_Kc0VegY.png
+WARNING 2025-05-15 17:20:31,798 basehttp "GET /media/profile_images/ED-removebg-preview_Kc0VegY.png HTTP/1.1" 404 4167
+WARNING 2025-05-15 17:20:31,804 log Not Found: /media/profile_images/logo_Flor-it_R9hl2VF.png
+WARNING 2025-05-15 17:20:31,805 basehttp "GET /media/profile_images/logo_Flor-it_R9hl2VF.png HTTP/1.1" 404 4139
+WARNING 2025-05-15 17:20:31,813 log Not Found: /media/profile_images/logo_Flor-it_3ug9vGy.png
+WARNING 2025-05-15 17:20:31,814 basehttp "GET /media/profile_images/logo_Flor-it_3ug9vGy.png HTTP/1.1" 404 4139
+WARNING 2025-05-15 17:20:31,821 log Not Found: /media/profile_images/logo_Flor-it_QbHvwb7.png
+WARNING 2025-05-15 17:20:31,821 basehttp "GET /media/profile_images/logo_Flor-it_QbHvwb7.png HTTP/1.1" 404 4139
+WARNING 2025-05-15 17:20:31,827 log Not Found: /media/profile_images/logo_flor-it.png
+WARNING 2025-05-15 17:20:31,828 basehttp "GET /media/profile_images/logo_flor-it.png HTTP/1.1" 404 4107
+WARNING 2025-05-15 17:20:31,835 log Not Found: /media/profile_images/ED-removebg-preview_CBDMx0t.png
+WARNING 2025-05-15 17:20:31,835 basehttp "GET /media/profile_images/ED-removebg-preview_CBDMx0t.png HTTP/1.1" 404 4167
+WARNING 2025-05-15 17:20:31,843 log Not Found: /media/profile_images/logo_Flor-it_I3sk1vS.png
+WARNING 2025-05-15 17:20:31,844 basehttp "GET /media/profile_images/logo_Flor-it_I3sk1vS.png HTTP/1.1" 404 4139
+WARNING 2025-05-15 17:20:31,851 log Not Found: /media/profile_images/logo_Flor-it_ycPeTUA.png
+WARNING 2025-05-15 17:20:31,851 basehttp "GET /media/profile_images/logo_Flor-it_ycPeTUA.png HTTP/1.1" 404 4139
+WARNING 2025-05-15 17:20:31,860 log Not Found: /media/profile_images/ED-removebg-preview_neUNEjX.png
+WARNING 2025-05-15 17:20:31,860 basehttp "GET /media/profile_images/ED-removebg-preview_neUNEjX.png HTTP/1.1" 404 4167
+WARNING 2025-05-15 17:20:31,867 log Not Found: /media/profile_images/logo_Flor-it_JECFN7N.png
+WARNING 2025-05-15 17:20:31,868 basehttp "GET /media/profile_images/logo_Flor-it_JECFN7N.png HTTP/1.1" 404 4139
+WARNING 2025-05-15 17:20:31,876 log Not Found: /media/profile_images/logo_Flor-it_p6KsS8d.png
+WARNING 2025-05-15 17:20:31,877 basehttp "GET /media/profile_images/logo_Flor-it_p6KsS8d.png HTTP/1.1" 404 4139
+WARNING 2025-05-15 17:20:31,884 log Not Found: /media/profile_images/logo_Flor-it_1mmrPW0.png
+WARNING 2025-05-15 17:20:31,885 basehttp "GET /media/profile_images/logo_Flor-it_1mmrPW0.png HTTP/1.1" 404 4139
+WARNING 2025-05-15 17:20:31,895 log Not Found: /media/profile_images/remarqz-logo-mark-full-color-rgb-900px-w-144ppi.png
+WARNING 2025-05-15 17:20:31,895 basehttp "GET /media/profile_images/remarqz-logo-mark-full-color-rgb-900px-w-144ppi.png HTTP/1.1" 404 4247
+WARNING 2025-05-15 17:20:31,902 log Not Found: /media/profile_images/Flor_IT-Badge.png
+WARNING 2025-05-15 17:20:31,903 basehttp "GET /media/profile_images/Flor_IT-Badge.png HTTP/1.1" 404 4111
+WARNING 2025-05-15 17:20:31,910 log Not Found: /media/profile_images/logo_Flor-it.png
+WARNING 2025-05-15 17:20:31,911 basehttp "GET /media/profile_images/logo_Flor-it.png HTTP/1.1" 404 4107
+WARNING 2025-05-15 17:20:31,917 log Not Found: /media/profile_images/remarqz-logo-full-color-rgb-900px-w-144ppi.jpg
+WARNING 2025-05-15 17:20:31,918 basehttp "GET /media/profile_images/remarqz-logo-full-color-rgb-900px-w-144ppi.jpg HTTP/1.1" 404 4227
+WARNING 2025-05-15 17:20:31,927 log Not Found: /media/profile_images/Schermafbeelding_2025-01-08_om_13.29.58.png
+WARNING 2025-05-15 17:20:31,927 basehttp "GET /media/profile_images/Schermafbeelding_2025-01-08_om_13.29.58.png HTTP/1.1" 404 4215
+WARNING 2025-05-15 17:20:31,934 log Not Found: /media/profile_images/Schermafbeelding_2025-01-06_om_15.14.17.png
+WARNING 2025-05-15 17:20:31,935 basehttp "GET /media/profile_images/Schermafbeelding_2025-01-06_om_15.14.17.png HTTP/1.1" 404 4215
+WARNING 2025-05-15 17:20:31,942 log Not Found: /media/profile_images/remarqz-logo-full-color-rgb-900px-w-144ppi.png
+WARNING 2025-05-15 17:20:31,943 basehttp "GET /media/profile_images/remarqz-logo-full-color-rgb-900px-w-144ppi.png HTTP/1.1" 404 4227
+WARNING 2025-05-15 17:20:31,951 log Not Found: /media/Logo PS.png
+WARNING 2025-05-15 17:20:31,952 basehttp "GET /media/Logo%20PS.png HTTP/1.1" 404 4029
+WARNING 2025-05-15 17:20:31,961 log Not Found: /media/profile_images/Schermafbeelding_2024-10-24_om_16.01.17.png
+WARNING 2025-05-15 17:20:31,961 basehttp "GET /media/profile_images/Schermafbeelding_2024-10-24_om_16.01.17.png HTTP/1.1" 404 4215
+WARNING 2025-05-15 17:20:31,969 log Not Found: /media/Dee & Tracy.jpg
+WARNING 2025-05-15 17:20:31,970 basehttp "GET /media/Dee%20%26%20Tracy.jpg HTTP/1.1" 404 4063
+WARNING 2025-05-15 17:20:31,978 log Not Found: /media/profile_images/Schermafbeelding_2024-10-11_om_13.21.22.png
+WARNING 2025-05-15 17:20:31,978 basehttp "GET /media/profile_images/Schermafbeelding_2024-10-11_om_13.21.22.png HTTP/1.1" 404 4215
+WARNING 2025-05-15 17:20:31,986 log Not Found: /media/profile_images/logo-transparent_langwerpig-01-01_edited_edited_edited.png
+WARNING 2025-05-15 17:20:31,986 basehttp "GET /media/profile_images/logo-transparent_langwerpig-01-01_edited_edited_edited.png HTTP/1.1" 404 4275
+WARNING 2025-05-15 17:20:31,993 log Not Found: /media/profile_images/icon_purple_kopie_jkDxYW0.png
+WARNING 2025-05-15 17:20:31,994 basehttp "GET /media/profile_images/icon_purple_kopie_jkDxYW0.png HTTP/1.1" 404 4159
+INFO 2025-05-15 17:20:33,330 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-15 17:20:38,499 basehttp "GET /api/reviews?domain=remarqz.com HTTP/1.1" 200 3513
+INFO 2025-05-15 17:21:04,062 basehttp "GET /api/reviews?domain=edice.ch HTTP/1.1" 200 4014
+INFO 2025-05-15 17:21:20,839 basehttp "GET /api/reviews?domain=precho.be HTTP/1.1" 200 3873
+INFO 2025-05-15 17:21:36,233 basehttp "GET /api/reviews?domain=victoria-hopkins.com HTTP/1.1" 200 4506
+INFO 2025-05-15 17:21:52,304 basehttp "GET /api/reviews?domain=bellini-lighting.com HTTP/1.1" 200 1220
+INFO 2025-05-15 17:22:16,412 basehttp "GET /api/reviews?domain=remarqz.com HTTP/1.1" 200 3513
+INFO 2025-05-15 17:22:46,505 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 54978
+WARNING 2025-05-15 17:22:46,531 log Not Found: /media/profile_images/22e53e_7066c7318bb34be38d3a4f2e3a256021mv2.webp
+WARNING 2025-05-15 17:22:46,531 basehttp "GET /media/profile_images/22e53e_7066c7318bb34be38d3a4f2e3a256021mv2.webp HTTP/1.1" 404 4231
+WARNING 2025-05-15 17:22:46,540 log Not Found: /media/profile_images/22e53e_7066c7318bb34be38d3a4f2e3a256021mv2_PFLhi0c.webp
+WARNING 2025-05-15 17:22:46,541 basehttp "GET /media/profile_images/22e53e_7066c7318bb34be38d3a4f2e3a256021mv2_PFLhi0c.webp HTTP/1.1" 404 4263
+WARNING 2025-05-15 17:22:46,551 log Not Found: /media/profile_images/ED-removebg-preview_Kc0VegY.png
+WARNING 2025-05-15 17:22:46,551 basehttp "GET /media/profile_images/ED-removebg-preview_Kc0VegY.png HTTP/1.1" 404 4167
+WARNING 2025-05-15 17:22:46,560 log Not Found: /media/profile_images/logo_Flor-it_R9hl2VF.png
+WARNING 2025-05-15 17:22:46,560 basehttp "GET /media/profile_images/logo_Flor-it_R9hl2VF.png HTTP/1.1" 404 4139
+WARNING 2025-05-15 17:22:46,569 log Not Found: /media/profile_images/logo_Flor-it_3ug9vGy.png
+WARNING 2025-05-15 17:22:46,570 basehttp "GET /media/profile_images/logo_Flor-it_3ug9vGy.png HTTP/1.1" 404 4139
+WARNING 2025-05-15 17:22:46,578 log Not Found: /media/profile_images/logo_Flor-it_QbHvwb7.png
+WARNING 2025-05-15 17:22:46,579 basehttp "GET /media/profile_images/logo_Flor-it_QbHvwb7.png HTTP/1.1" 404 4139
+WARNING 2025-05-15 17:22:46,586 log Not Found: /media/profile_images/logo_flor-it.png
+WARNING 2025-05-15 17:22:46,587 basehttp "GET /media/profile_images/logo_flor-it.png HTTP/1.1" 404 4107
+WARNING 2025-05-15 17:22:46,595 log Not Found: /media/profile_images/ED-removebg-preview_CBDMx0t.png
+WARNING 2025-05-15 17:22:46,595 basehttp "GET /media/profile_images/ED-removebg-preview_CBDMx0t.png HTTP/1.1" 404 4167
+WARNING 2025-05-15 17:22:46,603 log Not Found: /media/profile_images/logo_Flor-it_I3sk1vS.png
+WARNING 2025-05-15 17:22:46,604 basehttp "GET /media/profile_images/logo_Flor-it_I3sk1vS.png HTTP/1.1" 404 4139
+WARNING 2025-05-15 17:22:46,613 log Not Found: /media/profile_images/logo_Flor-it_ycPeTUA.png
+WARNING 2025-05-15 17:22:46,614 basehttp "GET /media/profile_images/logo_Flor-it_ycPeTUA.png HTTP/1.1" 404 4139
+WARNING 2025-05-15 17:22:46,623 log Not Found: /media/profile_images/ED-removebg-preview_neUNEjX.png
+WARNING 2025-05-15 17:22:46,624 basehttp "GET /media/profile_images/ED-removebg-preview_neUNEjX.png HTTP/1.1" 404 4167
+WARNING 2025-05-15 17:22:46,632 log Not Found: /media/profile_images/logo_Flor-it_JECFN7N.png
+WARNING 2025-05-15 17:22:46,632 basehttp "GET /media/profile_images/logo_Flor-it_JECFN7N.png HTTP/1.1" 404 4139
+WARNING 2025-05-15 17:22:46,641 log Not Found: /media/profile_images/logo_Flor-it_p6KsS8d.png
+WARNING 2025-05-15 17:22:46,641 basehttp "GET /media/profile_images/logo_Flor-it_p6KsS8d.png HTTP/1.1" 404 4139
+WARNING 2025-05-15 17:22:46,650 log Not Found: /media/profile_images/logo_Flor-it_1mmrPW0.png
+WARNING 2025-05-15 17:22:46,651 basehttp "GET /media/profile_images/logo_Flor-it_1mmrPW0.png HTTP/1.1" 404 4139
+WARNING 2025-05-15 17:22:46,658 log Not Found: /media/profile_images/remarqz-logo-mark-full-color-rgb-900px-w-144ppi.png
+WARNING 2025-05-15 17:22:46,659 basehttp "GET /media/profile_images/remarqz-logo-mark-full-color-rgb-900px-w-144ppi.png HTTP/1.1" 404 4247
+WARNING 2025-05-15 17:22:46,667 log Not Found: /media/profile_images/Flor_IT-Badge.png
+WARNING 2025-05-15 17:22:46,667 basehttp "GET /media/profile_images/Flor_IT-Badge.png HTTP/1.1" 404 4111
+WARNING 2025-05-15 17:22:46,675 log Not Found: /media/profile_images/logo_Flor-it.png
+WARNING 2025-05-15 17:22:46,676 basehttp "GET /media/profile_images/logo_Flor-it.png HTTP/1.1" 404 4107
+WARNING 2025-05-15 17:22:46,684 log Not Found: /media/profile_images/remarqz-logo-full-color-rgb-900px-w-144ppi.jpg
+WARNING 2025-05-15 17:22:46,684 basehttp "GET /media/profile_images/remarqz-logo-full-color-rgb-900px-w-144ppi.jpg HTTP/1.1" 404 4227
+WARNING 2025-05-15 17:22:46,693 log Not Found: /media/profile_images/Schermafbeelding_2025-01-08_om_13.29.58.png
+WARNING 2025-05-15 17:22:46,694 basehttp "GET /media/profile_images/Schermafbeelding_2025-01-08_om_13.29.58.png HTTP/1.1" 404 4215
+WARNING 2025-05-15 17:22:46,701 log Not Found: /media/profile_images/Schermafbeelding_2025-01-06_om_15.14.17.png
+WARNING 2025-05-15 17:22:46,702 basehttp "GET /media/profile_images/Schermafbeelding_2025-01-06_om_15.14.17.png HTTP/1.1" 404 4215
+WARNING 2025-05-15 17:22:46,709 log Not Found: /media/profile_images/remarqz-logo-full-color-rgb-900px-w-144ppi.png
+WARNING 2025-05-15 17:22:46,710 basehttp "GET /media/profile_images/remarqz-logo-full-color-rgb-900px-w-144ppi.png HTTP/1.1" 404 4227
+WARNING 2025-05-15 17:22:46,717 log Not Found: /media/Logo PS.png
+WARNING 2025-05-15 17:22:46,718 basehttp "GET /media/Logo%20PS.png HTTP/1.1" 404 4029
+WARNING 2025-05-15 17:22:46,726 log Not Found: /media/profile_images/Schermafbeelding_2024-10-24_om_16.01.17.png
+WARNING 2025-05-15 17:22:46,726 basehttp "GET /media/profile_images/Schermafbeelding_2024-10-24_om_16.01.17.png HTTP/1.1" 404 4215
+WARNING 2025-05-15 17:22:46,734 log Not Found: /media/Dee & Tracy.jpg
+WARNING 2025-05-15 17:22:46,734 basehttp "GET /media/Dee%20%26%20Tracy.jpg HTTP/1.1" 404 4063
+WARNING 2025-05-15 17:22:46,742 log Not Found: /media/profile_images/Schermafbeelding_2024-10-11_om_13.21.22.png
+WARNING 2025-05-15 17:22:46,743 basehttp "GET /media/profile_images/Schermafbeelding_2024-10-11_om_13.21.22.png HTTP/1.1" 404 4215
+WARNING 2025-05-15 17:22:46,751 log Not Found: /media/profile_images/logo-transparent_langwerpig-01-01_edited_edited_edited.png
+WARNING 2025-05-15 17:22:46,751 basehttp "GET /media/profile_images/logo-transparent_langwerpig-01-01_edited_edited_edited.png HTTP/1.1" 404 4275
+WARNING 2025-05-15 17:22:46,762 log Not Found: /media/profile_images/icon_purple_kopie_jkDxYW0.png
+WARNING 2025-05-15 17:22:46,762 basehttp "GET /media/profile_images/icon_purple_kopie_jkDxYW0.png HTTP/1.1" 404 4159
+INFO 2025-05-15 17:22:48,110 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-15 17:24:33,568 autoreload E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\review_system\admin.py changed, reloading.
+INFO 2025-05-15 17:24:34,492 autoreload Watching for file changes with StatReloader
+ERROR 2025-05-15 17:24:43,640 log Internal Server Error: /admin/review_system/customer/414/change/
+Traceback (most recent call last):
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\contrib\admin\options.py", line 835, in get_form
+    return modelform_factory(self.model, **defaults)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\forms\models.py", line 651, in modelform_factory
+    return type(form)(class_name, (form,), form_class_attrs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\forms\models.py", line 331, in __new__
+    raise FieldError(message)
+django.core.exceptions.FieldError: Unknown field(s) (display_profile_image) specified for Customer
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\contrib\admin\options.py", line 714, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\contrib\admin\sites.py", line 240, in inner
+    return view(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\contrib\admin\options.py", line 1944, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\contrib\admin\options.py", line 1802, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\contrib\admin\options.py", line 1837, in _changeform_view
+    ModelForm = self.get_form(
+                ^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\review_system\admin.py", line 104, in get_form
+    form = super().get_form(request, obj, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\contrib\admin\options.py", line 837, in get_form
+    raise FieldError(
+django.core.exceptions.FieldError: Unknown field(s) (display_profile_image) specified for Customer. Check fields/fieldsets/exclude attributes of class CustomerAdmin.
+ERROR 2025-05-15 17:24:43,651 basehttp "GET /admin/review_system/customer/414/change/ HTTP/1.1" 500 168852
+INFO 2025-05-15 17:25:24,101 autoreload E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\review_system\admin.py changed, reloading.
+INFO 2025-05-15 17:25:25,023 autoreload Watching for file changes with StatReloader
+INFO 2025-05-15 17:25:41,825 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 54978
+ERROR 2025-05-15 17:25:45,819 log Internal Server Error: /admin/review_system/customer/414/change/
+Traceback (most recent call last):
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\contrib\admin\options.py", line 714, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\contrib\admin\sites.py", line 240, in inner
+    return view(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\contrib\admin\options.py", line 1944, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\contrib\admin\options.py", line 1802, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\contrib\admin\options.py", line 1837, in _changeform_view
+    ModelForm = self.get_form(
+                ^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\review_system\admin.py", line 105, in get_form
+    form.base_fields['password'].widget = forms.PasswordInput(render_value=True)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'password'
+ERROR 2025-05-15 17:25:45,827 basehttp "GET /admin/review_system/customer/414/change/ HTTP/1.1" 500 140827
+INFO 2025-05-15 17:26:48,161 autoreload E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\review_system\admin.py changed, reloading.
+INFO 2025-05-15 17:26:49,130 autoreload Watching for file changes with StatReloader
+INFO 2025-05-15 17:27:02,254 basehttp "GET /admin/review_system/customer/414/change/ HTTP/1.1" 200 17276
+INFO 2025-05-15 17:27:03,883 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-15 17:27:39,846 autoreload E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\review_system\admin.py changed, reloading.
+INFO 2025-05-15 17:27:40,733 autoreload Watching for file changes with StatReloader
+INFO 2025-05-15 17:27:49,322 basehttp "GET /admin/review_system/customer/414/change/ HTTP/1.1" 200 20350
+INFO 2025-05-15 17:27:50,960 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-15 17:30:08,950 autoreload E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\review_system\admin.py changed, reloading.
+INFO 2025-05-15 17:30:09,829 autoreload Watching for file changes with StatReloader
+INFO 2025-05-15 17:31:11,640 basehttp "GET /admin/review_system/customer/414/change/ HTTP/1.1" 200 20350
+INFO 2025-05-15 17:31:13,285 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-15 17:40:17,296 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 54978
+WARNING 2025-05-15 17:40:17,349 log Not Found: /media/profile_images/22e53e_7066c7318bb34be38d3a4f2e3a256021mv2.webp
+WARNING 2025-05-15 17:40:17,350 basehttp "GET /media/profile_images/22e53e_7066c7318bb34be38d3a4f2e3a256021mv2.webp HTTP/1.1" 404 4231
+WARNING 2025-05-15 17:40:17,358 log Not Found: /media/profile_images/22e53e_7066c7318bb34be38d3a4f2e3a256021mv2_PFLhi0c.webp
+WARNING 2025-05-15 17:40:17,359 basehttp "GET /media/profile_images/22e53e_7066c7318bb34be38d3a4f2e3a256021mv2_PFLhi0c.webp HTTP/1.1" 404 4263
+WARNING 2025-05-15 17:40:17,368 log Not Found: /media/profile_images/ED-removebg-preview_Kc0VegY.png
+WARNING 2025-05-15 17:40:17,368 basehttp "GET /media/profile_images/ED-removebg-preview_Kc0VegY.png HTTP/1.1" 404 4167
+WARNING 2025-05-15 17:40:17,393 log Not Found: /media/profile_images/logo_Flor-it_R9hl2VF.png
+WARNING 2025-05-15 17:40:17,406 basehttp "GET /media/profile_images/logo_Flor-it_R9hl2VF.png HTTP/1.1" 404 4139
+WARNING 2025-05-15 17:40:17,418 log Not Found: /media/profile_images/logo_Flor-it_3ug9vGy.png
+WARNING 2025-05-15 17:40:17,420 basehttp "GET /media/profile_images/logo_Flor-it_3ug9vGy.png HTTP/1.1" 404 4139
+WARNING 2025-05-15 17:40:17,444 log Not Found: /media/profile_images/logo_Flor-it_QbHvwb7.png
+WARNING 2025-05-15 17:40:17,446 basehttp "GET /media/profile_images/logo_Flor-it_QbHvwb7.png HTTP/1.1" 404 4139
+WARNING 2025-05-15 17:40:17,470 log Not Found: /media/profile_images/logo_flor-it.png
+WARNING 2025-05-15 17:40:17,483 basehttp "GET /media/profile_images/logo_flor-it.png HTTP/1.1" 404 4107
+WARNING 2025-05-15 17:40:17,492 log Not Found: /media/profile_images/ED-removebg-preview_CBDMx0t.png
+WARNING 2025-05-15 17:40:17,493 basehttp "GET /media/profile_images/ED-removebg-preview_CBDMx0t.png HTTP/1.1" 404 4167
+WARNING 2025-05-15 17:40:17,502 log Not Found: /media/profile_images/logo_Flor-it_I3sk1vS.png
+WARNING 2025-05-15 17:40:17,515 basehttp "GET /media/profile_images/logo_Flor-it_I3sk1vS.png HTTP/1.1" 404 4139
+WARNING 2025-05-15 17:40:17,525 log Not Found: /media/profile_images/logo_Flor-it_ycPeTUA.png
+WARNING 2025-05-15 17:40:17,525 basehttp "GET /media/profile_images/logo_Flor-it_ycPeTUA.png HTTP/1.1" 404 4139
+WARNING 2025-05-15 17:40:17,566 log Not Found: /media/profile_images/ED-removebg-preview_neUNEjX.png
+WARNING 2025-05-15 17:40:17,567 basehttp "GET /media/profile_images/ED-removebg-preview_neUNEjX.png HTTP/1.1" 404 4167
+WARNING 2025-05-15 17:40:17,578 log Not Found: /media/profile_images/logo_Flor-it_JECFN7N.png
+WARNING 2025-05-15 17:40:17,603 basehttp "GET /media/profile_images/logo_Flor-it_JECFN7N.png HTTP/1.1" 404 4139
+WARNING 2025-05-15 17:40:17,616 log Not Found: /media/profile_images/logo_Flor-it_p6KsS8d.png
+WARNING 2025-05-15 17:40:17,669 basehttp "GET /media/profile_images/logo_Flor-it_p6KsS8d.png HTTP/1.1" 404 4139
+WARNING 2025-05-15 17:40:17,692 log Not Found: /media/profile_images/logo_Flor-it_1mmrPW0.png
+WARNING 2025-05-15 17:40:17,693 basehttp "GET /media/profile_images/logo_Flor-it_1mmrPW0.png HTTP/1.1" 404 4139
+WARNING 2025-05-15 17:40:17,703 log Not Found: /media/profile_images/remarqz-logo-mark-full-color-rgb-900px-w-144ppi.png
+WARNING 2025-05-15 17:40:17,719 basehttp "GET /media/profile_images/remarqz-logo-mark-full-color-rgb-900px-w-144ppi.png HTTP/1.1" 404 4247
+WARNING 2025-05-15 17:40:17,731 log Not Found: /media/profile_images/Flor_IT-Badge.png
+WARNING 2025-05-15 17:40:17,743 basehttp "GET /media/profile_images/Flor_IT-Badge.png HTTP/1.1" 404 4111
+WARNING 2025-05-15 17:40:17,760 log Not Found: /media/profile_images/logo_Flor-it.png
+WARNING 2025-05-15 17:40:17,767 basehttp "GET /media/profile_images/logo_Flor-it.png HTTP/1.1" 404 4107
+WARNING 2025-05-15 17:40:17,775 log Not Found: /media/profile_images/remarqz-logo-full-color-rgb-900px-w-144ppi.jpg
+WARNING 2025-05-15 17:40:17,781 basehttp "GET /media/profile_images/remarqz-logo-full-color-rgb-900px-w-144ppi.jpg HTTP/1.1" 404 4227
+WARNING 2025-05-15 17:40:17,828 log Not Found: /media/profile_images/Schermafbeelding_2025-01-08_om_13.29.58.png
+WARNING 2025-05-15 17:40:17,829 basehttp "GET /media/profile_images/Schermafbeelding_2025-01-08_om_13.29.58.png HTTP/1.1" 404 4215
+WARNING 2025-05-15 17:40:17,839 log Not Found: /media/profile_images/Schermafbeelding_2025-01-06_om_15.14.17.png
+WARNING 2025-05-15 17:40:17,841 basehttp "GET /media/profile_images/Schermafbeelding_2025-01-06_om_15.14.17.png HTTP/1.1" 404 4215
+WARNING 2025-05-15 17:40:17,864 log Not Found: /media/profile_images/remarqz-logo-full-color-rgb-900px-w-144ppi.png
+WARNING 2025-05-15 17:40:17,866 basehttp "GET /media/profile_images/remarqz-logo-full-color-rgb-900px-w-144ppi.png HTTP/1.1" 404 4227
+WARNING 2025-05-15 17:40:17,876 log Not Found: /media/Logo PS.png
+WARNING 2025-05-15 17:40:17,889 basehttp "GET /media/Logo%20PS.png HTTP/1.1" 404 4029
+WARNING 2025-05-15 17:40:17,898 log Not Found: /media/profile_images/Schermafbeelding_2024-10-24_om_16.01.17.png
+WARNING 2025-05-15 17:40:17,899 basehttp "GET /media/profile_images/Schermafbeelding_2024-10-24_om_16.01.17.png HTTP/1.1" 404 4215
+WARNING 2025-05-15 17:40:17,908 log Not Found: /media/Dee & Tracy.jpg
+WARNING 2025-05-15 17:40:17,922 basehttp "GET /media/Dee%20%26%20Tracy.jpg HTTP/1.1" 404 4063
+WARNING 2025-05-15 17:40:17,930 log Not Found: /media/profile_images/Schermafbeelding_2024-10-11_om_13.21.22.png
+WARNING 2025-05-15 17:40:17,932 basehttp "GET /media/profile_images/Schermafbeelding_2024-10-11_om_13.21.22.png HTTP/1.1" 404 4215
+WARNING 2025-05-15 17:40:17,943 log Not Found: /media/profile_images/logo-transparent_langwerpig-01-01_edited_edited_edited.png
+WARNING 2025-05-15 17:40:17,953 basehttp "GET /media/profile_images/logo-transparent_langwerpig-01-01_edited_edited_edited.png HTTP/1.1" 404 4275
+WARNING 2025-05-15 17:40:17,961 log Not Found: /media/profile_images/icon_purple_kopie_jkDxYW0.png
+WARNING 2025-05-15 17:40:17,962 basehttp "GET /media/profile_images/icon_purple_kopie_jkDxYW0.png HTTP/1.1" 404 4159
+INFO 2025-05-15 17:40:18,960 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-19 14:29:49,329 basehttp "GET /api/reviews?domain=remarqz.com HTTP/1.1" 200 3513
+INFO 2025-05-19 14:30:00,792 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 54014
+WARNING 2025-05-19 14:30:00,988 log Not Found: /media/profile_images/logo_Flor-it_JECFN7N.png
+WARNING 2025-05-19 14:30:00,990 basehttp "GET /media/profile_images/logo_Flor-it_JECFN7N.png HTTP/1.1" 404 4139
+WARNING 2025-05-19 14:30:00,996 log Not Found: /media/profile_images/ED-removebg-preview_Kc0VegY.png
+WARNING 2025-05-19 14:30:00,999 basehttp "GET /media/profile_images/ED-removebg-preview_Kc0VegY.png HTTP/1.1" 404 4167
+WARNING 2025-05-19 14:30:00,998 log Not Found: /media/profile_images/ED-removebg-preview_neUNEjX.png
+WARNING 2025-05-19 14:30:01,004 basehttp "GET /media/profile_images/ED-removebg-preview_neUNEjX.png HTTP/1.1" 404 4167
+WARNING 2025-05-19 14:30:01,169 log Not Found: /favicon.ico
+WARNING 2025-05-19 14:30:01,170 basehttp "GET /favicon.ico HTTP/1.1" 404 3896
+INFO 2025-05-19 14:30:28,964 basehttp "GET /admin/review_system/customer/414/change/ HTTP/1.1" 200 20341
+INFO 2025-05-19 14:30:28,987 basehttp "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+INFO 2025-05-19 14:30:28,988 basehttp "GET /static/admin/css/base.css HTTP/1.1" 304 0
+INFO 2025-05-19 14:30:28,989 basehttp "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+INFO 2025-05-19 14:30:29,009 basehttp "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+INFO 2025-05-19 14:30:29,009 basehttp "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+INFO 2025-05-19 14:30:29,011 basehttp "GET /static/admin/js/core.js HTTP/1.1" 304 0
+INFO 2025-05-19 14:30:29,012 basehttp "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+INFO 2025-05-19 14:30:29,034 basehttp "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+INFO 2025-05-19 14:30:29,037 basehttp "GET /static/admin/css/forms.css HTTP/1.1" 304 0
+INFO 2025-05-19 14:30:29,038 basehttp "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+INFO 2025-05-19 14:30:29,039 basehttp "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+INFO 2025-05-19 14:30:29,039 basehttp "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+INFO 2025-05-19 14:30:29,040 basehttp "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+INFO 2025-05-19 14:30:29,042 basehttp "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 304 0
+INFO 2025-05-19 14:30:29,054 basehttp "GET /static/admin/css/widgets.css HTTP/1.1" 304 0
+INFO 2025-05-19 14:30:29,073 basehttp "GET /static/admin/js/theme.js HTTP/1.1" 304 0
+INFO 2025-05-19 14:30:29,075 basehttp "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+INFO 2025-05-19 14:30:29,098 basehttp "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+INFO 2025-05-19 14:30:29,101 basehttp "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+INFO 2025-05-19 14:30:29,103 basehttp "GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 304 0
+INFO 2025-05-19 14:30:29,107 basehttp "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 304 0
+INFO 2025-05-19 14:30:29,133 basehttp "GET /static/admin/js/change_form.js HTTP/1.1" 304 0
+INFO 2025-05-19 14:30:30,721 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-19 14:30:41,528 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 54014
+INFO 2025-05-19 14:30:47,609 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 54014
+INFO 2025-05-19 14:30:47,630 basehttp "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+INFO 2025-05-19 14:30:47,631 basehttp "GET /static/admin/img/icon-no.svg HTTP/1.1" 304 0
+INFO 2025-05-19 14:30:47,631 basehttp "GET /static/admin/img/icon-yes.svg HTTP/1.1" 304 0
+INFO 2025-05-19 14:30:47,635 basehttp "GET /static/admin/js/filters.js HTTP/1.1" 304 0
+WARNING 2025-05-19 14:30:47,646 log Not Found: /media/profile_images/22e53e_7066c7318bb34be38d3a4f2e3a256021mv2.webp
+WARNING 2025-05-19 14:30:47,661 basehttp "GET /media/profile_images/22e53e_7066c7318bb34be38d3a4f2e3a256021mv2.webp HTTP/1.1" 404 4231
+WARNING 2025-05-19 14:30:47,669 log Not Found: /media/profile_images/22e53e_7066c7318bb34be38d3a4f2e3a256021mv2_PFLhi0c.webp
+WARNING 2025-05-19 14:30:47,670 basehttp "GET /media/profile_images/22e53e_7066c7318bb34be38d3a4f2e3a256021mv2_PFLhi0c.webp HTTP/1.1" 404 4263
+WARNING 2025-05-19 14:30:47,701 log Not Found: /media/profile_images/ED-removebg-preview_Kc0VegY.png
+WARNING 2025-05-19 14:30:47,702 basehttp "GET /media/profile_images/ED-removebg-preview_Kc0VegY.png HTTP/1.1" 404 4167
+WARNING 2025-05-19 14:30:47,713 log Not Found: /media/profile_images/logo_Flor-it_R9hl2VF.png
+WARNING 2025-05-19 14:30:47,714 basehttp "GET /media/profile_images/logo_Flor-it_R9hl2VF.png HTTP/1.1" 404 4139
+WARNING 2025-05-19 14:30:47,725 log Not Found: /media/profile_images/logo_Flor-it_3ug9vGy.png
+WARNING 2025-05-19 14:30:47,741 basehttp "GET /media/profile_images/logo_Flor-it_3ug9vGy.png HTTP/1.1" 404 4139
+WARNING 2025-05-19 14:30:47,753 log Not Found: /media/profile_images/logo_Flor-it_QbHvwb7.png
+WARNING 2025-05-19 14:30:47,777 basehttp "GET /media/profile_images/logo_Flor-it_QbHvwb7.png HTTP/1.1" 404 4139
+WARNING 2025-05-19 14:30:47,804 log Not Found: /media/profile_images/logo_flor-it.png
+WARNING 2025-05-19 14:30:47,806 basehttp "GET /media/profile_images/logo_flor-it.png HTTP/1.1" 404 4107
+WARNING 2025-05-19 14:30:47,817 log Not Found: /media/profile_images/ED-removebg-preview_CBDMx0t.png
+WARNING 2025-05-19 14:30:47,837 basehttp "GET /media/profile_images/ED-removebg-preview_CBDMx0t.png HTTP/1.1" 404 4167
+WARNING 2025-05-19 14:30:47,850 log Not Found: /media/profile_images/logo_Flor-it_I3sk1vS.png
+WARNING 2025-05-19 14:30:47,870 basehttp "GET /media/profile_images/logo_Flor-it_I3sk1vS.png HTTP/1.1" 404 4139
+WARNING 2025-05-19 14:30:47,884 log Not Found: /media/profile_images/logo_Flor-it_ycPeTUA.png
+WARNING 2025-05-19 14:30:47,900 basehttp "GET /media/profile_images/logo_Flor-it_ycPeTUA.png HTTP/1.1" 404 4139
+WARNING 2025-05-19 14:30:47,931 log Not Found: /media/profile_images/ED-removebg-preview_neUNEjX.png
+WARNING 2025-05-19 14:30:47,931 basehttp "GET /media/profile_images/ED-removebg-preview_neUNEjX.png HTTP/1.1" 404 4167
+WARNING 2025-05-19 14:30:47,945 log Not Found: /media/profile_images/logo_Flor-it_JECFN7N.png
+WARNING 2025-05-19 14:30:47,961 basehttp "GET /media/profile_images/logo_Flor-it_JECFN7N.png HTTP/1.1" 404 4139
+WARNING 2025-05-19 14:30:47,976 log Not Found: /media/profile_images/logo_Flor-it_p6KsS8d.png
+WARNING 2025-05-19 14:30:47,994 basehttp "GET /media/profile_images/logo_Flor-it_p6KsS8d.png HTTP/1.1" 404 4139
+WARNING 2025-05-19 14:30:48,009 log Not Found: /media/profile_images/logo_Flor-it_1mmrPW0.png
+WARNING 2025-05-19 14:30:48,025 basehttp "GET /media/profile_images/logo_Flor-it_1mmrPW0.png HTTP/1.1" 404 4139
+WARNING 2025-05-19 14:30:48,059 log Not Found: /media/profile_images/remarqz-logo-mark-full-color-rgb-900px-w-144ppi.png
+WARNING 2025-05-19 14:30:48,060 basehttp "GET /media/profile_images/remarqz-logo-mark-full-color-rgb-900px-w-144ppi.png HTTP/1.1" 404 4247
+WARNING 2025-05-19 14:30:48,117 log Not Found: /media/profile_images/Flor_IT-Badge.png
+WARNING 2025-05-19 14:30:48,117 basehttp "GET /media/profile_images/Flor_IT-Badge.png HTTP/1.1" 404 4111
+WARNING 2025-05-19 14:30:48,130 log Not Found: /media/profile_images/logo_Flor-it.png
+WARNING 2025-05-19 14:30:48,148 basehttp "GET /media/profile_images/logo_Flor-it.png HTTP/1.1" 404 4107
+WARNING 2025-05-19 14:30:48,158 log Not Found: /media/profile_images/remarqz-logo-full-color-rgb-900px-w-144ppi.jpg
+WARNING 2025-05-19 14:30:48,181 basehttp "GET /media/profile_images/remarqz-logo-full-color-rgb-900px-w-144ppi.jpg HTTP/1.1" 404 4227
+WARNING 2025-05-19 14:30:48,197 log Not Found: /media/profile_images/Schermafbeelding_2025-01-08_om_13.29.58.png
+WARNING 2025-05-19 14:30:48,214 basehttp "GET /media/profile_images/Schermafbeelding_2025-01-08_om_13.29.58.png HTTP/1.1" 404 4215
+WARNING 2025-05-19 14:30:48,245 log Not Found: /media/profile_images/Schermafbeelding_2025-01-06_om_15.14.17.png
+WARNING 2025-05-19 14:30:48,246 basehttp "GET /media/profile_images/Schermafbeelding_2025-01-06_om_15.14.17.png HTTP/1.1" 404 4215
+WARNING 2025-05-19 14:30:48,279 log Not Found: /media/profile_images/remarqz-logo-full-color-rgb-900px-w-144ppi.png
+WARNING 2025-05-19 14:30:48,279 basehttp "GET /media/profile_images/remarqz-logo-full-color-rgb-900px-w-144ppi.png HTTP/1.1" 404 4227
+WARNING 2025-05-19 14:30:48,315 log Not Found: /media/Logo PS.png
+WARNING 2025-05-19 14:30:48,316 basehttp "GET /media/Logo%20PS.png HTTP/1.1" 404 4029
+WARNING 2025-05-19 14:30:48,325 log Not Found: /media/profile_images/Schermafbeelding_2024-10-24_om_16.01.17.png
+WARNING 2025-05-19 14:30:48,353 basehttp "GET /media/profile_images/Schermafbeelding_2024-10-24_om_16.01.17.png HTTP/1.1" 404 4215
+WARNING 2025-05-19 14:30:48,365 log Not Found: /media/Dee & Tracy.jpg
+WARNING 2025-05-19 14:30:48,381 basehttp "GET /media/Dee%20%26%20Tracy.jpg HTTP/1.1" 404 4063
+WARNING 2025-05-19 14:30:48,422 log Not Found: /media/profile_images/Schermafbeelding_2024-10-11_om_13.21.22.png
+WARNING 2025-05-19 14:30:48,425 basehttp "GET /media/profile_images/Schermafbeelding_2024-10-11_om_13.21.22.png HTTP/1.1" 404 4215
+WARNING 2025-05-19 14:30:48,453 log Not Found: /media/profile_images/logo-transparent_langwerpig-01-01_edited_edited_edited.png
+WARNING 2025-05-19 14:30:48,478 basehttp "GET /media/profile_images/logo-transparent_langwerpig-01-01_edited_edited_edited.png HTTP/1.1" 404 4275
+WARNING 2025-05-19 14:30:48,497 log Not Found: /media/profile_images/icon_purple_kopie_jkDxYW0.png
+WARNING 2025-05-19 14:30:48,508 basehttp "GET /media/profile_images/icon_purple_kopie_jkDxYW0.png HTTP/1.1" 404 4159
+INFO 2025-05-19 14:30:49,283 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-19 14:30:59,958 basehttp "GET /admin/review_system/customer/404/change/ HTTP/1.1" 200 20376
+INFO 2025-05-19 14:31:01,727 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-19 14:31:08,822 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 54014
+INFO 2025-05-19 14:31:13,441 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 54014
+INFO 2025-05-19 14:31:13,667 basehttp "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2682
+INFO 2025-05-19 14:31:13,677 basehttp "GET /static/admin/css/changelists.css HTTP/1.1" 200 6811
+INFO 2025-05-19 14:31:13,722 basehttp "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+INFO 2025-05-19 14:31:13,723 basehttp "GET /static/admin/css/responsive.css HTTP/1.1" 200 17905
+INFO 2025-05-19 14:31:13,723 basehttp "GET /static/admin/css/base.css HTTP/1.1" 200 21544
+INFO 2025-05-19 14:31:13,724 basehttp "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+INFO 2025-05-19 14:31:13,768 basehttp "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 9042
+INFO 2025-05-19 14:31:13,800 basehttp "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+INFO 2025-05-19 14:31:13,849 basehttp "GET /static/admin/js/core.js HTTP/1.1" 200 6208
+INFO 2025-05-19 14:31:13,849 basehttp "GET /static/admin/js/actions.js HTTP/1.1" 200 8067
+INFO 2025-05-19 14:31:13,853 basehttp "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 285314
+INFO 2025-05-19 14:31:13,926 basehttp "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+INFO 2025-05-19 14:31:13,947 basehttp "GET /static/admin/img/icon-no.svg HTTP/1.1" 200 560
+INFO 2025-05-19 14:31:13,979 basehttp "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+INFO 2025-05-19 14:31:13,988 basehttp "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 325171
+INFO 2025-05-19 14:31:14,024 basehttp "GET /static/admin/js/theme.js HTTP/1.1" 200 1943
+INFO 2025-05-19 14:31:14,052 basehttp "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+INFO 2025-05-19 14:31:14,092 basehttp "GET /static/admin/js/filters.js HTTP/1.1" 200 978
+WARNING 2025-05-19 14:31:14,114 log Not Found: /media/profile_images/22e53e_7066c7318bb34be38d3a4f2e3a256021mv2.webp
+WARNING 2025-05-19 14:31:14,134 basehttp "GET /media/profile_images/22e53e_7066c7318bb34be38d3a4f2e3a256021mv2.webp HTTP/1.1" 404 4231
+WARNING 2025-05-19 14:31:14,144 log Not Found: /media/profile_images/22e53e_7066c7318bb34be38d3a4f2e3a256021mv2_PFLhi0c.webp
+WARNING 2025-05-19 14:31:14,163 basehttp "GET /media/profile_images/22e53e_7066c7318bb34be38d3a4f2e3a256021mv2_PFLhi0c.webp HTTP/1.1" 404 4263
+WARNING 2025-05-19 14:31:14,173 log Not Found: /media/profile_images/ED-removebg-preview_Kc0VegY.png
+WARNING 2025-05-19 14:31:14,196 basehttp "GET /media/profile_images/ED-removebg-preview_Kc0VegY.png HTTP/1.1" 404 4167
+WARNING 2025-05-19 14:31:14,207 log Not Found: /media/profile_images/logo_Flor-it_R9hl2VF.png
+WARNING 2025-05-19 14:31:14,224 basehttp "GET /media/profile_images/logo_Flor-it_R9hl2VF.png HTTP/1.1" 404 4139
+WARNING 2025-05-19 14:31:14,232 log Not Found: /media/profile_images/logo_Flor-it_3ug9vGy.png
+WARNING 2025-05-19 14:31:14,259 basehttp "GET /media/profile_images/logo_Flor-it_3ug9vGy.png HTTP/1.1" 404 4139
+WARNING 2025-05-19 14:31:14,277 log Not Found: /media/profile_images/logo_Flor-it_QbHvwb7.png
+WARNING 2025-05-19 14:31:14,294 basehttp "GET /media/profile_images/logo_Flor-it_QbHvwb7.png HTTP/1.1" 404 4139
+WARNING 2025-05-19 14:31:14,306 log Not Found: /media/profile_images/logo_flor-it.png
+WARNING 2025-05-19 14:31:14,325 basehttp "GET /media/profile_images/logo_flor-it.png HTTP/1.1" 404 4107
+WARNING 2025-05-19 14:31:14,363 log Not Found: /media/profile_images/ED-removebg-preview_CBDMx0t.png
+WARNING 2025-05-19 14:31:14,385 basehttp "GET /media/profile_images/ED-removebg-preview_CBDMx0t.png HTTP/1.1" 404 4167
+WARNING 2025-05-19 14:31:14,397 log Not Found: /media/profile_images/logo_Flor-it_I3sk1vS.png
+WARNING 2025-05-19 14:31:14,412 basehttp "GET /media/profile_images/logo_Flor-it_I3sk1vS.png HTTP/1.1" 404 4139
+WARNING 2025-05-19 14:31:14,425 log Not Found: /media/profile_images/logo_Flor-it_ycPeTUA.png
+WARNING 2025-05-19 14:31:14,447 basehttp "GET /media/profile_images/logo_Flor-it_ycPeTUA.png HTTP/1.1" 404 4139
+WARNING 2025-05-19 14:31:14,458 log Not Found: /media/profile_images/ED-removebg-preview_neUNEjX.png
+WARNING 2025-05-19 14:31:14,479 basehttp "GET /media/profile_images/ED-removebg-preview_neUNEjX.png HTTP/1.1" 404 4167
+WARNING 2025-05-19 14:31:14,512 log Not Found: /media/profile_images/logo_Flor-it_JECFN7N.png
+WARNING 2025-05-19 14:31:14,513 basehttp "GET /media/profile_images/logo_Flor-it_JECFN7N.png HTTP/1.1" 404 4139
+WARNING 2025-05-19 14:31:14,550 log Not Found: /media/profile_images/logo_Flor-it_p6KsS8d.png
+WARNING 2025-05-19 14:31:14,574 basehttp "GET /media/profile_images/logo_Flor-it_p6KsS8d.png HTTP/1.1" 404 4139
+WARNING 2025-05-19 14:31:14,606 log Not Found: /media/profile_images/logo_Flor-it_1mmrPW0.png
+WARNING 2025-05-19 14:31:14,607 basehttp "GET /media/profile_images/logo_Flor-it_1mmrPW0.png HTTP/1.1" 404 4139
+WARNING 2025-05-19 14:31:14,640 log Not Found: /media/profile_images/remarqz-logo-mark-full-color-rgb-900px-w-144ppi.png
+WARNING 2025-05-19 14:31:14,641 basehttp "GET /media/profile_images/remarqz-logo-mark-full-color-rgb-900px-w-144ppi.png HTTP/1.1" 404 4247
+WARNING 2025-05-19 14:31:14,652 log Not Found: /media/profile_images/Flor_IT-Badge.png
+WARNING 2025-05-19 14:31:14,653 basehttp "GET /media/profile_images/Flor_IT-Badge.png HTTP/1.1" 404 4111
+WARNING 2025-05-19 14:31:14,693 log Not Found: /media/profile_images/logo_Flor-it.png
+WARNING 2025-05-19 14:31:14,711 basehttp "GET /media/profile_images/logo_Flor-it.png HTTP/1.1" 404 4107
+WARNING 2025-05-19 14:31:14,725 log Not Found: /media/profile_images/remarqz-logo-full-color-rgb-900px-w-144ppi.jpg
+WARNING 2025-05-19 14:31:14,743 basehttp "GET /media/profile_images/remarqz-logo-full-color-rgb-900px-w-144ppi.jpg HTTP/1.1" 404 4227
+WARNING 2025-05-19 14:31:14,754 log Not Found: /media/profile_images/Schermafbeelding_2025-01-08_om_13.29.58.png
+WARNING 2025-05-19 14:31:14,772 basehttp "GET /media/profile_images/Schermafbeelding_2025-01-08_om_13.29.58.png HTTP/1.1" 404 4215
+WARNING 2025-05-19 14:31:14,786 log Not Found: /media/profile_images/Schermafbeelding_2025-01-06_om_15.14.17.png
+WARNING 2025-05-19 14:31:14,807 basehttp "GET /media/profile_images/Schermafbeelding_2025-01-06_om_15.14.17.png HTTP/1.1" 404 4215
+WARNING 2025-05-19 14:31:14,838 log Not Found: /media/profile_images/remarqz-logo-full-color-rgb-900px-w-144ppi.png
+WARNING 2025-05-19 14:31:14,839 basehttp "GET /media/profile_images/remarqz-logo-full-color-rgb-900px-w-144ppi.png HTTP/1.1" 404 4227
+WARNING 2025-05-19 14:31:14,874 log Not Found: /media/Logo PS.png
+WARNING 2025-05-19 14:31:14,902 basehttp "GET /media/Logo%20PS.png HTTP/1.1" 404 4029
+WARNING 2025-05-19 14:31:14,944 log Not Found: /media/profile_images/Schermafbeelding_2024-10-24_om_16.01.17.png
+WARNING 2025-05-19 14:31:14,963 basehttp "GET /media/profile_images/Schermafbeelding_2024-10-24_om_16.01.17.png HTTP/1.1" 404 4215
+WARNING 2025-05-19 14:31:14,973 log Not Found: /media/Dee & Tracy.jpg
+WARNING 2025-05-19 14:31:14,973 basehttp "GET /media/Dee%20%26%20Tracy.jpg HTTP/1.1" 404 4063
+WARNING 2025-05-19 14:31:14,983 log Not Found: /media/profile_images/Schermafbeelding_2024-10-11_om_13.21.22.png
+WARNING 2025-05-19 14:31:15,007 basehttp "GET /media/profile_images/Schermafbeelding_2024-10-11_om_13.21.22.png HTTP/1.1" 404 4215
+WARNING 2025-05-19 14:31:15,020 log Not Found: /media/profile_images/logo-transparent_langwerpig-01-01_edited_edited_edited.png
+WARNING 2025-05-19 14:31:15,036 basehttp "GET /media/profile_images/logo-transparent_langwerpig-01-01_edited_edited_edited.png HTTP/1.1" 404 4275
+WARNING 2025-05-19 14:31:15,046 log Not Found: /media/profile_images/icon_purple_kopie_jkDxYW0.png
+WARNING 2025-05-19 14:31:15,068 basehttp "GET /media/profile_images/icon_purple_kopie_jkDxYW0.png HTTP/1.1" 404 4159
+INFO 2025-05-19 14:31:15,150 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-19 14:31:15,204 basehttp "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+INFO 2025-05-19 14:31:15,204 basehttp "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+WARNING 2025-05-19 14:31:15,331 log Not Found: /favicon.ico
+WARNING 2025-05-19 14:31:15,334 basehttp "GET /favicon.ico HTTP/1.1" 404 3896
+INFO 2025-05-19 14:31:46,739 basehttp "GET /api/reviews?domain=edice.ch HTTP/1.1" 200 4855
+INFO 2025-05-19 14:32:29,852 basehttp "GET /api/reviews?domain=sparkscience.ch HTTP/1.1" 200 2884
+INFO 2025-05-19 14:32:54,692 basehttp "GET /api/reviews?domain=nonduale-coaching.nl HTTP/1.1" 200 7665
+INFO 2025-05-19 14:33:17,795 autoreload Watching for file changes with StatReloader
+INFO 2025-05-19 14:33:24,458 basehttp "GET / HTTP/1.1" 200 1256
+INFO 2025-05-19 14:33:34,236 basehttp "GET /admin/ HTTP/1.1" 200 12769
+INFO 2025-05-19 14:33:34,262 basehttp "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+INFO 2025-05-19 14:33:39,628 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 54014
+WARNING 2025-05-19 14:33:39,701 log Not Found: /media/profile_images/22e53e_7066c7318bb34be38d3a4f2e3a256021mv2.webp
+WARNING 2025-05-19 14:33:39,702 basehttp "GET /media/profile_images/22e53e_7066c7318bb34be38d3a4f2e3a256021mv2.webp HTTP/1.1" 404 4231
+WARNING 2025-05-19 14:33:39,711 log Not Found: /media/profile_images/22e53e_7066c7318bb34be38d3a4f2e3a256021mv2_PFLhi0c.webp
+WARNING 2025-05-19 14:33:39,712 basehttp "GET /media/profile_images/22e53e_7066c7318bb34be38d3a4f2e3a256021mv2_PFLhi0c.webp HTTP/1.1" 404 4263
+WARNING 2025-05-19 14:33:39,721 log Not Found: /media/profile_images/ED-removebg-preview_Kc0VegY.png
+WARNING 2025-05-19 14:33:39,740 basehttp "GET /media/profile_images/ED-removebg-preview_Kc0VegY.png HTTP/1.1" 404 4167
+WARNING 2025-05-19 14:33:39,749 log Not Found: /media/profile_images/logo_Flor-it_R9hl2VF.png
+WARNING 2025-05-19 14:33:39,750 basehttp "GET /media/profile_images/logo_Flor-it_R9hl2VF.png HTTP/1.1" 404 4139
+WARNING 2025-05-19 14:33:39,789 log Not Found: /media/profile_images/logo_Flor-it_3ug9vGy.png
+WARNING 2025-05-19 14:33:39,806 basehttp "GET /media/profile_images/logo_Flor-it_3ug9vGy.png HTTP/1.1" 404 4139
+WARNING 2025-05-19 14:33:39,817 log Not Found: /media/profile_images/logo_Flor-it_QbHvwb7.png
+WARNING 2025-05-19 14:33:39,837 basehttp "GET /media/profile_images/logo_Flor-it_QbHvwb7.png HTTP/1.1" 404 4139
+WARNING 2025-05-19 14:33:39,846 log Not Found: /media/profile_images/logo_flor-it.png
+WARNING 2025-05-19 14:33:39,870 basehttp "GET /media/profile_images/logo_flor-it.png HTTP/1.1" 404 4107
+WARNING 2025-05-19 14:33:39,886 log Not Found: /media/profile_images/ED-removebg-preview_CBDMx0t.png
+WARNING 2025-05-19 14:33:39,902 basehttp "GET /media/profile_images/ED-removebg-preview_CBDMx0t.png HTTP/1.1" 404 4167
+WARNING 2025-05-19 14:33:39,913 log Not Found: /media/profile_images/logo_Flor-it_I3sk1vS.png
+WARNING 2025-05-19 14:33:39,934 basehttp "GET /media/profile_images/logo_Flor-it_I3sk1vS.png HTTP/1.1" 404 4139
+WARNING 2025-05-19 14:33:39,945 log Not Found: /media/profile_images/logo_Flor-it_ycPeTUA.png
+WARNING 2025-05-19 14:33:39,962 basehttp "GET /media/profile_images/logo_Flor-it_ycPeTUA.png HTTP/1.1" 404 4139
+WARNING 2025-05-19 14:33:39,970 log Not Found: /media/profile_images/ED-removebg-preview_neUNEjX.png
+WARNING 2025-05-19 14:33:39,995 basehttp "GET /media/profile_images/ED-removebg-preview_neUNEjX.png HTTP/1.1" 404 4167
+WARNING 2025-05-19 14:33:40,007 log Not Found: /media/profile_images/logo_Flor-it_JECFN7N.png
+WARNING 2025-05-19 14:33:40,025 basehttp "GET /media/profile_images/logo_Flor-it_JECFN7N.png HTTP/1.1" 404 4139
+WARNING 2025-05-19 14:33:40,039 log Not Found: /media/profile_images/logo_Flor-it_p6KsS8d.png
+WARNING 2025-05-19 14:33:40,053 basehttp "GET /media/profile_images/logo_Flor-it_p6KsS8d.png HTTP/1.1" 404 4139
+WARNING 2025-05-19 14:33:40,065 log Not Found: /media/profile_images/logo_Flor-it_1mmrPW0.png
+WARNING 2025-05-19 14:33:40,087 basehttp "GET /media/profile_images/logo_Flor-it_1mmrPW0.png HTTP/1.1" 404 4139
+WARNING 2025-05-19 14:33:40,098 log Not Found: /media/profile_images/remarqz-logo-mark-full-color-rgb-900px-w-144ppi.png
+WARNING 2025-05-19 14:33:40,115 basehttp "GET /media/profile_images/remarqz-logo-mark-full-color-rgb-900px-w-144ppi.png HTTP/1.1" 404 4247
+WARNING 2025-05-19 14:33:40,129 log Not Found: /media/profile_images/Flor_IT-Badge.png
+WARNING 2025-05-19 14:33:40,151 basehttp "GET /media/profile_images/Flor_IT-Badge.png HTTP/1.1" 404 4111
+WARNING 2025-05-19 14:33:40,162 log Not Found: /media/profile_images/logo_Flor-it.png
+WARNING 2025-05-19 14:33:40,182 basehttp "GET /media/profile_images/logo_Flor-it.png HTTP/1.1" 404 4107
+WARNING 2025-05-19 14:33:40,194 log Not Found: /media/profile_images/remarqz-logo-full-color-rgb-900px-w-144ppi.jpg
+WARNING 2025-05-19 14:33:40,214 basehttp "GET /media/profile_images/remarqz-logo-full-color-rgb-900px-w-144ppi.jpg HTTP/1.1" 404 4227
+WARNING 2025-05-19 14:33:40,224 log Not Found: /media/profile_images/Schermafbeelding_2025-01-08_om_13.29.58.png
+WARNING 2025-05-19 14:33:40,225 basehttp "GET /media/profile_images/Schermafbeelding_2025-01-08_om_13.29.58.png HTTP/1.1" 404 4215
+WARNING 2025-05-19 14:33:40,235 log Not Found: /media/profile_images/Schermafbeelding_2025-01-06_om_15.14.17.png
+WARNING 2025-05-19 14:33:40,236 basehttp "GET /media/profile_images/Schermafbeelding_2025-01-06_om_15.14.17.png HTTP/1.1" 404 4215
+WARNING 2025-05-19 14:33:40,265 log Not Found: /media/profile_images/remarqz-logo-full-color-rgb-900px-w-144ppi.png
+WARNING 2025-05-19 14:33:40,266 basehttp "GET /media/profile_images/remarqz-logo-full-color-rgb-900px-w-144ppi.png HTTP/1.1" 404 4227
+WARNING 2025-05-19 14:33:40,303 log Not Found: /media/Logo PS.png
+WARNING 2025-05-19 14:33:40,304 basehttp "GET /media/Logo%20PS.png HTTP/1.1" 404 4029
+WARNING 2025-05-19 14:33:40,313 log Not Found: /media/profile_images/Schermafbeelding_2024-10-24_om_16.01.17.png
+WARNING 2025-05-19 14:33:40,315 basehttp "GET /media/profile_images/Schermafbeelding_2024-10-24_om_16.01.17.png HTTP/1.1" 404 4215
+WARNING 2025-05-19 14:33:40,367 log Not Found: /media/Dee & Tracy.jpg
+WARNING 2025-05-19 14:33:40,368 basehttp "GET /media/Dee%20%26%20Tracy.jpg HTTP/1.1" 404 4063
+WARNING 2025-05-19 14:33:40,383 log Not Found: /media/profile_images/Schermafbeelding_2024-10-11_om_13.21.22.png
+WARNING 2025-05-19 14:33:40,400 basehttp "GET /media/profile_images/Schermafbeelding_2024-10-11_om_13.21.22.png HTTP/1.1" 404 4215
+WARNING 2025-05-19 14:33:40,416 log Not Found: /media/profile_images/logo-transparent_langwerpig-01-01_edited_edited_edited.png
+WARNING 2025-05-19 14:33:40,439 basehttp "GET /media/profile_images/logo-transparent_langwerpig-01-01_edited_edited_edited.png HTTP/1.1" 404 4275
+WARNING 2025-05-19 14:33:40,449 log Not Found: /media/profile_images/icon_purple_kopie_jkDxYW0.png
+WARNING 2025-05-19 14:33:40,450 basehttp "GET /media/profile_images/icon_purple_kopie_jkDxYW0.png HTTP/1.1" 404 4159
+INFO 2025-05-19 14:33:41,244 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-19 14:33:50,779 basehttp "POST /admin/logout/ HTTP/1.1" 200 3553
+INFO 2025-05-19 14:33:52,346 basehttp "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-05-19 14:33:52,391 basehttp "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4158
+INFO 2025-05-19 14:33:52,427 basehttp "GET /static/admin/css/login.css HTTP/1.1" 304 0
+INFO 2025-05-19 14:34:06,373 basehttp "POST /admin/login/?next=/admin/ HTTP/1.1" 200 4324
+INFO 2025-05-19 14:34:17,402 basehttp "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2025-05-19 14:34:19,186 basehttp "GET /admin/ HTTP/1.1" 200 12769
+INFO 2025-05-19 14:34:29,709 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 54014
+WARNING 2025-05-19 14:34:29,738 log Not Found: /media/profile_images/22e53e_7066c7318bb34be38d3a4f2e3a256021mv2.webp
+WARNING 2025-05-19 14:34:29,739 basehttp "GET /media/profile_images/22e53e_7066c7318bb34be38d3a4f2e3a256021mv2.webp HTTP/1.1" 404 4231
+WARNING 2025-05-19 14:34:29,748 log Not Found: /media/profile_images/22e53e_7066c7318bb34be38d3a4f2e3a256021mv2_PFLhi0c.webp
+WARNING 2025-05-19 14:34:29,756 basehttp "GET /media/profile_images/22e53e_7066c7318bb34be38d3a4f2e3a256021mv2_PFLhi0c.webp HTTP/1.1" 404 4263
+WARNING 2025-05-19 14:34:29,764 log Not Found: /media/profile_images/ED-removebg-preview_Kc0VegY.png
+WARNING 2025-05-19 14:34:29,764 basehttp "GET /media/profile_images/ED-removebg-preview_Kc0VegY.png HTTP/1.1" 404 4167
+WARNING 2025-05-19 14:34:29,774 log Not Found: /media/profile_images/logo_Flor-it_R9hl2VF.png
+WARNING 2025-05-19 14:34:29,793 basehttp "GET /media/profile_images/logo_Flor-it_R9hl2VF.png HTTP/1.1" 404 4139
+WARNING 2025-05-19 14:34:29,804 log Not Found: /media/profile_images/logo_Flor-it_3ug9vGy.png
+WARNING 2025-05-19 14:34:29,826 basehttp "GET /media/profile_images/logo_Flor-it_3ug9vGy.png HTTP/1.1" 404 4139
+WARNING 2025-05-19 14:34:29,841 log Not Found: /media/profile_images/logo_Flor-it_QbHvwb7.png
+WARNING 2025-05-19 14:34:29,858 basehttp "GET /media/profile_images/logo_Flor-it_QbHvwb7.png HTTP/1.1" 404 4139
+WARNING 2025-05-19 14:34:29,871 log Not Found: /media/profile_images/logo_flor-it.png
+WARNING 2025-05-19 14:34:29,887 basehttp "GET /media/profile_images/logo_flor-it.png HTTP/1.1" 404 4107
+WARNING 2025-05-19 14:34:29,897 log Not Found: /media/profile_images/ED-removebg-preview_CBDMx0t.png
+WARNING 2025-05-19 14:34:29,916 basehttp "GET /media/profile_images/ED-removebg-preview_CBDMx0t.png HTTP/1.1" 404 4167
+WARNING 2025-05-19 14:34:29,928 log Not Found: /media/profile_images/logo_Flor-it_I3sk1vS.png
+WARNING 2025-05-19 14:34:29,947 basehttp "GET /media/profile_images/logo_Flor-it_I3sk1vS.png HTTP/1.1" 404 4139
+WARNING 2025-05-19 14:34:29,975 log Not Found: /media/profile_images/logo_Flor-it_ycPeTUA.png
+WARNING 2025-05-19 14:34:29,977 basehttp "GET /media/profile_images/logo_Flor-it_ycPeTUA.png HTTP/1.1" 404 4139
+WARNING 2025-05-19 14:34:29,984 log Not Found: /media/profile_images/ED-removebg-preview_neUNEjX.png
+WARNING 2025-05-19 14:34:29,985 basehttp "GET /media/profile_images/ED-removebg-preview_neUNEjX.png HTTP/1.1" 404 4167
+WARNING 2025-05-19 14:34:30,016 log Not Found: /media/profile_images/logo_Flor-it_JECFN7N.png
+WARNING 2025-05-19 14:34:30,042 basehttp "GET /media/profile_images/logo_Flor-it_JECFN7N.png HTTP/1.1" 404 4139
+WARNING 2025-05-19 14:34:30,053 log Not Found: /media/profile_images/logo_Flor-it_p6KsS8d.png
+WARNING 2025-05-19 14:34:30,073 basehttp "GET /media/profile_images/logo_Flor-it_p6KsS8d.png HTTP/1.1" 404 4139
+WARNING 2025-05-19 14:34:30,084 log Not Found: /media/profile_images/logo_Flor-it_1mmrPW0.png
+WARNING 2025-05-19 14:34:30,084 basehttp "GET /media/profile_images/logo_Flor-it_1mmrPW0.png HTTP/1.1" 404 4139
+WARNING 2025-05-19 14:34:30,093 log Not Found: /media/profile_images/remarqz-logo-mark-full-color-rgb-900px-w-144ppi.png
+WARNING 2025-05-19 14:34:30,094 basehttp "GET /media/profile_images/remarqz-logo-mark-full-color-rgb-900px-w-144ppi.png HTTP/1.1" 404 4247
+WARNING 2025-05-19 14:34:30,124 log Not Found: /media/profile_images/Flor_IT-Badge.png
+WARNING 2025-05-19 14:34:30,126 basehttp "GET /media/profile_images/Flor_IT-Badge.png HTTP/1.1" 404 4111
+WARNING 2025-05-19 14:34:30,269 log Not Found: /media/profile_images/logo_Flor-it.png
+WARNING 2025-05-19 14:34:30,306 basehttp "GET /media/profile_images/logo_Flor-it.png HTTP/1.1" 404 4107
+WARNING 2025-05-19 14:34:30,315 log Not Found: /media/profile_images/remarqz-logo-full-color-rgb-900px-w-144ppi.jpg
+WARNING 2025-05-19 14:34:30,336 basehttp "GET /media/profile_images/remarqz-logo-full-color-rgb-900px-w-144ppi.jpg HTTP/1.1" 404 4227
+WARNING 2025-05-19 14:34:30,350 log Not Found: /media/profile_images/Schermafbeelding_2025-01-08_om_13.29.58.png
+WARNING 2025-05-19 14:34:30,367 basehttp "GET /media/profile_images/Schermafbeelding_2025-01-08_om_13.29.58.png HTTP/1.1" 404 4215
+WARNING 2025-05-19 14:34:30,377 log Not Found: /media/profile_images/Schermafbeelding_2025-01-06_om_15.14.17.png
+WARNING 2025-05-19 14:34:30,379 basehttp "GET /media/profile_images/Schermafbeelding_2025-01-06_om_15.14.17.png HTTP/1.1" 404 4215
+WARNING 2025-05-19 14:34:30,388 log Not Found: /media/profile_images/remarqz-logo-full-color-rgb-900px-w-144ppi.png
+WARNING 2025-05-19 14:34:30,389 basehttp "GET /media/profile_images/remarqz-logo-full-color-rgb-900px-w-144ppi.png HTTP/1.1" 404 4227
+WARNING 2025-05-19 14:34:30,399 log Not Found: /media/Logo PS.png
+WARNING 2025-05-19 14:34:30,420 basehttp "GET /media/Logo%20PS.png HTTP/1.1" 404 4029
+WARNING 2025-05-19 14:34:30,454 log Not Found: /media/profile_images/Schermafbeelding_2024-10-24_om_16.01.17.png
+WARNING 2025-05-19 14:34:30,454 basehttp "GET /media/profile_images/Schermafbeelding_2024-10-24_om_16.01.17.png HTTP/1.1" 404 4215
+WARNING 2025-05-19 14:34:30,492 log Not Found: /media/Dee & Tracy.jpg
+WARNING 2025-05-19 14:34:30,510 basehttp "GET /media/Dee%20%26%20Tracy.jpg HTTP/1.1" 404 4063
+WARNING 2025-05-19 14:34:30,522 log Not Found: /media/profile_images/Schermafbeelding_2024-10-11_om_13.21.22.png
+WARNING 2025-05-19 14:34:30,523 basehttp "GET /media/profile_images/Schermafbeelding_2024-10-11_om_13.21.22.png HTTP/1.1" 404 4215
+WARNING 2025-05-19 14:34:30,531 log Not Found: /media/profile_images/logo-transparent_langwerpig-01-01_edited_edited_edited.png
+WARNING 2025-05-19 14:34:30,532 basehttp "GET /media/profile_images/logo-transparent_langwerpig-01-01_edited_edited_edited.png HTTP/1.1" 404 4275
+WARNING 2025-05-19 14:34:30,564 log Not Found: /media/profile_images/icon_purple_kopie_jkDxYW0.png
+WARNING 2025-05-19 14:34:30,589 basehttp "GET /media/profile_images/icon_purple_kopie_jkDxYW0.png HTTP/1.1" 404 4159
+INFO 2025-05-19 14:34:31,336 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-19 14:36:12,508 basehttp "GET /admin/review_system/plans/ HTTP/1.1" 200 15183
+INFO 2025-05-19 14:36:14,047 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-19 14:36:24,873 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 54014
+WARNING 2025-05-19 14:36:24,901 log Not Found: /media/profile_images/22e53e_7066c7318bb34be38d3a4f2e3a256021mv2.webp
+WARNING 2025-05-19 14:36:24,902 basehttp "GET /media/profile_images/22e53e_7066c7318bb34be38d3a4f2e3a256021mv2.webp HTTP/1.1" 404 4231
+WARNING 2025-05-19 14:36:24,910 log Not Found: /media/profile_images/22e53e_7066c7318bb34be38d3a4f2e3a256021mv2_PFLhi0c.webp
+WARNING 2025-05-19 14:36:24,910 basehttp "GET /media/profile_images/22e53e_7066c7318bb34be38d3a4f2e3a256021mv2_PFLhi0c.webp HTTP/1.1" 404 4263
+WARNING 2025-05-19 14:36:24,917 log Not Found: /media/profile_images/ED-removebg-preview_Kc0VegY.png
+WARNING 2025-05-19 14:36:24,918 basehttp "GET /media/profile_images/ED-removebg-preview_Kc0VegY.png HTTP/1.1" 404 4167
+WARNING 2025-05-19 14:36:24,925 log Not Found: /media/profile_images/logo_Flor-it_R9hl2VF.png
+WARNING 2025-05-19 14:36:24,925 basehttp "GET /media/profile_images/logo_Flor-it_R9hl2VF.png HTTP/1.1" 404 4139
+WARNING 2025-05-19 14:36:24,933 log Not Found: /media/profile_images/logo_Flor-it_3ug9vGy.png
+WARNING 2025-05-19 14:36:24,933 basehttp "GET /media/profile_images/logo_Flor-it_3ug9vGy.png HTTP/1.1" 404 4139
+WARNING 2025-05-19 14:36:24,940 log Not Found: /media/profile_images/logo_Flor-it_QbHvwb7.png
+WARNING 2025-05-19 14:36:24,942 basehttp "GET /media/profile_images/logo_Flor-it_QbHvwb7.png HTTP/1.1" 404 4139
+WARNING 2025-05-19 14:36:24,950 log Not Found: /media/profile_images/logo_flor-it.png
+WARNING 2025-05-19 14:36:24,950 basehttp "GET /media/profile_images/logo_flor-it.png HTTP/1.1" 404 4107
+WARNING 2025-05-19 14:36:24,957 log Not Found: /media/profile_images/ED-removebg-preview_CBDMx0t.png
+WARNING 2025-05-19 14:36:24,958 basehttp "GET /media/profile_images/ED-removebg-preview_CBDMx0t.png HTTP/1.1" 404 4167
+WARNING 2025-05-19 14:36:24,965 log Not Found: /media/profile_images/logo_Flor-it_I3sk1vS.png
+WARNING 2025-05-19 14:36:24,966 basehttp "GET /media/profile_images/logo_Flor-it_I3sk1vS.png HTTP/1.1" 404 4139
+WARNING 2025-05-19 14:36:24,974 log Not Found: /media/profile_images/logo_Flor-it_ycPeTUA.png
+WARNING 2025-05-19 14:36:24,974 basehttp "GET /media/profile_images/logo_Flor-it_ycPeTUA.png HTTP/1.1" 404 4139
+WARNING 2025-05-19 14:36:24,983 log Not Found: /media/profile_images/ED-removebg-preview_neUNEjX.png
+WARNING 2025-05-19 14:36:24,984 basehttp "GET /media/profile_images/ED-removebg-preview_neUNEjX.png HTTP/1.1" 404 4167
+WARNING 2025-05-19 14:36:24,991 log Not Found: /media/profile_images/logo_Flor-it_JECFN7N.png
+WARNING 2025-05-19 14:36:24,992 basehttp "GET /media/profile_images/logo_Flor-it_JECFN7N.png HTTP/1.1" 404 4139
+WARNING 2025-05-19 14:36:25,000 log Not Found: /media/profile_images/logo_Flor-it_p6KsS8d.png
+WARNING 2025-05-19 14:36:25,000 basehttp "GET /media/profile_images/logo_Flor-it_p6KsS8d.png HTTP/1.1" 404 4139
+WARNING 2025-05-19 14:36:25,007 log Not Found: /media/profile_images/logo_Flor-it_1mmrPW0.png
+WARNING 2025-05-19 14:36:25,008 basehttp "GET /media/profile_images/logo_Flor-it_1mmrPW0.png HTTP/1.1" 404 4139
+WARNING 2025-05-19 14:36:25,016 log Not Found: /media/profile_images/remarqz-logo-mark-full-color-rgb-900px-w-144ppi.png
+WARNING 2025-05-19 14:36:25,017 basehttp "GET /media/profile_images/remarqz-logo-mark-full-color-rgb-900px-w-144ppi.png HTTP/1.1" 404 4247
+WARNING 2025-05-19 14:36:25,025 log Not Found: /media/profile_images/Flor_IT-Badge.png
+WARNING 2025-05-19 14:36:25,025 basehttp "GET /media/profile_images/Flor_IT-Badge.png HTTP/1.1" 404 4111
+WARNING 2025-05-19 14:36:25,034 log Not Found: /media/profile_images/logo_Flor-it.png
+WARNING 2025-05-19 14:36:25,034 basehttp "GET /media/profile_images/logo_Flor-it.png HTTP/1.1" 404 4107
+WARNING 2025-05-19 14:36:25,042 log Not Found: /media/profile_images/remarqz-logo-full-color-rgb-900px-w-144ppi.jpg
+WARNING 2025-05-19 14:36:25,042 basehttp "GET /media/profile_images/remarqz-logo-full-color-rgb-900px-w-144ppi.jpg HTTP/1.1" 404 4227
+WARNING 2025-05-19 14:36:25,049 log Not Found: /media/profile_images/Schermafbeelding_2025-01-08_om_13.29.58.png
+WARNING 2025-05-19 14:36:25,050 basehttp "GET /media/profile_images/Schermafbeelding_2025-01-08_om_13.29.58.png HTTP/1.1" 404 4215
+WARNING 2025-05-19 14:36:25,057 log Not Found: /media/profile_images/Schermafbeelding_2025-01-06_om_15.14.17.png
+WARNING 2025-05-19 14:36:25,058 basehttp "GET /media/profile_images/Schermafbeelding_2025-01-06_om_15.14.17.png HTTP/1.1" 404 4215
+WARNING 2025-05-19 14:36:25,065 log Not Found: /media/profile_images/remarqz-logo-full-color-rgb-900px-w-144ppi.png
+WARNING 2025-05-19 14:36:25,066 basehttp "GET /media/profile_images/remarqz-logo-full-color-rgb-900px-w-144ppi.png HTTP/1.1" 404 4227
+WARNING 2025-05-19 14:36:25,075 log Not Found: /media/Logo PS.png
+WARNING 2025-05-19 14:36:25,075 basehttp "GET /media/Logo%20PS.png HTTP/1.1" 404 4029
+WARNING 2025-05-19 14:36:25,083 log Not Found: /media/profile_images/Schermafbeelding_2024-10-24_om_16.01.17.png
+WARNING 2025-05-19 14:36:25,084 basehttp "GET /media/profile_images/Schermafbeelding_2024-10-24_om_16.01.17.png HTTP/1.1" 404 4215
+WARNING 2025-05-19 14:36:25,091 log Not Found: /media/Dee & Tracy.jpg
+WARNING 2025-05-19 14:36:25,092 basehttp "GET /media/Dee%20%26%20Tracy.jpg HTTP/1.1" 404 4063
+WARNING 2025-05-19 14:36:25,099 log Not Found: /media/profile_images/Schermafbeelding_2024-10-11_om_13.21.22.png
+WARNING 2025-05-19 14:36:25,100 basehttp "GET /media/profile_images/Schermafbeelding_2024-10-11_om_13.21.22.png HTTP/1.1" 404 4215
+WARNING 2025-05-19 14:36:25,111 log Not Found: /media/profile_images/logo-transparent_langwerpig-01-01_edited_edited_edited.png
+WARNING 2025-05-19 14:36:25,111 basehttp "GET /media/profile_images/logo-transparent_langwerpig-01-01_edited_edited_edited.png HTTP/1.1" 404 4275
+WARNING 2025-05-19 14:36:25,121 log Not Found: /media/profile_images/icon_purple_kopie_jkDxYW0.png
+WARNING 2025-05-19 14:36:25,122 basehttp "GET /media/profile_images/icon_purple_kopie_jkDxYW0.png HTTP/1.1" 404 4159
+INFO 2025-05-19 14:36:26,516 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-19 14:36:57,351 basehttp "GET /admin/review_system/customer/414/change/ HTTP/1.1" 200 20341
+INFO 2025-05-19 14:36:59,199 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-19 14:37:07,165 basehttp "POST /admin/review_system/customer/414/change/ HTTP/1.1" 302 0
+INFO 2025-05-19 14:37:10,138 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 54255
+WARNING 2025-05-19 14:37:10,164 log Not Found: /media/profile_images/22e53e_7066c7318bb34be38d3a4f2e3a256021mv2.webp
+WARNING 2025-05-19 14:37:10,165 basehttp "GET /media/profile_images/22e53e_7066c7318bb34be38d3a4f2e3a256021mv2.webp HTTP/1.1" 404 4231
+WARNING 2025-05-19 14:37:10,172 log Not Found: /media/profile_images/22e53e_7066c7318bb34be38d3a4f2e3a256021mv2_PFLhi0c.webp
+WARNING 2025-05-19 14:37:10,172 basehttp "GET /media/profile_images/22e53e_7066c7318bb34be38d3a4f2e3a256021mv2_PFLhi0c.webp HTTP/1.1" 404 4263
+WARNING 2025-05-19 14:37:10,181 log Not Found: /media/profile_images/ED-removebg-preview_Kc0VegY.png
+WARNING 2025-05-19 14:37:10,181 basehttp "GET /media/profile_images/ED-removebg-preview_Kc0VegY.png HTTP/1.1" 404 4167
+WARNING 2025-05-19 14:37:10,188 log Not Found: /media/profile_images/logo_Flor-it_R9hl2VF.png
+WARNING 2025-05-19 14:37:10,189 basehttp "GET /media/profile_images/logo_Flor-it_R9hl2VF.png HTTP/1.1" 404 4139
+WARNING 2025-05-19 14:37:10,195 log Not Found: /media/profile_images/logo_Flor-it_3ug9vGy.png
+WARNING 2025-05-19 14:37:10,196 basehttp "GET /media/profile_images/logo_Flor-it_3ug9vGy.png HTTP/1.1" 404 4139
+WARNING 2025-05-19 14:37:10,202 log Not Found: /media/profile_images/logo_Flor-it_QbHvwb7.png
+WARNING 2025-05-19 14:37:10,202 basehttp "GET /media/profile_images/logo_Flor-it_QbHvwb7.png HTTP/1.1" 404 4139
+WARNING 2025-05-19 14:37:10,209 log Not Found: /media/profile_images/logo_flor-it.png
+WARNING 2025-05-19 14:37:10,209 basehttp "GET /media/profile_images/logo_flor-it.png HTTP/1.1" 404 4107
+WARNING 2025-05-19 14:37:10,216 log Not Found: /media/profile_images/ED-removebg-preview_CBDMx0t.png
+WARNING 2025-05-19 14:37:10,217 basehttp "GET /media/profile_images/ED-removebg-preview_CBDMx0t.png HTTP/1.1" 404 4167
+WARNING 2025-05-19 14:37:10,223 log Not Found: /media/profile_images/logo_Flor-it_I3sk1vS.png
+WARNING 2025-05-19 14:37:10,224 basehttp "GET /media/profile_images/logo_Flor-it_I3sk1vS.png HTTP/1.1" 404 4139
+WARNING 2025-05-19 14:37:10,230 log Not Found: /media/profile_images/logo_Flor-it_ycPeTUA.png
+WARNING 2025-05-19 14:37:10,231 basehttp "GET /media/profile_images/logo_Flor-it_ycPeTUA.png HTTP/1.1" 404 4139
+WARNING 2025-05-19 14:37:10,237 log Not Found: /media/profile_images/ED-removebg-preview_neUNEjX.png
+WARNING 2025-05-19 14:37:10,238 basehttp "GET /media/profile_images/ED-removebg-preview_neUNEjX.png HTTP/1.1" 404 4167
+WARNING 2025-05-19 14:37:10,246 log Not Found: /media/profile_images/logo_Flor-it_JECFN7N.png
+WARNING 2025-05-19 14:37:10,246 basehttp "GET /media/profile_images/logo_Flor-it_JECFN7N.png HTTP/1.1" 404 4139
+WARNING 2025-05-19 14:37:10,254 log Not Found: /media/profile_images/logo_Flor-it_p6KsS8d.png
+WARNING 2025-05-19 14:37:10,255 basehttp "GET /media/profile_images/logo_Flor-it_p6KsS8d.png HTTP/1.1" 404 4139
+WARNING 2025-05-19 14:37:10,263 log Not Found: /media/profile_images/logo_Flor-it_1mmrPW0.png
+WARNING 2025-05-19 14:37:10,264 basehttp "GET /media/profile_images/logo_Flor-it_1mmrPW0.png HTTP/1.1" 404 4139
+WARNING 2025-05-19 14:37:10,271 log Not Found: /media/profile_images/remarqz-logo-mark-full-color-rgb-900px-w-144ppi.png
+WARNING 2025-05-19 14:37:10,271 basehttp "GET /media/profile_images/remarqz-logo-mark-full-color-rgb-900px-w-144ppi.png HTTP/1.1" 404 4247
+WARNING 2025-05-19 14:37:10,279 log Not Found: /media/profile_images/Flor_IT-Badge.png
+WARNING 2025-05-19 14:37:10,280 basehttp "GET /media/profile_images/Flor_IT-Badge.png HTTP/1.1" 404 4111
+WARNING 2025-05-19 14:37:10,287 log Not Found: /media/profile_images/logo_Flor-it.png
+WARNING 2025-05-19 14:37:10,287 basehttp "GET /media/profile_images/logo_Flor-it.png HTTP/1.1" 404 4107
+WARNING 2025-05-19 14:37:10,295 log Not Found: /media/profile_images/remarqz-logo-full-color-rgb-900px-w-144ppi.jpg
+WARNING 2025-05-19 14:37:10,295 basehttp "GET /media/profile_images/remarqz-logo-full-color-rgb-900px-w-144ppi.jpg HTTP/1.1" 404 4227
+WARNING 2025-05-19 14:37:10,303 log Not Found: /media/profile_images/Schermafbeelding_2025-01-08_om_13.29.58.png
+WARNING 2025-05-19 14:37:10,303 basehttp "GET /media/profile_images/Schermafbeelding_2025-01-08_om_13.29.58.png HTTP/1.1" 404 4215
+WARNING 2025-05-19 14:37:10,311 log Not Found: /media/profile_images/Schermafbeelding_2025-01-06_om_15.14.17.png
+WARNING 2025-05-19 14:37:10,311 basehttp "GET /media/profile_images/Schermafbeelding_2025-01-06_om_15.14.17.png HTTP/1.1" 404 4215
+WARNING 2025-05-19 14:37:10,319 log Not Found: /media/profile_images/remarqz-logo-full-color-rgb-900px-w-144ppi.png
+WARNING 2025-05-19 14:37:10,320 basehttp "GET /media/profile_images/remarqz-logo-full-color-rgb-900px-w-144ppi.png HTTP/1.1" 404 4227
+WARNING 2025-05-19 14:37:10,327 log Not Found: /media/Logo PS.png
+WARNING 2025-05-19 14:37:10,327 basehttp "GET /media/Logo%20PS.png HTTP/1.1" 404 4029
+WARNING 2025-05-19 14:37:10,334 log Not Found: /media/profile_images/Schermafbeelding_2024-10-24_om_16.01.17.png
+WARNING 2025-05-19 14:37:10,334 basehttp "GET /media/profile_images/Schermafbeelding_2024-10-24_om_16.01.17.png HTTP/1.1" 404 4215
+WARNING 2025-05-19 14:37:10,343 log Not Found: /media/Dee & Tracy.jpg
+WARNING 2025-05-19 14:37:10,343 basehttp "GET /media/Dee%20%26%20Tracy.jpg HTTP/1.1" 404 4063
+WARNING 2025-05-19 14:37:10,350 log Not Found: /media/profile_images/Schermafbeelding_2024-10-11_om_13.21.22.png
+WARNING 2025-05-19 14:37:10,351 basehttp "GET /media/profile_images/Schermafbeelding_2024-10-11_om_13.21.22.png HTTP/1.1" 404 4215
+WARNING 2025-05-19 14:37:10,358 log Not Found: /media/profile_images/logo-transparent_langwerpig-01-01_edited_edited_edited.png
+WARNING 2025-05-19 14:37:10,358 basehttp "GET /media/profile_images/logo-transparent_langwerpig-01-01_edited_edited_edited.png HTTP/1.1" 404 4275
+WARNING 2025-05-19 14:37:10,366 log Not Found: /media/profile_images/icon_purple_kopie_jkDxYW0.png
+WARNING 2025-05-19 14:37:10,366 basehttp "GET /media/profile_images/icon_purple_kopie_jkDxYW0.png HTTP/1.1" 404 4159
+INFO 2025-05-19 14:37:11,718 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-19 14:37:17,415 basehttp "GET /admin/review_system/customer/412/change/ HTTP/1.1" 200 19968
+INFO 2025-05-19 14:37:18,996 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-19 14:37:26,370 basehttp "POST /admin/review_system/customer/412/change/ HTTP/1.1" 200 20761
+INFO 2025-05-19 14:37:27,952 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-19 14:37:37,608 basehttp "GET /admin/review_system/customer/412/change/ HTTP/1.1" 200 19968
+INFO 2025-05-19 14:37:45,512 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 54019
+INFO 2025-05-19 14:37:51,244 basehttp "GET /admin/review_system/customer/410/change/ HTTP/1.1" 200 19936
+INFO 2025-05-19 14:37:52,851 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-19 14:38:00,045 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 54019

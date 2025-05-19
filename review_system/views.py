@@ -19,69 +19,51 @@ class ProductReviewsListAPI(APIView):
     permission_classes = [AllowAny]
 
     def get(self, request):
-        product_name = request.query_params.get('product_name')
         domain = request.query_params.get('domain')
 
-        if not (product_name or domain):
+        if not domain:
             return Response(
                 {
                     "status": status.HTTP_400_BAD_REQUEST,
-                    "message": "Missing product_name/domain in query parameters",
+                    "message": "Missing domain in query parameters",
                 },
                 status=status.HTTP_400_BAD_REQUEST,
             )
 
         try:
-            # Fetch Product Reviews (reviews with product_name) and order by latest
-            product_reviews = ProductReviews.objects.filter(domain=domain, status='approve', product_name__isnull=False).order_by('-created_at')
-            if product_name:
-                product_reviews = product_reviews.filter(product_name=product_name)
+            try:
+                customer = Customer.objects.get(domain_name=domain)
+                plan_id = customer.plan.id if customer.plan else None
+            except Customer.DoesNotExist:
+                plan_id = None
 
-            # Fetch Business Reviews (reviews without product_name) and order by latest
-            business_reviews = ProductReviews.objects.filter(domain=domain, status='approve', product_name__isnull=True).order_by('-created_at')
+            if plan_id == 1:
+                business_reviews = ProductReviews.objects.filter(
+                    domain=domain, status="approve", product_name__isnull=True
+                ).order_by("-created_at")[:6]
+            else:
+                business_reviews = ProductReviews.objects.filter(
+                    domain=domain, status="approve", product_name__isnull=True
+                ).order_by("-created_at")
 
-            # Fetch Google Reviews and order by latest
-            google_reviews = Google_Reviews.objects.filter(domain_name=domain).order_by('-created_at')
-
-            # Calculate total and average star ratings
-            total_product_reviews = product_reviews.count()
             total_business_reviews = business_reviews.count()
-            total_google_reviews = google_reviews.count()
-
-            product_average_star_rating = product_reviews.aggregate(avg_star_rating=Avg('star_rating'))['avg_star_rating'] or 0.0
-            product_average_star_rating = round(product_average_star_rating, 1)
-
-            business_average_star_rating = business_reviews.aggregate(avg_star_rating=Avg('star_rating'))['avg_star_rating'] or 0.0
+            business_average_star_rating = business_reviews.aggregate(
+                avg_star_rating=Avg('star_rating')
+            )['avg_star_rating'] or 0.0
             business_average_star_rating = round(business_average_star_rating, 1)
 
-            google_average_star_rating = google_reviews.aggregate(avg_star_rating=Avg('rating'))['avg_star_rating'] or 0.0
-            google_average_star_rating = round(google_average_star_rating, 1)
-
-            # Serialize data for each type of review
-            product_reviews_data = ReviewSerializer(product_reviews, many=True).data
             business_reviews_data = ReviewSerializer(business_reviews, many=True).data
-            google_reviews_data = ReviewSerializer(google_reviews, many=True).data
 
             return Response(
                 {
                     "status": status.HTTP_200_OK,
-                    "message": "Reviews Retrieved successfully!",
+                    "message": "Business Reviews Retrieved successfully!",
                     "data": {
                         "business": {
                             "average_star_rating": business_average_star_rating,
                             "total_business_reviews": total_business_reviews,
                             "business_reviews": business_reviews_data,
-                        },
-                        "product": {
-                            "average_star_rating": product_average_star_rating,
-                            "total_product_reviews": total_product_reviews,
-                            "product_reviews": product_reviews_data,
-                        },
-                        "google": {
-                            "average_star_rating": google_average_star_rating,
-                            "total_google_reviews": total_google_reviews,
-                            "google_reviews": google_reviews_data,
-                        },
+                        }
                     },
                 },
                 status=status.HTTP_200_OK,
@@ -91,7 +73,7 @@ class ProductReviewsListAPI(APIView):
             return Response(
                 {
                     "status": status.HTTP_400_BAD_REQUEST,
-                    "message": f"Error while retrieving Reviews: {str(e)}",
+                    "message": f"Error while retrieving Business Reviews: {str(e)}",
                 },
                 status=status.HTTP_400_BAD_REQUEST,
             )

@@ -120,7 +120,23 @@ class Google_Reviews(models.Model):
     class Meta:
         verbose_name = "Google Review"
 
+class Plans(models.Model):
+    name = models.CharField(max_length=255)
+    features = models.CharField(max_length=1000, null=True, blank=True)
+    duration = models.CharField(max_length=255)
+    price = models.DecimalField(max_digits=10, decimal_places=3)
+    created_at = models.DateTimeField(auto_now_add=True) 
+    updated_at = models.DateTimeField(auto_now=True)
+
+    def __str__(self):
+        return f"Plan {self.id}"
+    
+    class Meta:
+        verbose_name = "Plan"
+        verbose_name_plural = "Plans"
+
 class Customer(models.Model):
+    plan = models.ForeignKey(Plans, on_delete=models.SET_NULL, default=1, null=True)
     domain_name = models.CharField(max_length=255, blank=True, null=True)
     email = models.EmailField(max_length=255, unique=True)
     first_name = models.CharField(max_length=50, null=True)
