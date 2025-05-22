@@ -6035,3 +6035,14 @@ INFO 2025-05-22 14:33:13,185 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
 INFO 2025-05-22 14:40:56,932 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 51854
 INFO 2025-05-22 14:55:38,489 autoreload E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\review_system\models.py changed, reloading.
 INFO 2025-05-22 14:55:41,991 autoreload Watching for file changes with StatReloader
+INFO 2025-05-22 15:04:21,713 basehttp "GET /admin/review_system/customer/375/change/ HTTP/1.1" 200 18018
+INFO 2025-05-22 15:04:23,386 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-22 15:04:33,062 basehttp "POST /admin/review_system/customer/375/change/ HTTP/1.1" 200 18295
+INFO 2025-05-22 15:04:34,710 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-22 15:04:46,947 autoreload E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\review_system\admin.py changed, reloading.
+INFO 2025-05-22 15:04:48,111 autoreload Watching for file changes with StatReloader
+INFO 2025-05-22 15:04:57,606 basehttp "POST /admin/review_system/customer/375/change/ HTTP/1.1" 200 18182
+INFO 2025-05-22 15:04:59,178 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-22 15:05:12,190 basehttp "POST /admin/review_system/customer/375/change/ HTTP/1.1" 302 0
+INFO 2025-05-22 15:05:16,461 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 52110
+INFO 2025-05-22 15:05:18,095 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
