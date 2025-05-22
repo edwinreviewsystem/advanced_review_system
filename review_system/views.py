@@ -102,46 +102,47 @@ class ProductReviewsListAPI(APIView):
                  'source':source
             }
 
-            # new_data['image'] = image if image else None
             serializer = ReviewSerializer(data=new_data)
 
-            # Fetch the ReviewSettings for the given domain
+            # Fetch ReviewSettings
             settings = ReviewSettings.objects.filter(domain=domain).first()
-            auto_approve = settings.auto_approve if settings and settings.auto_approve is not None else True 
-            # print(f'auto_approve value for {domain} is {auto_approve}')
-         
+            auto_approve = settings.auto_approve if settings and settings.auto_approve is not None else True
+
             if serializer.is_valid():
+                # Default status value
                 status_value = ProductReviews.APPROVE if auto_approve else ProductReviews.PENDING
-                serializer.validated_data['status'] = status_value
 
+                # Fetch customer to determine plan
+                customer = Customer.objects.filter(domain_name=domain).first()
+                if customer and customer.plan:
+                    # If plan is free
+                    if customer.plan.id == 1:
+                        # Count all reviews
+                        total_reviews = ProductReviews.objects.filter(domain=domain).count()
+                        print("total_reviews", total_reviews)
+                        if total_reviews >= 6:
+                            status_value = ProductReviews.PENDING
+
+                serializer.validated_data["status"] = status_value
                 review_instance = serializer.save()
-                # ProductReviews.objects.filter(domain=domain).update(status=status_value)
-                return Response(
-                    {
-                        "status": status.HTTP_201_CREATED,
-                        "message": "New Review added!",
-                        "data":ReviewSerializer(review_instance).data,
-                    },
-                    status=status.HTTP_201_CREATED,
-                )
 
-            return Response(
-                {
-                    "status": status.HTTP_400_BAD_REQUEST,
-                    "message": "Error in data validation",
-                    "data": serializer.errors,
-                },
-                status=status.HTTP_400_BAD_REQUEST,
-            )
+                return Response({
+                    "status": status.HTTP_201_CREATED,
+                    "message": "New Review added!",
+                    "data": ReviewSerializer(review_instance).data,
+                }, status=status.HTTP_201_CREATED)
+            
+            return Response({
+                "status": status.HTTP_400_BAD_REQUEST,
+                "message": "Error in data validation",
+                "data": serializer.errors,
+            }, status=status.HTTP_400_BAD_REQUEST)
+        
         except Exception as e:
-            return Response(
-                {
-                    "status": status.HTTP_400_BAD_REQUEST,
-                    "message": f"Error while posting new Review: {str(e)}",
-                },
-                status=status.HTTP_400_BAD_REQUEST,
-            )
-    
+            return Response({
+                "status": status.HTTP_400_BAD_REQUEST,
+                "message": f"Error while posting new Review: {str(e)}",
+            }, status=status.HTTP_400_BAD_REQUEST)
 
 
 class ProductReviewsDetailAPI(APIView):

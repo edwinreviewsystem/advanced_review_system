@@ -74,6 +74,17 @@ class CustomerAdminForm(forms.ModelForm):
         model = Customer
         fields = '__all__'
 
+    def __init__(self, *args, **kwargs):
+        super(CustomerAdminForm, self).__init__(*args, **kwargs)
+        optional_fields = ['last_name', 'date_start', 'date_end', 'plan_price', 'profile_img']
+        for field in optional_fields:
+            self.fields[field].required = False
+
+        self.fields['plan'].widget.can_add_related = False
+        self.fields['plan'].widget.can_change_related = False
+        self.fields['plan'].widget.can_delete_related = False
+        self.fields['plan'].widget.can_view_related = False
+
     def clean_password(self):
         password = self.cleaned_data.get('password')
         if password and not password.startswith('$2y$'):
@@ -89,18 +100,17 @@ class PlansAdmin(admin.ModelAdmin):
 
 class CustomerAdmin(admin.ModelAdmin):
     form = CustomerAdminForm
-    list_display = ('id', 'plan', 'email', 'domain_name', 'first_name', 'last_name', 'platform', 'display_profile_image', 'activated', 'created_at')
+    list_display = ('id', 'plan', 'email', 'domain_name', 'first_name', 'last_name', 'platform', 'activated', 'created_at')
     fields = (
-        'plan',
         'domain_name',
         'email',
         'first_name',
         'last_name',
-        'plan_name',
         'date_start',
         'date_end',
         'password',
         'plan_price',
+        'plan',
         'platform',
         'activated',
         'profile_img',

@@ -129,25 +129,24 @@ class Plans(models.Model):
     updated_at = models.DateTimeField(auto_now=True)
 
     def __str__(self):
-        return f"Plan {self.id}"
+        return f"{self.name} ({self.duration})"
     
     class Meta:
         verbose_name = "Plan"
         verbose_name_plural = "Plans"
 
 class Customer(models.Model):
-    plan = models.ForeignKey(Plans, on_delete=models.SET_NULL, default=1, null=True)
+    plan = models.ForeignKey(Plans, on_delete=models.SET_NULL, default=1, null=True, verbose_name="Plan Info")
     domain_name = models.CharField(max_length=255, blank=True, null=True)
     email = models.EmailField(max_length=255, unique=True)
     first_name = models.CharField(max_length=50, null=True)
-    last_name = models.CharField(max_length=50, null=True)
-    plan_name = models.CharField(max_length=100)
-    date_start = models.DateField()
-    date_end = models.DateField()
+    last_name = models.CharField(max_length=50, null=True, blank=True)
+    date_start = models.DateField(null=True, blank=True)
+    date_end = models.DateField(null=True, blank=True)
     password = models.CharField(max_length=128, null=True)
-    plan_price = models.DecimalField(max_digits=10, decimal_places=2)
+    plan_price = models.DecimalField(max_digits=10, decimal_places=2, null=True, blank=True)
     activated = models.BooleanField(default=True)
-    profile_img = models.ImageField(upload_to='profile_images/', default='', null=True)
+    profile_img = models.ImageField(upload_to='profile_images/', default='', null=True, blank=True)
     platform = models.CharField(max_length=255, blank=True, null=True, default="")
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now_add=True)
