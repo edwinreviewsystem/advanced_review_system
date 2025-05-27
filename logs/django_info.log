@@ -6046,3 +6046,293 @@ INFO 2025-05-22 15:04:59,178 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
 INFO 2025-05-22 15:05:12,190 basehttp "POST /admin/review_system/customer/375/change/ HTTP/1.1" 302 0
 INFO 2025-05-22 15:05:16,461 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 52110
 INFO 2025-05-22 15:05:18,095 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-22 16:41:52,769 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 51914
+INFO 2025-05-22 16:41:54,392 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-22 16:46:04,578 basehttp "GET /admin/review_system/customer/370/change/ HTTP/1.1" 200 17998
+INFO 2025-05-22 16:46:06,229 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-22 16:46:14,727 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 51914
+INFO 2025-05-23 13:19:17,515 autoreload Watching for file changes with StatReloader
+INFO 2025-05-27 10:54:02,166 autoreload E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\review_system\views.py changed, reloading.
+INFO 2025-05-27 10:54:04,454 autoreload Watching for file changes with StatReloader
+INFO 2025-05-27 10:54:17,723 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 51282
+INFO 2025-05-27 10:54:17,750 basehttp "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+INFO 2025-05-27 10:54:17,771 basehttp "GET /static/admin/css/base.css HTTP/1.1" 304 0
+INFO 2025-05-27 10:54:17,775 basehttp "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+INFO 2025-05-27 10:54:17,776 basehttp "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+INFO 2025-05-27 10:54:17,777 basehttp "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+INFO 2025-05-27 10:54:17,779 basehttp "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+INFO 2025-05-27 10:54:17,781 basehttp "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+INFO 2025-05-27 10:54:17,796 basehttp "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+INFO 2025-05-27 10:54:17,796 basehttp "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+INFO 2025-05-27 10:54:17,800 basehttp "GET /static/admin/js/core.js HTTP/1.1" 304 0
+INFO 2025-05-27 10:54:17,803 basehttp "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+INFO 2025-05-27 10:54:17,804 basehttp "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+INFO 2025-05-27 10:54:17,804 basehttp "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+INFO 2025-05-27 10:54:17,804 basehttp "GET /static/admin/img/icon-yes.svg HTTP/1.1" 304 0
+INFO 2025-05-27 10:54:17,839 basehttp "GET /static/admin/js/theme.js HTTP/1.1" 304 0
+INFO 2025-05-27 10:54:17,845 basehttp "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+INFO 2025-05-27 10:54:17,848 basehttp "GET /static/admin/js/filters.js HTTP/1.1" 304 0
+INFO 2025-05-27 10:54:17,863 basehttp "GET /static/admin/img/icon-no.svg HTTP/1.1" 304 0
+INFO 2025-05-27 10:54:19,430 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-27 10:54:19,486 basehttp "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+INFO 2025-05-27 10:54:19,486 basehttp "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+WARNING 2025-05-27 10:54:19,723 log Not Found: /favicon.ico
+WARNING 2025-05-27 10:54:19,723 basehttp "GET /favicon.ico HTTP/1.1" 404 3896
+INFO 2025-05-27 10:55:06,162 basehttp "GET /api/reviews?domain=mohazril48.wixsite.com/taman-kawan-konselin HTTP/1.1" 200 155
+INFO 2025-05-27 10:55:42,952 basehttp "GET /api/reviews?domain=vintageviolet.de HTTP/1.1" 200 155
+INFO 2025-05-27 10:55:59,339 basehttp "GET /admin/review_system/customer/80/change/ HTTP/1.1" 200 18552
+INFO 2025-05-27 10:55:59,379 basehttp "GET /static/admin/css/forms.css HTTP/1.1" 304 0
+INFO 2025-05-27 10:55:59,379 basehttp "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 304 0
+INFO 2025-05-27 10:55:59,383 basehttp "GET /static/admin/css/widgets.css HTTP/1.1" 304 0
+INFO 2025-05-27 10:55:59,385 basehttp "GET /static/admin/js/change_form.js HTTP/1.1" 304 0
+INFO 2025-05-27 10:56:00,940 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-27 10:56:09,932 basehttp "GET /admin/review_system/productreviews/ HTTP/1.1" 200 34629
+INFO 2025-05-27 10:56:09,957 basehttp "GET /static/admin/img/search.svg HTTP/1.1" 304 0
+WARNING 2025-05-27 10:56:09,978 log Not Found: /media/uploaded_images/remarqz-logo_LTpicon.png
+WARNING 2025-05-27 10:56:09,979 basehttp "GET /media/uploaded_images/remarqz-logo_LTpicon.png HTTP/1.1" 404 4143
+INFO 2025-05-27 10:56:11,497 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-27 10:56:11,516 basehttp "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 304 0
+INFO 2025-05-27 10:56:17,855 basehttp "GET /admin/review_system/productreviews/?domain=annamedicalfitness.com HTTP/1.1" 200 20282
+INFO 2025-05-27 10:56:19,434 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-27 10:56:28,552 basehttp "GET /admin/review_system/productreviews/?domain=Pinkstarbeauty.nl HTTP/1.1" 200 25676
+INFO 2025-05-27 10:56:30,150 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-27 10:56:43,649 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 51282
+INFO 2025-05-27 10:56:45,256 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-27 10:56:57,237 basehttp "GET /admin/review_system/customer/297/change/ HTTP/1.1" 200 18583
+INFO 2025-05-27 10:56:58,983 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-27 10:57:14,224 basehttp "POST /admin/review_system/customer/297/change/ HTTP/1.1" 302 0
+INFO 2025-05-27 10:57:20,323 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 51533
+INFO 2025-05-27 10:57:22,114 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-27 10:57:39,075 basehttp "GET /api/reviews?domain=Pinkstarbeauty.nl HTTP/1.1" 200 2269
+INFO 2025-05-27 10:58:11,983 basehttp "GET /admin/review_system/productreviews/ HTTP/1.1" 200 34629
+WARNING 2025-05-27 10:58:12,016 log Not Found: /media/uploaded_images/remarqz-logo_LTpicon.png
+WARNING 2025-05-27 10:58:12,016 basehttp "GET /media/uploaded_images/remarqz-logo_LTpicon.png HTTP/1.1" 404 4143
+INFO 2025-05-27 10:58:13,612 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-27 10:58:18,207 basehttp "GET /admin/review_system/productreviews/?domain=Pinkstarbeauty.nl HTTP/1.1" 200 25676
+INFO 2025-05-27 10:58:20,004 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-27 10:59:41,781 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 51298
+INFO 2025-05-27 10:59:43,433 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-27 10:59:46,963 basehttp "GET /admin/review_system/productreviews/ HTTP/1.1" 200 34629
+WARNING 2025-05-27 10:59:46,987 log Not Found: /media/uploaded_images/remarqz-logo_LTpicon.png
+WARNING 2025-05-27 10:59:46,987 basehttp "GET /media/uploaded_images/remarqz-logo_LTpicon.png HTTP/1.1" 404 4143
+INFO 2025-05-27 10:59:48,540 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-27 10:59:54,936 basehttp "GET /admin/review_system/productreviews/?domain=admiresfurnishings.co.uk HTTP/1.1" 200 38790
+INFO 2025-05-27 10:59:56,553 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-27 11:00:12,605 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 51298
+INFO 2025-05-27 11:00:14,182 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-27 11:00:26,322 basehttp "GET /admin/review_system/customer/282/change/ HTTP/1.1" 200 18085
+INFO 2025-05-27 11:00:27,935 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-27 11:00:33,879 basehttp "GET /api/reviews?domain=admiresfurnishings.co.uk HTTP/1.1" 200 22063
+INFO 2025-05-27 11:01:01,565 basehttp "POST /admin/review_system/customer/282/change/ HTTP/1.1" 302 0
+INFO 2025-05-27 11:01:06,992 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 51541
+INFO 2025-05-27 11:01:08,628 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-27 11:01:23,863 basehttp "GET /api/reviews?domain=admiresfurnishings.co.uk HTTP/1.1" 200 3637
+INFO 2025-05-27 11:01:42,581 basehttp "GET /admin/review_system/customer/282/change/ HTTP/1.1" 200 18094
+INFO 2025-05-27 11:01:44,371 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-27 11:01:52,105 basehttp "POST /admin/review_system/customer/282/change/ HTTP/1.1" 302 0
+INFO 2025-05-27 11:01:57,423 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 51549
+INFO 2025-05-27 11:01:59,009 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+ERROR 2025-05-27 11:02:07,835 log Internal Server Error: /api/reviews
+Traceback (most recent call last):
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\rest_framework\response.py", line 70, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\rest_framework\renderers.py", line 99, in render
+    ret = json.dumps(
+          ^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\rest_framework\utils\json.py", line 25, in dumps
+    return json.dumps(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\anmoltyagi\AppData\Local\Programs\Python\Python311\Lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "C:\Users\anmoltyagi\AppData\Local\Programs\Python\Python311\Lib\json\encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\anmoltyagi\AppData\Local\Programs\Python\Python311\Lib\json\encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\rest_framework\utils\encoders.py", line 67, in default
+    return super().default(obj)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\anmoltyagi\AppData\Local\Programs\Python\Python311\Lib\json\encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type ListSerializer is not JSON serializable
+ERROR 2025-05-27 11:02:07,849 basehttp "GET /api/reviews?domain=admiresfurnishings.co.uk HTTP/1.1" 500 151579
+INFO 2025-05-27 11:04:07,380 autoreload E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\review_system\views.py changed, reloading.
+INFO 2025-05-27 11:04:08,302 autoreload Watching for file changes with StatReloader
+INFO 2025-05-27 11:04:17,896 basehttp "GET /api/reviews?domain=admiresfurnishings.co.uk HTTP/1.1" 200 46699
+INFO 2025-05-27 11:04:56,506 basehttp "GET /admin/review_system/customer/282/change/ HTTP/1.1" 200 18094
+INFO 2025-05-27 11:04:58,023 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-27 11:05:04,897 basehttp "POST /admin/review_system/customer/282/change/ HTTP/1.1" 302 0
+INFO 2025-05-27 11:05:10,019 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 51548
+INFO 2025-05-27 11:05:11,575 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-27 11:05:17,267 basehttp "GET /api/reviews?domain=admiresfurnishings.co.uk HTTP/1.1" 200 46699
+INFO 2025-05-27 11:05:38,298 basehttp "GET /admin/review_system/customer/282/change/ HTTP/1.1" 200 18094
+INFO 2025-05-27 11:05:39,872 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-27 11:05:46,817 basehttp "POST /admin/review_system/customer/282/change/ HTTP/1.1" 302 0
+INFO 2025-05-27 11:05:52,202 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 51541
+INFO 2025-05-27 11:05:53,790 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-27 11:06:13,452 basehttp "GET /api/reviews?domain=remarqz.com HTTP/1.1" 200 13522
+INFO 2025-05-27 11:06:48,846 basehttp "GET /api/reviews?domain=annamedicalfitness.com HTTP/1.1" 200 1148
+INFO 2025-05-27 11:08:13,422 basehttp "GET /admin/review_system/productreviews/ HTTP/1.1" 200 34629
+WARNING 2025-05-27 11:08:13,458 log Not Found: /media/uploaded_images/remarqz-logo_LTpicon.png
+WARNING 2025-05-27 11:08:13,459 basehttp "GET /media/uploaded_images/remarqz-logo_LTpicon.png HTTP/1.1" 404 4143
+INFO 2025-05-27 11:08:15,007 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-27 11:08:20,651 basehttp "GET /admin/review_system/productreviews/?domain=avraacarhire.com HTTP/1.1" 200 25708
+WARNING 2025-05-27 11:08:20,677 log Not Found: /media/uploaded_images/Van_pics_12.jpg
+WARNING 2025-05-27 11:08:20,677 basehttp "GET /media/uploaded_images/Van_pics_12.jpg HTTP/1.1" 404 4107
+INFO 2025-05-27 11:08:22,231 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-27 11:08:28,468 basehttp "GET /admin/review_system/productreviews/?domain=bellini-lighting.com HTTP/1.1" 200 21165
+INFO 2025-05-27 11:08:30,100 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-27 11:08:34,034 basehttp "GET /admin/review_system/productreviews/?domain=beyoubedifferent.nl HTTP/1.1" 200 20216
+INFO 2025-05-27 11:08:35,903 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-27 11:08:40,980 basehttp "GET /admin/review_system/productreviews/?domain=carportzondervergunning.nl HTTP/1.1" 200 26103
+INFO 2025-05-27 11:08:42,583 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-27 11:08:47,671 basehttp "GET /admin/review_system/productreviews/?domain=casadegata.com HTTP/1.1" 200 20101
+INFO 2025-05-27 11:08:49,256 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-27 11:08:53,102 basehttp "GET /admin/review_system/productreviews/?domain=chaletparadiso.com HTTP/1.1" 200 20189
+INFO 2025-05-27 11:08:55,111 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-27 11:08:59,077 basehttp "GET /admin/review_system/productreviews/?domain=christiandoepke.com HTTP/1.1" 200 21169
+INFO 2025-05-27 11:09:00,672 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-27 11:09:04,624 basehttp "GET /admin/review_system/productreviews/?domain=customamishsheds.ca HTTP/1.1" 200 29449
+INFO 2025-05-27 11:09:06,299 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-27 11:09:25,336 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 51314
+INFO 2025-05-27 11:09:27,002 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-27 11:09:44,391 basehttp "GET /admin/review_system/customer/300/change/ HTTP/1.1" 200 18516
+INFO 2025-05-27 11:09:46,230 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-27 11:09:59,403 basehttp "POST /admin/review_system/customer/300/change/ HTTP/1.1" 302 0
+INFO 2025-05-27 11:10:05,017 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 51561
+INFO 2025-05-27 11:10:06,711 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-27 11:10:12,375 basehttp "GET /api/reviews?domain=customamishsheds.ca HTTP/1.1" 200 3470
+INFO 2025-05-27 11:10:29,796 basehttp "GET /admin/review_system/customer/300/change/ HTTP/1.1" 200 18525
+INFO 2025-05-27 11:10:31,455 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-27 11:10:38,648 basehttp "POST /admin/review_system/customer/300/change/ HTTP/1.1" 302 0
+INFO 2025-05-27 11:10:44,134 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 51569
+INFO 2025-05-27 11:10:45,717 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-27 11:10:53,373 basehttp "GET /api/reviews?domain=customamishsheds.ca HTTP/1.1" 200 10953
+INFO 2025-05-27 11:11:24,291 basehttp "GET /admin/review_system/customer/300/change/ HTTP/1.1" 200 18525
+INFO 2025-05-27 11:11:25,879 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-27 11:11:33,038 basehttp "POST /admin/review_system/customer/300/change/ HTTP/1.1" 302 0
+INFO 2025-05-27 11:11:39,053 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 51568
+INFO 2025-05-27 11:11:40,906 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-27 11:11:46,851 basehttp "GET /api/reviews?domain=customamishsheds.ca HTTP/1.1" 200 10953
+INFO 2025-05-27 11:12:07,886 basehttp "GET /admin/review_system/customer/300/change/ HTTP/1.1" 200 18525
+INFO 2025-05-27 11:12:09,483 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-27 11:12:16,886 basehttp "POST /admin/review_system/customer/300/change/ HTTP/1.1" 302 0
+INFO 2025-05-27 11:12:24,499 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 51561
+INFO 2025-05-27 11:12:26,233 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-27 11:12:31,705 basehttp "GET /api/reviews?domain=customamishsheds.ca HTTP/1.1" 200 3470
+INFO 2025-05-27 11:41:59,157 autoreload Watching for file changes with StatReloader
+INFO 2025-05-27 15:51:00,878 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 51330
+INFO 2025-05-27 15:51:02,545 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-27 16:19:53,555 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 51330
+INFO 2025-05-27 16:19:55,202 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-27 16:20:49,167 basehttp "GET /admin/review_system/productreviews/ HTTP/1.1" 200 34629
+WARNING 2025-05-27 16:20:49,203 log Not Found: /media/uploaded_images/remarqz-logo_LTpicon.png
+WARNING 2025-05-27 16:20:49,203 basehttp "GET /media/uploaded_images/remarqz-logo_LTpicon.png HTTP/1.1" 404 4143
+INFO 2025-05-27 16:20:50,817 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-27 16:20:58,438 basehttp "GET /admin/review_system/productreviews/?domain=customamishsheds.ca HTTP/1.1" 200 29449
+INFO 2025-05-27 16:21:00,055 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-27 16:21:11,971 basehttp - Broken pipe from ('127.0.0.1', 58433)
+INFO 2025-05-27 16:21:16,728 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 51330
+INFO 2025-05-27 16:21:18,336 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-27 16:21:32,746 basehttp "GET /api/reviews?domain=customamishsheds.ca HTTP/1.1" 200 3470
+INFO 2025-05-27 16:22:27,152 basehttp "GET /admin/review_system/customer/300/change/ HTTP/1.1" 200 18525
+INFO 2025-05-27 16:22:28,741 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-27 16:22:35,762 basehttp "POST /admin/review_system/customer/300/change/ HTTP/1.1" 302 0
+INFO 2025-05-27 16:22:41,000 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 51569
+INFO 2025-05-27 16:22:42,577 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-27 16:22:55,921 basehttp "GET /api/reviews?domain=customamishsheds.ca HTTP/1.1" 200 10953
+INFO 2025-05-27 16:23:47,255 basehttp "GET /admin/review_system/customer/300/change/ HTTP/1.1" 200 18525
+INFO 2025-05-27 16:23:48,877 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-27 16:23:55,181 basehttp "POST /admin/review_system/customer/300/change/ HTTP/1.1" 302 0
+INFO 2025-05-27 16:24:00,170 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 51568
+INFO 2025-05-27 16:24:01,862 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-27 16:24:10,197 basehttp "GET /api/reviews?domain=customamishsheds.ca HTTP/1.1" 200 10953
+INFO 2025-05-27 16:50:31,879 autoreload Watching for file changes with StatReloader
+INFO 2025-05-27 16:50:39,269 basehttp "GET /admin/login/?next=/admin/review_system/productreviews/ HTTP/1.1" 200 4216
+INFO 2025-05-27 16:50:49,062 basehttp "POST /admin/login/?next=/admin/review_system/productreviews/ HTTP/1.1" 302 0
+INFO 2025-05-27 16:50:51,416 basehttp "GET /admin/review_system/productreviews/ HTTP/1.1" 200 35013
+INFO 2025-05-27 16:50:53,044 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-27 16:51:07,916 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 51338
+INFO 2025-05-27 16:51:09,532 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-27 16:52:13,148 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 51338
+INFO 2025-05-27 16:52:14,876 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-27 16:52:20,492 basehttp "GET /admin/review_system/productreviews/ HTTP/1.1" 200 34843
+WARNING 2025-05-27 16:52:20,524 log Not Found: /media/uploaded_images/remarqz-logo_LTpicon.png
+WARNING 2025-05-27 16:52:20,525 basehttp "GET /media/uploaded_images/remarqz-logo_LTpicon.png HTTP/1.1" 404 4143
+INFO 2025-05-27 16:52:22,092 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-27 16:52:37,218 basehttp "GET /admin/review_system/productreviews/?domain=mohazril48.wixsite.com%5C%2Ftaman-kawan-konselin HTTP/1.1" 200 21053
+INFO 2025-05-27 16:52:38,848 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-27 16:54:54,355 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 51338
+INFO 2025-05-27 16:54:55,969 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-27 16:55:04,942 basehttp "GET /admin/review_system/productreviews/ HTTP/1.1" 200 34883
+WARNING 2025-05-27 16:55:04,976 log Not Found: /media/uploaded_images/remarqz-logo_LTpicon.png
+WARNING 2025-05-27 16:55:04,976 basehttp "GET /media/uploaded_images/remarqz-logo_LTpicon.png HTTP/1.1" 404 4143
+INFO 2025-05-27 16:55:06,530 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-27 16:56:46,319 basehttp "GET /admin/review_system/productreviews/?domain=mohazril48.wixsite.com%5C%2Ftaman-kawan-konselin HTTP/1.1" 200 22131
+INFO 2025-05-27 16:56:47,958 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-27 16:57:10,032 basehttp "POST /api/reviews HTTP/1.1" 201 368
+INFO 2025-05-27 16:57:18,471 basehttp "GET /admin/review_system/productreviews/?domain=mohazril48.wixsite.com%5C%2Ftaman-kawan-konselin HTTP/1.1" 200 22264
+INFO 2025-05-27 16:57:20,622 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-27 16:57:42,722 basehttp "GET /admin/review_system/productreviews/?domain=mohazril48.wixsite.com%5C%2Ftaman-kawan-konselin HTTP/1.1" 200 22264
+INFO 2025-05-27 16:57:45,057 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-27 16:58:04,034 basehttp "POST /api/reviews HTTP/1.1" 201 368
+INFO 2025-05-27 16:58:13,082 basehttp "GET /admin/review_system/productreviews/?domain=mohazril48.wixsite.com%5C%2Ftaman-kawan-konselin HTTP/1.1" 200 22264
+INFO 2025-05-27 16:58:14,686 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-27 16:59:24,050 basehttp "GET /admin/review_system/productreviews/?domain=mohazril48.wixsite.com%5C%2Ftaman-kawan-konselin HTTP/1.1" 200 22264
+INFO 2025-05-27 16:59:25,629 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-27 16:59:35,352 basehttp "GET /admin/review_system/productreviews/ HTTP/1.1" 200 35065
+WARNING 2025-05-27 16:59:35,385 log Not Found: /media/uploaded_images/remarqz-logo_LTpicon.png
+WARNING 2025-05-27 16:59:35,386 basehttp "GET /media/uploaded_images/remarqz-logo_LTpicon.png HTTP/1.1" 404 4143
+INFO 2025-05-27 16:59:37,007 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-27 16:59:43,913 basehttp "POST /api/reviews HTTP/1.1" 201 368
+INFO 2025-05-27 16:59:50,431 basehttp "GET /admin/review_system/productreviews/ HTTP/1.1" 200 34995
+INFO 2025-05-27 16:59:52,013 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-27 17:00:00,748 basehttp "POST /api/reviews HTTP/1.1" 201 368
+INFO 2025-05-27 17:00:06,461 basehttp "POST /api/reviews HTTP/1.1" 201 368
+INFO 2025-05-27 17:00:15,624 basehttp "GET /admin/review_system/productreviews/ HTTP/1.1" 200 35051
+INFO 2025-05-27 17:00:17,251 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-27 17:00:30,452 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 51338
+INFO 2025-05-27 17:00:32,057 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-27 17:01:00,335 basehttp "GET /admin/review_system/productreviews/ HTTP/1.1" 200 35051
+INFO 2025-05-27 17:01:02,052 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-27 17:02:03,846 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 51338
+INFO 2025-05-27 17:02:05,484 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-27 17:02:23,830 basehttp "GET /admin/review_system/productreviews/ HTTP/1.1" 200 35051
+INFO 2025-05-27 17:02:25,414 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-27 17:02:47,119 basehttp "POST /admin/review_system/productreviews/ HTTP/1.1" 200 11219
+INFO 2025-05-27 17:02:47,144 basehttp "GET /static/admin/js/cancel.js HTTP/1.1" 304 0
+INFO 2025-05-27 17:02:52,933 basehttp "POST /admin/review_system/productreviews/ HTTP/1.1" 302 0
+INFO 2025-05-27 17:02:55,265 basehttp "GET /admin/review_system/productreviews/ HTTP/1.1" 200 34774
+WARNING 2025-05-27 17:02:55,293 log Not Found: /media/uploaded_images/remarqz-logo_LTpicon.png
+WARNING 2025-05-27 17:02:55,294 basehttp "GET /media/uploaded_images/remarqz-logo_LTpicon.png HTTP/1.1" 404 4143
+INFO 2025-05-27 17:02:56,904 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-27 17:03:34,094 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 51338
+INFO 2025-05-27 17:03:35,755 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-27 17:03:43,706 basehttp "GET /admin/review_system/productreviews/ HTTP/1.1" 200 34629
+WARNING 2025-05-27 17:03:43,737 log Not Found: /media/uploaded_images/remarqz-logo_LTpicon.png
+WARNING 2025-05-27 17:03:43,738 basehttp "GET /media/uploaded_images/remarqz-logo_LTpicon.png HTTP/1.1" 404 4143
+INFO 2025-05-27 17:03:45,353 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-27 17:04:20,220 basehttp "POST /api/reviews HTTP/1.1" 201 368
+INFO 2025-05-27 17:04:26,948 basehttp "POST /api/reviews HTTP/1.1" 201 368
+INFO 2025-05-27 17:04:40,717 basehttp "POST /api/reviews HTTP/1.1" 201 369
+INFO 2025-05-27 17:04:46,512 basehttp "POST /api/reviews HTTP/1.1" 201 369
+INFO 2025-05-27 17:04:51,120 basehttp "POST /api/reviews HTTP/1.1" 201 369
+INFO 2025-05-27 17:04:55,860 basehttp "POST /api/reviews HTTP/1.1" 201 369
+INFO 2025-05-27 17:04:59,574 basehttp "POST /api/reviews HTTP/1.1" 201 369
+INFO 2025-05-27 17:05:06,236 basehttp "GET /admin/review_system/productreviews/ HTTP/1.1" 200 34862
+INFO 2025-05-27 17:05:08,406 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-27 17:05:37,589 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 51338
+INFO 2025-05-27 17:05:39,156 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-27 17:05:40,289 basehttp - Broken pipe from ('127.0.0.1', 58919)

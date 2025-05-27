@@ -31,40 +31,77 @@ class ProductReviewsListAPI(APIView):
             )
 
         try:
-            try:
-                customer = Customer.objects.get(domain_name=domain)
-                plan_id = customer.plan.id if customer.plan else None
-            except Customer.DoesNotExist:
-                plan_id = None
+            customer = Customer.objects.filter(domain_name=domain).first()
+            plan_id = customer.plan.id if customer and customer.plan else None
 
+            # --- Fetch Business Reviews ---
+            business_reviews_qs = ProductReviews.objects.filter(
+                domain=domain, status="approve", product_name__isnull=True
+            ).order_by("-created_at")
+
+            # For Free plan, limit to 6 reviews
             if plan_id == 1:
-                business_reviews = ProductReviews.objects.filter(
-                    domain=domain, status="approve", product_name__isnull=True
-                ).order_by("-created_at")[:6]
-            else:
-                business_reviews = ProductReviews.objects.filter(
-                    domain=domain, status="approve", product_name__isnull=True
-                ).order_by("-created_at")
+                business_reviews_qs = business_reviews_qs[:6]
 
-            total_business_reviews = business_reviews.count()
-            business_average_star_rating = business_reviews.aggregate(
+            total_business_reviews = business_reviews_qs.count()
+            business_avg_rating = business_reviews_qs.aggregate(
                 avg_star_rating=Avg('star_rating')
             )['avg_star_rating'] or 0.0
-            business_average_star_rating = round(business_average_star_rating, 1)
+            business_avg_rating = round(business_avg_rating, 1)
+            business_reviews_data = ReviewSerializer(business_reviews_qs, many=True).data
 
-            business_reviews_data = ReviewSerializer(business_reviews, many=True).data
+            # --- Base Response Data ---
+            response_data = {
+                "business": {
+                    "average_star_rating": business_avg_rating,
+                    "total_business_reviews": total_business_reviews,
+                    "business_reviews": business_reviews_data,
+                }
+            }
+
+            # --- Fetch Product & Google Reviews for Paid Plans ---
+            if plan_id and plan_id > 1:
+                # Product Reviews
+                product_reviews_qs = ProductReviews.objects.filter(
+                    domain=domain, status="approve", product_name__isnull=False
+                ).order_by("-created_at")
+                total_product_reviews = product_reviews_qs.count()
+                product_avg_rating = product_reviews_qs.aggregate(
+                    avg_star_rating=Avg('star_rating')
+                )['avg_star_rating'] or 0.0
+                product_avg_rating = round(product_avg_rating, 1)
+                product_reviews_data = ReviewSerializer(product_reviews_qs, many=True).data
+
+                # Google Reviews
+                google_reviews_qs = Google_Reviews.objects.filter(
+                    domain_name=domain
+                ).order_by("-created_at")
+                total_google_reviews = google_reviews_qs.count()
+                google_avg_rating = google_reviews_qs.aggregate(
+                    avg_star_rating=Avg('rating')
+                )['avg_star_rating'] or 0.0
+                google_avg_rating = round(google_avg_rating, 1)
+                google_reviews_data = ReviewSerializer(google_reviews_qs, many=True).data
+
+                # Add to response
+                response_data.update({
+                    "product": {
+                        "average_star_rating": product_avg_rating,
+                        "total_product_reviews": total_product_reviews,
+                        "product_reviews": product_reviews_data,
+                    },
+                    "google": {
+                        "average_star_rating": google_avg_rating,
+                        "total_google_reviews": total_google_reviews,
+                        "google_reviews": google_reviews_data,
+                    }
+                })
 
             return Response(
                 {
                     "status": status.HTTP_200_OK,
-                    "message": "Business Reviews Retrieved successfully!",
-                    "data": {
-                        "business": {
-                            "average_star_rating": business_average_star_rating,
-                            "total_business_reviews": total_business_reviews,
-                            "business_reviews": business_reviews_data,
-                        }
-                    },
+                    "message": "Reviews Retrieved successfully!",
+                    "data": response_data,
                 },
                 status=status.HTTP_200_OK,
             )
@@ -73,12 +110,10 @@ class ProductReviewsListAPI(APIView):
             return Response(
                 {
                     "status": status.HTTP_400_BAD_REQUEST,
-                    "message": f"Error while retrieving Business Reviews: {str(e)}",
+                    "message": f"Error while retrieving Reviews: {str(e)}",
                 },
                 status=status.HTTP_400_BAD_REQUEST,
             )
-
-
         
     def post(self, request):
         try:
