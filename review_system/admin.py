@@ -52,7 +52,17 @@ class ReviewFormDesignAdmin(admin.ModelAdmin):
 
 @admin.register(ReviewListDesign)
 class ReviewListDesignAdmin(admin.ModelAdmin):
-    list_display = ('domain', 'content_text_color', 'star_rating_color', 'reviewer_name_color', 'review_color', 'primary_btn_color', 'btn_border_radius', 'updated_at')
+    list_display = ('domain', 'primary_btn_color', 'btn_border_radius', 'primary_button_position', 'updated_at')
+    fields = (
+        "domain",
+        "primary_btn_color",
+        "btn_border_radius",
+        "primary_button_position",
+        "content_text_color",
+        "star_rating_color",
+        "reviewer_name_color",
+        "review_color",
+    )
     search_fields = ('domain',)
     list_filter = ('updated_at',)
 

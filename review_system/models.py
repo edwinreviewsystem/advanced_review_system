@@ -79,6 +79,17 @@ class ReviewFormDesign(models.Model):
 
 
 class ReviewListDesign(models.Model):
+    PRIMARY_BUTTON_POSITION_CHOICES = [
+        ("Middle Left", "Middle Left"),
+        ("Middle Right", "Middle Right"),
+        ("Top Left", "Top Left"),
+        ("Top Middle", "Top Middle"),
+        ("Top Right", "Top Right"),
+        ("Bottom Left", "Bottom Left"),
+        ("Bottom Middle", "Bottom Middle"),
+        ("Bottom Right", "Bottom Right"),
+    ]
+
     domain = models.CharField(max_length=255, blank=True)
     content_text_color = models.CharField(max_length=25, blank=True)
     star_rating_color = models.CharField(max_length=25, blank=True)
@@ -86,6 +97,7 @@ class ReviewListDesign(models.Model):
     review_color = models.CharField(max_length=25, blank=True)
     primary_btn_color = models.CharField(max_length=25, null=True, blank=True, verbose_name="Reviews Button Color")
     btn_border_radius = models.CharField(max_length=25, null=True, blank=True, verbose_name="Reviews Button Corners")
+    primary_button_position = models.CharField(max_length=25, null=True, blank=True, choices=PRIMARY_BUTTON_POSITION_CHOICES, default="Bottom Left", verbose_name="Reviews Button Position")
     updated_at = models.DateTimeField(auto_now=True)
 
     class Meta:
@@ -159,3 +171,17 @@ class Customer(models.Model):
 
     def __str__(self):
         return self.email
+
+# class Sites(models.Model):
+#     customer_id = models.ForeignKey(Customer, on_delete=models.CASCADE)
+#     plan_id = models.ForeignKey(Plans, on_delete=models.SET_NULL)
+#     domain = models.CharField(max_length=255, unique=True)
+#     created_at = models.DateTimeField(auto_now_add=True) 
+#     updated_at = models.DateTimeField(auto_now=True)
+
+#     def __str__(self):
+#         return "sites"
+    
+#     class Meta:
+#         verbose_name = "Site"
+#         verbose_name_plural = "Sites"

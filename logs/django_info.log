@@ -6336,3 +6336,191 @@ INFO 2025-05-27 17:05:08,406 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
 INFO 2025-05-27 17:05:37,589 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 51338
 INFO 2025-05-27 17:05:39,156 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
 INFO 2025-05-27 17:05:40,289 basehttp - Broken pipe from ('127.0.0.1', 58919)
+INFO 2025-05-27 18:00:31,789 autoreload Watching for file changes with StatReloader
+INFO 2025-05-27 18:00:46,740 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 51338
+INFO 2025-05-27 18:00:48,348 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-27 18:06:11,848 basehttp "GET /admin/review_system/productreviews/ HTTP/1.1" 200 34828
+WARNING 2025-05-27 18:06:11,883 log Not Found: /media/uploaded_images/remarqz-logo_LTpicon.png
+WARNING 2025-05-27 18:06:11,884 basehttp "GET /media/uploaded_images/remarqz-logo_LTpicon.png HTTP/1.1" 404 4143
+INFO 2025-05-27 18:06:13,435 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-27 18:06:50,336 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 51338
+INFO 2025-05-27 18:06:51,920 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-28 16:23:47,068 basehttp "GET /admin/review_system/productreviews/ HTTP/1.1" 200 34957
+INFO 2025-05-28 16:23:49,271 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-28 16:25:11,444 basehttp "GET /api/reviews?domain=mohazril48.wixsite.com\/taman-kawan-konselin HTTP/1.1" 200 2758
+INFO 2025-05-28 16:28:16,166 basehttp "GET /admin/review_system/productreviews/ HTTP/1.1" 200 35078
+INFO 2025-05-28 16:28:17,726 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-05-28 16:28:29,685 basehttp "GET /api/reviews?domain=dev-site-1x1861.wix-dev-center-test.org HTTP/1.1" 200 3251
+INFO 2025-05-30 16:11:46,218 autoreload Watching for file changes with StatReloader
+INFO 2025-06-09 14:01:04,089 autoreload Watching for file changes with StatReloader
+INFO 2025-06-09 15:31:05,125 basehttp "GET /admin/review_system/reviewlistdesign/ HTTP/1.1" 200 46926
+INFO 2025-06-09 15:31:05,347 basehttp "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2682
+INFO 2025-06-09 15:31:05,352 basehttp "GET /static/admin/css/base.css HTTP/1.1" 200 21544
+INFO 2025-06-09 15:31:05,357 basehttp "GET /static/admin/css/changelists.css HTTP/1.1" 200 6811
+INFO 2025-06-09 15:31:05,358 basehttp "GET /static/admin/css/responsive.css HTTP/1.1" 200 17905
+INFO 2025-06-09 15:31:05,404 basehttp "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+INFO 2025-06-09 15:31:05,406 basehttp "GET /static/admin/js/core.js HTTP/1.1" 200 6208
+INFO 2025-06-09 15:31:05,408 basehttp "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 9042
+INFO 2025-06-09 15:31:05,430 basehttp "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+INFO 2025-06-09 15:31:05,430 basehttp "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+INFO 2025-06-09 15:31:05,433 basehttp "GET /static/admin/js/actions.js HTTP/1.1" 200 8067
+INFO 2025-06-09 15:31:05,456 basehttp "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+INFO 2025-06-09 15:31:05,504 basehttp "GET /static/admin/img/search.svg HTTP/1.1" 200 458
+INFO 2025-06-09 15:31:05,515 basehttp "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 285314
+INFO 2025-06-09 15:31:05,630 basehttp "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 325171
+INFO 2025-06-09 15:31:05,659 basehttp "GET /static/admin/js/theme.js HTTP/1.1" 200 1943
+INFO 2025-06-09 15:31:05,699 basehttp "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+INFO 2025-06-09 15:31:05,747 basehttp "GET /static/admin/js/filters.js HTTP/1.1" 200 978
+INFO 2025-06-09 15:31:06,829 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-06-09 15:31:06,931 basehttp "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+INFO 2025-06-09 15:31:06,931 basehttp "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+INFO 2025-06-09 15:31:06,941 basehttp "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 200 581
+WARNING 2025-06-09 15:31:07,140 log Not Found: /favicon.ico
+WARNING 2025-06-09 15:31:07,141 basehttp "GET /favicon.ico HTTP/1.1" 404 3896
+INFO 2025-06-09 15:31:13,782 basehttp "GET /admin/review_system/productreviews/ HTTP/1.1" 200 34975
+WARNING 2025-06-09 15:31:13,811 log Not Found: /media/uploaded_images/remarqz-logo_z1C7PdM.jpg
+WARNING 2025-06-09 15:31:13,812 basehttp "GET /media/uploaded_images/remarqz-logo_z1C7PdM.jpg HTTP/1.1" 404 4143
+WARNING 2025-06-09 15:31:13,822 log Not Found: /media/uploaded_images/remarqz-logo1.jpg
+WARNING 2025-06-09 15:31:13,835 basehttp "GET /media/uploaded_images/remarqz-logo1.jpg HTTP/1.1" 404 4115
+WARNING 2025-06-09 15:31:13,844 log Not Found: /media/uploaded_images/remarqz-logo.jpg
+WARNING 2025-06-09 15:31:13,845 basehttp "GET /media/uploaded_images/remarqz-logo.jpg HTTP/1.1" 404 4111
+INFO 2025-06-09 15:31:15,296 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-06-09 15:31:19,342 basehttp "GET /admin/review_system/productreviews/add/ HTTP/1.1" 200 17508
+INFO 2025-06-09 15:31:19,378 basehttp "GET /static/admin/css/forms.css HTTP/1.1" 200 9048
+INFO 2025-06-09 15:31:19,409 basehttp "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+INFO 2025-06-09 15:31:19,412 basehttp "GET /static/admin/js/calendar.js HTTP/1.1" 200 9141
+INFO 2025-06-09 15:31:19,412 basehttp "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 200 19319
+INFO 2025-06-09 15:31:19,413 basehttp "GET /static/admin/css/widgets.css HTTP/1.1" 200 11800
+INFO 2025-06-09 15:31:19,435 basehttp "GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+INFO 2025-06-09 15:31:20,944 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-06-09 15:31:21,035 basehttp "GET /static/admin/img/icon-clock.svg HTTP/1.1" 200 677
+INFO 2025-06-09 15:31:21,036 basehttp "GET /static/admin/img/icon-calendar.svg HTTP/1.1" 200 1086
+INFO 2025-06-09 15:32:35,998 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 47780
+INFO 2025-06-09 15:32:36,030 basehttp "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+INFO 2025-06-09 15:32:38,115 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-06-09 15:47:08,300 basehttp "GET /admin/review_system/customer/72/change/ HTTP/1.1" 200 18092
+INFO 2025-06-09 15:47:10,197 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-06-09 15:47:37,417 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 47780
+INFO 2025-06-09 15:58:01,555 autoreload E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\review_system\models.py changed, reloading.
+INFO 2025-06-09 15:58:02,600 autoreload Watching for file changes with StatReloader
+INFO 2025-06-09 16:02:56,601 autoreload E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\review_system\admin.py changed, reloading.
+INFO 2025-06-09 16:02:57,512 autoreload Watching for file changes with StatReloader
+ERROR 2025-06-09 16:05:35,135 log Internal Server Error: /admin/review_system/reviewlistdesign/
+Traceback (most recent call last):
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.UndefinedColumn: column review_system_reviewlistdesign.primary_button_position does not exist
+LINE 1: ...iew_system_reviewlistdesign"."btn_border_radius", "review_sy...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\contrib\admin\options.py", line 714, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\contrib\admin\sites.py", line 240, in inner
+    return view(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\contrib\admin\options.py", line 2120, in changelist_view
+    "selection_note": _("0 of %(cnt)s selected") % {"cnt": len(cl.result_list)},
+                                                           ^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\db\models\query.py", line 380, in __len__
+    self._fetch_all()
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\db\models\query.py", line 1926, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: column review_system_reviewlistdesign.primary_button_position does not exist
+LINE 1: ...iew_system_reviewlistdesign"."btn_border_radius", "review_sy...
+                                                             ^
+
+ERROR 2025-06-09 16:05:35,161 basehttp "GET /admin/review_system/reviewlistdesign/ HTTP/1.1" 500 186754
+INFO 2025-06-09 16:05:52,097 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 47780
+INFO 2025-06-09 16:08:23,610 autoreload Watching for file changes with StatReloader
+INFO 2025-06-09 16:08:28,592 basehttp "GET /admin/review_system/reviewlistdesign/ HTTP/1.1" 200 39746
+INFO 2025-06-09 16:08:30,597 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-06-09 16:09:14,569 basehttp "GET /admin/review_system/reviewlistdesign/72/change/ HTTP/1.1" 200 16321
+INFO 2025-06-09 16:09:16,553 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-06-09 16:11:55,118 autoreload E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\review_system\admin.py changed, reloading.
+INFO 2025-06-09 16:11:56,304 autoreload Watching for file changes with StatReloader
+INFO 2025-06-09 16:12:03,590 basehttp "GET /admin/review_system/reviewlistdesign/72/change/ HTTP/1.1" 200 16321
+INFO 2025-06-09 16:12:05,694 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-06-09 16:14:01,740 autoreload E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\review_system\serializers.py changed, reloading.
+INFO 2025-06-09 16:14:02,857 autoreload Watching for file changes with StatReloader
+WARNING 2025-06-09 16:14:37,890 log Method Not Allowed: /api/get-customize-css
+WARNING 2025-06-09 16:14:37,937 basehttp "POST /api/get-customize-css?domain=pipco25.nl HTTP/1.1" 405 41
+INFO 2025-06-09 16:14:50,056 basehttp "GET /api/get-customize-css?domain=pipco25.nl HTTP/1.1" 200 443
+INFO 2025-06-09 16:14:59,505 autoreload E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\review_system\serializers.py changed, reloading.
+INFO 2025-06-09 16:15:00,719 autoreload Watching for file changes with StatReloader
+INFO 2025-06-09 16:15:06,916 basehttp "GET /api/get-customize-css?domain=pipco25.nl HTTP/1.1" 200 403
+INFO 2025-06-09 16:15:11,932 autoreload E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\review_system\serializers.py changed, reloading.
+INFO 2025-06-09 16:15:12,913 autoreload Watching for file changes with StatReloader
+INFO 2025-06-09 16:15:18,743 basehttp "GET /api/get-customize-css?domain=pipco25.nl HTTP/1.1" 200 443
+INFO 2025-06-09 16:34:44,364 basehttp "GET /admin/review_system/reviewlistdesign/ HTTP/1.1" 200 39746
+INFO 2025-06-10 10:30:54,200 basehttp "GET /api/get-customize-css?domain=pipco25.nl HTTP/1.1" 200 443
+INFO 2025-06-10 10:31:30,253 basehttp "GET /admin/review_system/reviewlistdesign/ HTTP/1.1" 200 39746
+INFO 2025-06-10 10:31:32,008 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-06-10 10:33:19,202 basehttp "GET /admin/review_system/reviewlistdesign/72/change/ HTTP/1.1" 200 16321
+INFO 2025-06-10 10:33:20,966 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-06-10 10:36:01,797 basehttp "GET /admin/review_system/reviewlistdesign/ HTTP/1.1" 200 39746
+INFO 2025-06-10 12:36:29,709 basehttp "GET /admin/review_system/productreviews/ HTTP/1.1" 200 34975
+WARNING 2025-06-10 12:36:29,801 log Not Found: /media/uploaded_images/remarqz-logo_z1C7PdM.jpg
+WARNING 2025-06-10 12:36:29,801 basehttp "GET /media/uploaded_images/remarqz-logo_z1C7PdM.jpg HTTP/1.1" 404 4143
+WARNING 2025-06-10 12:36:29,809 log Not Found: /media/uploaded_images/remarqz-logo1.jpg
+WARNING 2025-06-10 12:36:29,809 basehttp "GET /media/uploaded_images/remarqz-logo1.jpg HTTP/1.1" 404 4115
+WARNING 2025-06-10 12:36:29,818 log Not Found: /media/uploaded_images/remarqz-logo.jpg
+WARNING 2025-06-10 12:36:29,819 basehttp "GET /media/uploaded_images/remarqz-logo.jpg HTTP/1.1" 404 4111
+INFO 2025-06-10 12:36:31,455 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-06-10 12:42:19,555 basehttp "GET /admin/review_system/productreviews/1542/change/ HTTP/1.1" 200 18402
+INFO 2025-06-10 12:42:21,240 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-06-10 13:27:18,730 basehttp "GET /admin/review_system/reviewlistdesign/ HTTP/1.1" 200 39746
+INFO 2025-06-10 13:27:20,335 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-06-10 13:27:25,935 basehttp "GET /admin/review_system/reviewlistdesign/72/change/ HTTP/1.1" 200 16321
+INFO 2025-06-10 13:27:27,762 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
