@@ -3,6 +3,8 @@ import bcrypt
 from django.contrib.auth.hashers import make_password
 from django.utils.html import format_html
 
+from django.core.validators import MinValueValidator, MaxValueValidator
+
 
 class ReviewSettings(models.Model):
     auto_approve = models.BooleanField(default=False, null=True)
@@ -96,8 +98,8 @@ class ReviewListDesign(models.Model):
     reviewer_name_color = models.CharField(max_length=25, blank=True)
     review_color = models.CharField(max_length=25, blank=True)
     primary_btn_color = models.CharField(max_length=25, null=True, blank=True, verbose_name="Reviews Button Color")
-    btn_border_radius = models.CharField(max_length=25, null=True, blank=True, verbose_name="Reviews Button Corners")
-    primary_button_position = models.CharField(max_length=25, null=True, blank=True, choices=PRIMARY_BUTTON_POSITION_CHOICES, default="Bottom Left", verbose_name="Reviews Button Position")
+    btn_border_radius = models.IntegerField(null=True, blank=True, verbose_name="Reviews Button Corners", validators=[MinValueValidator(0), MaxValueValidator(20)])
+    primary_button_position = models.CharField(max_length=25, null=True, choices=PRIMARY_BUTTON_POSITION_CHOICES, default="Bottom Left", verbose_name="Reviews Button Position")
     updated_at = models.DateTimeField(auto_now=True)
 
     class Meta:
@@ -148,7 +150,13 @@ class Plans(models.Model):
         verbose_name_plural = "Plans"
 
 class Customer(models.Model):
+    ROLE_CHOICES = [
+        ("owner", "owner"),
+        ("collaborator", "collaborator"),
+    ]
+
     plan = models.ForeignKey(Plans, on_delete=models.SET_NULL, default=1, null=True, verbose_name="Plan Info")
+    role = models.CharField(max_length=25, choices=ROLE_CHOICES, default="")
     domain_name = models.CharField(max_length=255, blank=True, null=True)
     email = models.EmailField(max_length=255, unique=True)
     first_name = models.CharField(max_length=50, null=True)
@@ -172,16 +180,65 @@ class Customer(models.Model):
     def __str__(self):
         return self.email
 
-# class Sites(models.Model):
-#     customer_id = models.ForeignKey(Customer, on_delete=models.CASCADE)
-#     plan_id = models.ForeignKey(Plans, on_delete=models.SET_NULL)
-#     domain = models.CharField(max_length=255, unique=True)
-#     created_at = models.DateTimeField(auto_now_add=True) 
-#     updated_at = models.DateTimeField(auto_now=True)
+class Sites(models.Model):
+    domain = models.CharField(max_length=255, unique=True)
+    name = models.CharField(max_length=255, null=True, blank=True)  # New field
+    external_site_id = models.CharField(max_length=100, null=True, blank=True) 
+    created_at = models.DateTimeField(auto_now_add=True) 
+    updated_at = models.DateTimeField(auto_now=True)
 
-#     def __str__(self):
-#         return "sites"
+    def __str__(self):
+        return "sites"
     
-#     class Meta:
-#         verbose_name = "Site"
-#         verbose_name_plural = "Sites"
+    class Meta:
+        verbose_name = "Site"
+        verbose_name_plural = "Sites"
+
+class SiteUser(models.Model):
+    ROLE_CHOICES = [
+        ("owner", "owner"),
+        ("collaborator", "collaborator"),
+    ]
+    STATUS_CHOICES = [
+        ("invited", "invited"),
+        ("active", "active"),
+        ("removed", "removed")
+    ]
+
+    site = models.ForeignKey(Sites, on_delete=models.CASCADE)
+    customer = models.ForeignKey(Customer, on_delete=models.CASCADE)
+    role = models.CharField(max_length=25, choices=ROLE_CHOICES, default="")
+    status = models.CharField(max_length=25, choices=STATUS_CHOICES, default="")
+
+    def __str__(self):
+        return "Site User"
+    
+    class Meta:
+        verbose_name = "Site User"
+        verbose_name_plural = "Site Users"
+
+class CollaboratorInvitations(models.Model):
+    site_id = models.ForeignKey(Sites, on_delete=models.CASCADE)
+    email = models.CharField(max_length=255, null=True, blank=True)
+    token = models.CharField(max_length=255, null=True, blank=True)
+    accepted = models.BooleanField(default = False)
+
+    def __str__(self):
+        return "Collaborator_Invitation"
+    
+    class Meta:
+        verbose_name = "Collaborator Invitation"
+        verbose_name_plural = "Collaborator Invitations"
+
+class Collaborator(models.Model):
+    customer = models.ForeignKey(Customer, on_delete=models.CASCADE)
+    user_id = models.IntegerField()
+    created_at = models.DateTimeField(auto_now_add=True) 
+    updated_at = models.DateTimeField(auto_now=True)
+
+    def __str__(self):
+        return "Collaborator"
+    
+    class Meta:
+        verbose_name = "Collaborator"
+        verbose_name_plural = "Collaborators"

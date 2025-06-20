@@ -2,6 +2,7 @@ from django.contrib import admin
 from .models import *
 from django.utils.html import format_html
 from django import forms
+from django.urls import reverse
 import bcrypt
 
 
@@ -108,6 +109,7 @@ class PlansAdmin(admin.ModelAdmin):
     list_display = ("id", "name", "features", "duration", "price", "created_at", "updated_at")
     list_filter = ("name", "duration")
 
+
 class CustomerAdmin(admin.ModelAdmin):
     form = CustomerAdminForm
     list_display = ('id', 'plan', 'email', 'domain_name', 'first_name', 'last_name', 'platform', 'activated', 'created_at')
@@ -125,6 +127,33 @@ class CustomerAdmin(admin.ModelAdmin):
         'activated',
         'profile_img',
     )
+    list_filter = ('email',)
+    search_fields = ('email',)
+
+    # def manage_sites(self, obj):
+    #     sites = obj.sites_set.all()
+    #     if not sites:
+    #         return "No Sites"
+        
+    #     links = []
+    #     for site in sites:
+    #         url = reverse('admin:review_system_sites_change', args=[site.pk])  # Use your actual app name
+    #         links.append(f'<a href="{url}">{site.pk}</a>')
+
+    #     return format_html("<br>".join(links))
+
+    # manage_sites.short_description = "Manage Sites"
+
+    # def get_associated_plans(self, obj):
+    #     plans = obj.sites_set.select_related('plan').all()
+    #     display = {
+    #         f"{site.plan.name} ({site.plan.duration})"
+    #         for site in plans
+    #         if site.plan  # skip if plan is None
+    #     }
+    #     return ", ".join(display) if display else "-"
+    
+    # get_associated_plans.short_description = "Plan Info"
 
     def get_form(self, request, obj=None, **kwargs):
         form = super().get_form(request, obj, **kwargs)
@@ -148,3 +177,25 @@ class CustomerAdmin(admin.ModelAdmin):
 
 
 admin.site.register(Customer, CustomerAdmin)
+
+@admin.register(Sites)
+class SitesAdmin(admin.ModelAdmin):
+    list_display = ('domain', 'created_at', 'updated_at')
+    fields = (
+        "domain",
+    )
+    search_fields = ('domain',)
+    list_filter = ('updated_at',)
+
+# @admin.register(CollaboratorInvitations)
+# class CollaboratorInvitationsAdmin(admin.ModelAdmin):
+#     list_display = ("site_id", "email", "token", "accepted")
+#     fields = ("site_id", "email", "token", "accepted")
+#     search_fields = ('site_id',)
+
+# @admin.register(Collaborator)
+# class CollaboratorAdmin(admin.ModelAdmin):
+#     list_display = ("customer", "user_id", "created_at", "updated_at")
+#     fields = ("customer", "user_id")
+#     search_fields = ('customer',)
+#     list_filter = ('updated_at',)
