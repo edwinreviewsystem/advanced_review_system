@@ -102,13 +102,24 @@ WSGI_APPLICATION = 'advanced_review_system.wsgi.application'
 #     }
 # }
 
+# DATABASES = {
+#     "default": {
+#         "ENGINE": "django.db.backends.postgresql",
+#         "NAME": 'edice_db',
+#         "USER": 'shagun',
+#         "PASSWORD": 'shagun',
+#         "HOST":'16.170.1.215',
+#         "PORT":5432,
+#     }
+# }
+
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql",
-        "NAME": 'edice_db',
-        "USER": 'shagun',
-        "PASSWORD": 'shagun',
-        "HOST":'16.170.1.215',
+        "NAME": 'remarkz_db',
+        "USER": 'remarqz_app',
+        "PASSWORD": 'remarqz_12345',
+        "HOST":'remarkz.cz0cq460sfuo.eu-north-1.rds.amazonaws.com',
         "PORT":5432,
     }
 }

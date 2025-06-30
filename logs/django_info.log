@@ -7987,3 +7987,41 @@ WARNING 2025-06-18 11:38:24,178 basehttp "POST //logout/ HTTP/1.1" 404 3885
 INFO 2025-06-18 11:38:25,236 basehttp "OPTIONS //api/login/ HTTP/1.1" 200 0
 WARNING 2025-06-18 11:38:25,244 log Not Found: /api/login/
 WARNING 2025-06-18 11:38:25,245 basehttp "POST //api/login/ HTTP/1.1" 404 4563
+INFO 2025-06-23 12:18:48,664 autoreload Watching for file changes with StatReloader
+INFO 2025-06-23 12:19:01,791 basehttp "GET /api/reviews?domain=f3nxmedia.biz HTTP/1.1" 200 1006
+INFO 2025-06-23 12:19:24,839 basehttp "GET /api/get-customize-css?domain=f3nxmedia.biz HTTP/1.1" 200 62
+INFO 2025-06-26 22:07:14,301 autoreload Watching for file changes with StatReloader
+INFO 2025-06-26 22:07:25,547 basehttp "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-06-26 22:07:26,112 basehttp "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4158
+INFO 2025-06-26 22:07:26,215 basehttp "GET /static/admin/css/login.css HTTP/1.1" 200 958
+WARNING 2025-06-26 22:07:26,345 log Not Found: /favicon.ico
+WARNING 2025-06-26 22:07:26,346 basehttp "GET /favicon.ico HTTP/1.1" 404 3896
+INFO 2025-06-26 22:07:35,687 basehttp "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2025-06-26 22:07:37,491 basehttp "GET /admin/ HTTP/1.1" 200 13618
+INFO 2025-06-26 22:07:37,543 basehttp "GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+INFO 2025-06-26 22:07:37,582 basehttp "GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 200 392
+INFO 2025-06-26 22:07:37,582 basehttp "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+INFO 2025-06-27 10:55:46,871 autoreload E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\advanced_review_system\settings.py changed, reloading.
+INFO 2025-06-27 10:55:48,250 autoreload Watching for file changes with StatReloader
+INFO 2025-06-27 10:55:55,435 basehttp "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-06-27 10:55:55,497 basehttp "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4158
+INFO 2025-06-27 10:55:55,608 basehttp "GET /static/admin/css/login.css HTTP/1.1" 200 958
+WARNING 2025-06-27 10:55:55,679 log Not Found: /favicon.ico
+WARNING 2025-06-27 10:55:55,680 basehttp "GET /favicon.ico HTTP/1.1" 404 3896
+INFO 2025-06-27 10:56:05,428 basehttp "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2025-06-27 10:56:07,194 basehttp "GET /admin/ HTTP/1.1" 200 13618
+INFO 2025-06-27 10:56:07,220 basehttp "GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+INFO 2025-06-27 10:56:07,235 basehttp "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+INFO 2025-06-27 10:56:07,250 basehttp "GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 200 392
+INFO 2025-06-27 10:56:34,961 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 55711
+INFO 2025-06-27 10:56:36,976 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-06-27 10:56:46,040 basehttp "GET /admin/review_system/plans/ HTTP/1.1" 200 16850
+INFO 2025-06-27 10:56:47,657 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-06-27 10:57:09,054 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 55711
+INFO 2025-06-27 10:57:10,681 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-06-27 16:03:34,723 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 55711
+WARNING 2025-06-27 16:03:35,055 log Not Found: /favicon.ico
+WARNING 2025-06-27 16:03:35,056 basehttp "GET /favicon.ico HTTP/1.1" 404 3896
+INFO 2025-06-27 20:20:48,893 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 55711
+WARNING 2025-06-27 20:20:49,237 log Not Found: /favicon.ico
+WARNING 2025-06-27 20:20:49,238 basehttp "GET /favicon.ico HTTP/1.1" 404 3896
