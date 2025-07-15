@@ -7,6 +7,7 @@ from django.core.validators import MinValueValidator, MaxValueValidator
 
 
 class ReviewSettings(models.Model):
+    site = models.ForeignKey("Sites", on_delete=models.CASCADE, null=True, default="")
     auto_approve = models.BooleanField(default=False, null=True)
     domain = models.CharField(max_length=255, blank=True, null=True)
 
@@ -28,6 +29,7 @@ class ProductReviews(models.Model):
         (PENDING, 'Pending')
     ]
 
+    site = models.ForeignKey("Sites", on_delete=models.CASCADE, null=True, default="")
     status = models.CharField(max_length=20, choices=STATUS_CHOICES, default=PENDING)
     star_rating = models.IntegerField()
     review = models.TextField()
@@ -66,6 +68,7 @@ class ProductReviews(models.Model):
 
 
 class ReviewFormDesign(models.Model):
+    site = models.ForeignKey("Sites", on_delete=models.CASCADE, null=True, default="")
     domain = models.CharField(max_length=255, blank=True)
     generate_button = models.CharField(max_length=25, blank=True)
     generate_button_text = models.CharField(max_length=25, blank=True)
@@ -92,6 +95,7 @@ class ReviewListDesign(models.Model):
         ("Bottom Right", "Bottom Right"),
     ]
 
+    site = models.ForeignKey("Sites", on_delete=models.CASCADE, null=True, default="")
     domain = models.CharField(max_length=255, blank=True)
     content_text_color = models.CharField(max_length=25, blank=True)
     star_rating_color = models.CharField(max_length=25, blank=True)
@@ -117,6 +121,7 @@ class Google_Reviews(models.Model):
         (PENDING, 'Pending')
     ]
 
+    site = models.ForeignKey("Sites", on_delete=models.CASCADE, null=True, default="")
     status = models.CharField(max_length=20, choices=STATUS_CHOICES, default=APPROVE)
     place_id = models.CharField(max_length=255)  
     domain_name = models.CharField(max_length=255) 
@@ -242,3 +247,33 @@ class Collaborator(models.Model):
     class Meta:
         verbose_name = "Collaborator"
         verbose_name_plural = "Collaborators"
+
+class PlanSubscription(models.Model):
+    STATUS_CHOICES = [
+        ("active", "active"),
+        ("expired", "expired"),
+    ]
+
+    PLATFORM_CHOICES = [
+        ("wix", "wix"),
+        ("wordpress", "wordpress"),
+    ]
+
+    user = models.ForeignKey(Customer, on_delete=models.CASCADE)
+    plan = models.ForeignKey(Plans, on_delete=models.SET_NULL, null=True)
+    site = models.ForeignKey(Sites, on_delete=models.SET_NULL, null=True)
+    is_trial = models.BooleanField(default=False)
+    start_date = models.DateField(null=True, blank=True)
+    end_date = models.DateField(null=True, blank=True)
+    status = models.CharField(max_length=30, choices=STATUS_CHOICES, null=True, blank=True)
+    platform = models.CharField(max_length=50, choices=PLATFORM_CHOICES, null=True, blank=True)
+    trial_ends_at = models.DateField(null=True, blank=True)
+    created_at = models.DateTimeField(auto_now_add=True) 
+    updated_at = models.DateTimeField(auto_now=True)
+
+    def __str__(self):
+        return f"{self.user.email}"
+    
+    class Meta:
+        verbose_name = "Plan Subscription"
+        verbose_name_plural = "Plan Subscriptions"

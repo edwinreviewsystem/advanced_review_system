@@ -3,6 +3,7 @@ from .models import *
 from django.utils.html import format_html
 from django import forms
 from django.urls import reverse
+from django.db.models import OuterRef, Subquery
 import bcrypt
 
 
@@ -112,9 +113,8 @@ class PlansAdmin(admin.ModelAdmin):
 
 class CustomerAdmin(admin.ModelAdmin):
     form = CustomerAdminForm
-    list_display = ('id', 'plan', 'email', 'domain_name', 'first_name', 'last_name', 'platform', 'activated', 'created_at')
+    list_display = ('id', 'email', 'manage_sites', 'first_name', 'last_name', 'platform', 'activated', 'created_at')
     fields = (
-        'domain_name',
         'email',
         'first_name',
         'last_name',
@@ -122,7 +122,6 @@ class CustomerAdmin(admin.ModelAdmin):
         'date_end',
         'password',
         'plan_price',
-        'plan',
         'platform',
         'activated',
         'profile_img',
@@ -130,19 +129,18 @@ class CustomerAdmin(admin.ModelAdmin):
     list_filter = ('email',)
     search_fields = ('email',)
 
-    # def manage_sites(self, obj):
-    #     sites = obj.sites_set.all()
-    #     if not sites:
-    #         return "No Sites"
+    def manage_sites(self, obj):
+        site_ids = SiteUser.objects.filter(customer=obj, status='active').values_list("site__id", flat=True).distinct()
         
-    #     links = []
-    #     for site in sites:
-    #         url = reverse('admin:review_system_sites_change', args=[site.pk])  # Use your actual app name
-    #         links.append(f'<a href="{url}">{site.pk}</a>')
+        if not site_ids:
+            return ""
 
-    #     return format_html("<br>".join(links))
+        query_string = "&".join([f"id__in={site_id}" for site_id in site_ids])
+        url = f"{reverse('admin:review_system_sites_changelist')}?{query_string}"
 
-    # manage_sites.short_description = "Manage Sites"
+        return format_html('<a href="{}" style="color: #007bff; font-weight: 500; text-decoration:underline;">Manage Sites</a>', url)
+    
+    manage_sites.short_description = "Sites"
 
     # def get_associated_plans(self, obj):
     #     plans = obj.sites_set.select_related('plan').all()
@@ -180,12 +178,135 @@ admin.site.register(Customer, CustomerAdmin)
 
 @admin.register(Sites)
 class SitesAdmin(admin.ModelAdmin):
-    list_display = ('domain', 'created_at', 'updated_at')
-    fields = (
-        "domain",
-    )
+    list_display = ('site_display', 'get_status', 'get_plan', 'view_action')
     search_fields = ('domain',)
     list_filter = ('updated_at',)
+    readonly_fields = (
+        'readonly_customer_email', 'readonly_domain',
+        'readonly_plan_name', 'readonly_start_date', 'readonly_end_date'
+    )
+    fields = (
+        'readonly_customer_email',
+        'readonly_domain',
+        'readonly_plan_name',
+        'readonly_start_date',
+        'readonly_end_date',
+        'readonly_is_trial',
+    )
+
+    def changelist_view(self, request, extra_context=None):
+        extra_context = extra_context or {}
+
+        # Extract customer email from the query filter (id__in), if present
+        customer_first_name = None
+        customer_last_name = None
+        site_ids = request.GET.getlist("id__in")
+
+        if site_ids:
+            from review_system.models import SiteUser
+            site_user = (
+                SiteUser.objects
+                .filter(site__id__in=site_ids, status='active')
+                .select_related("customer")
+                .first()
+            )
+            if site_user and site_user.customer:
+                customer_first_name = site_user.customer.first_name
+                customer_last_name = site_user.customer.last_name
+
+        if customer_first_name and customer_last_name:
+            extra_context['title'] = f"Manage Sites for {customer_first_name} {customer_last_name}"
+        elif customer_first_name:
+            extra_context['title'] = f"Manage Sites for {customer_first_name}"
+        else:
+            extra_context['title'] = "Manage Sites"
+
+        extra_context['has_add_permission'] = False  # Hides the “ADD SITE +” button
+
+        return super().changelist_view(request, extra_context=extra_context)
+
+    def get_queryset(self, request):
+        return super().get_queryset(request).prefetch_related('plansubscription_set')
+
+    # --- Custom Display Columns for List View ---
+    def site_display(self, obj):
+        return obj.domain
+    site_display.short_description = "Site"
+
+    # With active status
+    # def get_plan_subscription(self, obj):
+    #     return PlanSubscription.objects.filter(site=obj, status='active').select_related('plan', 'user').first()
+
+    # Without active status
+    def get_plan_subscription(self, obj):
+        return PlanSubscription.objects.filter(site=obj).select_related('plan', 'user').first()
+
+    def get_status(self, obj):
+        # Fetch the SiteUser entry for this site where status is 'active'
+        site_user = SiteUser.objects.filter(site=obj, status='active').first()
+        return site_user.status.title() if site_user and site_user.status else "-"
+    get_status.short_description = 'Status'
+
+    def get_plan(self, obj):
+        sub = self.get_plan_subscription(obj)
+        return f"{sub.plan.name} ({sub.plan.duration})" if sub and sub.plan else "-"
+    get_plan.short_description = 'Plan'
+
+    def view_action(self, obj):
+        return format_html(
+            '<a href="{}" style="color: #007bff; font-weight: 500; text-decoration:underline;">View</a>',
+            f"/admin/review_system/sites/{obj.pk}/change/"
+        )
+    view_action.short_description = 'Actions'
+
+    # --- Read-only Fields for Detail View ---
+    def readonly_customer_email(self, obj):
+        sub = self.get_plan_subscription(obj)
+        return sub.user.email if sub and sub.user else "-"
+    readonly_customer_email.short_description = "Customer Email"
+
+    def readonly_domain(self, obj):
+        return obj.domain
+    readonly_domain.short_description = "Domain"
+
+    def readonly_plan_name(self, obj):
+        sub = self.get_plan_subscription(obj)
+        return sub.plan if sub and sub.plan else "-"
+    readonly_plan_name.short_description = "Plan Name"
+
+    def readonly_start_date(self, obj):
+        sub = self.get_plan_subscription(obj)
+        return sub.start_date if sub else "-"
+    readonly_start_date.short_description = "Start Date"
+
+    def readonly_end_date(self, obj):
+        sub = self.get_plan_subscription(obj)
+        return sub.end_date if sub else "-"
+    readonly_end_date.short_description = "End Date"
+
+    def readonly_is_trial(self, obj):
+        sub = self.get_plan_subscription(obj)
+        return sub.is_trial if sub else "-"
+    readonly_is_trial.short_description = "Is Trial"
+
+    # Make all fields read-only and hide save buttons
+    def has_change_permission(self, request, obj=None):
+        return False
+    
+    def has_delete_permission(self, request, obj=None):
+        return False
+    
+    def change_view(self, request, object_id, form_url='', extra_context=None):
+        extra_context = extra_context or {}
+        extra_context['show_save'] = False
+        extra_context['show_save_and_continue'] = False
+        extra_context['show_save_and_add_another'] = False
+        extra_context['show_delete'] = False
+
+        # Trick to hide "Close" by setting the form to be readonly and empty
+        request._dont_enforce_csrf_checks = True  # optional, to be safe with CSRF checks disabled
+        self.readonly_fields = self.readonly_fields  # force all fields to readonly
+        return super().change_view(request, object_id, form_url, extra_context=extra_context)
 
 # @admin.register(CollaboratorInvitations)
 # class CollaboratorInvitationsAdmin(admin.ModelAdmin):
