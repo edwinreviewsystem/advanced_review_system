@@ -9433,3 +9433,305 @@ INFO 2025-07-15 18:47:28,839 basehttp "GET /admin/review_system/sites/?id__in=15
 INFO 2025-07-15 18:47:41,680 basehttp "GET /admin/review_system/sites/15/change/ HTTP/1.1" 200 13832
 INFO 2025-07-15 18:47:43,358 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
 INFO 2025-07-15 18:48:17,720 basehttp "GET /admin/review_system/sites/ HTTP/1.1" 200 32616
+INFO 2025-07-16 10:17:54,560 autoreload Watching for file changes with StatReloader
+INFO 2025-07-16 10:18:14,946 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 60391
+ERROR 2025-07-16 10:18:21,916 log Internal Server Error: /admin/review_system/customer/add/
+Traceback (most recent call last):
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\contrib\admin\options.py", line 714, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\contrib\admin\sites.py", line 240, in inner
+    return view(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\contrib\admin\options.py", line 1941, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\contrib\admin\options.py", line 1802, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\contrib\admin\options.py", line 1869, in _changeform_view
+    form = ModelForm(initial=initial)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\review_system\admin.py", line 96, in __init__
+    self.fields['plan'].widget.can_add_related = False
+    ~~~~~~~~~~~^^^^^^^^
+KeyError: 'plan'
+ERROR 2025-07-16 10:18:21,922 basehttp "GET /admin/review_system/customer/add/ HTTP/1.1" 500 140524
+INFO 2025-07-16 10:21:11,604 autoreload E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\review_system\admin.py changed, reloading.
+INFO 2025-07-16 10:21:13,417 autoreload Watching for file changes with StatReloader
+INFO 2025-07-16 10:21:20,612 basehttp "GET /admin/review_system/customer/add/ HTTP/1.1" 200 16514
+INFO 2025-07-16 10:21:20,643 basehttp "GET /static/admin/css/base.css HTTP/1.1" 304 0
+INFO 2025-07-16 10:21:20,646 basehttp "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+INFO 2025-07-16 10:21:20,659 basehttp "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+INFO 2025-07-16 10:21:20,661 basehttp "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+INFO 2025-07-16 10:21:20,662 basehttp "GET /static/admin/js/core.js HTTP/1.1" 304 0
+INFO 2025-07-16 10:21:20,667 basehttp "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+INFO 2025-07-16 10:21:20,667 basehttp "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+INFO 2025-07-16 10:21:20,680 basehttp "GET /static/admin/css/forms.css HTTP/1.1" 304 0
+INFO 2025-07-16 10:21:20,681 basehttp "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+INFO 2025-07-16 10:21:20,682 basehttp "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+INFO 2025-07-16 10:21:20,683 basehttp "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+INFO 2025-07-16 10:21:20,710 basehttp "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+INFO 2025-07-16 10:21:20,710 basehttp "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+INFO 2025-07-16 10:21:20,713 basehttp "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 304 0
+INFO 2025-07-16 10:21:20,714 basehttp "GET /static/admin/css/widgets.css HTTP/1.1" 304 0
+INFO 2025-07-16 10:21:20,743 basehttp "GET /static/admin/js/theme.js HTTP/1.1" 304 0
+INFO 2025-07-16 10:21:20,747 basehttp "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+INFO 2025-07-16 10:21:20,775 basehttp "GET /static/admin/js/change_form.js HTTP/1.1" 304 0
+INFO 2025-07-16 10:21:22,832 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+ERROR 2025-07-16 10:22:08,387 log Internal Server Error: /admin/review_system/customer/add/
+Traceback (most recent call last):
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\contrib\admin\options.py", line 714, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\contrib\admin\sites.py", line 240, in inner
+    return view(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\contrib\admin\options.py", line 1941, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\contrib\admin\options.py", line 1802, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\contrib\admin\options.py", line 1847, in _changeform_view
+    form_validated = form.is_valid()
+                     ^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\forms\forms.py", line 197, in is_valid
+    return self.is_bound and not self.errors
+                                 ^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\forms\forms.py", line 192, in errors
+    self.full_clean()
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\forms\forms.py", line 327, in full_clean
+    self._clean_fields()
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\forms\forms.py", line 342, in _clean_fields
+    value = getattr(self, "clean_%s" % name)()
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\review_system\admin.py", line 98, in clean_password
+    return _hash_or_normalise(pw)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\review_system\models.py", line 26, in _hash_or_normalise
+    salt = bcrypt.gensalt(rounds=10, prefix=b"2y")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: Supported prefixes are b'2a' or b'2b'
+ERROR 2025-07-16 10:22:08,449 basehttp "POST /admin/review_system/customer/add/ HTTP/1.1" 500 162620
+INFO 2025-07-16 10:22:36,337 basehttp "GET /admin/review_system/customer/add/ HTTP/1.1" 200 16514
+ERROR 2025-07-16 10:23:33,593 log Internal Server Error: /admin/review_system/customer/add/
+Traceback (most recent call last):
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\contrib\admin\options.py", line 714, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\contrib\admin\sites.py", line 240, in inner
+    return view(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\contrib\admin\options.py", line 1941, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\contrib\admin\options.py", line 1802, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\contrib\admin\options.py", line 1847, in _changeform_view
+    form_validated = form.is_valid()
+                     ^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\forms\forms.py", line 197, in is_valid
+    return self.is_bound and not self.errors
+                                 ^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\forms\forms.py", line 192, in errors
+    self.full_clean()
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\forms\forms.py", line 327, in full_clean
+    self._clean_fields()
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\forms\forms.py", line 342, in _clean_fields
+    value = getattr(self, "clean_%s" % name)()
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\review_system\admin.py", line 98, in clean_password
+    return _hash_or_normalise(pw)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\review_system\models.py", line 26, in _hash_or_normalise
+    salt = bcrypt.gensalt(rounds=10, prefix=b"2y")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: Supported prefixes are b'2a' or b'2b'
+ERROR 2025-07-16 10:23:33,599 basehttp "POST /admin/review_system/customer/add/ HTTP/1.1" 500 162620
+INFO 2025-07-16 10:28:57,413 autoreload Watching for file changes with StatReloader
+INFO 2025-07-16 10:29:10,350 basehttp "GET /admin/review_system/customer/add/ HTTP/1.1" 200 16514
+INFO 2025-07-16 10:29:21,361 basehttp "POST /admin/review_system/customer/add/ HTTP/1.1" 302 0
+INFO 2025-07-16 10:29:33,856 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 61299
+INFO 2025-07-16 10:29:33,904 basehttp "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+INFO 2025-07-16 10:29:33,906 basehttp "GET /static/admin/img/icon-yes.svg HTTP/1.1" 304 0
+INFO 2025-07-16 10:29:33,906 basehttp "GET /static/admin/img/search.svg HTTP/1.1" 304 0
+INFO 2025-07-16 10:29:33,911 basehttp "GET /static/admin/js/filters.js HTTP/1.1" 304 0
+INFO 2025-07-16 10:29:35,503 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-16 10:29:35,563 basehttp "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+INFO 2025-07-16 10:29:35,564 basehttp "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 304 0
+INFO 2025-07-16 10:35:26,368 basehttp "GET /admin/review_system/customer/160/change/ HTTP/1.1" 200 16943
+INFO 2025-07-16 10:35:27,997 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-16 10:35:28,048 basehttp "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+INFO 2025-07-16 10:35:37,772 basehttp "POST /admin/review_system/customer/160/change/ HTTP/1.1" 302 0
+INFO 2025-07-16 10:35:50,172 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 61301
+INFO 2025-07-16 10:35:51,887 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-16 10:37:06,178 basehttp "GET /admin/review_system/customer/160/change/ HTTP/1.1" 200 16943
+INFO 2025-07-16 10:37:07,800 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-16 10:37:28,521 basehttp "POST /admin/review_system/customer/160/change/ HTTP/1.1" 302 0
+INFO 2025-07-16 10:37:40,805 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 61301
+INFO 2025-07-16 10:37:42,527 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-16 10:38:30,492 basehttp "GET /admin/review_system/customer/160/change/ HTTP/1.1" 200 16943
+INFO 2025-07-16 10:38:32,204 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-16 10:38:41,697 basehttp "POST /admin/review_system/customer/160/change/ HTTP/1.1" 302 0
+INFO 2025-07-16 10:38:54,033 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 61301
+INFO 2025-07-16 10:38:55,925 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-16 10:39:28,466 basehttp "GET /admin/review_system/customer/160/change/ HTTP/1.1" 200 16943
+INFO 2025-07-16 10:39:30,021 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-16 10:39:40,484 basehttp "POST /admin/review_system/customer/160/change/ HTTP/1.1" 302 0
+INFO 2025-07-16 10:39:52,849 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 61301
+INFO 2025-07-16 10:39:54,844 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-16 10:42:37,777 basehttp "POST /admin/review_system/customer/ HTTP/1.1" 200 10434
+INFO 2025-07-16 10:42:37,821 basehttp "GET /static/admin/js/cancel.js HTTP/1.1" 304 0
+INFO 2025-07-16 10:42:44,847 basehttp "POST /admin/review_system/customer/ HTTP/1.1" 302 0
+INFO 2025-07-16 10:42:59,018 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 60529
+INFO 2025-07-16 10:43:00,727 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-16 10:47:30,980 autoreload E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\review_system\models.py changed, reloading.
+INFO 2025-07-16 10:47:32,222 autoreload Watching for file changes with StatReloader
+INFO 2025-07-16 10:48:22,069 autoreload E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\review_system\admin.py changed, reloading.
+INFO 2025-07-16 10:48:23,211 autoreload Watching for file changes with StatReloader
+ERROR 2025-07-16 10:48:34,708 log Internal Server Error: /admin/review_system/customer/add/
+Traceback (most recent call last):
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\contrib\admin\options.py", line 714, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\contrib\admin\sites.py", line 240, in inner
+    return view(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\contrib\admin\options.py", line 1941, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\contrib\admin\options.py", line 1802, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\contrib\admin\options.py", line 1869, in _changeform_view
+    form = ModelForm(initial=initial)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\review_system\admin.py", line 95, in __init__
+    self.fields['plan'].widget.can_add_related = False
+    ~~~~~~~~~~~^^^^^^^^
+KeyError: 'plan'
+ERROR 2025-07-16 10:48:34,717 basehttp "GET /admin/review_system/customer/add/ HTTP/1.1" 500 140530
+INFO 2025-07-16 10:48:44,573 autoreload E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\review_system\admin.py changed, reloading.
+INFO 2025-07-16 10:48:45,511 autoreload Watching for file changes with StatReloader
+INFO 2025-07-16 10:48:52,130 basehttp "GET /admin/review_system/customer/add/ HTTP/1.1" 200 16514
+INFO 2025-07-16 10:48:53,815 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-16 10:49:22,364 basehttp "POST /admin/review_system/customer/add/ HTTP/1.1" 200 16800
+INFO 2025-07-16 10:49:24,074 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-16 10:49:33,882 basehttp "POST /admin/review_system/customer/add/ HTTP/1.1" 302 0
+INFO 2025-07-16 10:49:46,896 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 61299
+INFO 2025-07-16 10:49:48,565 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-16 10:50:19,118 basehttp "GET /admin/review_system/customer/161/change/ HTTP/1.1" 200 16944
+INFO 2025-07-16 10:50:20,805 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-16 10:50:31,631 basehttp "POST /admin/review_system/customer/161/change/ HTTP/1.1" 302 0
+INFO 2025-07-16 10:50:48,386 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 61301
+INFO 2025-07-16 10:50:50,059 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-16 10:51:10,111 basehttp "GET /admin/review_system/customer/161/change/ HTTP/1.1" 200 16944
+INFO 2025-07-16 10:51:11,782 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-16 10:51:21,737 basehttp "POST /admin/review_system/customer/161/change/ HTTP/1.1" 302 0
+INFO 2025-07-16 10:51:38,190 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 61301
+INFO 2025-07-16 10:51:39,765 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-16 10:52:06,451 basehttp "POST /admin/review_system/customer/ HTTP/1.1" 200 10434
+INFO 2025-07-16 10:52:13,579 basehttp "POST /admin/review_system/customer/ HTTP/1.1" 302 0
+INFO 2025-07-16 10:52:28,497 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 60529
+INFO 2025-07-16 10:52:30,191 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-16 10:53:03,733 basehttp "GET /admin/review_system/customer/add/ HTTP/1.1" 200 16514
+INFO 2025-07-16 10:53:06,060 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-16 10:53:21,085 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 60391

@@ -92,11 +92,6 @@ class CustomerAdminForm(forms.ModelForm):
         for field in optional_fields:
             self.fields[field].required = False
 
-        self.fields['plan'].widget.can_add_related = False
-        self.fields['plan'].widget.can_change_related = False
-        self.fields['plan'].widget.can_delete_related = False
-        self.fields['plan'].widget.can_view_related = False
-
     def clean_password(self):
         password = self.cleaned_data.get('password')
         if password and not password.startswith('$2y$'):
