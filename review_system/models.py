@@ -268,6 +268,7 @@ class PlanSubscription(models.Model):
     status = models.CharField(max_length=30, choices=STATUS_CHOICES, null=True, blank=True)
     platform = models.CharField(max_length=50, choices=PLATFORM_CHOICES, null=True, blank=True)
     trial_ends_at = models.DateField(null=True, blank=True)
+    stripe_subscription_id = models.CharField(max_length=255, null=True, blank=True)
     created_at = models.DateTimeField(auto_now_add=True) 
     updated_at = models.DateTimeField(auto_now=True)
 

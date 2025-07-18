@@ -9735,3 +9735,1215 @@ INFO 2025-07-16 10:52:30,191 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
 INFO 2025-07-16 10:53:03,733 basehttp "GET /admin/review_system/customer/add/ HTTP/1.1" 200 16514
 INFO 2025-07-16 10:53:06,060 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
 INFO 2025-07-16 10:53:21,085 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 60391
+INFO 2025-07-16 10:54:20,008 autoreload Watching for file changes with StatReloader
+INFO 2025-07-16 14:44:01,638 autoreload E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\review_system\models.py changed, reloading.
+INFO 2025-07-16 14:44:03,659 autoreload Watching for file changes with StatReloader
+INFO 2025-07-16 14:44:55,306 autoreload E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\review_system\admin.py changed, reloading.
+INFO 2025-07-16 14:44:56,303 autoreload Watching for file changes with StatReloader
+INFO 2025-07-16 14:45:33,541 basehttp "GET /admin/review_system/customer/add/ HTTP/1.1" 200 16514
+INFO 2025-07-16 14:45:35,257 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-16 14:46:03,134 basehttp "POST /admin/review_system/customer/add/ HTTP/1.1" 302 0
+INFO 2025-07-16 14:46:19,087 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 61299
+INFO 2025-07-16 14:46:20,716 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-16 14:47:28,092 basehttp "GET /admin/review_system/customer/162/change/ HTTP/1.1" 200 16943
+INFO 2025-07-16 14:47:29,721 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-16 14:47:41,250 basehttp "POST /admin/review_system/customer/162/change/ HTTP/1.1" 302 0
+INFO 2025-07-16 14:47:54,146 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 61301
+INFO 2025-07-16 14:47:55,796 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-16 14:56:40,308 basehttp "POST /admin/review_system/customer/ HTTP/1.1" 200 10434
+INFO 2025-07-16 14:56:46,178 basehttp "POST /admin/review_system/customer/ HTTP/1.1" 302 0
+INFO 2025-07-16 14:56:58,845 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 60529
+INFO 2025-07-16 14:57:00,576 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-16 15:30:39,903 basehttp "GET /admin/review_system/customer/add/ HTTP/1.1" 200 16514
+INFO 2025-07-16 15:30:41,513 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-16 15:31:05,440 basehttp "POST /admin/review_system/customer/add/ HTTP/1.1" 302 0
+INFO 2025-07-16 15:31:17,670 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 61300
+INFO 2025-07-16 15:31:19,401 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-16 15:34:16,477 basehttp "GET /admin/review_system/customer/163/change/ HTTP/1.1" 200 16943
+INFO 2025-07-16 15:34:18,521 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-16 15:34:31,422 basehttp "POST /admin/review_system/customer/163/change/ HTTP/1.1" 302 0
+INFO 2025-07-16 15:34:44,493 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 61302
+INFO 2025-07-16 15:34:46,188 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-16 15:36:55,243 basehttp "POST /admin/review_system/customer/ HTTP/1.1" 200 10434
+INFO 2025-07-16 15:37:01,244 basehttp "POST /admin/review_system/customer/ HTTP/1.1" 302 0
+INFO 2025-07-16 15:37:16,744 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 60529
+INFO 2025-07-16 15:37:18,454 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-16 16:25:16,983 autoreload E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\review_system\models.py changed, reloading.
+INFO 2025-07-16 16:25:18,296 autoreload Watching for file changes with StatReloader
+INFO 2025-07-16 16:26:19,467 autoreload E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\review_system\admin.py changed, reloading.
+INFO 2025-07-16 16:26:20,375 autoreload Watching for file changes with StatReloader
+INFO 2025-07-16 17:05:25,810 autoreload E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\review_system\admin.py changed, reloading.
+INFO 2025-07-16 17:05:27,134 autoreload Watching for file changes with StatReloader
+INFO 2025-07-16 17:05:38,033 basehttp "GET /admin/review_system/sites/?id__in=2&id__in=3 HTTP/1.1" 200 13302
+INFO 2025-07-16 17:10:07,985 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 60391
+INFO 2025-07-16 17:10:49,941 basehttp "GET /admin/review_system/sites/?id__in=65 HTTP/1.1" 200 12829
+INFO 2025-07-16 17:11:04,574 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 60391
+INFO 2025-07-16 17:11:14,951 basehttp "GET /admin/review_system/sites/?id__in=62 HTTP/1.1" 200 12829
+INFO 2025-07-16 17:11:32,769 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 60391
+INFO 2025-07-16 17:17:31,964 basehttp "GET /admin/review_system/sites/?id__in=2 HTTP/1.1" 200 12822
+INFO 2025-07-16 18:03:20,039 autoreload E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\review_system\admin.py changed, reloading.
+INFO 2025-07-16 18:03:21,233 autoreload Watching for file changes with StatReloader
+INFO 2025-07-16 18:03:43,910 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 61268
+INFO 2025-07-16 18:03:45,562 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-16 18:03:53,752 basehttp "GET /admin/review_system/sites/?id__in=74&for_customer=159 HTTP/1.1" 302 0
+INFO 2025-07-16 18:04:25,540 basehttp "GET /admin/review_system/sites/?e=1 HTTP/1.1" 200 34420
+INFO 2025-07-16 18:04:55,811 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 61268
+INFO 2025-07-16 18:05:03,150 basehttp "GET /admin/review_system/sites/?id__in=2&id__in=3&for_customer=42 HTTP/1.1" 302 0
+INFO 2025-07-16 18:05:26,242 basehttp "GET /admin/review_system/sites/?e=1 HTTP/1.1" 200 34420
+INFO 2025-07-16 18:13:21,565 autoreload E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\review_system\admin.py changed, reloading.
+INFO 2025-07-16 18:13:22,500 autoreload Watching for file changes with StatReloader
+INFO 2025-07-16 18:13:32,980 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 60666
+INFO 2025-07-16 18:13:34,656 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-16 18:13:38,435 basehttp "GET /admin/review_system/sites/?for_customer=159 HTTP/1.1" 302 0
+INFO 2025-07-16 18:14:07,153 basehttp "GET /admin/review_system/sites/?e=1 HTTP/1.1" 200 34420
+INFO 2025-07-16 18:14:20,576 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 60666
+INFO 2025-07-16 18:14:28,641 basehttp "GET /admin/review_system/sites/?for_customer=42 HTTP/1.1" 302 0
+INFO 2025-07-16 18:15:06,504 basehttp "GET /admin/review_system/sites/?e=1 HTTP/1.1" 200 34420
+INFO 2025-07-16 18:15:14,387 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 60666
+INFO 2025-07-16 18:15:57,184 basehttp "GET /admin/review_system/sites/?for_customer=159 HTTP/1.1" 302 0
+INFO 2025-07-16 18:16:32,772 basehttp "GET /admin/review_system/sites/?e=1 HTTP/1.1" 200 34420
+INFO 2025-07-16 18:17:27,709 autoreload E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\review_system\admin.py changed, reloading.
+INFO 2025-07-16 18:17:28,621 autoreload Watching for file changes with StatReloader
+INFO 2025-07-16 18:17:46,393 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 60391
+INFO 2025-07-16 18:17:52,325 basehttp "GET /admin/review_system/sites/?id__in=74 HTTP/1.1" 200 12803
+INFO 2025-07-16 18:18:09,887 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 60391
+INFO 2025-07-16 18:18:15,216 basehttp "GET /admin/review_system/sites/?id__in=15 HTTP/1.1" 200 12832
+INFO 2025-07-16 18:18:33,016 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 60391
+INFO 2025-07-16 18:24:09,531 autoreload E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\review_system\admin.py changed, reloading.
+INFO 2025-07-16 18:24:10,543 autoreload Watching for file changes with StatReloader
+INFO 2025-07-16 18:25:24,406 autoreload E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\review_system\admin.py changed, reloading.
+INFO 2025-07-16 18:25:25,450 autoreload Watching for file changes with StatReloader
+INFO 2025-07-16 18:25:43,957 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 61544
+INFO 2025-07-16 18:25:46,645 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-16 18:25:59,647 basehttp "GET /admin/review_system/sites/?id__in=74&for_customer=159 HTTP/1.1" 302 0
+INFO 2025-07-16 18:26:22,550 basehttp "GET /admin/review_system/sites/?e=1 HTTP/1.1" 200 34182
+INFO 2025-07-16 18:26:45,624 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 61544
+INFO 2025-07-16 18:27:22,326 basehttp "GET /admin/review_system/sites/?id__in=2&id__in=3&for_customer=42 HTTP/1.1" 302 0
+INFO 2025-07-16 18:27:45,496 basehttp "GET /admin/review_system/sites/?e=1 HTTP/1.1" 200 34182
+INFO 2025-07-16 18:28:01,552 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 61544
+INFO 2025-07-16 18:30:23,565 autoreload E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\review_system\admin.py changed, reloading.
+INFO 2025-07-16 18:30:24,665 autoreload Watching for file changes with StatReloader
+INFO 2025-07-16 18:30:32,960 basehttp "GET /admin/review_system/sites/?id__in=74&for_customer=159 HTTP/1.1" 302 0
+INFO 2025-07-16 18:30:56,350 basehttp "GET /admin/review_system/sites/?e=1 HTTP/1.1" 200 34420
+INFO 2025-07-16 18:34:21,269 autoreload E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\review_system\admin.py changed, reloading.
+INFO 2025-07-16 18:34:22,296 autoreload Watching for file changes with StatReloader
+INFO 2025-07-16 18:34:55,436 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 60391
+INFO 2025-07-16 18:35:05,554 basehttp "GET /admin/review_system/sites/?id__in=15 HTTP/1.1" 200 12832
+INFO 2025-07-16 18:39:38,541 autoreload E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\review_system\admin.py changed, reloading.
+INFO 2025-07-16 18:39:39,458 autoreload Watching for file changes with StatReloader
+INFO 2025-07-16 18:39:59,948 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 61543
+INFO 2025-07-16 18:40:01,707 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-16 18:40:09,148 basehttp "GET /admin/review_system/sites/?id__in=15&for_customer=158 HTTP/1.1" 302 0
+INFO 2025-07-16 18:40:48,757 basehttp "GET /admin/review_system/sites/?e=1 HTTP/1.1" 200 34420
+INFO 2025-07-16 18:42:07,691 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 61543
+INFO 2025-07-16 18:42:54,317 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 61543
+INFO 2025-07-16 18:42:54,545 basehttp "GET /static/admin/css/base.css HTTP/1.1" 200 21544
+INFO 2025-07-16 18:42:54,566 basehttp "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+INFO 2025-07-16 18:42:54,585 basehttp "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2682
+INFO 2025-07-16 18:42:54,586 basehttp "GET /static/admin/css/responsive.css HTTP/1.1" 200 17905
+INFO 2025-07-16 18:42:54,586 basehttp "GET /static/admin/css/changelists.css HTTP/1.1" 200 6811
+INFO 2025-07-16 18:42:54,659 basehttp "GET /static/admin/js/core.js HTTP/1.1" 200 6208
+INFO 2025-07-16 18:42:54,660 basehttp "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+INFO 2025-07-16 18:42:54,660 basehttp "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 9042
+INFO 2025-07-16 18:42:54,661 basehttp "GET /static/admin/js/actions.js HTTP/1.1" 200 8067
+INFO 2025-07-16 18:42:54,695 basehttp "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+INFO 2025-07-16 18:42:54,789 basehttp "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+INFO 2025-07-16 18:42:54,790 basehttp "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 285314
+INFO 2025-07-16 18:42:54,812 basehttp "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 325171
+INFO 2025-07-16 18:42:54,824 basehttp "GET /static/admin/img/search.svg HTTP/1.1" 200 458
+INFO 2025-07-16 18:42:54,832 basehttp "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+INFO 2025-07-16 18:42:54,986 basehttp "GET /static/admin/js/theme.js HTTP/1.1" 200 1943
+INFO 2025-07-16 18:42:55,067 basehttp "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+INFO 2025-07-16 18:42:55,084 basehttp "GET /static/admin/js/filters.js HTTP/1.1" 200 978
+INFO 2025-07-16 18:42:56,026 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-16 18:42:56,117 basehttp "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+INFO 2025-07-16 18:42:56,117 basehttp "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+INFO 2025-07-16 18:42:56,117 basehttp "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 200 581
+WARNING 2025-07-16 18:42:56,278 log Not Found: /favicon.ico
+WARNING 2025-07-16 18:42:56,293 basehttp "GET /favicon.ico HTTP/1.1" 404 3896
+INFO 2025-07-16 18:43:02,862 basehttp "GET /admin/review_system/sites/?id__in=65&for_customer=76 HTTP/1.1" 302 0
+INFO 2025-07-16 18:43:25,984 basehttp "GET /admin/review_system/sites/?e=1 HTTP/1.1" 200 34420
+INFO 2025-07-16 18:43:46,266 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 61543
+INFO 2025-07-16 18:43:48,687 autoreload E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\review_system\admin.py changed, reloading.
+INFO 2025-07-16 18:43:49,666 autoreload Watching for file changes with StatReloader
+INFO 2025-07-16 18:49:48,671 autoreload E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\review_system\admin.py changed, reloading.
+INFO 2025-07-16 18:49:49,595 autoreload Watching for file changes with StatReloader
+INFO 2025-07-16 18:49:57,046 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 63128
+INFO 2025-07-16 18:49:57,212 basehttp "GET /static/admin/css/base.css HTTP/1.1" 200 21544
+INFO 2025-07-16 18:49:57,216 basehttp "GET /static/admin/css/responsive.css HTTP/1.1" 200 17905
+INFO 2025-07-16 18:49:57,220 basehttp "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+INFO 2025-07-16 18:49:57,238 basehttp "GET /static/admin/js/core.js HTTP/1.1" 200 6208
+INFO 2025-07-16 18:49:57,243 basehttp "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 9042
+INFO 2025-07-16 18:49:57,247 basehttp "GET /static/admin/js/actions.js HTTP/1.1" 200 8067
+INFO 2025-07-16 18:49:57,285 basehttp "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2682
+INFO 2025-07-16 18:49:57,287 basehttp "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+INFO 2025-07-16 18:49:57,292 basehttp "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+INFO 2025-07-16 18:49:57,295 basehttp "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 325171
+INFO 2025-07-16 18:49:57,317 basehttp "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+INFO 2025-07-16 18:49:57,321 basehttp "GET /static/admin/img/search.svg HTTP/1.1" 200 458
+INFO 2025-07-16 18:49:57,327 basehttp "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 285314
+INFO 2025-07-16 18:49:57,357 basehttp "GET /static/admin/css/changelists.css HTTP/1.1" 200 6811
+INFO 2025-07-16 18:49:57,384 basehttp "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+INFO 2025-07-16 18:49:57,387 basehttp "GET /static/admin/js/theme.js HTTP/1.1" 200 1943
+INFO 2025-07-16 18:49:57,393 basehttp "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+INFO 2025-07-16 18:49:57,418 basehttp "GET /static/admin/js/filters.js HTTP/1.1" 200 978
+INFO 2025-07-16 18:49:58,777 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-16 18:49:58,818 basehttp "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+INFO 2025-07-16 18:49:58,822 basehttp "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+INFO 2025-07-16 18:49:58,822 basehttp "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 200 581
+WARNING 2025-07-16 18:49:58,924 log Not Found: /favicon.ico
+WARNING 2025-07-16 18:49:58,933 basehttp "GET /favicon.ico HTTP/1.1" 404 3896
+INFO 2025-07-16 18:50:05,597 basehttp "GET /admin/review_system/sites/?for_customer=159&_changelist_filters=for_customer=159 HTTP/1.1" 302 0
+INFO 2025-07-16 18:50:28,384 basehttp "GET /admin/review_system/sites/?e=1 HTTP/1.1" 200 34420
+INFO 2025-07-16 18:50:34,623 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 63128
+INFO 2025-07-16 18:50:59,469 autoreload E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\review_system\admin.py changed, reloading.
+INFO 2025-07-16 18:51:00,407 autoreload Watching for file changes with StatReloader
+INFO 2025-07-16 18:51:18,794 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 60391
+INFO 2025-07-16 18:51:20,440 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-16 18:51:27,033 basehttp "GET /admin/review_system/sites/?id__in=2 HTTP/1.1" 200 12822
+INFO 2025-07-16 18:51:44,181 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 60391
+INFO 2025-07-16 18:51:57,735 basehttp "GET /admin/review_system/sites/?id__in=2&id__in=3 HTTP/1.1" 200 13302
+INFO 2025-07-16 18:52:22,934 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 60391
+INFO 2025-07-16 18:55:33,124 autoreload E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\review_system\admin.py changed, reloading.
+INFO 2025-07-16 18:55:34,050 autoreload Watching for file changes with StatReloader
+INFO 2025-07-16 18:55:36,750 autoreload E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\review_system\admin.py changed, reloading.
+INFO 2025-07-16 18:55:37,681 autoreload Watching for file changes with StatReloader
+INFO 2025-07-16 18:57:23,930 autoreload E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\review_system\admin.py changed, reloading.
+INFO 2025-07-16 18:57:24,896 autoreload Watching for file changes with StatReloader
+ERROR 2025-07-16 18:57:37,428 log Internal Server Error: /admin/review_system/sites/
+Traceback (most recent call last):
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\contrib\admin\options.py", line 714, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\contrib\admin\sites.py", line 240, in inner
+    return view(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\review_system\admin.py", line 207, in changelist_view
+    if site_user and site_user.customer:
+                     ^^^^^^^^^^^^^^^^^^
+AttributeError: 'QuerySet' object has no attribute 'customer'
+ERROR 2025-07-16 18:57:37,433 basehttp "GET /admin/review_system/sites/?id__in=2&id__in=3 HTTP/1.1" 500 109258
+INFO 2025-07-16 18:57:55,774 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 60391
+INFO 2025-07-16 18:58:15,769 autoreload E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\review_system\admin.py changed, reloading.
+INFO 2025-07-16 18:58:16,706 autoreload Watching for file changes with StatReloader
+INFO 2025-07-16 18:58:27,465 basehttp "GET /admin/review_system/sites/?id__in=2&id__in=3 HTTP/1.1" 200 13302
+INFO 2025-07-16 19:08:29,373 autoreload E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\review_system\admin.py changed, reloading.
+INFO 2025-07-16 19:08:30,669 autoreload Watching for file changes with StatReloader
+INFO 2025-07-16 19:09:22,029 autoreload E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\review_system\admin.py changed, reloading.
+INFO 2025-07-16 19:09:23,027 autoreload Watching for file changes with StatReloader
+INFO 2025-07-16 19:09:49,011 basehttp - Broken pipe from ('127.0.0.1', 50315)
+INFO 2025-07-16 19:09:56,876 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 61433
+INFO 2025-07-16 19:09:56,922 basehttp - Broken pipe from ('127.0.0.1', 50316)
+INFO 2025-07-16 19:09:58,609 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-16 19:10:10,641 basehttp "GET /admin/review_system/sites/?id__in=74&customer_id=159 HTTP/1.1" 302 0
+INFO 2025-07-16 19:10:32,381 basehttp "GET /admin/review_system/sites/?e=1 HTTP/1.1" 200 34420
+INFO 2025-07-16 19:14:10,890 autoreload E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\review_system\admin.py changed, reloading.
+INFO 2025-07-16 19:14:11,920 autoreload Watching for file changes with StatReloader
+INFO 2025-07-16 19:14:24,791 autoreload E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\review_system\admin.py changed, reloading.
+INFO 2025-07-16 19:14:26,030 autoreload Watching for file changes with StatReloader
+INFO 2025-07-16 19:14:42,793 autoreload E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\review_system\admin.py changed, reloading.
+INFO 2025-07-16 19:14:43,848 autoreload Watching for file changes with StatReloader
+INFO 2025-07-16 19:14:55,303 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 60778
+INFO 2025-07-16 19:15:01,239 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 60778
+INFO 2025-07-16 19:15:02,891 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-16 19:15:20,037 basehttp "GET /admin/review_system/sites/?customer_id=159 HTTP/1.1" 302 0
+INFO 2025-07-16 19:15:42,680 basehttp "GET /admin/review_system/sites/?e=1 HTTP/1.1" 200 34420
+INFO 2025-07-16 19:15:47,434 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 60778
+INFO 2025-07-16 19:15:58,732 autoreload E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\review_system\admin.py changed, reloading.
+INFO 2025-07-16 19:15:59,625 autoreload Watching for file changes with StatReloader
+INFO 2025-07-16 19:16:38,887 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 60391
+INFO 2025-07-16 19:16:40,607 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-16 19:16:54,129 basehttp "GET /admin/review_system/sites/?id__in=74 HTTP/1.1" 200 12803
+INFO 2025-07-16 19:17:28,138 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 60391
+INFO 2025-07-16 19:17:32,004 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-16 19:19:02,729 autoreload E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\review_system\admin.py changed, reloading.
+INFO 2025-07-16 19:19:03,644 autoreload Watching for file changes with StatReloader
+INFO 2025-07-16 19:19:19,138 basehttp "GET /admin/review_system/sites/?id__in=74 HTTP/1.1" 200 12803
+INFO 2025-07-16 19:19:52,898 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 61213
+INFO 2025-07-16 19:20:32,587 autoreload E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\review_system\admin.py changed, reloading.
+INFO 2025-07-16 19:20:33,507 autoreload Watching for file changes with StatReloader
+INFO 2025-07-16 19:20:48,475 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 61161
+INFO 2025-07-16 19:20:50,159 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+ERROR 2025-07-16 19:20:58,815 log Internal Server Error: /admin/review_system/sites/
+Traceback (most recent call last):
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\db\models\fields\__init__.py", line 2112, in get_prep_value
+    return int(value)
+           ^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: '74?customer_id=1'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\contrib\admin\options.py", line 714, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\contrib\admin\sites.py", line 240, in inner
+    return view(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\review_system\admin.py", line 205, in changelist_view
+    .filter(site__id__in=site_ids, status='active')
+     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\db\models\query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\db\models\query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\db\models\query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\db\models\sql\query.py", line 1600, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\db\models\sql\query.py", line 1632, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\db\models\sql\query.py", line 1546, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\db\models\sql\query.py", line 1376, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\db\models\lookups.py", line 30, in __init__
+    self.rhs = self.get_prep_lookup()
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\db\models\lookups.py", line 482, in get_prep_lookup
+    return super().get_prep_lookup()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\db\models\lookups.py", line 297, in get_prep_lookup
+    rhs_value = self.lhs.output_field.get_prep_value(rhs_value)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\db\models\fields\__init__.py", line 2114, in get_prep_value
+    raise e.__class__(
+ValueError: Field 'id' expected a number but got '74?customer_id=1'.
+ERROR 2025-07-16 19:20:58,830 basehttp "GET /admin/review_system/sites/?id__in=74?customer_id=1 HTTP/1.1" 500 175256
+INFO 2025-07-16 19:21:35,702 autoreload E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\review_system\admin.py changed, reloading.
+INFO 2025-07-16 19:21:36,631 autoreload Watching for file changes with StatReloader
+INFO 2025-07-16 19:21:52,389 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 61216
+INFO 2025-07-16 19:21:54,271 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+ERROR 2025-07-16 19:21:59,152 log Internal Server Error: /admin/review_system/sites/
+Traceback (most recent call last):
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\db\models\fields\__init__.py", line 2112, in get_prep_value
+    return int(value)
+           ^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: '74/?customer_id=1'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\contrib\admin\options.py", line 714, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\contrib\admin\sites.py", line 240, in inner
+    return view(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\review_system\admin.py", line 205, in changelist_view
+    .filter(site__id__in=site_ids, status='active')
+     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\db\models\query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\db\models\query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\db\models\query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\db\models\sql\query.py", line 1600, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\db\models\sql\query.py", line 1632, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\db\models\sql\query.py", line 1546, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\db\models\sql\query.py", line 1376, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\db\models\lookups.py", line 30, in __init__
+    self.rhs = self.get_prep_lookup()
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\db\models\lookups.py", line 482, in get_prep_lookup
+    return super().get_prep_lookup()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\db\models\lookups.py", line 297, in get_prep_lookup
+    rhs_value = self.lhs.output_field.get_prep_value(rhs_value)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\db\models\fields\__init__.py", line 2114, in get_prep_value
+    raise e.__class__(
+ValueError: Field 'id' expected a number but got '74/?customer_id=1'.
+ERROR 2025-07-16 19:21:59,161 basehttp "GET /admin/review_system/sites/?id__in=74/?customer_id=1 HTTP/1.1" 500 175292
+INFO 2025-07-16 19:22:24,767 autoreload E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\review_system\admin.py changed, reloading.
+INFO 2025-07-16 19:22:25,699 autoreload Watching for file changes with StatReloader
+INFO 2025-07-16 21:18:00,087 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 60391
+INFO 2025-07-16 21:18:01,781 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-17 09:53:33,602 basehttp "GET /admin/review_system/sites/?id__in=74 HTTP/1.1" 200 12803
+INFO 2025-07-17 10:01:14,547 autoreload E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\review_system\admin.py changed, reloading.
+INFO 2025-07-17 10:01:16,136 autoreload Watching for file changes with StatReloader
+INFO 2025-07-17 10:01:36,315 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 61433
+INFO 2025-07-17 10:01:38,063 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-17 10:01:43,301 basehttp "GET /admin/review_system/sites/?id__in=74&customer_id=159 HTTP/1.1" 302 0
+INFO 2025-07-17 10:02:04,768 basehttp "GET /admin/review_system/sites/?e=1 HTTP/1.1" 200 34420
+INFO 2025-07-17 10:06:07,976 autoreload E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\review_system\admin.py changed, reloading.
+INFO 2025-07-17 10:06:09,028 autoreload Watching for file changes with StatReloader
+INFO 2025-07-17 10:06:29,884 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 61433
+INFO 2025-07-17 10:06:31,495 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-17 10:06:38,496 basehttp "GET /admin/review_system/sites/?id__in=74&customer_id=159 HTTP/1.1" 302 0
+INFO 2025-07-17 10:06:59,445 basehttp "GET /admin/review_system/sites/?e=1 HTTP/1.1" 200 34420
+INFO 2025-07-17 10:12:00,032 autoreload E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\review_system\admin.py changed, reloading.
+INFO 2025-07-17 10:12:01,052 autoreload Watching for file changes with StatReloader
+INFO 2025-07-17 10:12:19,323 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 61572
+INFO 2025-07-17 10:12:20,994 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-17 10:12:44,305 basehttp "GET /admin/review_system/sites/?customer_id=159&id__in=74 HTTP/1.1" 302 0
+INFO 2025-07-17 10:13:07,380 basehttp "GET /admin/review_system/sites/?e=1 HTTP/1.1" 200 34420
+INFO 2025-07-17 10:13:28,147 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 61572
+INFO 2025-07-17 10:13:51,672 basehttp "GET /admin/review_system/sites/?customer_id=159&id__in=74 HTTP/1.1" 302 0
+INFO 2025-07-17 10:14:31,357 basehttp "GET /admin/review_system/sites/?e=1 HTTP/1.1" 200 34420
+INFO 2025-07-17 10:16:30,566 autoreload E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\review_system\admin.py changed, reloading.
+INFO 2025-07-17 10:16:31,554 autoreload Watching for file changes with StatReloader
+INFO 2025-07-17 10:16:50,601 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 64548
+INFO 2025-07-17 10:16:58,418 basehttp "GET /admin/review_system/sites/?customer_id=159&id__in=74&_changelist_filters=customer_id=159&id__in=74 HTTP/1.1" 302 0
+INFO 2025-07-17 10:17:21,675 basehttp "GET /admin/review_system/sites/?e=1 HTTP/1.1" 200 34420
+INFO 2025-07-17 10:17:37,903 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 64548
+INFO 2025-07-17 10:19:39,159 autoreload E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\review_system\admin.py changed, reloading.
+INFO 2025-07-17 10:19:40,113 autoreload Watching for file changes with StatReloader
+INFO 2025-07-17 10:19:57,676 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 60391
+INFO 2025-07-17 10:19:59,396 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-17 10:20:06,578 basehttp "GET /admin/review_system/sites/?id__in=74 HTTP/1.1" 200 12803
+INFO 2025-07-17 10:20:34,194 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 60391
+INFO 2025-07-17 10:21:38,909 autoreload E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\review_system\admin.py changed, reloading.
+INFO 2025-07-17 10:21:40,545 autoreload Watching for file changes with StatReloader
+INFO 2025-07-17 10:21:49,399 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 60778
+INFO 2025-07-17 10:21:51,261 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-17 10:22:05,642 basehttp "GET /admin/review_system/sites/?customer_id=159 HTTP/1.1" 302 0
+INFO 2025-07-17 10:22:29,161 basehttp "GET /admin/review_system/sites/?e=1 HTTP/1.1" 200 34570
+INFO 2025-07-17 10:22:57,700 autoreload E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\review_system\admin.py changed, reloading.
+INFO 2025-07-17 10:22:58,595 autoreload Watching for file changes with StatReloader
+INFO 2025-07-17 10:23:13,807 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 60778
+INFO 2025-07-17 10:23:15,488 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-17 10:24:06,338 basehttp "GET /admin/review_system/sites/?customer_id=159 HTTP/1.1" 302 0
+INFO 2025-07-17 10:24:28,031 basehttp "GET /admin/review_system/sites/?e=1 HTTP/1.1" 200 34570
+INFO 2025-07-17 10:27:13,758 autoreload E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\review_system\admin.py changed, reloading.
+INFO 2025-07-17 10:27:14,674 autoreload Watching for file changes with StatReloader
+INFO 2025-07-17 10:27:34,455 autoreload E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\review_system\admin.py changed, reloading.
+INFO 2025-07-17 10:27:35,356 autoreload Watching for file changes with StatReloader
+INFO 2025-07-17 10:27:47,238 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 58872
+INFO 2025-07-17 10:27:49,308 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-17 10:28:12,900 basehttp "GET /admin/review_system/sites/?customer_id=159&_changelist_filters=customer_id=159 HTTP/1.1" 302 0
+INFO 2025-07-17 10:28:38,411 basehttp "GET /admin/review_system/sites/?e=1 HTTP/1.1" 200 34570
+INFO 2025-07-17 10:28:44,954 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 58872
+INFO 2025-07-17 10:30:33,089 autoreload E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\review_system\admin.py changed, reloading.
+INFO 2025-07-17 10:30:34,019 autoreload Watching for file changes with StatReloader
+INFO 2025-07-17 10:31:03,659 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 60391
+INFO 2025-07-17 10:31:05,567 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-17 10:42:36,932 autoreload E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\review_system\admin.py changed, reloading.
+INFO 2025-07-17 10:42:37,837 autoreload Watching for file changes with StatReloader
+INFO 2025-07-17 10:42:57,443 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 62507
+INFO 2025-07-17 10:42:59,479 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-17 10:43:08,038 basehttp "GET /admin/review_system/sites/?customer=159&_changelist_filters=customer=159 HTTP/1.1" 302 0
+INFO 2025-07-17 10:43:29,769 basehttp "GET /admin/review_system/sites/?e=1 HTTP/1.1" 200 34420
+INFO 2025-07-17 10:46:03,647 autoreload E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\review_system\admin.py changed, reloading.
+INFO 2025-07-17 10:46:04,779 autoreload Watching for file changes with StatReloader
+INFO 2025-07-17 10:49:13,391 autoreload E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\review_system\admin.py changed, reloading.
+INFO 2025-07-17 10:49:14,302 autoreload Watching for file changes with StatReloader
+INFO 2025-07-17 10:49:34,019 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 63610
+INFO 2025-07-17 10:49:35,684 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+ERROR 2025-07-17 10:49:40,275 exception Filtering by siteuser__customer__id__exact not allowed
+Traceback (most recent call last):
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\contrib\admin\options.py", line 714, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\contrib\admin\sites.py", line 240, in inner
+    return view(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\review_system\admin.py", line 213, in changelist_view
+    return super().changelist_view(request, extra_context=extra_context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\contrib\admin\options.py", line 1981, in changelist_view
+    cl = self.get_changelist_instance(request)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\contrib\admin\options.py", line 862, in get_changelist_instance
+    return ChangeList(
+           ^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\contrib\admin\views\main.py", line 144, in __init__
+    self.queryset = self.get_queryset(request)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\contrib\admin\views\main.py", line 539, in get_queryset
+    ) = self.get_filters(request)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\contrib\admin\views\main.py", line 193, in get_filters
+    raise DisallowedModelAdminLookup(f"Filtering by {key} not allowed")
+django.contrib.admin.exceptions.DisallowedModelAdminLookup: Filtering by siteuser__customer__id__exact not allowed
+WARNING 2025-07-17 10:49:40,567 log Bad Request: /admin/review_system/sites/
+WARNING 2025-07-17 10:49:40,568 basehttp "GET /admin/review_system/sites/?siteuser__customer__id__exact=159&siteuser__status__exact=active HTTP/1.1" 400 154658
+INFO 2025-07-17 10:52:01,697 autoreload E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\review_system\admin.py changed, reloading.
+INFO 2025-07-17 10:52:02,602 autoreload Watching for file changes with StatReloader
+INFO 2025-07-17 10:52:22,731 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 63610
+INFO 2025-07-17 10:52:29,694 basehttp "GET /admin/review_system/sites/?siteuser__customer__id__exact=159&siteuser__status__exact=active HTTP/1.1" 200 13313
+INFO 2025-07-17 10:52:53,002 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 63610
+INFO 2025-07-17 10:52:59,432 basehttp "GET /admin/review_system/sites/?siteuser__customer__id__exact=127&siteuser__status__exact=active HTTP/1.1" 200 13340
+INFO 2025-07-17 10:53:31,008 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 63610
+INFO 2025-07-17 10:53:32,861 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-17 10:53:42,283 basehttp "GET /admin/review_system/sites/?siteuser__customer__id__exact=42&siteuser__status__exact=active HTTP/1.1" 200 13755
+INFO 2025-07-17 10:53:56,355 basehttp "GET /admin/review_system/sites/3/change/ HTTP/1.1" 200 13769
+INFO 2025-07-17 10:53:57,942 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-17 11:03:18,501 autoreload E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\review_system\admin.py changed, reloading.
+INFO 2025-07-17 11:03:19,720 autoreload Watching for file changes with StatReloader
+INFO 2025-07-17 11:03:28,398 basehttp "GET /admin/review_system/sites/?siteuser__customer__id__exact=42&siteuser__status__exact=active HTTP/1.1" 200 13755
+INFO 2025-07-17 11:03:37,199 basehttp "GET /admin/review_system/sites/3/change/ HTTP/1.1" 200 13769
+INFO 2025-07-17 11:03:39,137 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-17 11:04:55,851 basehttp "GET /admin/review_system/sites/?siteuser__customer__id__exact=42&siteuser__status__exact=active HTTP/1.1" 200 13755
+INFO 2025-07-17 11:05:10,256 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 63610
+INFO 2025-07-17 11:05:24,143 basehttp "GET /admin/review_system/sites/?siteuser__customer__id__exact=159&siteuser__status__exact=active HTTP/1.1" 200 13313
+INFO 2025-07-17 11:05:40,125 basehttp "GET /admin/review_system/sites/74/change/ HTTP/1.1" 200 13802
+INFO 2025-07-17 11:05:41,728 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-17 11:06:11,990 basehttp "GET /admin/review_system/sites/?siteuser__customer__id__exact=159&siteuser__status__exact=active HTTP/1.1" 200 13313
+INFO 2025-07-17 11:07:05,765 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 63610
+INFO 2025-07-17 11:07:17,992 basehttp "GET /admin/review_system/sites/?siteuser__customer__id__exact=158&siteuser__status__exact=active HTTP/1.1" 200 13342
+INFO 2025-07-17 11:07:25,939 basehttp "GET /admin/review_system/sites/15/change/ HTTP/1.1" 200 13832
+INFO 2025-07-17 11:07:27,868 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-17 11:07:36,382 basehttp "GET /admin/review_system/sites/?siteuser__customer__id__exact=158&siteuser__status__exact=active HTTP/1.1" 200 13342
+INFO 2025-07-17 11:07:50,688 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 63610
+INFO 2025-07-17 11:07:58,497 basehttp "GET /admin/review_system/sites/?siteuser__customer__id__exact=130&siteuser__status__exact=active HTTP/1.1" 200 13799
+INFO 2025-07-17 11:08:14,839 basehttp "GET /admin/review_system/sites/73/change/ HTTP/1.1" 200 13833
+INFO 2025-07-17 11:08:16,516 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-17 11:08:22,212 basehttp "GET /admin/review_system/sites/?siteuser__customer__id__exact=130&siteuser__status__exact=active HTTP/1.1" 200 13799
+INFO 2025-07-17 11:08:27,557 basehttp "GET /admin/review_system/sites/68/change/ HTTP/1.1" 200 13839
+INFO 2025-07-17 11:08:29,311 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-17 11:11:14,642 basehttp "GET /admin/review_system/sites/?siteuser__customer__id__exact=130&siteuser__status__exact=active HTTP/1.1" 200 13799
+INFO 2025-07-17 11:43:14,942 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 63610
+INFO 2025-07-17 11:43:16,603 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-17 11:55:06,698 basehttp "GET /admin/review_system/sites/?siteuser__customer__id__exact=26&siteuser__status__exact=active HTTP/1.1" 200 13349
+INFO 2025-07-17 12:32:57,128 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 63610
+INFO 2025-07-17 12:33:10,366 basehttp "GET /admin/review_system/sites/?siteuser__customer__id__exact=42&siteuser__status__exact=active HTTP/1.1" 200 13755
+INFO 2025-07-17 14:50:58,236 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 63610
+INFO 2025-07-17 14:51:09,654 basehttp "GET /admin/review_system/sites/?siteuser__customer__id__exact=127&siteuser__status__exact=active HTTP/1.1" 200 13340
+INFO 2025-07-17 16:45:34,910 autoreload Watching for file changes with StatReloader
+INFO 2025-07-17 16:45:46,998 basehttp - Broken pipe from ('127.0.0.1', 50410)
+INFO 2025-07-17 16:45:59,287 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 63610
+WARNING 2025-07-17 16:45:59,599 log Not Found: /favicon.ico
+WARNING 2025-07-17 16:45:59,608 basehttp "GET /favicon.ico HTTP/1.1" 404 3896
+INFO 2025-07-17 16:46:07,861 basehttp "GET /admin/review_system/sites/?siteuser__customer__id__exact=159&siteuser__status__exact=active HTTP/1.1" 200 13313
+INFO 2025-07-17 16:46:24,907 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 63610
+INFO 2025-07-17 16:46:33,400 basehttp "GET /admin/review_system/sites/?siteuser__customer__id__exact=42&siteuser__status__exact=active HTTP/1.1" 200 13755
+INFO 2025-07-17 16:46:51,305 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 63610
+INFO 2025-07-17 17:20:05,847 basehttp "GET /admin/review_system/sites/?siteuser__customer__id__exact=158&siteuser__status__exact=active HTTP/1.1" 200 13342
+INFO 2025-07-17 17:20:31,439 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 63610
+INFO 2025-07-17 17:20:43,007 basehttp "GET /admin/review_system/sites/?siteuser__customer__id__exact=42&siteuser__status__exact=active HTTP/1.1" 200 13755
+INFO 2025-07-17 17:21:25,272 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 63610
+INFO 2025-07-17 17:21:42,330 basehttp "GET /admin/review_system/sites/?siteuser__customer__id__exact=42&siteuser__status__exact=active HTTP/1.1" 200 13755
+INFO 2025-07-17 17:22:42,252 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 63610
+INFO 2025-07-17 17:22:54,438 basehttp "GET /admin/review_system/sites/?siteuser__customer__id__exact=127&siteuser__status__exact=active HTTP/1.1" 200 13340
+INFO 2025-07-17 17:23:20,714 basehttp - Broken pipe from ('127.0.0.1', 51603)
+INFO 2025-07-17 17:23:22,261 basehttp "GET /admin/review_system/sites/2/change/ HTTP/1.1" 200 13821
+INFO 2025-07-17 17:23:23,941 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-17 17:23:52,035 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 63610
+INFO 2025-07-17 17:23:53,748 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-17 17:24:26,369 basehttp "GET /admin/review_system/sites/?siteuser__customer__id__exact=159&siteuser__status__exact=active HTTP/1.1" 200 13313
+INFO 2025-07-17 17:24:32,197 basehttp "GET /admin/review_system/sites/74/change/ HTTP/1.1" 200 13802
+INFO 2025-07-17 17:24:33,844 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-17 17:27:15,556 basehttp "GET /admin/review_system/sites/?siteuser__customer__id__exact=159&siteuser__status__exact=active HTTP/1.1" 200 13313
+INFO 2025-07-17 17:27:40,932 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 63610
+INFO 2025-07-17 17:27:55,856 basehttp "GET /admin/review_system/sites/?siteuser__customer__id__exact=127&siteuser__status__exact=active HTTP/1.1" 200 13340
+INFO 2025-07-17 17:28:12,779 basehttp "GET /admin/review_system/sites/2/change/ HTTP/1.1" 200 13821
+INFO 2025-07-17 17:28:14,445 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-17 17:28:29,800 basehttp "GET /admin/review_system/sites/?siteuser__customer__id__exact=127&siteuser__status__exact=active HTTP/1.1" 200 13340
+INFO 2025-07-17 17:28:42,969 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 63610
+INFO 2025-07-17 17:28:50,796 basehttp "GET /admin/review_system/sites/?siteuser__customer__id__exact=130&siteuser__status__exact=active HTTP/1.1" 200 13799
+INFO 2025-07-17 17:28:57,909 basehttp "GET /admin/review_system/sites/73/change/ HTTP/1.1" 200 13833
+INFO 2025-07-17 17:28:59,584 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-17 17:29:05,736 basehttp "GET /admin/review_system/sites/?siteuser__customer__id__exact=130&siteuser__status__exact=active HTTP/1.1" 200 13799
+INFO 2025-07-17 17:29:11,455 basehttp "GET /admin/review_system/sites/68/change/ HTTP/1.1" 200 13839
+INFO 2025-07-17 17:29:14,169 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-17 17:29:19,582 basehttp "GET /admin/review_system/sites/?siteuser__customer__id__exact=130&siteuser__status__exact=active HTTP/1.1" 200 13799
+INFO 2025-07-17 17:29:34,204 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 63610
+INFO 2025-07-17 17:29:42,900 basehttp "GET /admin/review_system/sites/?siteuser__customer__id__exact=42&siteuser__status__exact=active HTTP/1.1" 200 13755
+INFO 2025-07-17 17:29:56,843 basehttp "GET /admin/review_system/sites/2/change/ HTTP/1.1" 200 13821
+INFO 2025-07-17 17:29:58,482 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-17 17:42:28,431 basehttp "GET /admin/review_system/sites/?siteuser__customer__id__exact=42&siteuser__status__exact=active HTTP/1.1" 200 13755
+INFO 2025-07-17 18:00:31,087 autoreload E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\review_system\admin.py changed, reloading.
+INFO 2025-07-17 18:00:32,912 autoreload Watching for file changes with StatReloader
+INFO 2025-07-17 18:00:52,686 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 63610
+INFO 2025-07-17 18:00:58,734 basehttp "GET /admin/review_system/sites/?siteuser__customer__id__exact=159&siteuser__status__exact=active HTTP/1.1" 200 13293
+INFO 2025-07-17 18:01:04,785 basehttp "GET /admin/review_system/sites/74/change/ HTTP/1.1" 200 13802
+INFO 2025-07-17 18:01:06,489 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-17 18:01:12,047 basehttp "GET /admin/review_system/sites/?siteuser__customer__id__exact=159&siteuser__status__exact=active HTTP/1.1" 200 13293
+INFO 2025-07-17 18:02:00,387 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 63610
+INFO 2025-07-17 18:02:05,261 basehttp "GET /admin/review_system/sites/?siteuser__customer__id__exact=158&siteuser__status__exact=active HTTP/1.1" 200 13308
+INFO 2025-07-17 18:02:26,533 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 63610
+INFO 2025-07-17 18:02:32,578 basehttp "GET /admin/review_system/sites/?siteuser__customer__id__exact=127&siteuser__status__exact=active HTTP/1.1" 200 13306
+INFO 2025-07-17 18:02:38,253 basehttp "GET /admin/review_system/sites/2/change/ HTTP/1.1" 200 13821
+INFO 2025-07-17 18:02:39,925 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-17 18:02:52,465 basehttp "GET /admin/review_system/sites/?siteuser__customer__id__exact=127&siteuser__status__exact=active HTTP/1.1" 200 13306
+INFO 2025-07-17 18:03:25,643 autoreload E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\review_system\admin.py changed, reloading.
+INFO 2025-07-17 18:03:26,596 autoreload Watching for file changes with StatReloader
+INFO 2025-07-17 18:03:47,434 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 63610
+INFO 2025-07-17 18:03:49,116 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-17 18:04:56,199 basehttp "GET /admin/review_system/sites/?siteuser__customer__id__exact=159&siteuser__status__exact=active HTTP/1.1" 200 13313
+INFO 2025-07-17 18:05:11,589 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 63610
+INFO 2025-07-17 18:05:32,538 basehttp "GET /admin/review_system/sites/?siteuser__customer__id__exact=127&siteuser__status__exact=active HTTP/1.1" 200 13340
+INFO 2025-07-17 18:05:38,990 basehttp "GET /admin/review_system/sites/2/change/ HTTP/1.1" 200 13821
+INFO 2025-07-17 18:05:40,756 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-17 18:12:31,520 autoreload E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\review_system\admin.py changed, reloading.
+INFO 2025-07-17 18:12:32,464 autoreload Watching for file changes with StatReloader
+INFO 2025-07-17 18:12:51,806 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 61544
+INFO 2025-07-17 18:12:53,435 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-17 18:13:04,359 basehttp "GET /admin/review_system/sites/?id__in=74&ctx_customer=159 HTTP/1.1" 302 0
+INFO 2025-07-17 18:13:27,330 basehttp "GET /admin/review_system/sites/?e=1 HTTP/1.1" 200 34196
+INFO 2025-07-17 18:13:43,999 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 61544
+INFO 2025-07-17 18:14:13,311 autoreload E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\review_system\admin.py changed, reloading.
+INFO 2025-07-17 18:14:14,274 autoreload Watching for file changes with StatReloader
+INFO 2025-07-17 18:14:47,226 basehttp "GET /admin/review_system/sites/?id__in=74&ctx_customer=159 HTTP/1.1" 302 0
+INFO 2025-07-17 18:15:11,484 basehttp "GET /admin/review_system/sites/?e=1 HTTP/1.1" 200 34420
+INFO 2025-07-17 18:15:46,482 autoreload E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\review_system\admin.py changed, reloading.
+INFO 2025-07-17 18:15:47,390 autoreload Watching for file changes with StatReloader
+INFO 2025-07-17 18:16:04,368 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 63610
+INFO 2025-07-17 18:16:10,451 basehttp "GET /admin/review_system/sites/?siteuser__customer__id__exact=159&siteuser__status__exact=active HTTP/1.1" 200 13313
+INFO 2025-07-17 18:17:01,889 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 63610
+INFO 2025-07-17 18:17:12,424 basehttp "GET /admin/review_system/sites/?siteuser__customer__id__exact=127&siteuser__status__exact=active HTTP/1.1" 200 13340
+INFO 2025-07-17 18:17:20,324 basehttp "GET /admin/review_system/sites/2/change/ HTTP/1.1" 200 13821
+INFO 2025-07-17 18:17:22,050 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-17 18:17:27,907 basehttp "GET /admin/review_system/sites/?siteuser__customer__id__exact=127&siteuser__status__exact=active HTTP/1.1" 200 13340
+INFO 2025-07-17 18:27:38,364 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 63610
+INFO 2025-07-17 18:27:58,486 basehttp "GET /admin/review_system/sites/?siteuser__customer__id__exact=159&siteuser__status__exact=active HTTP/1.1" 200 13313
+INFO 2025-07-17 18:28:05,253 basehttp "GET /admin/review_system/sites/74/change/ HTTP/1.1" 200 13803
+INFO 2025-07-17 18:28:06,887 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-17 18:28:30,507 basehttp "GET /admin/review_system/sites/?siteuser__customer__id__exact=159&siteuser__status__exact=active HTTP/1.1" 200 13313
+INFO 2025-07-17 18:29:13,028 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 63610
+INFO 2025-07-17 18:33:16,773 autoreload E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\review_system\admin.py changed, reloading.
+INFO 2025-07-17 18:33:17,719 autoreload Watching for file changes with StatReloader
+INFO 2025-07-17 18:34:09,919 autoreload E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\review_system\admin.py changed, reloading.
+INFO 2025-07-17 18:34:10,922 autoreload Watching for file changes with StatReloader
+INFO 2025-07-17 18:35:02,338 autoreload E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\review_system\admin.py changed, reloading.
+INFO 2025-07-17 18:35:03,232 autoreload Watching for file changes with StatReloader
+INFO 2025-07-17 18:35:10,609 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 50906
+INFO 2025-07-17 18:35:12,310 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-17 18:35:17,788 basehttp "GET /admin/review_system/sites/ HTTP/1.1" 200 40928
+INFO 2025-07-17 18:35:19,471 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-17 18:35:38,217 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 50906
+INFO 2025-07-17 18:35:44,359 basehttp "GET /admin/review_system/sites/ HTTP/1.1" 200 40928
+INFO 2025-07-17 18:35:46,011 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-17 19:15:00,857 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 50906
+INFO 2025-07-17 19:15:02,515 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-17 19:48:51,880 autoreload E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\review_system\models.py changed, reloading.
+INFO 2025-07-17 19:48:53,313 autoreload Watching for file changes with StatReloader
+INFO 2025-07-17 19:49:29,131 autoreload Watching for file changes with StatReloader
+INFO 2025-07-18 13:50:04,668 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 51607
+INFO 2025-07-18 15:24:17,149 autoreload E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\review_system\admin.py changed, reloading.
+INFO 2025-07-18 15:24:18,788 autoreload Watching for file changes with StatReloader
+INFO 2025-07-18 15:24:45,947 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 57932
+INFO 2025-07-18 15:24:45,977 basehttp "GET /static/admin/css/base.css HTTP/1.1" 304 0
+INFO 2025-07-18 15:24:45,978 basehttp "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+INFO 2025-07-18 15:24:45,978 basehttp "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+INFO 2025-07-18 15:24:45,990 basehttp "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+INFO 2025-07-18 15:24:45,990 basehttp "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+INFO 2025-07-18 15:24:46,038 basehttp "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+INFO 2025-07-18 15:24:46,038 basehttp "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+INFO 2025-07-18 15:24:46,041 basehttp "GET /static/admin/js/core.js HTTP/1.1" 304 0
+INFO 2025-07-18 15:24:46,041 basehttp "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+INFO 2025-07-18 15:24:46,043 basehttp "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+INFO 2025-07-18 15:24:46,044 basehttp "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+INFO 2025-07-18 15:24:46,046 basehttp "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+INFO 2025-07-18 15:24:46,047 basehttp "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+INFO 2025-07-18 15:24:46,070 basehttp "GET /static/admin/img/search.svg HTTP/1.1" 304 0
+INFO 2025-07-18 15:24:46,074 basehttp "GET /static/admin/img/icon-yes.svg HTTP/1.1" 304 0
+INFO 2025-07-18 15:24:46,099 basehttp "GET /static/admin/js/theme.js HTTP/1.1" 304 0
+INFO 2025-07-18 15:24:46,105 basehttp "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+INFO 2025-07-18 15:24:46,109 basehttp "GET /static/admin/js/filters.js HTTP/1.1" 304 0
+INFO 2025-07-18 15:24:47,660 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-18 15:24:47,725 basehttp "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 304 0
+INFO 2025-07-18 15:24:47,725 basehttp "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+INFO 2025-07-18 15:24:47,726 basehttp "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+INFO 2025-07-18 15:25:05,215 basehttp "GET /admin/review_system/sites/?customer_id=166 HTTP/1.1" 302 0
+ERROR 2025-07-18 15:25:07,141 log Internal Server Error: /admin/review_system/sites/
+Traceback (most recent call last):
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\contrib\admin\options.py", line 714, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\contrib\admin\sites.py", line 240, in inner
+    return view(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\review_system\admin.py", line 239, in changelist_view
+    extra_context["title"] = _("Manage Sites for %s") % full_name
+                             ^
+NameError: name '_' is not defined
+ERROR 2025-07-18 15:25:07,148 basehttp "GET /admin/review_system/sites/?e=1 HTTP/1.1" 500 108116
+INFO 2025-07-18 15:25:36,660 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 57932
+ERROR 2025-07-18 15:25:42,557 log Internal Server Error: /admin/review_system/sites/
+Traceback (most recent call last):
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\contrib\admin\options.py", line 714, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\contrib\admin\sites.py", line 240, in inner
+    return view(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\review_system\admin.py", line 239, in changelist_view
+    extra_context["title"] = _("Manage Sites for %s") % full_name
+                             ^
+NameError: name '_' is not defined
+ERROR 2025-07-18 15:25:42,560 basehttp "GET /admin/review_system/sites/?customer_id=159 HTTP/1.1" 500 108260
+INFO 2025-07-18 15:27:23,735 autoreload E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\review_system\admin.py changed, reloading.
+INFO 2025-07-18 15:27:24,933 autoreload Watching for file changes with StatReloader
+INFO 2025-07-18 15:27:43,753 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 57932
+INFO 2025-07-18 15:27:49,464 basehttp "GET /admin/review_system/sites/?customer_id=166 HTTP/1.1" 302 0
+INFO 2025-07-18 15:28:14,215 basehttp "GET /admin/review_system/sites/?e=1 HTTP/1.1" 200 25496
+INFO 2025-07-18 15:33:28,964 basehttp "GET /admin/review_system/sites/88/change/?customer_id=166 HTTP/1.1" 200 13843
+INFO 2025-07-18 15:33:29,014 basehttp "GET /static/admin/css/forms.css HTTP/1.1" 304 0
+INFO 2025-07-18 15:33:29,020 basehttp "GET /static/admin/css/widgets.css HTTP/1.1" 304 0
+INFO 2025-07-18 15:33:29,023 basehttp "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 304 0
+INFO 2025-07-18 15:33:29,026 basehttp "GET /static/admin/js/change_form.js HTTP/1.1" 304 0
+INFO 2025-07-18 15:33:30,676 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-18 15:34:06,345 basehttp "GET /admin/review_system/sites/?e=1 HTTP/1.1" 200 25496
+INFO 2025-07-18 15:35:13,288 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 57932
+INFO 2025-07-18 15:35:14,931 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-18 15:35:26,351 basehttp "GET /admin/review_system/sites/?customer_id=127 HTTP/1.1" 302 0
+INFO 2025-07-18 15:35:51,631 basehttp "GET /admin/review_system/sites/?e=1 HTTP/1.1" 200 25444
+INFO 2025-07-18 15:35:57,966 basehttp "GET /admin/review_system/sites/73/change/?customer_id=127 HTTP/1.1" 302 0
+INFO 2025-07-18 15:35:59,791 basehttp "GET /admin/ HTTP/1.1" 200 13891
+INFO 2025-07-18 15:35:59,945 basehttp "GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+INFO 2025-07-18 15:36:00,014 basehttp "GET /static/admin/img/icon-alert.svg HTTP/1.1" 200 504
+INFO 2025-07-18 15:36:00,070 basehttp "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+INFO 2025-07-18 15:36:00,088 basehttp "GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 200 392
+INFO 2025-07-18 15:36:41,318 basehttp - Broken pipe from ('127.0.0.1', 63967)
+INFO 2025-07-18 15:36:50,813 basehttp "GET /admin/review_system/sites/?e=1 HTTP/1.1" 200 25444
+INFO 2025-07-18 15:37:05,873 basehttp "GET /admin/review_system/sites/2/change/?customer_id=127 HTTP/1.1" 200 13804
+INFO 2025-07-18 15:37:07,616 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-18 15:38:02,711 basehttp "GET /admin/review_system/sites/?e=1 HTTP/1.1" 200 25444
+INFO 2025-07-18 15:38:27,722 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 57932
+INFO 2025-07-18 15:39:42,137 basehttp "GET /admin/review_system/sites/?customer_id=42 HTTP/1.1" 302 0
+INFO 2025-07-18 15:40:06,564 basehttp "GET /admin/review_system/sites/?e=1 HTTP/1.1" 200 25379
+INFO 2025-07-18 15:40:13,630 basehttp "GET /admin/review_system/sites/73/change/?customer_id=42 HTTP/1.1" 302 0
+INFO 2025-07-18 15:40:15,484 basehttp "GET /admin/ HTTP/1.1" 200 13891
+INFO 2025-07-18 15:40:41,582 basehttp "GET /admin/review_system/sites/?e=1 HTTP/1.1" 200 25379
+INFO 2025-07-18 15:41:28,539 basehttp "GET /admin/review_system/sites/68/change/?customer_id=42 HTTP/1.1" 302 0
+INFO 2025-07-18 15:41:30,357 basehttp "GET /admin/ HTTP/1.1" 200 13891
+INFO 2025-07-18 15:41:57,438 basehttp "GET /admin/review_system/sites/?e=1 HTTP/1.1" 200 25379
+INFO 2025-07-18 15:42:23,165 basehttp "GET /admin/review_system/sites/62/change/?customer_id=42 HTTP/1.1" 302 0
+INFO 2025-07-18 15:42:24,994 basehttp "GET /admin/ HTTP/1.1" 200 13891
+INFO 2025-07-18 15:43:08,377 basehttp "GET /admin/review_system/sites/?e=1 HTTP/1.1" 200 25379
+INFO 2025-07-18 15:43:16,304 basehttp "GET /admin/review_system/sites/88/change/?customer_id=42 HTTP/1.1" 302 0
+INFO 2025-07-18 15:43:18,102 basehttp "GET /admin/ HTTP/1.1" 200 13891
+INFO 2025-07-18 15:43:46,866 basehttp "GET /admin/review_system/sites/?e=1 HTTP/1.1" 200 25379
+INFO 2025-07-18 15:44:22,485 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 57932
+INFO 2025-07-18 15:44:35,419 basehttp "GET /admin/review_system/sites/?customer_id=166 HTTP/1.1" 302 0
+INFO 2025-07-18 15:45:00,156 basehttp "GET /admin/review_system/sites/?e=1 HTTP/1.1" 200 25496
+INFO 2025-07-18 15:45:07,578 basehttp "GET /admin/review_system/sites/88/change/?customer_id=166 HTTP/1.1" 200 13843
+INFO 2025-07-18 15:45:09,232 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-18 15:45:33,650 basehttp "GET /admin/review_system/sites/?e=1 HTTP/1.1" 200 25496
+INFO 2025-07-18 15:45:44,338 basehttp "GET /admin/review_system/sites/87/change/?customer_id=166 HTTP/1.1" 200 13845
+INFO 2025-07-18 15:45:45,985 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-18 15:46:16,296 basehttp "GET /admin/review_system/sites/?e=1 HTTP/1.1" 200 25496
+INFO 2025-07-18 15:46:22,208 basehttp "GET /admin/review_system/sites/75/change/?customer_id=166 HTTP/1.1" 302 0
+INFO 2025-07-18 15:46:23,952 basehttp "GET /admin/ HTTP/1.1" 200 13891
+INFO 2025-07-18 15:46:51,155 basehttp "GET /admin/review_system/sites/?e=1 HTTP/1.1" 200 25496
+INFO 2025-07-18 15:47:08,707 basehttp "GET /admin/review_system/sites/2/change/?customer_id=166 HTTP/1.1" 302 0
+INFO 2025-07-18 15:47:10,490 basehttp "GET /admin/ HTTP/1.1" 200 13890
+INFO 2025-07-18 15:47:38,292 basehttp "GET /admin/review_system/sites/?e=1 HTTP/1.1" 200 25496
+INFO 2025-07-18 15:47:49,925 basehttp "GET /admin/review_system/sites/88/change/?customer_id=166 HTTP/1.1" 200 13843
+INFO 2025-07-18 15:47:51,623 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-18 15:48:20,261 basehttp "GET /admin/review_system/sites/?e=1 HTTP/1.1" 200 25496
+INFO 2025-07-18 15:48:28,247 basehttp "GET /admin/review_system/sites/86/change/?customer_id=166 HTTP/1.1" 200 13845
+INFO 2025-07-18 15:48:30,028 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-18 15:48:57,748 basehttp "GET /admin/review_system/sites/?e=1 HTTP/1.1" 200 25496
+INFO 2025-07-18 15:54:08,574 autoreload E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\review_system\admin.py changed, reloading.
+INFO 2025-07-18 15:54:09,605 autoreload Watching for file changes with StatReloader
+INFO 2025-07-18 15:54:25,344 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 57708
+INFO 2025-07-18 15:54:27,098 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-18 15:54:35,527 basehttp "GET /admin/review_system/sites/?customer=166 HTTP/1.1" 302 0
+INFO 2025-07-18 15:55:00,405 basehttp "GET /admin/review_system/sites/?e=1 HTTP/1.1" 200 25496
+INFO 2025-07-18 15:56:06,084 basehttp - Broken pipe from ('127.0.0.1', 64924)
+INFO 2025-07-18 16:01:08,573 autoreload E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\review_system\admin.py changed, reloading.
+INFO 2025-07-18 16:01:09,599 autoreload Watching for file changes with StatReloader
+INFO 2025-07-18 16:02:55,189 basehttp - Broken pipe from ('127.0.0.1', 65355)
+INFO 2025-07-18 16:03:03,296 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 59220
+INFO 2025-07-18 16:03:04,925 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-18 16:03:26,689 basehttp - Broken pipe from ('127.0.0.1', 65300)
+INFO 2025-07-18 16:05:02,810 basehttp "GET /admin/review_system/sites/?_changelist_filters=customer%3D166 HTTP/1.1" 302 0
+INFO 2025-07-18 16:05:27,377 basehttp "GET /admin/review_system/sites/?e=1 HTTP/1.1" 200 25496
+ERROR 2025-07-18 16:09:21,535 log Internal Server Error: /admin/review_system/sites/88/change/
+Traceback (most recent call last):
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\contrib\admin\options.py", line 714, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\views\decorators\cache.py", line 81, in _view_wrapper
+    add_never_cache_headers(response)
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\utils\cache.py", line 292, in add_never_cache_headers
+    patch_response_headers(response, cache_timeout=-1)
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\utils\cache.py", line 283, in patch_response_headers
+    if not response.has_header("Expires"):
+           ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'has_header'
+ERROR 2025-07-18 16:09:21,544 basehttp "GET /admin/review_system/sites/88/change/?customer_id=166 HTTP/1.1" 500 106844
+INFO 2025-07-18 16:09:51,521 basehttp "GET /admin/review_system/sites/?e=1 HTTP/1.1" 200 25496
+INFO 2025-07-18 16:11:40,537 autoreload E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\review_system\admin.py changed, reloading.
+INFO 2025-07-18 16:11:41,612 autoreload Watching for file changes with StatReloader
+INFO 2025-07-18 16:12:22,325 autoreload E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\review_system\admin.py changed, reloading.
+INFO 2025-07-18 16:12:23,279 autoreload Watching for file changes with StatReloader
+INFO 2025-07-18 16:12:41,264 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 57988
+INFO 2025-07-18 16:12:42,933 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-18 16:12:51,805 basehttp "GET /admin/review_system/sites/?customer=166 HTTP/1.1" 302 0
+INFO 2025-07-18 16:12:54,155 basehttp "GET /admin/review_system/sites/?e=1 HTTP/1.1" 200 21179
+INFO 2025-07-18 16:16:52,648 autoreload E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\review_system\admin.py changed, reloading.
+INFO 2025-07-18 16:16:53,817 autoreload Watching for file changes with StatReloader
+INFO 2025-07-18 16:17:30,825 autoreload E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\review_system\admin.py changed, reloading.
+INFO 2025-07-18 16:17:31,825 autoreload Watching for file changes with StatReloader
+INFO 2025-07-18 16:17:51,423 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 64540
+INFO 2025-07-18 16:17:53,843 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-18 16:18:02,562 basehttp "GET /admin/review_system/sites/?siteuser__customer__id__exact=166&siteuser__status__exact=active HTTP/1.1" 200 14340
+INFO 2025-07-18 16:18:25,845 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 64540
+INFO 2025-07-18 16:18:35,234 basehttp "GET /admin/review_system/sites/?siteuser__customer__id__exact=127&siteuser__status__exact=active HTTP/1.1" 200 13340
+INFO 2025-07-18 16:18:50,837 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 64540
+INFO 2025-07-18 16:19:01,040 basehttp "GET /admin/review_system/sites/?siteuser__customer__id__exact=42&siteuser__status__exact=active HTTP/1.1" 200 13755
+INFO 2025-07-18 16:19:08,438 basehttp "GET /admin/review_system/sites/2/change/ HTTP/1.1" 200 13821
+INFO 2025-07-18 16:19:10,164 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-18 16:19:16,860 basehttp "GET /admin/review_system/sites/?siteuser__customer__id__exact=42&siteuser__status__exact=active HTTP/1.1" 200 13755
+INFO 2025-07-18 16:19:22,964 basehttp "GET /admin/review_system/sites/3/change/ HTTP/1.1" 200 13769
+INFO 2025-07-18 16:19:24,614 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-18 16:19:31,385 basehttp "GET /admin/review_system/sites/?siteuser__customer__id__exact=42&siteuser__status__exact=active HTTP/1.1" 200 13755
+INFO 2025-07-18 16:19:45,794 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 64540
+INFO 2025-07-18 16:20:01,878 basehttp "GET /admin/review_system/sites/?siteuser__customer__id__exact=166&siteuser__status__exact=active HTTP/1.1" 200 14340
+INFO 2025-07-18 16:20:06,978 basehttp "GET /admin/review_system/sites/88/change/ HTTP/1.1" 200 13850
+INFO 2025-07-18 16:20:08,673 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-18 16:20:15,592 basehttp "GET /admin/review_system/sites/?siteuser__customer__id__exact=166&siteuser__status__exact=active HTTP/1.1" 200 14340
+INFO 2025-07-18 16:20:20,704 basehttp "GET /admin/review_system/sites/87/change/ HTTP/1.1" 200 13852
+INFO 2025-07-18 16:20:22,401 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-18 16:20:32,506 basehttp "GET /admin/review_system/sites/?siteuser__customer__id__exact=166&siteuser__status__exact=active HTTP/1.1" 200 14340
+INFO 2025-07-18 16:21:13,570 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 64540
+INFO 2025-07-18 16:21:20,591 basehttp "GET /admin/review_system/sites/?siteuser__customer__id__exact=127&siteuser__status__exact=active HTTP/1.1" 200 13340
+INFO 2025-07-18 16:21:25,682 basehttp "GET /admin/review_system/sites/2/change/ HTTP/1.1" 200 13821
+INFO 2025-07-18 16:21:27,379 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-18 16:21:32,879 basehttp "GET /admin/review_system/sites/?siteuser__customer__id__exact=127&siteuser__status__exact=active HTTP/1.1" 200 13340
+INFO 2025-07-18 16:29:56,360 autoreload E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\review_system\admin.py changed, reloading.
+INFO 2025-07-18 16:29:57,590 autoreload Watching for file changes with StatReloader
+INFO 2025-07-18 16:30:48,733 autoreload E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\review_system\admin.py changed, reloading.
+INFO 2025-07-18 16:30:49,738 autoreload Watching for file changes with StatReloader
+INFO 2025-07-18 16:31:04,374 autoreload E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\review_system\admin.py changed, reloading.
+INFO 2025-07-18 16:31:05,309 autoreload Watching for file changes with StatReloader
+INFO 2025-07-18 16:31:24,407 autoreload E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\review_system\admin.py changed, reloading.
+INFO 2025-07-18 16:31:25,340 autoreload Watching for file changes with StatReloader
+INFO 2025-07-18 16:31:43,331 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 64348
+INFO 2025-07-18 16:31:44,937 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-18 16:31:54,542 basehttp "GET /admin/review_system/sites/?siteuser__customer__id__exact=159&siteuser__status__exact=active HTTP/1.1" 200 13343
+INFO 2025-07-18 16:32:06,326 basehttp "GET /admin/review_system/sites/74/change/?siteuser__customer__id__exact=159 HTTP/1.1" 200 13321
+INFO 2025-07-18 16:32:08,128 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-18 16:32:17,440 basehttp "GET /admin/review_system/sites/?siteuser__customer__id__exact=159&siteuser__status__exact=active HTTP/1.1" 200 13343
+INFO 2025-07-18 16:32:39,878 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 64348
+INFO 2025-07-18 16:32:46,043 basehttp "GET /admin/review_system/sites/?siteuser__customer__id__exact=127&siteuser__status__exact=active HTTP/1.1" 200 13370
+INFO 2025-07-18 16:32:52,791 basehttp "GET /admin/review_system/sites/2/change/?siteuser__customer__id__exact=127 HTTP/1.1" 200 13347
+INFO 2025-07-18 16:32:54,504 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-18 16:33:23,429 basehttp "GET /admin/review_system/sites/?siteuser__customer__id__exact=127&siteuser__status__exact=active HTTP/1.1" 200 13370
+INFO 2025-07-18 16:33:39,789 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 64348
+INFO 2025-07-18 16:33:52,980 basehttp "GET /admin/review_system/sites/?siteuser__customer__id__exact=44&siteuser__status__exact=active HTTP/1.1" 200 13353
+INFO 2025-07-18 16:34:31,743 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 64348
+INFO 2025-07-18 16:34:33,379 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-18 16:34:42,854 basehttp "GET /admin/review_system/sites/?siteuser__customer__id__exact=42&siteuser__status__exact=active HTTP/1.1" 200 13813
+INFO 2025-07-18 16:34:48,741 basehttp "GET /admin/review_system/sites/3/change/?siteuser__customer__id__exact=42 HTTP/1.1" 200 13277
+INFO 2025-07-18 16:34:50,410 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-18 16:35:01,089 basehttp "GET /admin/review_system/sites/?siteuser__customer__id__exact=42&siteuser__status__exact=active HTTP/1.1" 200 13813
+INFO 2025-07-18 16:35:06,467 basehttp "GET /admin/review_system/sites/2/change/?siteuser__customer__id__exact=42 HTTP/1.1" 200 13333
+INFO 2025-07-18 16:35:08,218 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-18 16:35:14,490 basehttp "GET /admin/review_system/sites/?siteuser__customer__id__exact=42&siteuser__status__exact=active HTTP/1.1" 200 13813
+INFO 2025-07-18 16:35:24,277 basehttp "GET /admin/review_system/sites/2/change/?siteuser__customer__id__exact=42 HTTP/1.1" 200 13333
+INFO 2025-07-18 16:35:25,969 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-18 16:35:30,847 basehttp "GET /admin/review_system/sites/?siteuser__customer__id__exact=42&siteuser__status__exact=active HTTP/1.1" 200 13813
+INFO 2025-07-18 16:35:36,145 basehttp "GET /admin/review_system/sites/3/change/?siteuser__customer__id__exact=42 HTTP/1.1" 200 13277
+INFO 2025-07-18 16:35:37,800 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-18 16:35:46,840 basehttp "GET /admin/review_system/sites/?siteuser__customer__id__exact=42&siteuser__status__exact=active HTTP/1.1" 200 13813
+INFO 2025-07-18 16:36:03,461 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 64348
+INFO 2025-07-18 16:36:39,858 basehttp "GET /admin/review_system/sites/ HTTP/1.1" 200 34175
+INFO 2025-07-18 16:37:00,424 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 64348
+INFO 2025-07-18 16:37:02,329 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-18 16:39:36,124 basehttp "GET /admin/review_system/sites/?siteuser__customer__id__exact=42&siteuser__status__exact=active HTTP/1.1" 200 13813
+INFO 2025-07-18 16:39:38,931 basehttp - Broken pipe from ('127.0.0.1', 50135)
+INFO 2025-07-18 16:40:10,796 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 64348
+INFO 2025-07-18 16:40:12,543 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-18 16:41:38,132 autoreload E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\review_system\admin.py changed, reloading.
+INFO 2025-07-18 16:41:39,118 autoreload Watching for file changes with StatReloader
+ERROR 2025-07-18 16:41:56,752 log Internal Server Error: /admin/review_system/sites/
+Traceback (most recent call last):
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\db\models\options.py", line 681, in get_field
+    return self.fields_map[field_name]
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'get_plan'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\contrib\admin\utils.py", line 289, in lookup_field
+    f = _get_non_gfk_field(opts, name)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\contrib\admin\utils.py", line 322, in _get_non_gfk_field
+    field = opts.get_field(name)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\db\models\options.py", line 683, in get_field
+    raise FieldDoesNotExist(
+django.core.exceptions.FieldDoesNotExist: Sites has no field named 'get_plan'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\contrib\admin\templatetags\base.py", line 45, in render
+    return super().render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\template\library.py", line 258, in render
+    _dict = self.func(*resolved_args, **resolved_kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 343, in result_list
+    "results": list(results(cl)),
+               ^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 319, in results
+    yield ResultList(None, items_for_result(cl, res, None))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 310, in __init__
+    super().__init__(*items)
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 217, in items_for_result
+    f, attr, value = lookup_field(field_name, result, cl.model_admin)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\contrib\admin\utils.py", line 298, in lookup_field
+    value = attr(obj)
+            ^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\review_system\admin.py", line 262, in get_plan
+    print(sub.status)
+          ^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'status'
+ERROR 2025-07-18 16:41:56,789 basehttp "GET /admin/review_system/sites/?siteuser__customer__id__exact=42&siteuser__status__exact=active HTTP/1.1" 500 458632
+INFO 2025-07-18 16:50:51,530 autoreload E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\review_system\admin.py changed, reloading.
+INFO 2025-07-18 16:50:52,815 autoreload Watching for file changes with StatReloader
+INFO 2025-07-18 16:51:11,599 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 64348
+INFO 2025-07-18 16:51:22,662 basehttp "GET /admin/review_system/sites/?siteuser__customer__id__exact=127&siteuser__status__exact=active HTTP/1.1" 200 13363
+INFO 2025-07-18 16:51:38,364 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 64348
+INFO 2025-07-18 16:51:45,954 basehttp "GET /admin/review_system/sites/?siteuser__customer__id__exact=42&siteuser__status__exact=active HTTP/1.1" 200 13808
+INFO 2025-07-18 16:51:54,654 basehttp "GET /admin/review_system/sites/3/change/?siteuser__customer__id__exact=42 HTTP/1.1" 200 13277
+INFO 2025-07-18 16:51:56,358 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-18 16:52:03,889 basehttp "GET /admin/review_system/sites/?siteuser__customer__id__exact=42&siteuser__status__exact=active HTTP/1.1" 200 13808
+INFO 2025-07-18 16:53:01,795 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 64348
+INFO 2025-07-18 16:53:03,454 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-18 16:53:12,059 basehttp "GET /admin/review_system/sites/?siteuser__customer__id__exact=158&siteuser__status__exact=active HTTP/1.1" 200 13372
+INFO 2025-07-18 16:53:33,084 basehttp "GET /admin/review_system/sites/15/change/?siteuser__customer__id__exact=158 HTTP/1.1" 200 13349
+INFO 2025-07-18 16:53:34,838 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-18 16:54:41,220 autoreload E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\review_system\admin.py changed, reloading.
+INFO 2025-07-18 16:54:42,227 autoreload Watching for file changes with StatReloader
+INFO 2025-07-18 16:54:50,020 basehttp "GET /admin/review_system/sites/15/change/?siteuser__customer__id__exact=158 HTTP/1.1" 200 13313
+INFO 2025-07-18 16:54:51,687 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-18 16:54:57,760 basehttp "GET /admin/review_system/sites/?siteuser__customer__id__exact=158&siteuser__status__exact=active HTTP/1.1" 200 13372
+INFO 2025-07-18 16:55:14,586 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 64348
+INFO 2025-07-18 16:55:20,459 basehttp "GET /admin/review_system/sites/?siteuser__customer__id__exact=127&siteuser__status__exact=active HTTP/1.1" 200 13363
+INFO 2025-07-18 16:55:27,310 basehttp "GET /admin/review_system/sites/2/change/?siteuser__customer__id__exact=127 HTTP/1.1" 200 13311
+INFO 2025-07-18 16:55:29,006 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-18 16:55:41,599 basehttp "GET /admin/review_system/sites/?siteuser__customer__id__exact=127&siteuser__status__exact=active HTTP/1.1" 200 13363
+INFO 2025-07-18 16:57:53,932 autoreload E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\review_system\admin.py changed, reloading.
+INFO 2025-07-18 16:57:54,897 autoreload Watching for file changes with StatReloader
+INFO 2025-07-18 16:58:16,195 basehttp "GET /admin/review_system/sites/2/change/?siteuser__customer__id__exact=127 HTTP/1.1" 200 13275
+INFO 2025-07-18 16:58:18,716 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-18 16:58:57,052 autoreload E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\review_system\admin.py changed, reloading.
+INFO 2025-07-18 16:58:58,014 autoreload Watching for file changes with StatReloader
+INFO 2025-07-18 16:59:07,065 basehttp "GET /admin/review_system/sites/2/change/?siteuser__customer__id__exact=127 HTTP/1.1" 200 13823
+INFO 2025-07-18 16:59:08,738 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-18 16:59:15,330 basehttp - Broken pipe from ('127.0.0.1', 51495)
+INFO 2025-07-18 16:59:34,036 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 64348
+INFO 2025-07-18 16:59:35,665 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-18 16:59:42,511 basehttp "GET /admin/review_system/sites/?siteuser__customer__id__exact=159&siteuser__status__exact=active HTTP/1.1" 200 13343
+INFO 2025-07-18 16:59:48,881 basehttp "GET /admin/review_system/sites/74/change/?siteuser__customer__id__exact=159 HTTP/1.1" 200 13803
+INFO 2025-07-18 16:59:50,557 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-18 17:00:03,735 basehttp "GET /admin/review_system/sites/?siteuser__customer__id__exact=159&siteuser__status__exact=active HTTP/1.1" 200 13343
+INFO 2025-07-18 17:00:17,865 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 64348
+INFO 2025-07-18 17:00:24,365 basehttp "GET /admin/review_system/sites/?siteuser__customer__id__exact=130&siteuser__status__exact=active HTTP/1.1" 200 13859
+INFO 2025-07-18 17:00:32,063 basehttp "GET /admin/review_system/sites/73/change/?siteuser__customer__id__exact=130 HTTP/1.1" 200 13834
+INFO 2025-07-18 17:00:33,743 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-18 17:00:48,097 basehttp "GET /admin/review_system/sites/?siteuser__customer__id__exact=130&siteuser__status__exact=active HTTP/1.1" 200 13859
+INFO 2025-07-18 17:00:54,818 basehttp "GET /admin/review_system/sites/68/change/?siteuser__customer__id__exact=130 HTTP/1.1" 200 13839
+INFO 2025-07-18 17:00:56,493 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-18 17:01:04,715 basehttp "GET /admin/review_system/sites/?siteuser__customer__id__exact=130&siteuser__status__exact=active HTTP/1.1" 200 13859
+INFO 2025-07-18 17:01:18,455 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 64348
+INFO 2025-07-18 17:02:36,540 basehttp "GET /admin/review_system/sites/?siteuser__customer__id__exact=127&siteuser__status__exact=active HTTP/1.1" 200 13363
+INFO 2025-07-18 17:02:42,064 basehttp "GET /admin/review_system/sites/2/change/?siteuser__customer__id__exact=127 HTTP/1.1" 200 13823
+INFO 2025-07-18 17:02:43,751 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-18 17:02:54,347 basehttp "GET /admin/review_system/sites/?siteuser__customer__id__exact=127&siteuser__status__exact=active HTTP/1.1" 200 13363
+INFO 2025-07-18 17:04:11,842 basehttp - Broken pipe from ('127.0.0.1', 51496)
+INFO 2025-07-18 17:04:23,590 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 64348
+INFO 2025-07-18 17:04:25,255 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-18 17:04:43,677 basehttp "GET /admin/review_system/sites/?siteuser__customer__id__exact=42&siteuser__status__exact=active HTTP/1.1" 200 13808
+INFO 2025-07-18 17:04:52,330 basehttp "GET /admin/review_system/sites/3/change/?siteuser__customer__id__exact=42 HTTP/1.1" 200 13758
+INFO 2025-07-18 17:04:53,969 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-18 17:05:00,587 basehttp "GET /admin/review_system/sites/?siteuser__customer__id__exact=42&siteuser__status__exact=active HTTP/1.1" 200 13808
+INFO 2025-07-18 17:05:08,220 basehttp "GET /admin/review_system/sites/2/change/?siteuser__customer__id__exact=42 HTTP/1.1" 200 13821
+INFO 2025-07-18 17:05:09,868 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-18 17:05:22,437 basehttp "GET /admin/review_system/sites/?siteuser__customer__id__exact=42&siteuser__status__exact=active HTTP/1.1" 200 13808
+INFO 2025-07-18 17:05:38,438 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 64348
+INFO 2025-07-18 17:06:49,189 basehttp "GET /admin/review_system/sites/?siteuser__customer__id__exact=54&siteuser__status__exact=active HTTP/1.1" 200 13360
+INFO 2025-07-18 17:07:03,244 basehttp "GET /admin/review_system/sites/62/change/?siteuser__customer__id__exact=54 HTTP/1.1" 200 13835
+INFO 2025-07-18 17:07:04,918 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-18 17:07:16,602 basehttp "GET /admin/review_system/sites/?siteuser__customer__id__exact=54&siteuser__status__exact=active HTTP/1.1" 200 13360
+INFO 2025-07-18 17:07:30,638 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 64348
+INFO 2025-07-18 17:08:00,990 basehttp "GET /admin/review_system/sites/?siteuser__customer__id__exact=26&siteuser__status__exact=active HTTP/1.1" 200 13378
+INFO 2025-07-18 17:08:11,935 basehttp "GET /admin/review_system/sites/38/change/?siteuser__customer__id__exact=26 HTTP/1.1" 200 13846
+INFO 2025-07-18 17:08:13,580 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-18 17:08:22,904 basehttp "GET /admin/review_system/sites/?siteuser__customer__id__exact=26&siteuser__status__exact=active HTTP/1.1" 200 13378
+INFO 2025-07-18 17:08:37,865 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 64348
+INFO 2025-07-18 17:09:32,917 basehttp "GET /admin/review_system/sites/?siteuser__customer__id__exact=2&siteuser__status__exact=active HTTP/1.1" 200 13357
+INFO 2025-07-18 17:09:47,027 basehttp "GET /admin/review_system/sites/17/change/?siteuser__customer__id__exact=2 HTTP/1.1" 200 13816
+INFO 2025-07-18 17:09:48,672 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-18 17:09:59,343 basehttp "GET /admin/review_system/sites/?siteuser__customer__id__exact=2&siteuser__status__exact=active HTTP/1.1" 200 13357
+INFO 2025-07-18 17:10:12,588 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 64348
+INFO 2025-07-18 17:10:22,916 basehttp "GET /admin/review_system/sites/?siteuser__customer__id__exact=127&siteuser__status__exact=active HTTP/1.1" 200 13363
+INFO 2025-07-18 17:10:36,568 basehttp "GET /admin/review_system/sites/2/change/?siteuser__customer__id__exact=127 HTTP/1.1" 200 13823
+INFO 2025-07-18 17:10:38,113 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-18 17:10:45,986 basehttp "GET /admin/review_system/sites/?siteuser__customer__id__exact=127&siteuser__status__exact=active HTTP/1.1" 200 13363
+INFO 2025-07-18 17:11:02,087 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 64254
+INFO 2025-07-18 17:11:45,937 basehttp "GET /admin/review_system/sites/?siteuser__customer__id__exact=42&siteuser__status__exact=active HTTP/1.1" 200 13808
+INFO 2025-07-18 17:12:05,283 basehttp "GET /admin/review_system/sites/2/change/?siteuser__customer__id__exact=42 HTTP/1.1" 200 13821
+INFO 2025-07-18 17:12:06,884 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-18 17:12:16,826 basehttp "GET /admin/review_system/sites/?siteuser__customer__id__exact=42&siteuser__status__exact=active HTTP/1.1" 200 13808
+INFO 2025-07-18 17:12:28,433 autoreload E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\review_system\admin.py changed, reloading.
+INFO 2025-07-18 17:12:29,389 autoreload Watching for file changes with StatReloader
+INFO 2025-07-18 17:12:37,161 basehttp "GET /admin/review_system/sites/?siteuser__customer__id__exact=42&siteuser__status__exact=active HTTP/1.1" 200 14066
+INFO 2025-07-18 17:16:25,194 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 63610
+INFO 2025-07-18 17:18:55,029 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 63610
+INFO 2025-07-18 17:18:57,248 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-18 17:25:02,094 basehttp "GET /admin/review_system/sites/?siteuser__customer__id__exact=159&siteuser__status__exact=active HTTP/1.1" 200 13576
+INFO 2025-07-18 17:25:09,850 basehttp "GET /admin/review_system/sites/74/change/?siteuser__customer__id__exact=159 HTTP/1.1" 200 13803
+INFO 2025-07-18 17:25:11,535 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-18 17:25:30,647 basehttp "GET /admin/review_system/sites/?siteuser__customer__id__exact=159&siteuser__status__exact=active HTTP/1.1" 200 13576
+INFO 2025-07-18 17:26:48,619 autoreload E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\review_system\admin.py changed, reloading.
+INFO 2025-07-18 17:26:49,539 autoreload Watching for file changes with StatReloader
+INFO 2025-07-18 17:27:11,867 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 63610
+INFO 2025-07-18 17:27:17,782 basehttp "GET /admin/review_system/sites/?siteuser__customer__id__exact=130&siteuser__status__exact=active HTTP/1.1" 200 13859
+INFO 2025-07-18 17:27:28,140 basehttp "GET /admin/review_system/sites/73/change/?siteuser__customer__id__exact=130 HTTP/1.1" 200 13834
+INFO 2025-07-18 17:27:29,790 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-18 17:27:48,853 basehttp "GET /admin/review_system/sites/?siteuser__customer__id__exact=130&siteuser__status__exact=active HTTP/1.1" 200 13859
+INFO 2025-07-18 17:27:55,028 basehttp "GET /admin/review_system/sites/68/change/?siteuser__customer__id__exact=130 HTTP/1.1" 200 13839
+INFO 2025-07-18 17:27:56,636 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-18 17:28:03,000 basehttp "GET /admin/review_system/sites/?siteuser__customer__id__exact=130&siteuser__status__exact=active HTTP/1.1" 200 13859
+INFO 2025-07-18 17:28:26,018 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 63610
+INFO 2025-07-18 17:28:40,881 basehttp "GET /admin/review_system/sites/?siteuser__customer__id__exact=127&siteuser__status__exact=active HTTP/1.1" 200 13363
+INFO 2025-07-18 17:28:51,457 basehttp "GET /admin/review_system/sites/2/change/?siteuser__customer__id__exact=127 HTTP/1.1" 200 13823
+INFO 2025-07-18 17:28:53,092 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-18 17:29:00,006 basehttp "GET /admin/review_system/sites/?siteuser__customer__id__exact=127&siteuser__status__exact=active HTTP/1.1" 200 13363
+INFO 2025-07-18 17:29:18,652 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 63610
+INFO 2025-07-18 17:29:26,771 basehttp "GET /admin/review_system/sites/?siteuser__customer__id__exact=42&siteuser__status__exact=active HTTP/1.1" 200 13808
+INFO 2025-07-18 17:30:33,891 basehttp "GET /admin/review_system/sites/2/change/?siteuser__customer__id__exact=42 HTTP/1.1" 200 13821
+INFO 2025-07-18 17:30:35,540 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-18 17:30:41,844 basehttp "GET /admin/review_system/sites/?siteuser__customer__id__exact=42&siteuser__status__exact=active HTTP/1.1" 200 13808
+INFO 2025-07-18 17:30:55,698 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 63610
+INFO 2025-07-18 17:47:51,821 basehttp "GET /admin/review_system/sites/?siteuser__customer__id__exact=42&siteuser__status__exact=active HTTP/1.1" 200 13808
+INFO 2025-07-18 17:48:13,314 basehttp "GET /admin/review_system/sites/2/change/?siteuser__customer__id__exact=42 HTTP/1.1" 200 13821
+INFO 2025-07-18 17:48:14,952 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-18 17:48:32,131 basehttp "GET /admin/review_system/sites/?siteuser__customer__id__exact=42&siteuser__status__exact=active HTTP/1.1" 200 13808
+INFO 2025-07-18 17:48:39,835 basehttp "GET /admin/review_system/sites/3/change/?siteuser__customer__id__exact=42 HTTP/1.1" 200 13758
+INFO 2025-07-18 17:48:41,506 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-18 17:48:55,850 basehttp "GET /admin/review_system/sites/?siteuser__customer__id__exact=42&siteuser__status__exact=active HTTP/1.1" 200 13808
+INFO 2025-07-18 17:50:18,513 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 64541
+INFO 2025-07-18 17:50:20,151 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-18 17:53:20,710 basehttp "GET /admin/review_system/sites/?siteuser__customer__id__exact=42&siteuser__status__exact=active HTTP/1.1" 200 13828
+INFO 2025-07-18 17:53:27,135 basehttp "GET /admin/review_system/sites/3/change/?siteuser__customer__id__exact=42 HTTP/1.1" 200 13811
+INFO 2025-07-18 17:53:28,665 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-18 17:53:52,366 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 64541
+INFO 2025-07-18 17:53:54,086 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-18 17:56:20,198 autoreload E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\review_system\admin.py changed, reloading.
+INFO 2025-07-18 17:56:21,295 autoreload Watching for file changes with StatReloader
+INFO 2025-07-18 17:56:31,538 basehttp "GET /admin/review_system/sites/?siteuser__customer__id__exact=167&siteuser__status__exact=active HTTP/1.1" 200 14428
+INFO 2025-07-18 17:56:40,271 basehttp "GET /admin/review_system/sites/89/change/?siteuser__customer__id__exact=167 HTTP/1.1" 200 13850
+INFO 2025-07-18 17:56:41,877 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-18 17:56:48,547 basehttp "GET /admin/review_system/sites/?siteuser__customer__id__exact=167&siteuser__status__exact=active HTTP/1.1" 200 14428
+INFO 2025-07-18 17:56:55,259 basehttp "GET /admin/review_system/sites/86/change/?siteuser__customer__id__exact=167 HTTP/1.1" 200 13852
+INFO 2025-07-18 17:56:56,886 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-18 17:57:06,044 basehttp "GET /admin/review_system/sites/?siteuser__customer__id__exact=167&siteuser__status__exact=active HTTP/1.1" 200 14428
+INFO 2025-07-18 17:57:19,901 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 64541
