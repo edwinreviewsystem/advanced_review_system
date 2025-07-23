@@ -88,7 +88,7 @@ class CustomerAdminForm(forms.ModelForm):
 
     def __init__(self, *args, **kwargs):
         super(CustomerAdminForm, self).__init__(*args, **kwargs)
-        optional_fields = ['last_name', 'date_start', 'date_end', 'plan_price', 'profile_img', 'password']
+        optional_fields = ['last_name', 'profile_img', 'password']
         for field in optional_fields:
             self.fields[field].required = False
 
@@ -112,10 +112,7 @@ class CustomerAdmin(admin.ModelAdmin):
         'email',
         'first_name',
         'last_name',
-        'date_start',
-        'date_end',
         'password',
-        'plan_price',
         'platform',
         'activated',
         'profile_img',

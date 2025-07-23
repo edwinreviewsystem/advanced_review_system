@@ -11,6 +11,7 @@ from django.db.models import Avg
 import logging
 import json 
 from django.http import JsonResponse
+from django.utils import timezone 
 
 logger = logging.getLogger('review_system')
 logger.setLevel(logging.DEBUG)
@@ -31,17 +32,43 @@ class ProductReviewsListAPI(APIView):
             )
 
         try:
-            customer = Customer.objects.filter(domain_name=domain).first()
-            plan_id = customer.plan.id if customer and customer.plan else None
+            # Step 1: Find Site by domain
+            site = Sites.objects.filter(domain=domain).first()
+            if not site:
+                return Response(
+                    {"status": status.HTTP_404_NOT_FOUND, "message": "Site not found."},
+                    status=status.HTTP_404_NOT_FOUND
+                )
 
-            # --- Fetch Business Reviews ---
+            # Step 2: Get active PlanSubscription for that site
+            plan_subscription = PlanSubscription.objects.filter(
+                site=site,
+                status='active'
+            ).select_related('plan').first()
+
+            if not plan_subscription or not plan_subscription.plan:
+                return Response(
+                    {"status": status.HTTP_404_NOT_FOUND, "message": "No active plan subscription found."},
+                    status=status.HTTP_404_NOT_FOUND
+                )
+
+            plan = plan_subscription.plan
+            plan_id = plan.id
+            is_trial = plan_subscription.is_trial
+            trial_ends_at = plan_subscription.trial_ends_at
+            today = timezone.now().date()
+
+            # Step 3: Business Reviews (common for all plans)
             business_reviews_qs = ProductReviews.objects.filter(
-                domain=domain, status="approve", product_name__isnull=True
+                site=site,
+                status="approve",
+                product_name__isnull=True
             ).order_by("-created_at")
 
-            # For Free plan, limit to 6 reviews
+            # Freemium Logic: Only 6 reviews if trial expired
             if plan_id == 1:
-                business_reviews_qs = business_reviews_qs[:6]
+                if not is_trial or (trial_ends_at and today > trial_ends_at):
+                    business_reviews_qs = business_reviews_qs[:6]
 
             total_business_reviews = business_reviews_qs.count()
             business_avg_rating = business_reviews_qs.aggregate(
@@ -50,7 +77,7 @@ class ProductReviewsListAPI(APIView):
             business_avg_rating = round(business_avg_rating, 1)
             business_reviews_data = ReviewSerializer(business_reviews_qs, many=True).data
 
-            # --- Base Response Data ---
+            # Step 4: Base response
             response_data = {
                 "business": {
                     "average_star_rating": business_avg_rating,
@@ -59,11 +86,13 @@ class ProductReviewsListAPI(APIView):
                 }
             }
 
-            # --- Fetch Product & Google Reviews for Paid Plans ---
-            if plan_id and plan_id > 1:
+            # Step 5: Premium Logic (plan_id > 1) - Show Product & Google reviews
+            if plan_id > 1:
                 # Product Reviews
                 product_reviews_qs = ProductReviews.objects.filter(
-                    domain=domain, status="approve", product_name__isnull=False
+                    site=site,
+                    status="approve",
+                    product_name__isnull=False
                 ).order_by("-created_at")
                 total_product_reviews = product_reviews_qs.count()
                 product_avg_rating = product_reviews_qs.aggregate(
@@ -74,7 +103,7 @@ class ProductReviewsListAPI(APIView):
 
                 # Google Reviews
                 google_reviews_qs = Google_Reviews.objects.filter(
-                    domain_name=domain
+                    site=site
                 ).order_by("-created_at")
                 total_google_reviews = google_reviews_qs.count()
                 google_avg_rating = google_reviews_qs.aggregate(
@@ -83,7 +112,6 @@ class ProductReviewsListAPI(APIView):
                 google_avg_rating = round(google_avg_rating, 1)
                 google_reviews_data = ReviewSerializer(google_reviews_qs, many=True).data
 
-                # Add to response
                 response_data.update({
                     "product": {
                         "average_star_rating": product_avg_rating,
@@ -100,19 +128,19 @@ class ProductReviewsListAPI(APIView):
             return Response(
                 {
                     "status": status.HTTP_200_OK,
-                    "message": "Reviews Retrieved successfully!",
+                    "message": "Reviews retrieved successfully!",
                     "data": response_data,
                 },
-                status=status.HTTP_200_OK,
+                status=status.HTTP_200_OK
             )
 
         except Exception as e:
             return Response(
                 {
-                    "status": status.HTTP_400_BAD_REQUEST,
-                    "message": f"Error while retrieving Reviews: {str(e)}",
+                    "status": status.HTTP_500_INTERNAL_SERVER_ERROR,
+                    "message": f"Error while retrieving reviews: {str(e)}",
                 },
-                status=status.HTTP_400_BAD_REQUEST,
+                status=status.HTTP_500_INTERNAL_SERVER_ERROR
             )
         
     def post(self, request):
@@ -126,53 +154,64 @@ class ProductReviewsListAPI(APIView):
             image = request.FILES.get('image')
             source = request.data.get('source')
 
+            # --- Step 1: Fetch Site using domain ---
+            site = Sites.objects.filter(domain=domain).first()
+            if not site:
+                return Response({
+                    "status": status.HTTP_400_BAD_REQUEST,
+                    "message": f"No site found with domain '{domain}'",
+                }, status=status.HTTP_400_BAD_REQUEST)
+
+            # --- Step 2: Fetch active PlanSubscription to get plan_id ---
+            plan_subscription = PlanSubscription.objects.filter(site=site, status="active").select_related('plan').first()
+            plan_id = plan_subscription.plan.id if plan_subscription and plan_subscription.plan else None
+
+            # --- Step 3: Load Review Settings ---
+            settings = ReviewSettings.objects.filter(domain=domain).first()
+            auto_approve = settings.auto_approve if settings and settings.auto_approve is not None else True
+
+            # --- Step 4: Prepare serializer input data ---
             new_data = {
-                 'product_name': product_name,
-                 'domain':domain,
-                 'star_rating': star_rating,
-                 'email':email,
-                 'name': name,
-                 'review': review,
-                 'image':image if image else None,
-                 'source':source
+                'product_name': product_name,
+                'domain': domain,
+                'star_rating': star_rating,
+                'email': email,
+                'name': name,
+                'review': review,
+                'image': image if image else None,
+                'source': source
             }
 
             serializer = ReviewSerializer(data=new_data)
 
-            # Fetch ReviewSettings
-            settings = ReviewSettings.objects.filter(domain=domain).first()
-            auto_approve = settings.auto_approve if settings and settings.auto_approve is not None else True
-
             if serializer.is_valid():
-                # Default status value
+                # Determine status based on plan
                 status_value = ProductReviews.APPROVE if auto_approve else ProductReviews.PENDING
 
-                # Fetch customer to determine plan
-                customer = Customer.objects.filter(domain_name=domain).first()
-                if customer and customer.plan:
-                    # If plan is free
-                    if customer.plan.id == 1:
-                        # Count all reviews
-                        total_reviews = ProductReviews.objects.filter(domain=domain).count()
-                        print("total_reviews", total_reviews)
-                        if total_reviews >= 6:
-                            status_value = ProductReviews.PENDING
+                if plan_id == 1:  # Freemium plan
+                    total_reviews = ProductReviews.objects.filter(site=site).count()
+                    if total_reviews >= 6:
+                        status_value = ProductReviews.PENDING  # Limit reviews
 
-                serializer.validated_data["status"] = status_value
-                review_instance = serializer.save()
+                # Save review with status and site foreign key
+                serializer.validated_data['status'] = status_value
+                review_instance = ProductReviews.objects.create(
+                    **serializer.validated_data,
+                    site=site
+                )
 
                 return Response({
                     "status": status.HTTP_201_CREATED,
                     "message": "New Review added!",
                     "data": ReviewSerializer(review_instance).data,
                 }, status=status.HTTP_201_CREATED)
-            
+
             return Response({
                 "status": status.HTTP_400_BAD_REQUEST,
                 "message": "Error in data validation",
                 "data": serializer.errors,
             }, status=status.HTTP_400_BAD_REQUEST)
-        
+
         except Exception as e:
             return Response({
                 "status": status.HTTP_400_BAD_REQUEST,
