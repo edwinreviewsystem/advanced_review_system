@@ -160,16 +160,12 @@ class Customer(models.Model):
         ("collaborator", "collaborator"),
     ]
 
-    # plan = models.ForeignKey(Plans, on_delete=models.SET_NULL, default=1, null=True, verbose_name="Plan Info")
     role = models.CharField(max_length=25, choices=ROLE_CHOICES, default="")
     domain_name = models.CharField(max_length=255, blank=True, null=True)
     email = models.EmailField(max_length=255, unique=True)
     first_name = models.CharField(max_length=50, null=True)
     last_name = models.CharField(max_length=50, null=True, blank=True)
-    # date_start = models.DateField(null=True, blank=True)
-    # date_end = models.DateField(null=True, blank=True)
     password = models.CharField(max_length=128, null=True)
-    # plan_price = models.DecimalField(max_digits=10, decimal_places=2, null=True, blank=True)
     activated = models.BooleanField(default=True)
     profile_img = models.ImageField(upload_to='profile_images/', default='', null=True, blank=True)
     platform = models.CharField(max_length=255, blank=True, null=True, default="")

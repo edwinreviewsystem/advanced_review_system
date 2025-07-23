@@ -79,9 +79,6 @@ class CustomDateInput(forms.DateInput):
 
 
 class CustomerAdminForm(forms.ModelForm):
-    date_start = forms.DateField(widget=CustomDateInput(format='%d-%m-%Y'))
-    date_end = forms.DateField(widget=CustomDateInput(format='%d-%m-%Y'))
-
     class Meta:
         model = Customer
         fields = '__all__'
@@ -97,7 +94,7 @@ class CustomerAdminForm(forms.ModelForm):
         if password and not password.startswith('$2y$'):
             salt = bcrypt.gensalt()
             hashed_password = bcrypt.hashpw(password.encode('utf-8'), salt)
-            return hashed_password.decode('utf-8')  # Store it as a string
+            return hashed_password.decode('utf-8')
         return password
 
 @admin.register(Plans)

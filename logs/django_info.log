@@ -11283,3 +11283,44 @@ INFO 2025-07-23 17:29:34,648 basehttp "GET /static/admin/img/tooltag-add.svg HTT
 INFO 2025-07-23 17:29:34,661 basehttp "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 200 581
 WARNING 2025-07-23 17:29:34,818 log Not Found: /favicon.ico
 WARNING 2025-07-23 17:29:34,819 basehttp "GET /favicon.ico HTTP/1.1" 404 3896
+INFO 2025-07-23 17:31:49,110 autoreload Watching for file changes with StatReloader
+INFO 2025-07-23 20:20:02,757 basehttp "GET /admin/review_system/customer/172/change/ HTTP/1.1" 302 0
+INFO 2025-07-23 20:20:05,037 basehttp "GET /admin/ HTTP/1.1" 200 13864
+INFO 2025-07-23 20:20:05,073 basehttp "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+INFO 2025-07-23 20:20:05,085 basehttp "GET /static/admin/img/icon-alert.svg HTTP/1.1" 304 0
+INFO 2025-07-23 20:20:05,087 basehttp "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+INFO 2025-07-23 20:20:05,089 basehttp "GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 304 0
+INFO 2025-07-23 20:20:24,131 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 65467
+INFO 2025-07-23 20:20:43,778 basehttp "GET /admin/review_system/customer/173/change/ HTTP/1.1" 200 15088
+INFO 2025-07-23 20:20:45,555 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-23 20:21:07,922 basehttp "POST /admin/review_system/customer/173/change/ HTTP/1.1" 200 15174
+INFO 2025-07-23 20:21:09,556 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-23 20:22:52,930 basehttp "POST /admin/review_system/customer/173/change/ HTTP/1.1" 200 15174
+INFO 2025-07-23 20:22:54,553 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-23 20:22:58,673 basehttp "GET /admin/review_system/customer/173/change/ HTTP/1.1" 200 15088
+INFO 2025-07-23 20:23:17,076 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 65467
+INFO 2025-07-23 20:23:29,999 basehttp "GET /admin/review_system/customer/173/change/ HTTP/1.1" 200 15088
+INFO 2025-07-23 20:23:31,610 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-23 20:24:00,235 basehttp "POST /admin/review_system/customer/173/change/ HTTP/1.1" 200 15179
+INFO 2025-07-23 20:24:01,890 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-23 20:26:30,761 autoreload E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\review_system\models.py changed, reloading.
+INFO 2025-07-23 20:26:32,555 autoreload Watching for file changes with StatReloader
+INFO 2025-07-23 20:31:42,538 autoreload E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\review_system\admin.py changed, reloading.
+INFO 2025-07-23 20:31:43,673 autoreload Watching for file changes with StatReloader
+INFO 2025-07-23 20:31:55,100 basehttp "GET /admin/review_system/customer HTTP/1.1" 301 0
+INFO 2025-07-23 20:32:07,561 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 65467
+INFO 2025-07-23 20:32:09,235 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-23 20:32:14,727 basehttp "GET /admin/review_system/customer/add/ HTTP/1.1" 200 14749
+INFO 2025-07-23 20:32:16,347 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-23 20:32:27,097 basehttp "POST /admin/review_system/customer/add/ HTTP/1.1" 302 0
+INFO 2025-07-23 20:32:39,148 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 66370
+INFO 2025-07-23 20:32:40,902 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-23 20:32:46,535 basehttp "GET /admin/review_system/customer/175/change/ HTTP/1.1" 200 15024
+INFO 2025-07-23 20:32:48,131 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-23 20:32:54,275 basehttp "POST /admin/review_system/customer/175/change/ HTTP/1.1" 302 0
+INFO 2025-07-23 20:33:07,517 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 66372
+INFO 2025-07-23 20:33:09,209 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-23 20:35:26,460 basehttp "POST /admin/review_system/customer/ HTTP/1.1" 200 10434
+INFO 2025-07-23 20:35:32,255 basehttp "POST /admin/review_system/customer/ HTTP/1.1" 302 0
+INFO 2025-07-23 20:35:45,321 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 64675
+INFO 2025-07-23 20:35:46,972 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
