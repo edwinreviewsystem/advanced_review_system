@@ -44,19 +44,69 @@ class ReviewSettingsAdmin(admin.ModelAdmin):
     list_filter = ('auto_approve',)
     list_display_links = ('id', 'auto_approve')
 
+class ReviewFormDesignForm(forms.ModelForm):
+    class Meta:
+        model = ReviewFormDesign
+        fields = '__all__'
+
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        if 'site' in self.fields:
+            self.fields['site'].widget.can_add_related = False
+            self.fields['site'].widget.can_change_related = False
+            self.fields['site'].widget.can_view_related = False
 
 @admin.register(ReviewFormDesign)
 class ReviewFormDesignAdmin(admin.ModelAdmin):
-    list_display = ('domain', 'generate_button', 'generate_button_text', 'button_color', 'button_text_color', 'label_text_color', 'background_color', 'updated_at')
-    search_fields = ('domain',)
+    form = ReviewFormDesignForm
+    list_display = (
+        'get_domain',
+        'generate_button',
+        'generate_button_text',
+        'button_color',
+        'button_text_color',
+        'label_text_color',
+        'background_color',
+        'updated_at'
+    )
+    fields = (
+        'generate_button',
+        'generate_button_text',
+        'button_color',
+        'button_text_color',
+        'label_text_color',
+        'background_color',
+    )
+    search_fields = ('site__domain',)
     list_filter = ('updated_at',)
 
+    def get_domain(self, obj):
+        return obj.site.domain if obj.site and obj.site.domain else "-"
+    get_domain.short_description = "Domain"
+
+class ReviewListDesignForm(forms.ModelForm):
+    class Meta:
+        model = ReviewListDesign
+        fields = '__all__'
+
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        if 'site' in self.fields:
+            self.fields['site'].widget.can_add_related = False
+            self.fields['site'].widget.can_change_related = False
+            self.fields['site'].widget.can_view_related = False
 
 @admin.register(ReviewListDesign)
 class ReviewListDesignAdmin(admin.ModelAdmin):
-    list_display = ('domain', 'primary_btn_color', 'btn_border_radius', 'primary_button_position', 'updated_at')
+    form = ReviewListDesignForm
+    list_display = (
+        'get_domain',
+        'primary_btn_color',
+        'btn_border_radius',
+        'primary_button_position',
+        'updated_at'
+    )
     fields = (
-        "domain",
         "primary_btn_color",
         "btn_border_radius",
         "primary_button_position",
@@ -65,8 +115,12 @@ class ReviewListDesignAdmin(admin.ModelAdmin):
         "reviewer_name_color",
         "review_color",
     )
-    search_fields = ('domain',)
+    search_fields = ('site__domain',)
     list_filter = ('updated_at',)
+
+    def get_domain(self, obj):
+        return obj.site.domain if obj.site and obj.site.domain else "-"
+    get_domain.short_description = "Domain"
 
 
 class CustomDateInput(forms.DateInput):

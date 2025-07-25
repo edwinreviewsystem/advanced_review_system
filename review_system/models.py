@@ -69,7 +69,6 @@ class ProductReviews(models.Model):
 
 class ReviewFormDesign(models.Model):
     site = models.ForeignKey("Sites", on_delete=models.CASCADE, null=True, default="")
-    domain = models.CharField(max_length=255, blank=True)
     generate_button = models.CharField(max_length=25, blank=True)
     generate_button_text = models.CharField(max_length=25, blank=True)
     button_color = models.CharField(max_length=25, blank=True)
@@ -77,6 +76,9 @@ class ReviewFormDesign(models.Model):
     label_text_color = models.CharField(max_length=25, blank=True)
     background_color = models.CharField(max_length=25, blank=True)
     updated_at = models.DateTimeField(auto_now=True)
+
+    def __str__(self):
+        return self.site.domain if self.site and self.site.domain else "Review Form Design"
 
     class Meta:
         verbose_name = "Review Form Design"
@@ -96,7 +98,6 @@ class ReviewListDesign(models.Model):
     ]
 
     site = models.ForeignKey("Sites", on_delete=models.CASCADE, null=True, default="")
-    domain = models.CharField(max_length=255, blank=True)
     content_text_color = models.CharField(max_length=25, blank=True)
     star_rating_color = models.CharField(max_length=25, blank=True)
     reviewer_name_color = models.CharField(max_length=25, blank=True)
@@ -105,6 +106,9 @@ class ReviewListDesign(models.Model):
     btn_border_radius = models.IntegerField(null=True, blank=True, verbose_name="Reviews Button Corners", validators=[MinValueValidator(0), MaxValueValidator(20)])
     primary_button_position = models.CharField(max_length=25, null=True, choices=PRIMARY_BUTTON_POSITION_CHOICES, default="Bottom Left", verbose_name="Reviews Button Position")
     updated_at = models.DateTimeField(auto_now=True)
+
+    def __str__(self):
+        return self.site.domain if self.site and self.site.domain else "Review List Design"
 
     class Meta:
         verbose_name = "Review List Design"
@@ -189,7 +193,7 @@ class Sites(models.Model):
     updated_at = models.DateTimeField(auto_now=True)
 
     def __str__(self):
-        return "sites"
+        return f"{self.domain}"
     
     class Meta:
         verbose_name = "Site"

@@ -11324,3 +11324,570 @@ INFO 2025-07-23 20:35:26,460 basehttp "POST /admin/review_system/customer/ HTTP/
 INFO 2025-07-23 20:35:32,255 basehttp "POST /admin/review_system/customer/ HTTP/1.1" 302 0
 INFO 2025-07-23 20:35:45,321 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 64675
 INFO 2025-07-23 20:35:46,972 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-23 20:37:03,719 autoreload Watching for file changes with StatReloader
+INFO 2025-07-24 15:16:47,217 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 67321
+INFO 2025-07-24 16:11:37,221 autoreload E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\review_system\models.py changed, reloading.
+INFO 2025-07-24 16:11:39,385 autoreload Watching for file changes with StatReloader
+INFO 2025-07-24 16:11:49,879 basehttp "GET /admin/review_system/reviewformdesign/ HTTP/1.1" 200 54693
+INFO 2025-07-24 16:11:51,506 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-24 16:11:55,767 basehttp "GET /admin/review_system/reviewformdesign/77/change/ HTTP/1.1" 200 19903
+INFO 2025-07-24 16:11:57,406 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-24 16:12:28,256 basehttp "GET /admin/review_system/reviewformdesign/ HTTP/1.1" 200 54693
+INFO 2025-07-24 16:13:01,274 autoreload E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\review_system\admin.py changed, reloading.
+INFO 2025-07-24 16:13:02,448 autoreload Watching for file changes with StatReloader
+INFO 2025-07-24 16:13:19,862 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 67321
+ERROR 2025-07-24 16:13:29,857 log Internal Server Error: /admin/review_system/reviewformdesign/
+Traceback (most recent call last):
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\db\models\options.py", line 681, in get_field
+    return self.fields_map[field_name]
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'get_domain'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\contrib\admin\utils.py", line 289, in lookup_field
+    f = _get_non_gfk_field(opts, name)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\contrib\admin\utils.py", line 322, in _get_non_gfk_field
+    field = opts.get_field(name)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\db\models\options.py", line 683, in get_field
+    raise FieldDoesNotExist(
+django.core.exceptions.FieldDoesNotExist: ReviewFormDesign has no field named 'get_domain'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\contrib\admin\templatetags\base.py", line 45, in render
+    return super().render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\template\library.py", line 258, in render
+    _dict = self.func(*resolved_args, **resolved_kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 343, in result_list
+    "results": list(results(cl)),
+               ^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 319, in results
+    yield ResultList(None, items_for_result(cl, res, None))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 310, in __init__
+    super().__init__(*items)
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 217, in items_for_result
+    f, attr, value = lookup_field(field_name, result, cl.model_admin)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\contrib\admin\utils.py", line 298, in lookup_field
+    value = attr(obj)
+            ^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\review_system\admin.py", line 64, in get_domain
+    return obj.site.domain_name if obj.site and obj.site.domain_name else "-"
+                                                ^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Sites' object has no attribute 'domain_name'
+ERROR 2025-07-24 16:13:29,872 basehttp "GET /admin/review_system/reviewformdesign/ HTTP/1.1" 500 460913
+INFO 2025-07-24 16:14:04,399 autoreload E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\review_system\admin.py changed, reloading.
+INFO 2025-07-24 16:14:05,648 autoreload Watching for file changes with StatReloader
+INFO 2025-07-24 16:14:20,825 basehttp "GET /admin/review_system/reviewformdesign/ HTTP/1.1" 200 54837
+INFO 2025-07-24 16:14:22,435 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-24 16:14:53,161 basehttp "GET /admin/review_system/reviewformdesign/81/change/ HTTP/1.1" 200 19880
+INFO 2025-07-24 16:14:54,849 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-24 16:15:49,733 autoreload E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\review_system\admin.py changed, reloading.
+INFO 2025-07-24 16:15:51,039 autoreload Watching for file changes with StatReloader
+INFO 2025-07-24 16:15:58,068 basehttp "GET /admin/review_system/reviewformdesign/81/change/ HTTP/1.1" 200 19880
+INFO 2025-07-24 16:15:59,690 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-24 16:17:50,988 autoreload E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\review_system\admin.py changed, reloading.
+INFO 2025-07-24 16:17:52,517 autoreload Watching for file changes with StatReloader
+ERROR 2025-07-24 16:17:59,254 log Internal Server Error: /admin/review_system/reviewformdesign/81/change/
+Traceback (most recent call last):
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\contrib\admin\options.py", line 835, in get_form
+    return modelform_factory(self.model, **defaults)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\forms\models.py", line 651, in modelform_factory
+    return type(form)(class_name, (form,), form_class_attrs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\forms\models.py", line 309, in __new__
+    fields = fields_for_model(
+             ^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\forms\models.py", line 204, in fields_for_model
+    raise FieldError(
+django.core.exceptions.FieldError: 'updated_at' cannot be specified for ReviewFormDesign model form as it is a non-editable field
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\contrib\admin\options.py", line 714, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\contrib\admin\sites.py", line 240, in inner
+    return view(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\contrib\admin\options.py", line 1944, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\contrib\admin\options.py", line 1802, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\contrib\admin\options.py", line 1837, in _changeform_view
+    ModelForm = self.get_form(
+                ^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\contrib\admin\options.py", line 837, in get_form
+    raise FieldError(
+django.core.exceptions.FieldError: 'updated_at' cannot be specified for ReviewFormDesign model form as it is a non-editable field. Check fields/fieldsets/exclude attributes of class ReviewFormDesignAdmin.
+ERROR 2025-07-24 16:17:59,287 basehttp "GET /admin/review_system/reviewformdesign/81/change/ HTTP/1.1" 500 171603
+INFO 2025-07-24 16:18:06,571 autoreload E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\review_system\admin.py changed, reloading.
+INFO 2025-07-24 16:18:07,621 autoreload Watching for file changes with StatReloader
+INFO 2025-07-24 16:18:18,889 basehttp "GET /admin/review_system/reviewformdesign/81/change/ HTTP/1.1" 200 19278
+INFO 2025-07-24 16:18:20,590 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-24 16:18:55,006 basehttp "POST /admin/review_system/reviewformdesign/81/change/ HTTP/1.1" 302 0
+INFO 2025-07-24 16:19:06,119 basehttp "GET /admin/review_system/reviewformdesign/ HTTP/1.1" 200 55077
+INFO 2025-07-24 16:19:07,768 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-24 16:19:14,558 basehttp "GET /admin/review_system/reviewformdesign/81/change/ HTTP/1.1" 200 19278
+INFO 2025-07-24 16:19:16,184 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-24 16:19:22,595 basehttp "POST /admin/review_system/reviewformdesign/81/change/ HTTP/1.1" 302 0
+INFO 2025-07-24 16:19:34,071 basehttp "GET /admin/review_system/reviewformdesign/ HTTP/1.1" 200 55075
+INFO 2025-07-24 16:19:35,907 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-24 16:23:46,711 autoreload E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\review_system\admin.py changed, reloading.
+INFO 2025-07-24 16:23:47,728 autoreload Watching for file changes with StatReloader
+INFO 2025-07-24 16:24:03,288 basehttp "GET /admin/review_system/reviewlistdesign/ HTTP/1.1" 200 43775
+INFO 2025-07-24 16:24:04,997 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-24 16:24:12,446 basehttp "GET /admin/review_system/reviewlistdesign/80/change/ HTTP/1.1" 200 20379
+INFO 2025-07-24 16:24:14,093 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-24 16:25:20,030 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 67321
+INFO 2025-07-24 16:25:21,713 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-24 16:25:37,647 basehttp "GET /admin/review_system/reviewformdesign/ HTTP/1.1" 200 54823
+INFO 2025-07-24 16:25:39,341 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-24 16:33:48,481 basehttp "GET /admin/review_system/reviewformdesign/81/change/ HTTP/1.1" 200 19278
+INFO 2025-07-24 16:33:50,119 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-24 16:43:27,854 basehttp "GET /admin/review_system/reviewlistdesign/ HTTP/1.1" 200 43775
+INFO 2025-07-24 16:43:29,432 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-24 16:59:38,723 basehttp "GET /admin/review_system/reviewlistdesign/79/change/ HTTP/1.1" 200 20379
+INFO 2025-07-24 16:59:40,377 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-24 19:31:33,289 basehttp "GET /admin/review_system/reviewformdesign/ HTTP/1.1" 200 54143
+INFO 2025-07-24 19:31:35,064 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-24 19:31:54,493 basehttp "GET /admin/review_system/reviewformdesign/81/change/ HTTP/1.1" 200 19343
+INFO 2025-07-24 19:31:54,537 basehttp "GET /static/admin/css/forms.css HTTP/1.1" 304 0
+INFO 2025-07-24 19:31:54,538 basehttp "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 304 0
+INFO 2025-07-24 19:31:54,542 basehttp "GET /static/admin/js/change_form.js HTTP/1.1" 304 0
+INFO 2025-07-24 19:31:54,542 basehttp "GET /static/admin/css/widgets.css HTTP/1.1" 304 0
+INFO 2025-07-24 19:31:56,083 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-24 19:32:06,884 basehttp "GET /admin/review_system/sites/3/change/?_to_field=id HTTP/1.1" 200 13881
+INFO 2025-07-24 19:32:08,568 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-24 19:32:33,065 basehttp "GET /admin/review_system/reviewformdesign/81/change/ HTTP/1.1" 200 19343
+INFO 2025-07-24 19:32:49,156 basehttp "GET /admin/review_system/reviewformdesign/ HTTP/1.1" 200 54143
+INFO 2025-07-24 19:32:54,813 basehttp "GET /admin/review_system/reviewformdesign/72/change/ HTTP/1.1" 200 19343
+INFO 2025-07-24 19:32:56,896 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-24 19:33:05,933 basehttp "GET /admin/review_system/sites/62/change/?_to_field=id HTTP/1.1" 200 13914
+INFO 2025-07-24 19:33:07,515 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-24 19:33:12,816 basehttp "GET /admin/review_system/reviewformdesign/72/change/ HTTP/1.1" 200 19343
+ERROR 2025-07-24 19:33:20,029 log Internal Server Error: /admin/review_system/sites/add/
+Traceback (most recent call last):
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\contrib\admin\options.py", line 835, in get_form
+    return modelform_factory(self.model, **defaults)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\forms\models.py", line 651, in modelform_factory
+    return type(form)(class_name, (form,), form_class_attrs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\forms\models.py", line 331, in __new__
+    raise FieldError(message)
+django.core.exceptions.FieldError: Unknown field(s) (readonly_is_trial) specified for Sites
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\contrib\admin\options.py", line 714, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\contrib\admin\sites.py", line 240, in inner
+    return view(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\contrib\admin\options.py", line 1941, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\contrib\admin\options.py", line 1802, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\contrib\admin\options.py", line 1837, in _changeform_view
+    ModelForm = self.get_form(
+                ^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\contrib\admin\options.py", line 837, in get_form
+    raise FieldError(
+django.core.exceptions.FieldError: Unknown field(s) (readonly_is_trial) specified for Sites. Check fields/fieldsets/exclude attributes of class SitesAdmin.
+ERROR 2025-07-24 19:33:20,040 basehttp "GET /admin/review_system/sites/add/?_to_field=id&_popup=1 HTTP/1.1" 500 164661
+INFO 2025-07-24 19:33:48,162 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 67321
+INFO 2025-07-24 19:33:50,111 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-24 19:33:59,023 basehttp "GET /admin/review_system/sites/?siteuser__customer__id__exact=42&siteuser__status__exact=active HTTP/1.1" 200 13850
+INFO 2025-07-24 19:34:06,934 basehttp "GET /admin/review_system/sites/93/change/?siteuser__customer__id__exact=42 HTTP/1.1" 200 13913
+INFO 2025-07-24 19:34:08,583 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-24 19:34:17,565 basehttp "GET /admin/review_system/sites/?siteuser__customer__id__exact=42&siteuser__status__exact=active HTTP/1.1" 200 13850
+INFO 2025-07-24 19:34:23,485 basehttp "GET /admin/review_system/sites/2/change/?siteuser__customer__id__exact=42 HTTP/1.1" 200 13830
+INFO 2025-07-24 19:34:25,155 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-24 19:34:52,570 basehttp "GET /admin/review_system/reviewformdesign/ HTTP/1.1" 200 54143
+INFO 2025-07-24 19:34:54,209 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-24 21:06:20,871 basehttp "GET /admin/review_system/reviewformdesign/81/change/ HTTP/1.1" 200 19344
+INFO 2025-07-24 21:06:22,535 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-24 21:09:01,586 autoreload E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\review_system\admin.py changed, reloading.
+INFO 2025-07-24 21:09:05,458 autoreload Watching for file changes with StatReloader
+INFO 2025-07-24 21:09:13,685 basehttp "GET /admin/review_system/reviewformdesign/81/change/ HTTP/1.1" 200 19344
+INFO 2025-07-24 21:09:15,433 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-24 21:10:12,007 autoreload E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\review_system\admin.py changed, reloading.
+INFO 2025-07-24 21:10:13,315 autoreload Watching for file changes with StatReloader
+INFO 2025-07-24 21:10:26,691 autoreload E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\review_system\admin.py changed, reloading.
+INFO 2025-07-24 21:10:27,878 autoreload Watching for file changes with StatReloader
+INFO 2025-07-24 21:10:38,578 basehttp "GET /admin/review_system/reviewformdesign/81/change/ HTTP/1.1" 200 19344
+INFO 2025-07-24 21:10:40,186 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-24 21:13:41,747 autoreload E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\review_system\admin.py changed, reloading.
+INFO 2025-07-24 21:13:42,917 autoreload Watching for file changes with StatReloader
+INFO 2025-07-24 21:13:51,107 basehttp "GET /admin/review_system/reviewformdesign/81/change/ HTTP/1.1" 200 18773
+INFO 2025-07-24 21:13:53,444 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-24 21:15:00,892 autoreload E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\review_system\admin.py changed, reloading.
+INFO 2025-07-24 21:15:02,138 autoreload Watching for file changes with StatReloader
+INFO 2025-07-24 21:15:18,206 basehttp "GET /admin/review_system/reviewlistdesign/ HTTP/1.1" 200 42702
+INFO 2025-07-24 21:15:21,577 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-24 21:15:28,130 basehttp "GET /admin/review_system/reviewlistdesign/73/change/ HTTP/1.1" 200 19874
+INFO 2025-07-24 21:15:31,085 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-24 21:15:53,272 basehttp "GET /admin/review_system/reviewformdesign/ HTTP/1.1" 200 53482
+INFO 2025-07-24 21:15:54,995 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-24 21:16:02,613 basehttp "GET /admin/review_system/reviewformdesign/81/change/ HTTP/1.1" 200 18773
+INFO 2025-07-24 21:16:04,232 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-24 21:16:13,188 basehttp "POST /admin/review_system/reviewformdesign/81/change/ HTTP/1.1" 302 0
+INFO 2025-07-24 21:16:23,810 basehttp "GET /admin/review_system/reviewformdesign/ HTTP/1.1" 200 53735
+INFO 2025-07-24 21:16:25,474 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-24 21:16:32,502 basehttp "GET /admin/review_system/reviewformdesign/81/change/ HTTP/1.1" 200 18773
+INFO 2025-07-24 21:16:34,103 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-24 21:16:40,416 basehttp "POST /admin/review_system/reviewformdesign/81/change/ HTTP/1.1" 302 0
+INFO 2025-07-24 21:16:51,242 basehttp "GET /admin/review_system/reviewformdesign/ HTTP/1.1" 200 53733
+INFO 2025-07-24 21:16:52,921 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-24 21:17:09,768 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 67312
+INFO 2025-07-24 21:17:09,799 basehttp "GET /static/admin/img/icon-no.svg HTTP/1.1" 304 0
+INFO 2025-07-24 21:17:11,377 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-24 21:31:09,169 autoreload E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\review_system\models.py changed, reloading.
+INFO 2025-07-24 21:31:10,380 autoreload Watching for file changes with StatReloader
+INFO 2025-07-24 21:31:23,337 autoreload E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\review_system\models.py changed, reloading.
+INFO 2025-07-24 21:31:24,266 autoreload Watching for file changes with StatReloader
+INFO 2025-07-25 11:42:06,286 basehttp "GET /api/get-customize-css?domain=remarqz.com HTTP/1.1" 200 443
+INFO 2025-07-25 13:22:40,939 basehttp "GET /admin/review_system/reviewformdesign/ HTTP/1.1" 200 53481
+INFO 2025-07-25 13:22:42,515 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-25 14:37:57,686 basehttp "GET /admin/review_system/reviewformdesign/80/change/ HTTP/1.1" 200 18773
+INFO 2025-07-25 14:37:59,437 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-25 14:41:43,174 basehttp "GET /admin/review_system/reviewlistdesign/ HTTP/1.1" 200 43229
+INFO 2025-07-25 14:41:44,851 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-25 14:43:13,071 basehttp "GET /admin/review_system/reviewlistdesign/79/change/ HTTP/1.1" 200 19874
+INFO 2025-07-25 14:43:14,689 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-25 14:44:13,454 basehttp "GET /admin/review_system/reviewlistdesign/ HTTP/1.1" 200 43229
+INFO 2025-07-25 14:44:54,282 autoreload E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\review_system\admin.py changed, reloading.
+INFO 2025-07-25 14:44:56,551 autoreload Watching for file changes with StatReloader
+INFO 2025-07-25 14:45:12,971 basehttp "GET /admin/review_system/reviewformdesign/ HTTP/1.1" 200 54142
+INFO 2025-07-25 14:45:14,634 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-25 14:45:31,247 basehttp "GET /admin/review_system/reviewformdesign/80/change/ HTTP/1.1" 200 14862
+INFO 2025-07-25 14:45:32,868 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-25 14:46:55,494 autoreload E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\review_system\models.py changed, reloading.
+INFO 2025-07-25 14:46:56,522 autoreload Watching for file changes with StatReloader
+INFO 2025-07-25 14:47:05,419 autoreload E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\review_system\models.py changed, reloading.
+INFO 2025-07-25 14:47:06,514 autoreload Watching for file changes with StatReloader
+INFO 2025-07-25 14:47:14,165 basehttp "GET /admin/review_system/reviewformdesign/80/change/ HTTP/1.1" 200 14832
+INFO 2025-07-25 14:47:15,998 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+ERROR 2025-07-25 14:47:30,323 log Internal Server Error: /admin/review_system/reviewformdesign/
+Traceback (most recent call last):
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\db\models\options.py", line 681, in get_field
+    return self.fields_map[field_name]
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'action_checkbox'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\contrib\admin\utils.py", line 289, in lookup_field
+    f = _get_non_gfk_field(opts, name)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\contrib\admin\utils.py", line 322, in _get_non_gfk_field
+    field = opts.get_field(name)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\db\models\options.py", line 683, in get_field
+    raise FieldDoesNotExist(
+django.core.exceptions.FieldDoesNotExist: ReviewFormDesign has no field named 'action_checkbox'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\contrib\admin\templatetags\base.py", line 45, in render
+    return super().render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\template\library.py", line 258, in render
+    _dict = self.func(*resolved_args, **resolved_kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 343, in result_list
+    "results": list(results(cl)),
+               ^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 319, in results
+    yield ResultList(None, items_for_result(cl, res, None))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 310, in __init__
+    super().__init__(*items)
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 217, in items_for_result
+    f, attr, value = lookup_field(field_name, result, cl.model_admin)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\contrib\admin\utils.py", line 298, in lookup_field
+    value = attr(obj)
+            ^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\contrib\admin\options.py", line 997, in action_checkbox
+    "aria-label": format_html(_("Select this object for an action - {}"), obj),
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\utils\html.py", line 135, in format_html
+    return mark_safe(format_string.format(*args_safe, **kwargs_safe))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\utils\html.py", line 117, in conditional_escape
+    return escape(text)
+           ^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\utils\functional.py", line 231, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\venv\Lib\site-packages\django\utils\html.py", line 50, in escape
+    return SafeString(html.escape(str(text)))
+                                  ^^^^^^^^^
+  File "E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\review_system\models.py", line 82, in __str__
+    return f"{self.site.domain}"
+              ^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'domain'
+ERROR 2025-07-25 14:47:30,369 basehttp "GET /admin/review_system/reviewformdesign/ HTTP/1.1" 500 479331
+INFO 2025-07-25 14:48:59,598 autoreload E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\review_system\models.py changed, reloading.
+INFO 2025-07-25 14:49:00,685 autoreload Watching for file changes with StatReloader
+INFO 2025-07-25 14:49:16,891 basehttp "GET /admin/review_system/reviewformdesign/ HTTP/1.1" 200 53533
+INFO 2025-07-25 14:49:18,562 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-25 14:49:26,054 basehttp "GET /admin/review_system/reviewformdesign/81/change/ HTTP/1.1" 200 14832
+INFO 2025-07-25 14:49:27,754 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-25 14:51:49,681 autoreload E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\review_system\models.py changed, reloading.
+INFO 2025-07-25 14:51:50,707 autoreload Watching for file changes with StatReloader
+INFO 2025-07-25 14:52:06,824 basehttp "GET /admin/review_system/reviewformdesign/ HTTP/1.1" 200 53471
+INFO 2025-07-25 14:52:13,727 basehttp "GET /admin/review_system/reviewformdesign/80/change/ HTTP/1.1" 200 14832
+INFO 2025-07-25 14:52:15,317 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-25 14:52:29,884 basehttp "GET /admin/review_system/reviewformdesign/ HTTP/1.1" 200 53471
+INFO 2025-07-25 14:52:34,316 basehttp "GET /admin/review_system/reviewformdesign/76/change/ HTTP/1.1" 200 14832
+INFO 2025-07-25 14:52:35,981 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-25 14:52:50,018 basehttp "GET /admin/review_system/reviewformdesign/ HTTP/1.1" 200 53471
+INFO 2025-07-25 14:52:56,662 autoreload E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\review_system\models.py changed, reloading.
+INFO 2025-07-25 14:52:57,644 autoreload Watching for file changes with StatReloader
+INFO 2025-07-25 14:53:12,472 basehttp "GET /admin/review_system/reviewlistdesign/ HTTP/1.1" 200 42592
+INFO 2025-07-25 14:53:14,149 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-25 14:53:18,937 basehttp "GET /admin/review_system/reviewlistdesign/66/change/ HTTP/1.1" 200 15907
+INFO 2025-07-25 14:53:20,684 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-25 14:53:36,114 basehttp "GET /admin/review_system/reviewlistdesign/ HTTP/1.1" 200 42592
+INFO 2025-07-25 14:53:42,243 basehttp "GET /admin/review_system/reviewlistdesign/64/change/ HTTP/1.1" 200 15907
+INFO 2025-07-25 14:53:43,825 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-25 14:54:08,367 basehttp "GET /admin/review_system/reviewlistdesign/ HTTP/1.1" 200 42592
+INFO 2025-07-25 15:26:31,753 autoreload E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\review_system\models.py changed, reloading.
+INFO 2025-07-25 15:26:32,872 autoreload Watching for file changes with StatReloader
