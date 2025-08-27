@@ -177,7 +177,7 @@ class CustomerAdmin(admin.ModelAdmin):
             • the chosen customer (via reverse FK path)
             • only *active* SiteUser links
         """
-        if not SiteUser.objects.filter(customer=obj, status='active').exists():
+        if not SiteUser.objects.filter(customer=obj).exists():
             return "-"
 
         params = urlencode({

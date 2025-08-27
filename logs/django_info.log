@@ -11891,3 +11891,62 @@ INFO 2025-07-25 14:53:43,825 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
 INFO 2025-07-25 14:54:08,367 basehttp "GET /admin/review_system/reviewlistdesign/ HTTP/1.1" 200 42592
 INFO 2025-07-25 15:26:31,753 autoreload E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\review_system\models.py changed, reloading.
 INFO 2025-07-25 15:26:32,872 autoreload Watching for file changes with StatReloader
+INFO 2025-07-25 15:29:08,450 autoreload Watching for file changes with StatReloader
+INFO 2025-07-28 10:01:11,213 basehttp "GET /admin/review_system/reviewlistdesign/ HTTP/1.1" 200 43142
+WARNING 2025-07-28 10:01:11,637 log Not Found: /favicon.ico
+WARNING 2025-07-28 10:01:11,638 basehttp "GET /favicon.ico HTTP/1.1" 404 3896
+INFO 2025-08-25 14:13:44,729 autoreload Watching for file changes with StatReloader
+INFO 2025-08-25 14:14:00,817 basehttp "GET / HTTP/1.1" 200 1256
+WARNING 2025-08-25 14:14:01,387 log Not Found: /favicon.ico
+WARNING 2025-08-25 14:14:01,388 basehttp "GET /favicon.ico HTTP/1.1" 404 3896
+INFO 2025-08-25 14:14:08,117 basehttp "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-25 14:14:08,382 basehttp "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4158
+INFO 2025-08-25 14:14:16,606 basehttp "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2025-08-25 14:14:18,322 basehttp "GET /admin/ HTTP/1.1" 200 13969
+INFO 2025-08-25 14:14:42,521 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 74033
+INFO 2025-08-25 14:14:42,645 basehttp "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+INFO 2025-08-25 14:14:42,660 basehttp "GET /static/admin/img/icon-no.svg HTTP/1.1" 200 560
+INFO 2025-08-25 14:14:44,224 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-25 14:18:34,559 autoreload E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\review_system\admin.py changed, reloading.
+INFO 2025-08-25 14:18:35,792 autoreload Watching for file changes with StatReloader
+INFO 2025-08-25 14:18:56,953 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 74609
+INFO 2025-08-25 14:18:58,707 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-25 14:19:09,676 basehttp "GET /admin/review_system/sites/?siteuser__customer__id__exact=206&siteuser__status__exact=active HTTP/1.1" 200 12259
+INFO 2025-08-25 14:19:37,964 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 74609
+INFO 2025-08-25 14:19:49,254 basehttp "GET /admin/review_system/sites/?siteuser__customer__id__exact=203&siteuser__status__exact=active HTTP/1.1" 200 13369
+INFO 2025-08-25 14:20:35,290 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 74609
+INFO 2025-08-25 14:20:52,305 autoreload E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\review_system\admin.py changed, reloading.
+INFO 2025-08-25 14:20:53,333 autoreload Watching for file changes with StatReloader
+INFO 2025-08-25 14:21:14,130 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 72264
+INFO 2025-08-25 14:21:15,833 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-25 14:21:30,775 basehttp "GET /admin/review_system/sites/?siteuser__customer__id__exact=206 HTTP/1.1" 200 13056
+INFO 2025-08-25 14:21:49,200 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 72264
+INFO 2025-08-25 14:33:53,520 autoreload E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\review_system\admin.py changed, reloading.
+INFO 2025-08-25 14:33:54,489 autoreload Watching for file changes with StatReloader
+INFO 2025-08-25 14:34:05,662 basehttp "GET /admin/review_system/sites/?siteuser__customer__id__exact=206 HTTP/1.1" 200 13056
+INFO 2025-08-25 14:36:58,033 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 74609
+INFO 2025-08-25 14:40:18,342 basehttp "GET /admin/review_system/sites/?siteuser__customer__id__exact=11&siteuser__status__exact=active HTTP/1.1" 200 13356
+INFO 2025-08-25 14:40:41,642 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 74609
+INFO 2025-08-25 14:40:48,668 basehttp "GET /admin/review_system/sites/?siteuser__customer__id__exact=4&siteuser__status__exact=active HTTP/1.1" 200 13352
+INFO 2025-08-25 14:41:06,184 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 74609
+INFO 2025-08-25 14:41:43,738 basehttp "GET /admin/review_system/sites/?siteuser__customer__id__exact=42&siteuser__status__exact=active HTTP/1.1" 200 13349
+INFO 2025-08-25 14:41:52,722 basehttp "GET /admin/review_system/sites/2/change/?_changelist_filters=siteuser__customer__id__exact%3D42%26siteuser__status__exact%3Dactive HTTP/1.1" 200 14088
+INFO 2025-08-25 14:41:52,892 basehttp "GET /static/admin/css/forms.css HTTP/1.1" 200 9048
+INFO 2025-08-25 14:41:52,897 basehttp "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+INFO 2025-08-25 14:41:52,907 basehttp "GET /static/admin/css/widgets.css HTTP/1.1" 200 11800
+INFO 2025-08-25 14:41:52,964 basehttp "GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+INFO 2025-08-25 14:41:54,392 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-25 14:42:02,796 basehttp "GET /admin/review_system/sites/?siteuser__customer__id__exact=42&siteuser__status__exact=active HTTP/1.1" 200 13349
+INFO 2025-08-25 14:44:26,846 basehttp "GET /admin/review_system/sites/?siteuser__customer__id__exact=42&siteuser__status__exact=active HTTP/1.1" 200 13828
+INFO 2025-08-25 14:44:48,917 basehttp "GET /admin/review_system/sites/?siteuser__customer__id__exact=42&siteuser__status__exact=active HTTP/1.1" 200 13349
+INFO 2025-08-25 14:45:06,796 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 74609
+INFO 2025-08-25 14:45:08,358 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-25 14:49:33,753 basehttp "GET /admin/review_system/sites/?siteuser__customer__id__exact=201&siteuser__status__exact=active HTTP/1.1" 200 13924
+INFO 2025-08-25 14:49:41,557 basehttp "GET /admin/review_system/sites/112/change/?_changelist_filters=siteuser__customer__id__exact%3D201%26siteuser__status__exact%3Dactive HTTP/1.1" 200 14223
+INFO 2025-08-25 14:49:43,170 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-25 14:50:12,653 basehttp "GET /admin/review_system/sites/?siteuser__customer__id__exact=201&siteuser__status__exact=active HTTP/1.1" 200 13924
+INFO 2025-08-25 14:53:43,081 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 74609
+INFO 2025-08-25 14:54:21,249 basehttp "GET /admin/review_system/sites/?siteuser__customer__id__exact=183&siteuser__status__exact=active HTTP/1.1" 200 13355
+INFO 2025-08-25 14:54:37,688 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 74609
+INFO 2025-08-25 16:13:03,281 basehttp "GET /admin/review_system/sites/?siteuser__customer__id__exact=201&siteuser__status__exact=active HTTP/1.1" 200 13924
+INFO 2025-08-25 16:13:20,360 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 74609
