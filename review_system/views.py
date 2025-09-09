@@ -54,22 +54,36 @@ class ProductReviewsListAPI(APIView):
 
             plan = plan_subscription.plan
             plan_id = plan.id
+            print("Plan ID:", plan_id)
             is_trial = plan_subscription.is_trial
             trial_ends_at = plan_subscription.trial_ends_at
             today = timezone.now().date()
 
-            # Step 3: Business Reviews (common for all plans)
             business_reviews_qs = ProductReviews.objects.filter(
                 site=site,
                 status="approve",
                 product_name__isnull=True
             ).order_by("-created_at")
 
-            # Freemium Logic: Only 6 reviews if trial expired
-            if plan_id == 1:
-                if not is_trial or (trial_ends_at and today > trial_ends_at):
-                    business_reviews_qs = business_reviews_qs[:6]
+            # Flag to decide if we include product + google reviews
+            include_product_google = False
 
+            # Step 4: Apply plan logic
+            if plan_id == 1:  # Freemium
+                if is_trial and (not trial_ends_at or today <= trial_ends_at):
+                    print("In is trial")
+                    # Active trial → show everything
+                    include_product_google = True
+                else:
+                    print("Out is trial")
+                    # Trial expired → limit all reviews to 6
+                    business_reviews_qs = business_reviews_qs[:6]
+                    include_product_google = True  # Still show product + google (but limited below)
+            else:
+                # Premium plan
+                include_product_google = True
+
+            # Step 5: Business reviews
             total_business_reviews = business_reviews_qs.count()
             business_avg_rating = business_reviews_qs.aggregate(
                 avg_star_rating=Avg('star_rating')
@@ -77,7 +91,6 @@ class ProductReviewsListAPI(APIView):
             business_avg_rating = round(business_avg_rating, 1)
             business_reviews_data = ReviewSerializer(business_reviews_qs, many=True).data
 
-            # Step 4: Base response
             response_data = {
                 "business": {
                     "average_star_rating": business_avg_rating,
@@ -86,14 +99,24 @@ class ProductReviewsListAPI(APIView):
                 }
             }
 
-            # Step 5: Premium Logic (plan_id > 1) - Show Product & Google reviews
-            if plan_id > 1:
-                # Product Reviews
+            # Step 6: Product + Google reviews (if allowed)
+            if include_product_google:
                 product_reviews_qs = ProductReviews.objects.filter(
                     site=site,
                     status="approve",
                     product_name__isnull=False
                 ).order_by("-created_at")
+
+                google_reviews_qs = Google_Reviews.objects.filter(
+                    site=site
+                ).order_by("-created_at")
+
+                # If freemium trial expired → limit to 6 each
+                if plan_id == 1 and (not is_trial or (trial_ends_at and today > trial_ends_at)):
+                    product_reviews_qs = product_reviews_qs[:6]
+                    google_reviews_qs = google_reviews_qs[:6]
+
+                # Product Reviews
                 total_product_reviews = product_reviews_qs.count()
                 product_avg_rating = product_reviews_qs.aggregate(
                     avg_star_rating=Avg('star_rating')
@@ -102,9 +125,6 @@ class ProductReviewsListAPI(APIView):
                 product_reviews_data = ReviewSerializer(product_reviews_qs, many=True).data
 
                 # Google Reviews
-                google_reviews_qs = Google_Reviews.objects.filter(
-                    site=site
-                ).order_by("-created_at")
                 total_google_reviews = google_reviews_qs.count()
                 google_avg_rating = google_reviews_qs.aggregate(
                     avg_star_rating=Avg('rating')

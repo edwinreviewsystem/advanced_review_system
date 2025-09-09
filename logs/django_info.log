@@ -11950,3 +11950,47 @@ INFO 2025-08-25 14:54:21,249 basehttp "GET /admin/review_system/sites/?siteuser_
 INFO 2025-08-25 14:54:37,688 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 74609
 INFO 2025-08-25 16:13:03,281 basehttp "GET /admin/review_system/sites/?siteuser__customer__id__exact=201&siteuser__status__exact=active HTTP/1.1" 200 13924
 INFO 2025-08-25 16:13:20,360 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 74609
+INFO 2025-09-04 17:04:21,142 autoreload Watching for file changes with StatReloader
+INFO 2025-09-04 17:11:06,965 basehttp "GET /api/reviews?domain=lexadip237.wixsite.com/fastway HTTP/1.1" 200 155
+INFO 2025-09-04 17:22:58,552 autoreload E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\review_system\views.py changed, reloading.
+INFO 2025-09-04 17:22:59,594 autoreload Watching for file changes with StatReloader
+INFO 2025-09-04 17:23:08,568 basehttp "GET /api/reviews?domain=lexadip237.wixsite.com/fastway HTTP/1.1" 200 640
+INFO 2025-09-04 17:24:15,853 basehttp "GET /api/reviews?domain=testdomain.com HTTP/1.1" 200 322
+INFO 2025-09-04 17:24:49,886 basehttp "GET /api/reviews?domain=carportzondervergunning.nl HTTP/1.1" 200 4106
+INFO 2025-09-04 17:25:24,449 basehttp "GET /api/reviews?domain=remarqz.com HTTP/1.1" 200 19952
+INFO 2025-09-04 17:26:02,821 basehttp "GET /api/reviews?domain=admiresfurnishings.co.uk HTTP/1.1" 200 46699
+INFO 2025-09-04 17:26:34,077 basehttp "GET /api/reviews?domain=lexadip237.wixsite.com/fastway HTTP/1.1" 200 640
+INFO 2025-09-04 17:28:12,020 basehttp "GET /api/reviews?domain=digitaldiner.ai HTTP/1.1" 200 322
+INFO 2025-09-04 17:28:48,756 basehttp "GET /api/reviews?domain=umbrapets.com HTTP/1.1" 200 322
+INFO 2025-09-04 17:29:32,478 basehttp "GET /api/reviews?domain=dev-site-3x2693.wix-dev-center-test.org HTTP/1.1" 200 322
+INFO 2025-09-04 17:30:01,745 basehttp "GET /api/reviews?domain=crfixit.com HTTP/1.1" 200 322
+INFO 2025-09-04 17:30:26,394 basehttp "GET /api/reviews?domain=lexadip237.wixsite.com/fastway HTTP/1.1" 200 640
+INFO 2025-09-04 17:30:52,757 basehttp "GET /api/reviews?domain=knockknockstorage.com HTTP/1.1" 200 322
+INFO 2025-09-04 17:31:35,307 basehttp "GET /api/reviews?domain=mohazril48.wixsite.com/taman-kawan-konselin HTTP/1.1" 200 322
+INFO 2025-09-04 17:32:11,748 basehttp "GET /api/reviews?domain=trendfusion.ch HTTP/1.1" 200 322
+INFO 2025-09-04 17:33:34,128 basehttp "GET /api/reviews?domain=north-ac.com HTTP/1.1" 200 322
+INFO 2025-09-04 17:33:51,915 basehttp "GET /api/reviews?domain=charu236.wixsite.com/tiksh HTTP/1.1" 200 322
+INFO 2025-09-04 17:34:12,294 basehttp "GET /api/reviews?domain=intrinsicshaving.com HTTP/1.1" 200 322
+INFO 2025-09-04 17:35:33,006 basehttp "GET /api/reviews?domain=f3nxmedia.biz HTTP/1.1" 200 1173
+INFO 2025-09-04 17:35:50,672 basehttp "GET /api/reviews?domain=edice.ch HTTP/1.1" 200 8140
+INFO 2025-09-04 17:39:13,471 autoreload E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\review_system\views.py changed, reloading.
+INFO 2025-09-04 17:39:14,404 autoreload Watching for file changes with StatReloader
+INFO 2025-09-04 17:39:20,643 basehttp "GET /api/reviews?domain=edice.ch HTTP/1.1" 200 8140
+INFO 2025-09-04 17:40:13,531 autoreload E:\VE\ScratchPad\Tasks\advanced-review-system-new\advanced_review_system\review_system\views.py changed, reloading.
+INFO 2025-09-04 17:40:14,408 autoreload Watching for file changes with StatReloader
+INFO 2025-09-04 17:40:21,872 basehttp "GET /api/reviews?domain=edice.ch HTTP/1.1" 200 8140
+INFO 2025-09-04 17:42:42,200 basehttp "GET /api/reviews?domain=Isabelle.com HTTP/1.1" 200 322
+INFO 2025-09-04 17:43:24,264 basehttp "GET /api/reviews?domain=crfixit.com HTTP/1.1" 200 322
+INFO 2025-09-04 17:43:42,790 basehttp "GET /api/reviews?domain=edicesarl.wixstudio.com/isabelle HTTP/1.1" 200 322
+INFO 2025-09-04 17:44:13,953 basehttp "GET /api/reviews?domain=studioasjemenou.nl HTTP/1.1" 200 322
+INFO 2025-09-04 17:44:28,218 basehttp "GET /api/reviews?domain=rayorcode.wixsite.com/rayorcodestore HTTP/1.1" 200 322
+INFO 2025-09-04 17:44:40,062 basehttp "GET /api/reviews?domain=edicesarl.wixstudio.com/testsite HTTP/1.1" 200 322
+INFO 2025-09-04 17:45:05,647 basehttp "GET /api/reviews?domain=edicesarl.wixstudio.com/testsite2 HTTP/1.1" 200 322
+INFO 2025-09-04 17:45:29,804 basehttp "GET /api/reviews?domain=aenderungsschneidereibrigitte.com HTTP/1.1" 200 322
+INFO 2025-09-04 17:46:07,416 basehttp "GET /api/reviews?domain=127.0.0.1 HTTP/1.1" 200 322
+INFO 2025-09-04 17:46:30,412 basehttp "GET /api/reviews?domain=chaletmurmeli.com HTTP/1.1" 200 2718
+INFO 2025-09-04 17:46:50,928 basehttp "GET /api/reviews?domain=dev-site-1x1861.wix-dev-center-test.org HTTP/1.1" 200 322
+INFO 2025-09-04 17:47:02,712 basehttp "GET /api/reviews?domain=dev-site-2x1049.wix-development-sites.org HTTP/1.1" 200 322
+INFO 2025-09-04 17:48:08,707 basehttp "GET /api/reviews?domain=lexadip237.wixsite.com/fastway HTTP/1.1" 200 640
+INFO 2025-09-04 17:49:16,535 basehttp "GET /api/reviews?domain=lexadip237.wixsite.com/fastway HTTP/1.1" 200 640
+INFO 2025-09-04 17:49:41,407 basehttp "GET /api/reviews?domain=lexadip237.wixsite.com/fastway HTTP/1.1" 200 640
