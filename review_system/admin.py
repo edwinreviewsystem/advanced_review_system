@@ -6,6 +6,9 @@ from django.urls import reverse
 from urllib.parse import urlencode
 import bcrypt
 
+from django.http import HttpResponseRedirect
+from django.contrib import messages
+
 
 class ProductReviewsListAdmin(admin.ModelAdmin):
     list_display = ('id', 'review_one_line', 'star_rating', 'email', 'domain', 'display_image', 'status', 'source', 'created_at')
@@ -225,29 +228,37 @@ class CustomerAdmin(admin.ModelAdmin):
 
 admin.site.register(Customer, CustomerAdmin)
 
+class SiteAdminForm(forms.ModelForm):
+    plan = forms.ModelChoiceField(
+        queryset=Plans.objects.all(),
+        required=False,
+        label="Plan Name"
+    )
+    start_date = forms.DateField(required=False)
+    end_date = forms.DateField(required=False)
+    is_trial = forms.BooleanField(required=False)
+
+    class Meta:
+        model = Sites
+        fields = ['domain', 'plan', 'start_date', 'end_date', 'is_trial']
+
 @admin.register(Sites)
 class SitesAdmin(admin.ModelAdmin):
+    form = SiteAdminForm  # assume your SiteAdminForm defines: domain, plan, start_date, end_date, is_trial
+
     list_display = ('site_display', 'get_status', 'get_plan', 'view_action')
     search_fields = ('domain',)
     list_filter = ('updated_at',)
-    readonly_fields = (
-        'readonly_customer_email', 'readonly_domain',
-        'readonly_plan_name', 'readonly_start_date', 'readonly_end_date'
-    )
-    fields = (
-        'readonly_customer_email',
-        'readonly_domain',
-        'readonly_plan_name',
-        'readonly_start_date',
-        'readonly_end_date',
-        'readonly_is_trial',
-    )
     FILTER_PARAM = "siteuser__customer__id__exact"
+
+    SAFE_LOOKUPS = {
+        'siteuser__customer__id__exact',
+        'siteuser__status__exact',
+    }
 
     def changelist_view(self, request, extra_context=None):
         extra_context = extra_context or {}
-
-        cust_id = request.GET.get('siteuser__customer__id__exact')
+        cust_id = request.GET.get(self.FILTER_PARAM)
         if cust_id:
             from review_system.models import Customer
             c = Customer.objects.filter(pk=cust_id).first()
@@ -256,19 +267,10 @@ class SitesAdmin(admin.ModelAdmin):
                 extra_context['title'] = f"Manage Sites for {name}"
         else:
             extra_context['title'] = "Manage Sites"
-
         extra_context['has_add_permission'] = False
         return super().changelist_view(request, extra_context=extra_context)
 
-    SAFE_LOOKUPS = {
-        'siteuser__customer__id__exact',
-        'siteuser__status__exact',
-    }
-
     def lookup_allowed(self, lookup, value):
-        """
-        Let Django admin know these look‑ups are intentional and safe.
-        """
         if lookup in self.SAFE_LOOKUPS:
             return True
         return super().lookup_allowed(lookup, value)
@@ -278,10 +280,121 @@ class SitesAdmin(admin.ModelAdmin):
               .get_queryset(request)
               .prefetch_related("plansubscription_set")
               .distinct())
-
-        # remember whose sites we’re showing – available to every other method
+        # remember whose sites we’re showing
         self._cust_id = request.GET.get(self.FILTER_PARAM)
         return qs
+
+    # -------------------------
+    # Show fields on change form.
+    # - When opened for a customer (via FILTER_PARAM) we show the editable fields
+    #   plus the read-only "Customer Email".
+    # - Otherwise fall back to default admin fields (read-only behaviour).
+    # -------------------------
+    def get_fields(self, request, obj=None):
+        cust_id = request.GET.get(self.FILTER_PARAM)
+
+        # 1️⃣ ADD PAGE
+        if obj is None:
+            # Show only fields for creating a new Site
+            return ['domain', 'name']
+
+        # 2️⃣ EDIT WITH CUSTOMER FILTER (Manage Sites → View)
+        if cust_id:
+            return [
+                'readonly_customer_email',
+                'domain', 'plan', 'start_date', 'end_date', 'is_trial'
+            ]
+
+        # 3️⃣ EDIT DIRECT FROM SITES (no customer filter)
+        return [
+            'readonly_customer_email',
+            'domain', 'plan', 'start_date', 'end_date', 'is_trial'
+        ]
+        # no special customer filter -> keep previous behaviour (read-only changelist/detail)
+        # return super().get_fields(request, obj)
+
+    def get_readonly_fields(self, request, obj=None):
+        # ADD page → no read-only fields
+        if obj is None:
+            return []
+
+        # EDIT pages → Customer Email always read-only
+        return ['readonly_customer_email']
+
+    # -------------------------
+    # Only allow changing (show save buttons) if FILTER_PARAM present.
+    # Otherwise keep read-only (no save).
+    # -------------------------
+    def has_change_permission(self, request, obj=None):
+        """
+        Let Django's normal permission system handle this.
+        This means:
+        - If the user has change permission on Sites, they can edit from both:
+            - Customer → Manage Sites
+            - Direct Sites list
+        - Your existing FILTER_PARAM-based logic is still used for scoping
+        which PlanSubscription we touch in save_model().
+        """
+        return super().has_change_permission(request, obj)
+
+    def has_delete_permission(self, request, obj=None):
+        return False
+
+    # -------------------------
+    # Prefill the form: return a dynamic form class that sets initial for plan/start/end/is_trial
+    # using the latest PlanSubscription for (site, customer).
+    # -------------------------
+    def get_form(self, request, obj=None, **kwargs):
+        """
+        Build a subclass of the configured form that sets initial values for subscription fields
+        when we have an obj, using either:
+        - customer-specific subscription (when FILTER_PARAM present), or
+        - latest subscription for that site (when opened directly from Sites).
+        """
+        cust_id = request.GET.get(self.FILTER_PARAM)
+        BaseForm = super().get_form(request, obj, **kwargs)  # SiteAdminForm
+
+        class _PrefilledForm(BaseForm):
+            def __init__(self, *a, **kw):
+                super().__init__(*a, **kw)
+
+                # Domain is already prefilled by the ModelForm.
+                if not obj:
+                    return
+
+                try:
+                    # 1) If we have customer context → filter by that user
+                    if cust_id:
+                        qs = (
+                            PlanSubscription.objects
+                            .filter(site=obj, user_id=cust_id)
+                            .select_related('plan')
+                        )
+                    else:
+                        # 2) No customer context (direct Sites) → use latest sub for this site
+                        qs = (
+                            PlanSubscription.objects
+                            .filter(site=obj)
+                            .select_related('plan')
+                        )
+
+                    sub = qs.order_by('-created_at').first()
+
+                    if sub:
+                        if 'plan' in self.fields:
+                            self.fields['plan'].initial = sub.plan_id
+                        if 'start_date' in self.fields:
+                            self.fields['start_date'].initial = sub.start_date
+                        if 'end_date' in self.fields:
+                            self.fields['end_date'].initial = sub.end_date
+                        if 'is_trial' in self.fields:
+                            self.fields['is_trial'].initial = bool(sub.is_trial)
+
+                except Exception:
+                    # be tolerant — don't break admin for unexpected DB states
+                    pass
+
+        return _PrefilledForm
 
     # --- Custom Display Columns for List View ---
     def site_display(self, obj):
@@ -372,24 +485,78 @@ class SitesAdmin(admin.ModelAdmin):
         return sub.is_trial if sub else "-"
     readonly_is_trial.short_description = "Is Trial"
 
-    # Make all fields read-only and hide save buttons
-    def has_change_permission(self, request, obj=None):
-        return False
-    
-    def has_delete_permission(self, request, obj=None):
-        return False
-    
-    
+    def render_change_form(self, request, context, *args, **kwargs):
+        # Hide unwanted buttons
+        context['show_save_and_add_another'] = False
+        context['show_save_and_continue'] = False
+        context['show_save'] = True  # keep Save button
 
-# @admin.register(CollaboratorInvitations)
-# class CollaboratorInvitationsAdmin(admin.ModelAdmin):
-#     list_display = ("site_id", "email", "token", "accepted")
-#     fields = ("site_id", "email", "token", "accepted")
-#     search_fields = ('site_id',)
+        return super().render_change_form(request, context, *args, **kwargs)
 
-# @admin.register(Collaborator)
-# class CollaboratorAdmin(admin.ModelAdmin):
-#     list_display = ("customer", "user_id", "created_at", "updated_at")
-#     fields = ("customer", "user_id")
-#     search_fields = ('customer',)
-#     list_filter = ('updated_at',)
+    def save_model(self, request, obj, form, change):
+        # Save Sites.domain, name, etc. first
+        super().save_model(request, obj, form, change)
+
+        cust_id = request.GET.get(self.FILTER_PARAM)
+
+        # 🧩 1) For ADD page without customer context, keep the old behaviour:
+        # don't auto-create a subscription if we don't know the customer.
+        if not change and not cust_id:
+            return
+
+        # 🧩 2) For EDIT page without FILTER_PARAM (opened directly from Sites),
+        # infer the customer from the latest PlanSubscription for this site.
+        if not cust_id and change:
+            latest_sub = (
+                PlanSubscription.objects
+                .filter(site=obj)
+                .order_by('-created_at')
+                .first()
+            )
+            if not latest_sub:
+                # No existing subscription to update, and no customer context
+                # → nothing to do (same spirit as your previous code)
+                return
+            cust_id = latest_sub.user_id
+
+        # If we still don't have a cust_id for some reason, bail out.
+        if not cust_id:
+            return
+
+        # 🧩 3) Now we have a customer ID (either from FILTER_PARAM or inferred).
+        sub = (
+            PlanSubscription.objects
+            .filter(site=obj, user_id=cust_id)
+            .order_by('-created_at')
+            .first()
+        )
+
+        if sub:
+            # update existing subscription
+            sub.plan = form.cleaned_data.get('plan') or sub.plan
+            sub.start_date = form.cleaned_data.get('start_date')
+            sub.end_date = form.cleaned_data.get('end_date')
+            sub.is_trial = bool(form.cleaned_data.get('is_trial'))
+            # Keep existing status/platform unless you want to change them explicitly
+            sub.save()
+        else:
+            # no existing sub -> create one (same as your previous behaviour)
+            PlanSubscription.objects.create(
+                user_id=cust_id,
+                site=obj,
+                plan=form.cleaned_data.get('plan'),
+                start_date=form.cleaned_data.get('start_date'),
+                end_date=form.cleaned_data.get('end_date'),
+                is_trial=bool(form.cleaned_data.get('is_trial')),
+                status='active'
+            )
+
+    def response_change(self, request, obj):
+        """
+        After the user clicks Save, stay on the same page
+        and show a success message.
+        """
+        messages.success(request, "The information has been updated.")
+
+        # Stay on the same edit page:
+        return HttpResponseRedirect(request.path)

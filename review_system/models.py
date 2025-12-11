@@ -1,9 +1,15 @@
+import random
+import string
 from django.db import models
 import bcrypt
 from django.contrib.auth.hashers import make_password
 from django.utils.html import format_html
 
 from django.core.validators import MinValueValidator, MaxValueValidator
+
+def generate_external_site_id(length=25):
+    allowed = string.ascii_lowercase + string.digits + "-"
+    return "".join(random.choice(allowed) for _ in range(length))
 
 
 class ReviewSettings(models.Model):
@@ -191,6 +197,16 @@ class Sites(models.Model):
     external_site_id = models.CharField(max_length=100, null=True, blank=True) 
     created_at = models.DateTimeField(auto_now_add=True) 
     updated_at = models.DateTimeField(auto_now=True)
+
+    def save(self, *args, **kwargs):
+        if not self.external_site_id:
+            # Generate a unique external_site_id
+            while True:
+                external_site_id = generate_external_site_id()
+                if not Sites.objects.filter(external_site_id=external_site_id).exists():
+                    self.external_site_id = external_site_id
+                    break
+        super().save(*args, **kwargs)
 
     def __str__(self):
         return f"{self.domain}"
