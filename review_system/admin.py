@@ -8,7 +8,7 @@ import bcrypt
 
 from django.http import HttpResponseRedirect
 from django.contrib import messages
-
+from django.contrib.admin.widgets import AdminDateWidget
 
 class ProductReviewsListAdmin(admin.ModelAdmin):
     list_display = ('id', 'review_one_line', 'star_rating', 'email', 'domain', 'display_image', 'status', 'source', 'created_at')
@@ -234,8 +234,14 @@ class SiteAdminForm(forms.ModelForm):
         required=False,
         label="Plan Name"
     )
-    start_date = forms.DateField(required=False)
-    end_date = forms.DateField(required=False)
+    start_date = forms.DateField(
+        required=False,
+        widget=AdminDateWidget()
+    )
+    end_date = forms.DateField(
+        required=False,
+        widget=AdminDateWidget()
+    )
     is_trial = forms.BooleanField(required=False)
 
     class Meta:

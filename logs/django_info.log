@@ -13083,3 +13083,42 @@ INFO 2025-12-10 15:51:36,101 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
 INFO 2025-12-10 15:52:35,167 basehttp "GET /admin/review_system/sites/ HTTP/1.1" 200 47220
 INFO 2025-12-10 15:53:19,749 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 102519
 INFO 2025-12-10 15:53:21,412 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-11 12:35:02,804 autoreload Watching for file changes with StatReloader
+INFO 2025-12-11 12:35:30,696 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 102519
+WARNING 2025-12-11 12:35:31,169 log Not Found: /favicon.ico
+WARNING 2025-12-11 12:35:31,171 basehttp "GET /favicon.ico HTTP/1.1" 404 3896
+INFO 2025-12-11 12:37:51,195 basehttp "GET /admin/review_system/sites/?siteuser__customer__id__exact=127&siteuser__status__exact=active HTTP/1.1" 200 13364
+INFO 2025-12-11 12:37:59,845 basehttp "GET /admin/review_system/sites/2/change/?siteuser__customer__id__exact=127 HTTP/1.1" 200 14457
+INFO 2025-12-11 12:38:00,001 basehttp "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 200 19319
+INFO 2025-12-11 12:38:00,013 basehttp "GET /static/admin/js/calendar.js HTTP/1.1" 200 9141
+INFO 2025-12-11 12:38:01,444 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-11 12:38:01,507 basehttp "GET /static/admin/img/icon-calendar.svg HTTP/1.1" 200 1086
+INFO 2025-12-11 12:38:07,390 basehttp "GET /static/admin/img/calendar-icons.svg HTTP/1.1" 200 1094
+INFO 2025-12-11 12:38:45,654 basehttp "POST /admin/review_system/sites/2/change/?siteuser__customer__id__exact=127 HTTP/1.1" 302 0
+INFO 2025-12-11 12:38:48,902 basehttp "GET /admin/review_system/sites/2/change/ HTTP/1.1" 200 14625
+INFO 2025-12-11 12:38:50,612 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-11 12:39:45,290 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 102519
+INFO 2025-12-11 12:39:51,756 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-11 12:40:04,267 basehttp "GET /admin/review_system/sites/?siteuser__customer__id__exact=127&siteuser__status__exact=active HTTP/1.1" 200 13364
+INFO 2025-12-11 12:40:13,783 basehttp "GET /admin/review_system/sites/2/change/?siteuser__customer__id__exact=127 HTTP/1.1" 200 14495
+INFO 2025-12-11 12:40:16,762 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-11 12:40:33,068 basehttp "POST /admin/review_system/sites/2/change/?siteuser__customer__id__exact=127 HTTP/1.1" 302 0
+INFO 2025-12-11 12:40:36,504 basehttp "GET /admin/review_system/sites/2/change/ HTTP/1.1" 200 14587
+INFO 2025-12-11 12:40:38,276 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-11 12:41:12,618 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 102519
+INFO 2025-12-11 12:41:14,472 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-12 11:38:41,366 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 302 0
+INFO 2025-12-12 11:38:41,615 basehttp "GET /admin/login/?next=/admin/review_system/customer/ HTTP/1.1" 200 4204
+WARNING 2025-12-12 11:38:41,779 log Not Found: /favicon.ico
+WARNING 2025-12-12 11:38:41,780 basehttp "GET /favicon.ico HTTP/1.1" 404 3896
+INFO 2025-12-12 11:38:51,656 basehttp "POST /admin/login/?next=/admin/review_system/customer/ HTTP/1.1" 302 0
+INFO 2025-12-12 11:39:11,833 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 102519
+INFO 2025-12-12 11:39:13,681 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-12 11:39:35,350 basehttp "GET /admin/review_system/sites/?siteuser__customer__id__exact=278&siteuser__status__exact=active HTTP/1.1" 200 13392
+INFO 2025-12-12 11:39:42,546 basehttp "GET /admin/review_system/sites/180/change/?siteuser__customer__id__exact=278 HTTP/1.1" 200 14580
+INFO 2025-12-12 11:39:44,235 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-12-12 11:40:08,246 basehttp - Broken pipe from ('127.0.0.1', 61492)
+INFO 2025-12-12 11:40:10,089 basehttp - Broken pipe from ('127.0.0.1', 61536)
+INFO 2025-12-12 11:40:11,372 basehttp "GET /admin/review_system/customer/ HTTP/1.1" 200 102519
+INFO 2025-12-12 11:40:12,745 basehttp - Broken pipe from ('127.0.0.1', 61533)
+INFO 2025-12-12 11:40:12,966 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
